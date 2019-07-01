@@ -9,27 +9,36 @@ require_once(dirname(__FILE__) . '/taxon_name_parser.php');
 
 $basedir = dirname(__FILE__) . '/data';
 
+// flies
 $filename = '/14/14400153-ac4e-4385-b257-1468a2fd81be.json';
 
-$filename = '/f8/f8ddbcc1-c2d1-48f7-be99-55d9ed4c2234.json';
+//$filename = '/f8/f8ddbcc1-c2d1-48f7-be99-55d9ed4c2234.json';
 
+// fish, my author parsing of AFD has broken (first author has only one name)
 //$filename = '/29/291cad28-fea2-4c4b-b638-cb8b66807c28.json';
 
+// journal
 //$filename = '/04/04F84E9F-352F-414B-8CDE-6F4C58C7753F.json';
 
-$filename = '/02/02943d33-6d53-4cb6-a6bd-47526ec80c67.json';
+// snails in zookeys
+//$filename = '/02/02943d33-6d53-4cb6-a6bd-47526ec80c67.json';
 
 // swiftlet subspecies
 //$filename = '/D3/D338443D-5D0A-44E0-81DB-E9AC07310403.json';
 
+// blind fish (no  nomen acts!!)
+//$filename = 'D6/D6547090-2354-428C-B7EA-59C8B3795394.json';
+
+$filename = '/ef/ef2e2649-a046-47b5-a4a8-fc2e0fa683e0.json';
+
 
 $json = file_get_contents($basedir . '/' . $filename);
 
-echo $json;
+//echo $json;
 
 $obj = json_decode($json);
 
-print_r($obj);
+//print_r($obj);
 
 	// remove empty fields
 	$to_delete = array();
@@ -51,7 +60,7 @@ print_r($obj);
 	
 	$sameAs = array();
 	
-	$guid = $obj->lsid;
+	$guid = strtolower($obj->lsid);
 	
 	/*
 	// DOI
@@ -131,7 +140,7 @@ print_r($obj);
 
 	if (isset($obj->parentreferenceid))
 	{
-		$container_id = 'urn:lsid:zoobank.org:pub:' . $obj->parentreferenceid;
+		$container_id = 'urn:lsid:zoobank.org:pub:' . strtolower($obj->parentreferenceid);
 		$triples[] = $s . ' <http://schema.org/isPartOf> <' . $container_id  . '> . ';		
 		
 		if (isset($obj->parentreference))
@@ -178,19 +187,32 @@ print_r($obj);
 			$index = $i + 1;
 		
 			// Author
-			$author_id = '<urn:lsid:zoobank.org:author:' . $obj->authors[$i][0]->gnubuuid . '>';
+			$author_id = '<urn:lsid:zoobank.org:author:' . strtolower($obj->authors[$i][0]->gnubuuid) . '>';
 			
 			//$triples[] = $author_id . ' <http://schema.org/name> ' . '"' . addcslashes($reference->author[$i]->name, '"') . '" .';					
+			
+			$parts = array();
+			
 			
 			if (isset($obj->authors[$i][0]->givenname) && ($obj->authors[$i][0]->givenname != ''))
 			{
 				$triples[] = $author_id . ' <http://schema.org/givenName> ' . '"' . addcslashes($obj->authors[$i][0]->givenname, '"') . '" .';					
+				
+				$parts[] = $obj->authors[$i][0]->givenname;
 			}
 			if (isset($obj->authors[$i][0]->familyname) && ($obj->authors[$i][0]->familyname != ''))
 			{
 				$triples[] = $author_id . ' <http://schema.org/familyName> ' . '"' . addcslashes($obj->authors[$i][0]->familyname, '"') . '" .';					
+				
+				$parts[] = $obj->authors[$i][0]->familyname;
 			}
 			
+			// combine to create complete name
+			if (count($parts) > 0)
+			{
+				$triples[] = $author_id . ' <http://schema.org/name> ' . '"' . addcslashes(join(' ', $parts), '"') . '" .';									
+			}
+						
 			// assume is a person, need to handle cases where this is not true
 			$triples[] = $author_id . ' <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ' . ' <http://schema.org/Person>' . ' .';			
 		
@@ -224,70 +246,172 @@ print_r($obj);
 	
 		foreach ($obj->NomenclaturalActs as $act)
 		{
-			// original usage?
+			//print_r($act);
 			
+			// To keep sane we just handle new names, other things get very messy very quickly 
 			if ($act->tnuuuid == $act->protonymuuid)
 			{
 			
-				$r = $pp->parse($act->cleanprotonym);
-	
-				print_r($r);
+				//$act_id = $act->lsid;
 			
+				$act_id = 'urn:lsid:zoobank.org:act:' . strtolower($act->tnuuuid);
 			
-			
-				// original combination
-			
-				$act_id = $act->lsid;
-				
-				$triples[] = '<' . $act->lsid . '> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName> . ';
-				
-				$triples[] = '<' . $act_id . '> <http://rs.tdwg.org/ontology/voc/Common#publishedInCitation> ' . $s . ' . ';
-				
-				// handle name strings, which ZooBank does horrible things to
-				$triples[] = '<' . $act_id . '> <http://schema.org/name> "' . addcslashes($act->cleanprotonym, '"') . '" . ';
-				
-				$nameComplete = '';
-				$rankString = $act->rankgroup;
-				
-				switch ($act->rankgroup)
-				{
-					case 'Genus':
-						$parts = explode(' ', $act->namestring);
-						$nameComplete = $parts[0];
-						
-						$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#uninomial> ' . '"' . addcslashes($parts[0], '"') . '" . ';
-						break;
-						
-					case 'Species':
-						$parts = explode(' ', $act->parentname);
-						$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#genusPart> ' . '"' . addcslashes($parts[0], '"') . '" . ';
-						$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#specificEpithet> ' . '"' . addcslashes($act->namestring, '"') . '" . ';
-
-						$nameComplete =  $parts[0] . ' ' . $act->namestring;
-						break;
-						
-					default:
-						$nameComplete = $act->namestring;				
-						break;
-				}
-				
-				if ($nameComplete != '')
-				{
-					$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#nameComplete> ' . '"' . addcslashes($nameComplete, '"') . '" . ';				
-				}
-				
-				$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#rankString> ' . '"' . addcslashes(strtolower($rankString), '"') . '" . ';
-				
+				// it's a taxonomic name
+				$triples[] = '<' . $act_id . '> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName> . ';
 				if (isset($act->NomenclaturalCode))
 				{					
 					$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#nomenclaturalCode> ' . ' <http://rs.tdwg.org/ontology/voc/TaxonName#' . $act->NomenclaturalCode . '> . ';
 				}				
+				
+				// if original combination we link to publication
+				if ($act->tnuuuid == $act->protonymuuid)
+				{
+					// original combination so we have publication
+					$triples[] = '<' . $act_id . '> <http://rs.tdwg.org/ontology/voc/Common#publishedInCitation> ' . $s . ' . ';
+				}
+				else
+				{
 			
-			}
+				}
+				
+			
+				// rank is a mess, ZooBank has "rankgroup" and "taxonnamerankid",
+				// and the same rankgroup can have multiple taxonnamerankids. I think
+				// this is a way to say that "species" and "subspecies" are part of the same rank group.
+			
+				$rankstring = '';
+			
+				switch ($act->rankgroup)
+				{
+					case 'Genus':
+						switch ($act->taxonnamerankid)
+						{
+							case 63:
+								$rankstring	= 'subgenus';
+								break;
+										
+							case 60:
+							default:
+								$rankstring	= 'genus';
+								break;
+						}
+						break;
+					
+					case 'Species':
+						switch ($act->taxonnamerankid)
+						{					
+							case 73:
+								$rankstring	= 'subspecies';
+								break;
+										
+							case 70:
+							default:
+								$rankstring	= 'species';
+								break;
+						}
+						break;					
+					
+					
+					default:
+						$rankstring =  strtolower($act->rankgroup);
+						break;
+				}
+			
+				$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#rankString> ' . '"' . addcslashes(strtolower($rankstring), '"') . '" . ';
+
+				// names are store din all sorts of horribel ways so try and make sense of 
+				// "cleanprotonym" which is complete name for a new name, but may be
+				// something entirely different for new combinations
+							
+				$r = $pp->parse($act->cleanprotonym);
+	
+				//print_r($r);
+			
+				if ($r->scientificName->parsed)
+				{
+					$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#nameComplete> ' . '"' . addcslashes($r->scientificName->canonical, '"') . '" . ';				
+					
+					$authorship = '';
+			
+					switch ($rankstring)
+					{
+						case 'family':
+							break;
+					
+						case 'genus':
+							if (isset($r->scientificName->details[0]->genus))
+							{
+								$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#uninomial> ' . '"' . addcslashes($r->scientificName->details[0]->genus->epitheton, '"') . '" . ';					
+								if (isset($r->scientificName->details[0]->genus->authorship))
+								{
+									$authorship = $r->scientificName->details[0]->genus->authorship;		
+								}				
+							}											
+							break;
+					
+						case 'subgenus':
+							if (isset($r->scientificName->details[0]->genus))
+							{
+								$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#genusPart> ' . '"' . addcslashes($r->scientificName->details[0]->genus->epitheton, '"') . '" . ';					
+							}				
+							if (isset($r->scientificName->details[0]->infragenus))
+							{
+								$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#infragenericEpithet> ' . '"' . addcslashes($r->scientificName->details[0]->infragenus->epitheton, '"') . '" . ';					
+								if (isset($r->scientificName->details[0]->infragenus->authorship))
+								{
+									$authorship = $r->scientificName->details[0]->infragenus->authorship;		
+								}												
+							}				
+							break;
+					
+						case 'species':
+						case 'subspecies':					
+							if (isset($r->scientificName->details[0]->genus))
+							{
+								$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#genusPart> ' . '"' . addcslashes($r->scientificName->details[0]->genus->epitheton, '"') . '" . ';					
+							}
+					
+							if (isset($r->scientificName->details[0]->infragenus))
+							{
+								$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#infragenericEpithet> ' . '"' . addcslashes($r->scientificName->details[0]->infragenus->epitheton, '"') . '" . ';					
+							}									
+					
+							if (isset($r->scientificName->details[0]->species))
+							{
+								$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#specificEpithet> ' . '"' . addcslashes($r->scientificName->details[0]->species->epitheton, '"') . '" . ';					
+								if (isset($r->scientificName->details[0]->species->authorship))
+								{
+									$authorship = $r->scientificName->details[0]->species->authorship;		
+								}												
+							}
+
+							if (isset($r->scientificName->details[0]->infraspecies))
+							{
+								$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#infraspecificEpithet> ' . '"' . addcslashes($r->scientificName->details[0]->infraspecies->epitheton, '"') . '" . ';					
+								if (isset($r->scientificName->details[0]->infraspecies->authorship))
+								{
+									$authorship = $r->scientificName->details[0]->infraspecies->authorship;		
+								}												
+							}					
+							break;
+			
+						default:
+							break;
+			
+					}
+					
+					if (isset($act->usageauthors))
+					{
+						$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#authorship> ' . '"' . addcslashes($act->usageauthors, '"') . '" . ';										
+					}
+					
+				}
+			}			
+
 		}
 	}
 	
-	exit();
+	//exit();
 
 	//print_r($triples);
 
@@ -323,8 +447,8 @@ print_r($obj);
 	
 	$doc = jsonld_compact($doc, $context);
 	
-	echo json_encode($doc, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-	echo "\n";
+	//echo json_encode($doc, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+	//echo "\n";
 	
 
 /*
