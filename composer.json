@@ -1,0 +1,13 @@
+{
+    "name": "rpage/oz-zoobank",
+    "authors": [
+        {
+            "name": "Roderic Page",
+            "email": "rdmpage@gmail.com"
+        }
+    ],
+    "require": {
+        "digitalbazaar/json-ld": "^0.4.7",
+        "semsol/arc2": "^2"
+    }
+}

@@ -1,5 +1,13 @@
 <?php
 
+/*
+
+Harvest reference uuids from ZooBnak DWCA file, then fetch data either form ZooBank 
+or from local CouchDB we have from earlier work.
+
+
+*/
+
 error_reporting(E_ALL);
 
 require_once (dirname(__FILE__) . '/couchsimple.php');
@@ -7,6 +15,7 @@ require_once (dirname(__FILE__) . '/utils.php');
 
 // Parse a TSV file and extract references
 $filename = 'dwca-zoobank-v1/taxon.txt';
+$filename = 'dwca-zoobank-v1.378/taxon.txt'; // https://doi.org/10.15468/wkr0kn
 
 $keys = array();
 $index_to_key = array();
