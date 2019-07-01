@@ -289,7 +289,7 @@ class Parser
 			}
 			
 			// need to decide whether we include this as it has implications for searching ION
-			if (0)
+			if (1)
 			{
 				if (isset($result->scientificName->details[0]->infragenus))
 				{
