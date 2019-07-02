@@ -1,6 +1,6 @@
 <?php
 
-// Grab files from data directory and process
+// Template for grabbing files from data directory and processing
 
 $basedir = dirname(__FILE__) . '/data';
 

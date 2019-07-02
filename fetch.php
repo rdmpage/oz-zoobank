@@ -2,8 +2,7 @@
 
 /*
 
-Harvest ZooBank Reference uuids
-
+Harvest ZooBank Reference uuids from list
 
 */
 
@@ -13,9 +12,14 @@ require_once (dirname(__FILE__) . '/couchsimple.php');
 require_once (dirname(__FILE__) . '/utils.php');
 
 $uuids=array(
-'D338443D-5D0A-44E0-81DB-E9AC07310403'
+//'D338443D-5D0A-44E0-81DB-E9AC07310403',
+//'D6547090-2354-428C-B7EA-59C8B3795394'
+//'F2DEB5D3-A2EC-4599-8595-E57328D502E5'
+'327D7F9C-1ACC-4323-9D03-8D3A7B2E83D8'
 );
 
+
+$force = false;
 
 $basedir = dirname(__FILE__) . '/data';
 

@@ -1,45 +1,12 @@
 <?php
 
-// Grab files from data directory and process
+// Function to convert ZooBank to RDF
 
 require_once(dirname(__FILE__) . '/vendor/autoload.php');
-
 require_once(dirname(__FILE__) . '/taxon_name_parser.php');
 
-
-$basedir = dirname(__FILE__) . '/data';
-
-// flies
-$filename = '/14/14400153-ac4e-4385-b257-1468a2fd81be.json';
-
-//$filename = '/f8/f8ddbcc1-c2d1-48f7-be99-55d9ed4c2234.json';
-
-// fish, my author parsing of AFD has broken (first author has only one name)
-//$filename = '/29/291cad28-fea2-4c4b-b638-cb8b66807c28.json';
-
-// journal
-//$filename = '/04/04F84E9F-352F-414B-8CDE-6F4C58C7753F.json';
-
-// snails in zookeys
-//$filename = '/02/02943d33-6d53-4cb6-a6bd-47526ec80c67.json';
-
-// swiftlet subspecies
-//$filename = '/D3/D338443D-5D0A-44E0-81DB-E9AC07310403.json';
-
-// blind fish (no  nomen acts!!)
-//$filename = 'D6/D6547090-2354-428C-B7EA-59C8B3795394.json';
-
-$filename = '/ef/ef2e2649-a046-47b5-a4a8-fc2e0fa683e0.json';
-
-
-$json = file_get_contents($basedir . '/' . $filename);
-
-//echo $json;
-
-$obj = json_decode($json);
-
-//print_r($obj);
-
+function zoobank_to_jsonld($obj, $format = 'nt')
+{
 	// remove empty fields
 	$to_delete = array();
 	
@@ -58,21 +25,8 @@ $obj = json_decode($json);
 
 	$triples = array();
 	
-	$sameAs = array();
-	
-	$guid = strtolower($obj->lsid);
-	
-	/*
-	// DOI
-	if (preg_match('/^10\./', $guid))
-	{
-		$guid = 'https://doi.org/' . strtolower($guid);
-		
-		$sameAs[] = $guid;
-	}
-	*/
-	
-	$subject_id = $guid; // fix this
+	$guid = $obj->lsid;	
+	$subject_id = $guid; 
 
 	$s = '<' . $subject_id . '>';
 	
@@ -140,7 +94,7 @@ $obj = json_decode($json);
 
 	if (isset($obj->parentreferenceid))
 	{
-		$container_id = 'urn:lsid:zoobank.org:pub:' . strtolower($obj->parentreferenceid);
+		$container_id = 'urn:lsid:zoobank.org:pub:' . strtoupper($obj->parentreferenceid);
 		$triples[] = $s . ' <http://schema.org/isPartOf> <' . $container_id  . '> . ';		
 		
 		if (isset($obj->parentreference))
@@ -164,8 +118,7 @@ $obj = json_decode($json);
 	$triples[] = $identifier_id . ' <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .';			
 	$triples[] = $identifier_id . ' <http://schema.org/propertyID> ' . '"zoobank"' . '.';
 	$triples[] = $identifier_id . ' <http://schema.org/value> ' . '"' . $obj->referenceuuid . '"' . '.';
-	
-	
+		
 	// DOI
 	if (isset($obj->doi))
 	{
@@ -179,21 +132,19 @@ $obj = json_decode($json);
 	
 	
 	if (isset($obj->authors))
-	{
-	
+	{	
 		$n = count($obj->authors);
 		for ($i = 0; $i < $n; $i++)
 		{
 			$index = $i + 1;
 		
 			// Author
-			$author_id = '<urn:lsid:zoobank.org:author:' . strtolower($obj->authors[$i][0]->gnubuuid) . '>';
+			$author_id = '<urn:lsid:zoobank.org:author:' . strtoupper($obj->authors[$i][0]->gnubuuid) . '>';
 			
 			//$triples[] = $author_id . ' <http://schema.org/name> ' . '"' . addcslashes($reference->author[$i]->name, '"') . '" .';					
 			
 			$parts = array();
-			
-			
+						
 			if (isset($obj->authors[$i][0]->givenname) && ($obj->authors[$i][0]->givenname != ''))
 			{
 				$triples[] = $author_id . ' <http://schema.org/givenName> ' . '"' . addcslashes($obj->authors[$i][0]->givenname, '"') . '" .';					
@@ -254,7 +205,7 @@ $obj = json_decode($json);
 			
 				//$act_id = $act->lsid;
 			
-				$act_id = 'urn:lsid:zoobank.org:act:' . strtolower($act->tnuuuid);
+				$act_id = 'urn:lsid:zoobank.org:act:' . strtoupper($act->tnuuuid);
 			
 				// it's a taxonomic name
 				$triples[] = '<' . $act_id . '> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName> . ';
@@ -410,76 +361,44 @@ $obj = json_decode($json);
 
 		}
 	}
+
 	
-	//exit();
-
-	//print_r($triples);
-
 	$nt = join("\n", $triples);
-	echo $nt  . "\n";	
 	
-	$doc = jsonld_from_rdf($nt, array('format' => 'application/nquads'));
-	
-	//print_r($doc);
-
-	// Context 
-
-
-	
-	$context = (object)array(
-		'@vocab' => 'http://schema.org/',
-		'tcommon' => 'http://rs.tdwg.org/ontology/voc/Common#',
-		'tc' => 'http://rs.tdwg.org/ontology/voc/TaxonConcept#',
-		'tn' => 'http://rs.tdwg.org/ontology/voc/TaxonName#',	
-		'taxrefprop' => 'http://taxref.mnhn.fr/lod/property/',			
-		'dwc' => 'http://rs.tdwg.org/dwc/terms/',
-	);
-	
-	/*
-	$frame = (object)array(
-		'@context' => $context,
-		'@type' => array('http://schema.org/' . $type,
-	);
-
-	$doc = jsonld_frame($doc, $frame);	
-	
-	*/
-	
-	$doc = jsonld_compact($doc, $context);
-	
-	//echo json_encode($doc, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-	//echo "\n";
-	
-
-/*
-$count = 0;
-
-$files1 = scandir($basedir);
-
-foreach ($files1 as $directory1)
-{
-	if (preg_match('/^[a-z0-9]{2}$/i', $directory1))
+	if ($format == 'nt')
 	{
-		$files = scandir($basedir . '/' . $directory1);
-		//print_r($files);
+		echo $nt  . "\n";	
+	}
+	if ($format == 'jsonld')
+	{
 	
-		foreach ($files as $filename)
-		{
-			if (preg_match('/\.json/', $filename))
-			{
-				//echo $filename . "\n";
-				$json = file_get_contents($basedir . '/' . $directory1 . '/' . $filename);
-			
-				//echo $json;
-			
-				$count++;
-		
-			}
-		}
+		$doc = jsonld_from_rdf($nt, array('format' => 'application/nquads'));
+	
+		// Context 
+		$context = (object)array(
+			'@vocab' => 'http://schema.org/',
+			'tcommon' => 'http://rs.tdwg.org/ontology/voc/Common#',
+			'tc' => 'http://rs.tdwg.org/ontology/voc/TaxonConcept#',
+			'tn' => 'http://rs.tdwg.org/ontology/voc/TaxonName#',	
+			'taxrefprop' => 'http://taxref.mnhn.fr/lod/property/',			
+			'dwc' => 'http://rs.tdwg.org/dwc/terms/',
+		);
+	
+		/*
+		$frame = (object)array(
+			'@context' => $context,
+			'@type' => array('http://schema.org/' . $type,
+		);
+
+		$doc = jsonld_frame($doc, $frame);	
+	
+		*/
+	
+		$doc = jsonld_compact($doc, $context);
+	
+		echo json_encode($doc, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+		echo "\n";
 	}
 }
-
-echo $count . "\n";
-*/
 
 ?>
