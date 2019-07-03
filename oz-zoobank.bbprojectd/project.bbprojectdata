@@ -4,7 +4,8 @@
 <dict>
 	<key>HierarchyData</key>
 	<array>
-		<string>74843D42-4FC1-4755-8555-5EC6EBFF2999</string>
+		<string>F021781E-B7AD-4DB0-9231-EA3DE3AEEEC5</string>
+		<string>85CAE45C-9D2C-4CB9-B067-48C3F2AD2547</string>
 		<string>E3A6790D-3785-4432-AA56-EC509D75E463</string>
 		<string>D2779698-A430-477F-9673-0EFFA6E48078</string>
 		<string>40497AAF-5830-48D6-807A-EECF3180E5AA</string>
@@ -270,7 +271,7 @@
 			<key>UserOverrideItemName</key>
 			<true/>
 		</dict>
-		<key>74843D42-4FC1-4755-8555-5EC6EBFF2999</key>
+		<key>85CAE45C-9D2C-4CB9-B067-48C3F2AD2547</key>
 		<dict>
 			<key>ItemData</key>
 			<dict>
@@ -711,6 +712,56 @@
 			</dict>
 			<key>ItemName</key>
 			<string>config.inc.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>F021781E-B7AD-4DB0-9231-EA3DE3AEEEC5</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vayQDAAAAAAQQMAAAAFCZ6akMPGzHS6LcQauAjS+1
+				wDXY4V9EYoM5NQclnbkOFAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAAAoAAAABAQAALmdpdGlnbm9yZQAAFAAAAAEGAAAQ
+				AAAAIAAAADAAAABEAAAAWAAAAAgAAAAEAwAAEGcCAAAA
+				AAAIAAAABAMAAIV0DQAAAAAACAAAAAQDAAAjWA4AAAAA
+				AAgAAAAEAwAAdWV2AQMAAAAIAAAABAMAAMGreQEDAAAA
+				FAAAAAEGAACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+				BAAAQcFiIPK/4fMYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+				AAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMA
+				APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+				bnRvc2ggSEQIAAAABAMAAACwnz5pAAAACAAAAAAEAABB
+				vt1dYgAAACQAAAABAQAAMjVFNDI4NkQtNzEyQy0zODk5
+				LUI0M0YtNUQzRjZBOEJEMTIxGAAAAAECAACBAAAAAQAA
+				AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
+				AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
+				ZXJLZXkAAAQAAAADAwAAIuwAANgAAAD+////AQAAAAAA
+				AAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAAEBAA
+				AAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAA
+				BSAAAEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAA
+				AAAAEiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAAALAB
+				AAAAAAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAAEcAA
+				ACAAAAAAAAAAEsAAADQBAAAAAAAAENAAAAQAAAAAAAAA
+				5AEAgAgCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/.gitignore</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./.gitignore</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>.gitignore</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>

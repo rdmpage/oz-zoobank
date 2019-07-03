@@ -34,6 +34,9 @@ foreach ($files1 as $directory1)
 				
 				if (isset($obj->parentreference))
 				{
+					$doi_prefix = '10\.'; 	// default
+					$journal = ".*";		// default
+					
 					//if (preg_match('/^Sys.* B.*/i', $obj->parentreference))
 
 					//if (preg_match('/^Zootaxa/i', $obj->parentreference))
@@ -44,7 +47,11 @@ foreach ($files1 as $directory1)
 					$doi_prefix = '10.1080';	
 					
 					$journal = 'Zoological Journal of the Linnean Society';	
-					$doi_prefix = '(10.1111|10.1093|10.1046)';			
+					$doi_prefix = '(10.1111|10.1093|10.1046)';		
+					
+					$journal = 'Invertebrate Taxonomy';	
+					$doi_prefix = '(10.1071)';			
+	
 					
 					if (preg_match('/^' . $journal . '/i', $obj->parentreference))
 					{
@@ -84,7 +91,19 @@ foreach ($files1 as $directory1)
 							echo $obj->lsid . "\n";
 							echo $obj->value . "\n";
 							$doi = find_doi($obj->value);
-							echo "DOI=$doi\n";						
+							echo "DOI=$doi\n";	
+							
+							// Add to object and save file
+							if ($doi != '')
+							{
+								if (preg_match('/' . $doi_prefix . '/', $doi))
+								{						
+									$obj->doi = $doi;
+								
+									file_put_contents($full_filename, json_encode($obj));
+								}
+								
+							}
 						}
 							
 						
