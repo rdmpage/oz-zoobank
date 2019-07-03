@@ -6,6 +6,10 @@ Having harvested ZooBank a few times before, I’m now creating an on-disk archi
 
 I’m processing the files, for example by reading them in a checking for DOIs (and whether the DOIs seem obviously wrong). Once the data is processed, we could, for example, export as JSON-LD for storage, or export as triples and add to a triple store. We could, for example, add them to a triple store of all eukaryote names…
 
+## IPT
+
+ZooBank IPT with daily updates http://zoobank.org:8080/ipt/resource?r=zoobank
+
 ## Upload
 
 ```
