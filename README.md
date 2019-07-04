@@ -53,3 +53,26 @@ select ?nameComplete ?doi where
 }
 ```
 
+```
+select  ?container_name ?datePublished ?doi
+where 
+{
+  ?work <http://schema.org/isPartOf> ?container .
+  ?container <http://schema.org/name> ?container_name .
+  ?work <http://schema.org/datePublished> ?datePublished .
+  
+ OPTIONAL {
+    ?work <http://schema.org/identifier> ?identifier .
+      ?identifier <http://schema.org/propertyID> "doi" .
+      ?identifier <http://schema.org/value> ?doi .      
+   }  
+ 
+  #FILTER (?datePublished = "2011")
+  #FILTER (?container_name = "Acarologia")
+  FILTER regex(?doi, "figure")
+}
+ORDER BY ?container_name
+#ORDER BY ?datePublished
+```
+
+
