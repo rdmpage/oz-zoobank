@@ -1,8 +1,12 @@
+.DS_Store
+
 #data
 
 dwca-zoobank-v1
 dwca-zoobank-v1.378
 
 junk
+
+*.nt
 
 /vendor/
