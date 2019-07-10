@@ -7,6 +7,22 @@ require_once(dirname(__FILE__) . '/taxon_name_parser.php');
 
 function zoobank_to_jsonld($obj, $format = 'nt')
 {
+	if (isset($obj->lsid) &&  $obj->lsid != '')
+	{
+		$guid = $obj->lsid;	
+	}
+	else
+	{		
+		if (isset($obj->referenceuuid))
+		{
+			$guid = 'http://zoobank.org/References/' . $obj->referenceuuid;
+		}
+		else
+		{
+			return;
+		}
+	}
+
 	// remove empty fields
 	$to_delete = array();
 	
@@ -25,36 +41,39 @@ function zoobank_to_jsonld($obj, $format = 'nt')
 
 	$triples = array();
 	
-	$guid = $obj->lsid;	
+	
 	$subject_id = $guid; 
 
 	$s = '<' . $subject_id . '>';
 	
 	$type = 'CreativeWork';
 	
-	switch ($obj->referencetype)
+	if (isset($obj->referencetype))
 	{
-		case 'Book':
-			$type = 'Book';	
-			break;
+		switch ($obj->referencetype)
+		{
+			case 'Book':
+				$type = 'Book';	
+				break;
 
-		case 'Book Section':
-			$type = 'Chapter';	
-			break;
+			case 'Book Section':
+				$type = 'Chapter';	
+				break;
 	
-		case 'Journal Article':
-			$type = 'ScholarlyArticle';	
-			break;
+			case 'Journal Article':
+				$type = 'ScholarlyArticle';	
+				break;
 			
-		case 'Periodical':
-			$type = 'Periodical';
-			break;
+			case 'Periodical':
+				$type = 'Periodical';
+				break;
 			
-		default:
-			$type = 'CreativeWork';	
-			break;
+			default:
+				$type = 'CreativeWork';	
+				break;
+		}
 	}
-	
+		
 	$triples[] = $s . ' <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/' . $type . '> .';
 	
 	if (isset($obj->title))
@@ -105,20 +124,23 @@ function zoobank_to_jsonld($obj, $format = 'nt')
 	
 	// Identifiers
 
-	// uuid
-	if (1)
+	if (isset($obj->referenceuuid))
 	{
-		$triples[] = $s . ' <http://schema.org/identifier> "' . strtolower($obj->referenceuuid) . '" .';	
-	}
+		// uuid
+		if (1)
+		{
+			$triples[] = $s . ' <http://schema.org/identifier> "' . strtolower($obj->referenceuuid) . '" .';	
+		}
 
-	// lsid
-	$identifier_id = '<' . $subject_id . '#zoobank' . '>';
+		// lsid
+		$identifier_id = '<' . $subject_id . '#zoobank' . '>';
 	
-	$triples[] = $s . ' <http://schema.org/identifier> ' . $identifier_id . '.';			
-	$triples[] = $identifier_id . ' <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .';			
-	$triples[] = $identifier_id . ' <http://schema.org/propertyID> ' . '"zoobank"' . '.';
-	$triples[] = $identifier_id . ' <http://schema.org/value> ' . '"' . $obj->referenceuuid . '"' . '.';
-		
+		$triples[] = $s . ' <http://schema.org/identifier> ' . $identifier_id . '.';			
+		$triples[] = $identifier_id . ' <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .';			
+		$triples[] = $identifier_id . ' <http://schema.org/propertyID> ' . '"zoobank"' . '.';
+		$triples[] = $identifier_id . ' <http://schema.org/value> ' . '"' . $obj->referenceuuid . '"' . '.';
+	}
+			
 	// DOI
 	if (isset($obj->doi))
 	{
