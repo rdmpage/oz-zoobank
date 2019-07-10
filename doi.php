@@ -44,7 +44,7 @@ function find_doi($string)
 //----------------------------------------------------------------------------------------
 function find_openurl($reference)
 {
-	$doi = '';
+	$identifiers = new stdclass;
 	
 	$parameters = array();
 	
@@ -78,7 +78,7 @@ function find_openurl($reference)
 	
 	$url = 'http://localhost/~rpage/microcitation/www/api_openurl.php?' . http_build_query($parameters);
 	
-	//echo $url . "\n";	
+	echo "\n$url\n";	
 	
 	$opts = array(
 	  CURLOPT_URL =>$url,
@@ -102,14 +102,26 @@ function find_openurl($reference)
 		{
 			if (isset($obj->results[0]->doi))
 			{
-				$doi = $obj->results[0]->doi;
+				$identifiers->doi = $obj->results[0]->doi;
 			}
+
+			if (isset($obj->results[0]->handle))
+			{
+				$identifiers->handle = $obj->results[0]->handle;
+			}
+
+			if (isset($obj->results[0]->jstor))
+			{
+				$identifiers->jstor = $obj->results[0]->jstor;
+			}
+
+
 		}
 		
 	}
 	
 	
-	return $doi;
+	return $identifiers;
 			
 }
 
