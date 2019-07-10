@@ -202,6 +202,15 @@ foreach ($files1 as $directory1)
 					$doi_prefix = '10.1080';
 					$journal = 'Annals and Magazine of Natural History';
 					
+					$doi_prefix = '1111';
+					$journal = 'Acta zoologica lilloana';
+					$journal ='Österreichische Zoologische Zeitschrift';
+					$journal = 'DUPLICATE RECORD';
+					$journal = 'Forschungsergebnisse';
+					$journal = '\[Unspecified Author\s\)\]';
+					
+					//$doi_prefix = '10.1007';
+					//$journal = '^facies$';
 										
 					if (preg_match('/' . $journal . '/i', $obj->parentreference) 
 					//&& ($obj->year==2018)
@@ -240,8 +249,8 @@ foreach ($files1 as $directory1)
 						}
 						
 						// No DOI? Then try and find one
-						//if (!isset($obj->doi) && ($doi_prefix != '1111'))
-						if (0)
+						if (!isset($obj->doi) && ($doi_prefix != '1111'))
+						//if (0)
 						{
 							$doi = '';
 							$handle = '';

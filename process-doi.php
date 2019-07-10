@@ -41,16 +41,16 @@ foreach ($files1 as $directory1)
 				{
 					$doi_prefix = '10.5962\/bhl'; 	// BHL
 					$doi_prefix = '10.1163';
+					
+					$doi_prefix ='10.1002\/iroh.19630480410';
 										
-					if (preg_match('/' . $doi_prefix . '/i', $obj->doi)
-						&& ($obj->year < 1800)
-					)
+					if (preg_match('/' . $doi_prefix . '/i', $obj->doi))
 					{			
 						echo $obj->value . "\n";		
 						echo $obj->doi . "\n";
 						
 						unset($obj->doi);
-						//$modified = true;
+						$modified = true;
 
 						if ($modified)
 						{
