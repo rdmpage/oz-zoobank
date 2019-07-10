@@ -209,6 +209,10 @@ foreach ($files1 as $directory1)
 					$journal = 'Forschungsergebnisse';
 					$journal = '\[Unspecified Author\s\)\]';
 					
+					$doi_prefix = '10.1080';
+					$journal = 'Boletín Científico Centro de Museos, Museo de Historia Natural';
+					
+					
 					//$doi_prefix = '10.1007';
 					//$journal = '^facies$';
 										
