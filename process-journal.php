@@ -212,6 +212,9 @@ foreach ($files1 as $directory1)
 					$doi_prefix = '10.1080';
 					$journal = 'Boletín Científico Centro de Museos, Museo de Historia Natural';
 					
+					$doi_prefix = '10.3897';
+					$journal = 'ZooKeys';
+					
 					
 					//$doi_prefix = '10.1007';
 					//$journal = '^facies$';

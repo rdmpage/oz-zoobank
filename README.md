@@ -75,4 +75,50 @@ ORDER BY ?container_name
 #ORDER BY ?datePublished
 ```
 
+### Find author
+
+```
+select *
+where 
+{
+  ?person <http://schema.org/familyName> "Chapple" .
+  ?person <http://schema.org/name> ?name .
+
+  
+  ?role <http://schema.org/creator> ?person . 
+  ?work <http://schema.org/creator> ?role . 
+  
+OPTIONAL {
+    ?work <http://schema.org/identifier> ?identifier .
+      ?identifier <http://schema.org/propertyID> "doi" .
+      ?identifier <http://schema.org/value> ?doi .      
+   }  
+ 
+}
+```
+
+### List DOIs for a journal
+
+```
+select  ?container_name ?datePublished ?doi
+where 
+{
+  ?work <http://schema.org/isPartOf> ?container .
+  ?container <http://schema.org/name> ?container_name .
+  ?work <http://schema.org/datePublished> ?datePublished .
+  
+ OPTIONAL {
+    ?work <http://schema.org/identifier> ?identifier .
+      ?identifier <http://schema.org/propertyID> "doi" .
+      ?identifier <http://schema.org/value> ?doi .      
+   }  
+ 
+  FILTER (?container_name = "Herpetologica")
+}
+ORDER BY ?datePublished
+```
+
+
+
+
 
