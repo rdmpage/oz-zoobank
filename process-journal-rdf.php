@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL ^ E_DEPRECATED);
+
 // Grab files from data directory and process
 // and generate RDF
 
@@ -27,20 +29,30 @@ foreach ($files1 as $directory1)
 				$full_filename = $basedir . '/' . $directory1 . '/' . $filename;
 				
 				$json = file_get_contents($full_filename);
-			
-				//echo $json;
 				
+				if ($json == '') 
+				{
+					echo $filename . "\n";
+					exit();
+				}
+							
 				$obj = json_decode($json);
 				
+				if ($obj)
+				{				
+					zoobank_to_jsonld($obj);
+				}
+				
+				/*
 				if (isset($obj->parentreference))
 				{
-					//if (preg_match('/^Sys.* B.*/i', $obj->parentreference))
 
 					//if (preg_match('/^Zootaxa/i', $obj->parentreference))
 					//if (preg_match('/^Zookeys/i', $obj->parentreference))
 					// if (preg_match('/^Invert/i', $obj->parentreference))
 					
 					$journal = 'Journal of Natural History';
+					$journal = 'Beiträge zur Entomologie';
 					
 					if (preg_match('/^' . $journal . '/i', $obj->parentreference))
 					{
@@ -48,7 +60,9 @@ foreach ($files1 as $directory1)
 						zoobank_to_jsonld($obj);
 						
 					}
-				}			
+				}	
+				*/
+						
 				$count++;
 		
 			}

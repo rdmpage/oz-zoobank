@@ -109,12 +109,108 @@ foreach ($files1 as $directory1)
 					$journal = 'Mitteilungen der Schweizerischen Entomologischen Gesellschaft';
 					$doi_prefix = '10.5169'; 
 					
+					// Lots of DOIs but metadata poor and uses new journal name (sigh)
+					// but very few articles in ZooBank
+					$journal = 'Proceedings of the Malacological Society of London';
+					$doi_prefix = '10.1093'; 
+
+					$journal = 'Tropical Zoology';
+					$journal = 'Fragmenta Entomologica';
+					$journal = 'Pacific Science';
+					$doi_prefix = '10.*'; 
 					
-					if (preg_match('/^' . $journal . '/i', $obj->parentreference) 
+					// Most of these will need to be matched in JSTOR
+					$journal = "Journal of Arachnology";
+					$doi_prefix = '10.1636';
+					
+					$journal = "Molluscan Research";
+					$doi_prefix = '(10.1080|10.1071)';
+					
+					$journal = "Japanese Journal of Ichthyology";
+					$doi_prefix = "(10.11369)";
+
+					$journal = "Ichthyological Research";
+					$doi_prefix = "(10.1007)";
+
+					$journal = "Venus";
+					$doi_prefix = "10.18941";
+
+					$journal = "Zoologica Scripta";
+					$doi_prefix = "(10.1111|10.1046)";
+
+					$journal = "Acta Arach";
+					$doi_prefix = "10.2476";
+					
+					$journal = "^African Invertebrates";
+					$doi_prefix = "(10.5733|10.3897)";
+					
+					$journal ="Journal of Parasitology";
+					$doi_prefix = "(10.2307|10.1645)";
+					
+					$journal ="Systematic Parasitology";
+					$doi_prefix = "(10.1007|10.1023)";
+					
+					$journal = "PeerJ";
+					$doi_prefix = "10.7717";
+					
+					$journal = "Proceedings of the Academy of Natural Sciences of Philadelphia";
+					$doi_prefix = "10.1635";
+					
+					$journal = "Journal of the Ocean Science Foundation";
+					$journal = "Raffles Bulletin of Zoology";
+					$journal = "Annali del Museo Civico di Storia Naturale";
+					$journal = "Belgian Journal of Entomology";
+					$journal = "Bulletin de la Société Entomologique de France";
+					$journal = "FishTaxa";
+					$journal = "Humanity space. International almanac";
+					$journal = "Insecta Mundi";
+					$journal = "^Species$";
+					$journal = "Tropical Lepidoptera Research";
+					$journal = "Australasian Journal of Herpetology";
+					$journal = "Peckhamia";
+					$journal = "Denisia";
+					$journal = "Entomologische Nachrichten und Berichte";
+					$journal = "Ichthyological Exploration of Freshwaters";
+					$journal = "Öfversigt af Konglelige Vetenskaps-Akademiens Förhandlingar";
+					$journal = "Danish Scient. Invest. Iran";
+					$doi_prefix = "1111"; // force deletion of DOI
+					
+					//$journal = "Public Library of Science";
+					//$doi_prefix = "10.1371";
+					
+					//$journal = "European journal of taxonomy";
+					//$doi_prefix = "10.5852";
+					
+					//$journal = "Annals of the Entomological Society of America";
+					//$doi_prefix = "(10.1093|10.1063)";
+					
+					//$journal = "Papers in Palaeontology";
+					//$doi_prefix = "10.1002";
+					
+					
+					$doi_prefix = '^((?!fig).)*$';
+					//$doi_prefix = '^((?!supp).)*$';
+					$journal = "^Zoologia$";
+					$journal = "^African invertebrates$";
+					$journal="Zoosystematics and Evolution";	
+					$journal = 'Biodiversity Data Journal';
+					$journal = 'Deutsche Entomologische Zeitschrift';
+					$journal = 'Journal of Hymenoptera Research';
+					$journal = 'Nota lepidopterologica';
+					
+					
+					$doi_prefix = '10.1080';
+					$journal = 'Annals and Magazine of Natural History';
+					
+										
+					if (preg_match('/' . $journal . '/i', $obj->parentreference) 
 					//&& ($obj->year==2018)
 					)
 					{
-						// echo $obj->parentreference;
+						//echo $full_filename . "\n";
+						//echo $obj->parentreference . "\n";
+						
+						//print_r($obj);
 						
 						$modified = false;						
 						
@@ -143,31 +239,63 @@ foreach ($files1 as $directory1)
 							}
 						}
 						
-						// No DOI?
-						if (!isset($obj->doi))
+						// No DOI? Then try and find one
+						//if (!isset($obj->doi) && ($doi_prefix != '1111'))
+						if (0)
 						{
+							$doi = '';
+							$handle = '';
+							$jstor = '';
+						
+						
 							echo "\nLooking for DOI\n";
 							echo $obj->lsid . "\n";
 							echo $obj->value . "\n";
 							
-							$lookup_crossref = true;
+							$lookup_crossref = true; // default
+
+							//$lookup_crossref = false; // force local search
 							
 							$datacite_prefixes = '/(10.21248|10.24349|10.5169)/';
 							
-							$other_prefixes = '';
+							$other_prefixes = '/(10.11369|10.18941)/';
 							
 							if (preg_match($datacite_prefixes, $doi_prefix))
+							{
+								$lookup_crossref = false;
+							}
+
+							if (preg_match($other_prefixes	, $doi_prefix))
 							{
 								$lookup_crossref = false;
 							}
 														
 							if ($lookup_crossref)
 							{
+								echo "CrossRef\n";
 								$doi = find_doi($obj->value);
 							}
 							else
 							{
-								$doi = find_openurl($obj);
+								echo "LOCAL\n";
+								$ids = find_openurl($obj);
+								
+								//print_r($ids);
+								
+								if (isset($ids->doi))
+								{
+									$doi = $ids->doi;
+								}
+								if (isset($ids->handle))
+								{
+									$handle = $ids->handle;
+									echo "Handle=$handle\n";
+								}
+								if (isset($ids->jstor))
+								{
+									$jstor = $ids->jstor;
+									echo "JSTOR=$jstor\n";
+								}
 							}
 														
 							echo "DOI=$doi\n";	
@@ -190,6 +318,23 @@ foreach ($files1 as $directory1)
 								}
 								
 							}
+							
+							if ($handle != '')
+							{
+								echo "Handle=$handle\n";
+							
+								//$obj->doi = $doi;
+								//$modified = true;
+							}
+
+							if ($jstor != '')
+							{
+								echo "JSTOR=$jstor\n";
+							
+								//$obj->doi = $doi;
+								//$modified = true;
+							}
+								
 						}
 						
 						if ($modified)
