@@ -1,7 +1,7 @@
 <?php
 
 // Grab files from data directory and process
-// looking for possible problems , such as bad DOIs
+// deleteing bad DOIs
 
 require_once (dirname(__FILE__) . '/doi.php');
 
