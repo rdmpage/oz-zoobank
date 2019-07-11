@@ -16,6 +16,7 @@ require_once (dirname(__FILE__) . '/utils.php');
 // Parse a TSV file and extract references
 $filename = 'dwca-zoobank-v1/taxon.txt';
 $filename = 'dwca-zoobank-v1.378/taxon.txt'; // https://doi.org/10.15468/wkr0kn
+$filename = 'dwca-zoobank-v1.392/taxon.txt'; // http://zoobank.org:8080/ipt/resource?r=zoobank
 
 $keys = array();
 $index_to_key = array();
@@ -115,10 +116,25 @@ while (!feof($file_handle))
 					{
 						echo "Fetch\n";
 						$url = 'http://zoobank.org/References.json/' . strtolower($uuid);	
-						$json = get($url);						
+						$json = get($url);
+						
+						if ($json != '')
+						{
+							$obj = json_decode($json);
+							
+							if (is_array($obj))
+							{
+								$obj = $obj[0];
+							}
+							
+							$json = json_encode($obj);
+						}
 					}
 					
-					file_put_contents($filename, $json);
+					if ($json != '')
+					{
+						file_put_contents($filename, $json);
+					}
 				}
 
 
