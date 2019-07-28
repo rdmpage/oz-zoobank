@@ -5,6 +5,7 @@
 	<key>HierarchyData</key>
 	<array>
 		<string>F021781E-B7AD-4DB0-9231-EA3DE3AEEEC5</string>
+		<string>2165596E-0352-4AC9-AD3E-0DBF5290957B</string>
 		<string>730847EC-8F2C-41AB-977B-39B264D12C92</string>
 		<string>85CAE45C-9D2C-4CB9-B067-48C3F2AD2547</string>
 		<string>E3A6790D-3785-4432-AA56-EC509D75E463</string>
@@ -15,8 +16,10 @@
 		<string>945D8AB7-1950-4E9E-B71D-6700FCFAEDE8</string>
 		<string>A2D9D2AA-0671-4DC2-A1D9-5D9BDDFEB606</string>
 		<string>6676173C-B7A7-45C3-9454-B34A9359EF4B</string>
-		<string>5F630579-02B0-4129-B083-80F97390A799</string>
 		<string>FE952F57-F0CA-4C76-B2DE-8D2573DD6CBB</string>
+		<string>5AF01CDA-40FC-42E1-94C2-2785587A5389</string>
+		<string>66D952FB-6FAC-4416-BC45-FC15DB2F69D7</string>
+		<string>DD811BC9-5DF6-4D3B-B0C4-588CCAF4A984</string>
 		<string>B4082363-D7A9-4A4A-BAB4-42E9FA5330FA</string>
 		<string>DDFEC71F-37E5-46FD-A5E0-00D08A5C02C1</string>
 		<string>D3533388-D82C-43A9-9D21-0FB85575EEED</string>
@@ -27,6 +30,56 @@
 	</array>
 	<key>ProjectItems</key>
 	<dict>
+		<key>2165596E-0352-4AC9-AD3E-0DBF5290957B</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vaygDAAAAAAQQMAAAAMiQyK9j4jQ3X5ttMsM7knGg
+				SjHL24qT1c3Svu/Q0N1bGAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAABAAAAABAQAAYWRkLWRvaS11dWlkLnBocBQAAAAB
+				BgAAEAAAACAAAAAwAAAARAAAAFgAAAAIAAAABAMAABBn
+				AgAAAAAACAAAAAQDAACFdA0AAAAAAAgAAAAEAwAAI1gO
+				AAAAAAAIAAAABAMAAHVldgEDAAAACAAAAAQDAADpYoYB
+				AwAAABQAAAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
+				AAAAAAQAAEHBauLpSeDYGAAAAAECAAABAAAAAAAAAA8A
+				AAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAA
+				AAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAA
+				TWFjaW50b3NoIEhECAAAAAQDAAAAsJ8+aQAAAAgAAAAA
+				BAAAQb7dXWIAAAAkAAAAAQEAADI1RTQyODZELTcxMkMt
+				Mzg5OS1CNDNGLTVEM0Y2QThCRDEyMRgAAAABAgAAgQAA
+				AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA
+				AAAAAAEFAAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
+				dGlmaWVyS2V5AAAEAAAAAwMAAETuAADYAAAA/v///wEA
+				AAAAAAAAEQAAAAQQAABwAAAAAAAAAAUQAADcAAAAAAAA
+				ABAQAAAIAQAAAAAAAEAQAAD4AAAAAAAAAAIgAADUAQAA
+				AAAAAAUgAABEAQAAAAAAABAgAABUAQAAAAAAABEgAACI
+				AQAAAAAAABIgAABoAQAAAAAAABMgAAB4AQAAAAAAACAg
+				AAC0AQAAAAAAADAgAADgAQAAAAAAAAHAAAAoAQAAAAAA
+				ABHAAAAgAAAAAAAAABLAAAA4AQAAAAAAABDQAAAEAAAA
+				AAAAAOgBAIAMAgAAAAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/add-doi-uuid.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./add-doi-uuid.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>add-doi-uuid.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
 		<key>40497AAF-5830-48D6-807A-EECF3180E5AA</key>
 		<dict>
 			<key>ItemData</key>
@@ -173,6 +226,56 @@
 			<key>UserOverrideItemName</key>
 			<true/>
 		</dict>
+		<key>5AF01CDA-40FC-42E1-94C2-2785587A5389</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vazADAAAAAAQQMAAAAO/ORFrIKwSsPX41RBMqYRmS
+				+XEqKTb4Wxa2ZSyBiB9MIAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAABcAAAABAQAAcHJvY2Vzcy1qb3VybmFsLXJkZi5w
+				aHAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAWAAAAAgA
+				AAAEAwAAEGcCAAAAAAAIAAAABAMAAIV0DQAAAAAACAAA
+				AAQDAAAjWA4AAAAAAAgAAAAEAwAAdWV2AQMAAAAIAAAA
+				BAMAAN8EfwEDAAAAFAAAAAEGAACUAAAApAAAALQAAADE
+				AAAA1AAAAAgAAAAABAAAQcFhpGKetv0YAAAAAQIAAAEA
+				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
+				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACwnz5p
+				AAAACAAAAAAEAABBvt1dYgAAACQAAAABAQAAMjVFNDI4
+				NkQtNzEyQy0zODk5LUI0M0YtNUQzRjZBOEJEMTIxGAAA
+				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
+				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAAXO0AANgA
+				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
+				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
+				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
+				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
+				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
+				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
+				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/process-journal-rdf.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./process-journal-rdf.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>process-journal-rdf.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
 		<key>5EB5E427-E321-424B-91B3-E92693107F40</key>
 		<dict>
 			<key>ItemData</key>
@@ -223,56 +326,6 @@
 			<key>UserOverrideItemName</key>
 			<true/>
 		</dict>
-		<key>5F630579-02B0-4129-B083-80F97390A799</key>
-		<dict>
-			<key>ItemData</key>
-			<dict>
-				<key>BookmarkData</key>
-				<data>
-				Ym9vazADAAAAAAQQMAAAAO/ORFrIKwSsPX41RBMqYRmS
-				+XEqKTb4Wxa2ZSyBiB9MIAIAAAQAAAADAwAAAAgAKAUA
-				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
-				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
-				bmsAABcAAAABAQAAcHJvY2Vzcy1qb3VybmFsLXJkZi5w
-				aHAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAWAAAAAgA
-				AAAEAwAAEGcCAAAAAAAIAAAABAMAAIV0DQAAAAAACAAA
-				AAQDAAAjWA4AAAAAAAgAAAAEAwAAdWV2AQMAAAAIAAAA
-				BAMAAN8EfwEDAAAAFAAAAAEGAACUAAAApAAAALQAAADE
-				AAAA1AAAAAgAAAAABAAAQcFhpGKetv0YAAAAAQIAAAEA
-				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
-				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
-				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACwnz5p
-				AAAACAAAAAAEAABBvt1dYgAAACQAAAABAQAAMjVFNDI4
-				NkQtNzEyQy0zODk5LUI0M0YtNUQzRjZBOEJEMTIxGAAA
-				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
-				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
-				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAAXO0AANgA
-				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
-				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
-				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
-				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
-				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
-				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
-				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
-				</data>
-				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/oz-zoobank/process-journal-rdf.php</string>
-				<key>HasSecurityScope</key>
-				<true/>
-				<key>RelativePath</key>
-				<string>./process-journal-rdf.php</string>
-				<key>TypeID</key>
-				<string>_CFileLocator</string>
-				<key>Version</key>
-				<integer>1</integer>
-			</dict>
-			<key>ItemName</key>
-			<string>process-journal-rdf.php</string>
-			<key>ItemType</key>
-			<string>FileReference</string>
-			<key>UserOverrideItemName</key>
-			<true/>
-		</dict>
 		<key>6676173C-B7A7-45C3-9454-B34A9359EF4B</key>
 		<dict>
 			<key>ItemData</key>
@@ -318,6 +371,56 @@
 			</dict>
 			<key>ItemName</key>
 			<string>process-doi.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>66D952FB-6FAC-4416-BC45-FC15DB2F69D7</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vazADAAAAAAQQMAAAAMA5PjB1ehNjYEE2omzylq5S
+				Inq2IUApeCli3fVLYhWSIAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAABcAAAABAQAAcHJvY2Vzcy1qb3VybmFsLXNxbC5w
+				aHAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAWAAAAAgA
+				AAAEAwAAEGcCAAAAAAAIAAAABAMAAIV0DQAAAAAACAAA
+				AAQDAAAjWA4AAAAAAAgAAAAEAwAAdWV2AQMAAAAIAAAA
+				BAMAAJudhwEDAAAAFAAAAAEGAACUAAAApAAAALQAAADE
+				AAAA1AAAAAgAAAAABAAAQcFhpGKetv0YAAAAAQIAAAEA
+				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
+				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACwnz5p
+				AAAACAAAAAAEAABBvt1dYgAAACQAAAABAQAAMjVFNDI4
+				NkQtNzEyQy0zODk5LUI0M0YtNUQzRjZBOEJEMTIxGAAA
+				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
+				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAAqu4AANgA
+				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
+				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
+				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
+				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
+				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
+				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
+				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/process-journal-sql.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./process-journal-sql.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>process-journal-sql.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>
@@ -814,6 +917,56 @@
 			</dict>
 			<key>ItemName</key>
 			<string>taxon_name_parser.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>DD811BC9-5DF6-4D3B-B0C4-588CCAF4A984</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vazADAAAAAAQQMAAAAILqr0XB3+btDVow/Q4vznQQ
+				DHDgD5T+1u6g1ujOkuFZIAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAABUAAAABAQAAcHJvY2Vzcy11dWlkcy1yZGYucGhw
+				AAAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAWAAAAAgA
+				AAAEAwAAEGcCAAAAAAAIAAAABAMAAIV0DQAAAAAACAAA
+				AAQDAAAjWA4AAAAAAAgAAAAEAwAAdWV2AQMAAAAIAAAA
+				BAMAAFA8lwEDAAAAFAAAAAEGAACUAAAApAAAALQAAADE
+				AAAA1AAAAAgAAAAABAAAQcF0qmyAQYYYAAAAAQIAAAEA
+				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
+				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACwnz5p
+				AAAACAAAAAAEAABBvt1dYgAAACQAAAABAQAAMjVFNDI4
+				NkQtNzEyQy0zODk5LUI0M0YtNUQzRjZBOEJEMTIxGAAA
+				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
+				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAAdvMAANgA
+				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
+				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
+				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
+				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
+				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
+				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
+				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/process-uuids-rdf.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./process-uuids-rdf.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>process-uuids-rdf.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>

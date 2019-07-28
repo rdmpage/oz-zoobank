@@ -138,7 +138,7 @@ function zoobank_to_jsonld($obj, $format = 'nt')
 		$triples[] = $s . ' <http://schema.org/identifier> ' . $identifier_id . '.';			
 		$triples[] = $identifier_id . ' <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .';			
 		$triples[] = $identifier_id . ' <http://schema.org/propertyID> ' . '"zoobank"' . '.';
-		$triples[] = $identifier_id . ' <http://schema.org/value> ' . '"' . $obj->referenceuuid . '"' . '.';
+		$triples[] = $identifier_id . ' <http://schema.org/value> ' . '"' . strtolower($obj->referenceuuid) . '"' . '.';
 	}
 			
 	// DOI

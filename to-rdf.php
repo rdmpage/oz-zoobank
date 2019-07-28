@@ -38,6 +38,8 @@ $filename = '32/327D7F9C-1ACC-4323-9D03-8D3A7B2E83D8.json';
 $filename = '8c/8c2a02a8-31cd-4615-8d0d-a63fa46870bb.json';
 $filename = 'd3/d3b2a85b-82ca-45ef-9e13-2c68032a20b1.json';
 
+$filename = 'd7/d7588a4e-d06e-4524-bb49-ac16c3fec849.json';
+
 
 $json = file_get_contents($basedir . '/' . $filename);
 
@@ -46,6 +48,6 @@ echo $json;
 $obj = json_decode($json);
 
 zoobank_to_jsonld($obj, 'jsonld');
-zoobank_to_jsonld($obj);
+//zoobank_to_jsonld($obj);
 
 ?>

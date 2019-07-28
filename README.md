@@ -119,6 +119,39 @@ ORDER BY ?datePublished
 ```
 
 
+## Author and roles
+```
+SELECT *
+WHERE 
+{
+  
+  VALUES ?work { <urn:lsid:zoobank.org:pub:D7588A4E-D06E-4524-BB49-AC16C3FEC849> } .
+  ?work <http://schema.org/name> ?title .
+  ?work <http://schema.org/creator> ?role . 
+  ?role <http://schema.org/roleName> ?roleName . 
+  ?role <http://schema.org/creator> ?person . 
+  ?person <http://schema.org/familyName> ?familyName .
+  ?person <http://schema.org/name> ?name .
+
+  OPTIONAL {
+    ?work <http://schema.org/identifier> ?identifier .
+	?identifier <http://schema.org/propertyID> "doi" .
+	?identifier <http://schema.org/value> ?doi .      
+   }
+  
+ OPTIONAL {
+    ?work <http://schema.org/identifier> ?identifier .
+	?identifier <http://schema.org/propertyID> "zoobank" .
+	?identifier <http://schema.org/value> ?zoobank .      
+   } 
+
+ 
+}
+
+
+
+```
+
 
 
 
