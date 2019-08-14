@@ -40,6 +40,8 @@ foreach ($files1 as $directory1)
 					$journal = "ZooKeys";	
 					$journal = "Records of the Australian Museum";
 					$journal = "Invertebrate Systematics";
+					
+					$journal = "Zootaxa";
 										
 					if (preg_match('/' . $journal . '/i', $obj->parentreference))
 					{
@@ -49,27 +51,38 @@ foreach ($files1 as $directory1)
 						
 						$keys[] = 'PUB_PARENT_JOURNAL_TITLE="' . addcslashes($journal, '"') . '"';
 
-						/*
-						if (isset($obj->volume) && ($obj->volume != ''))
+						if (1)
 						{
-							$keys[] = 'volume="' . addcslashes($obj->volume, '"') . '"';
-						}
+							if (isset($obj->volume) && ($obj->volume != ''))
+							{
+								$keys[] = 'volume="' . addcslashes($obj->volume, '"') . '"';
+							}
 
-						if (isset($obj->startpage) && ($obj->startpage != ''))
-						{
-							$keys[] = 'spage="' . addcslashes($obj->startpage, '"') . '"';
+							if (isset($obj->startpage) && ($obj->startpage != ''))
+							{
+								$keys[] = 'spage="' . addcslashes($obj->startpage, '"') . '"';
+							}
+							
+							if (count($keys) >= 3)
+							{
+								echo 'UPDATE bibliography SET zoobank="' . strtolower($obj->referenceuuid) . '" WHERE ' . join(' AND ', $keys) . ';' . "\n";
+							}							
+							
 						}
-						*/
-
-						if (isset($obj->doi))
-						{
-							$keys[] = 'doi="' . $obj->doi . '"';
+						else
+						{						
+							// DOI matching
+							if (isset($obj->doi))
+							{
+								$keys[] = 'doi="' . $obj->doi . '"';
+							}
+							
+							if (count($keys) >= 2)
+							{
+								echo 'UPDATE bibliography SET zoobank="' . strtolower($obj->referenceuuid) . '" WHERE ' . join(' AND ', $keys) . ';' . "\n";
+							}							
 						}
 						
-						if (count($keys) >= 2)
-						{
-							echo 'UPDATE bibliography SET zoobank="' . strtolower($obj->referenceuuid) . '" WHERE ' . join(' AND ', $keys) . ';' . "\n";
-						}
 						
 					}
 				}			
