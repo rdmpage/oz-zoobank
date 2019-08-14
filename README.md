@@ -153,5 +153,65 @@ WHERE
 ```
 
 
+## Matching ZooBank ids to Wikidata entries for authors
 
+### Extract ZooBank authors to SQL
+
+Run `process-authors.php` to parse data dump and add authors to a SQL output.
+
+### Get candidates for matching from Wikidata
+
+We can select various people that we think should have Zoobank ids, such as authors in Wikispecies. Can make the query manageable by restricting to different categories of people (or just do everyone):
+
+```
+SELECT ?item ?itemLabel ?article ?zoobank
+WHERE
+{
+	# Wikispecies articles
+	?article 	schema:about ?item ;
+	schema:isPartOf <https://species.wikimedia.org/> .
+	?item wdt:P31 wd:Q5 .
+
+	# only include people flagged as arachnologists
+	#?item wdt:P106 wd:Q17344952 .
+
+	# only include people flagged as dipterologist (4)
+	#?item wdt:P106 wd:Q63146541 .
+	# only include people flagged as carcinologist (1162)
+	#?item wdt:P106 wd:Q16868721
+	 
+	# only include people flagged as entomologist (10886)
+	# ?item wdt:P106 wd:Q3055126
+	 
+	?item wdt:P106 wd:Q27497422
+
+	# Do they have a ZooBank author ID?
+	OPTIONAL { ?item wdt:P2006 ?zoobank . }
+
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+```
+
+Get TSV dump of this query, upload to a table in MySQL then match to ZooBank:
+
+```
+CREATE TABLE `wikidata` (
+  `item` varchar(255) NOT NULL DEFAULT '',
+  `itemLabel` varchar(255) DEFAULT NULL,
+  `article` varchar(255) DEFAULT NULL,
+  `zoobank` varchar(64) DEFAULT NULL,
+  KEY `itemLabel` (`itemLabel`),
+  KEY `article` (`article`),
+  KEY `zb` (`zoobank`),
+  KEY `item` (`item`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+```
+
+Match to ZooBank assuming author names will be exactly the same:
+
+```
+SELECT CONCAT(REPLACE(item, 'http://www.wikidata.org/entity/', ''), '|P2006|"', id, '"') FROM zoobank_authors INNER JOIN wikidata ON zoobank_authors.name = wikidata.itemLabel WHERE wikidata.zoobank = '';
+
+```
 
