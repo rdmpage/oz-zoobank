@@ -1,8 +1,10 @@
 <?php
 
+// get from RSS
+// horribly out of date :(
+
 require_once('./utils.php');
 
-// get from RSS
 
 $rss = 'http://zoobank.org/rss/rss.xml';
 
