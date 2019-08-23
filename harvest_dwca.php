@@ -17,13 +17,14 @@ require_once (dirname(__FILE__) . '/utils.php');
 $filename = 'dwca-zoobank-v1/taxon.txt';
 $filename = 'dwca-zoobank-v1.378/taxon.txt'; // https://doi.org/10.15468/wkr0kn
 $filename = 'dwca-zoobank-v1.392/taxon.txt'; // http://zoobank.org:8080/ipt/resource?r=zoobank
+$filename = 'dwca-zoobank-v1.435/taxon.txt';
 
 $keys = array();
 $index_to_key = array();
 
 
 $force 		= false;
-$doi_lookup = true;
+$doi_lookup = false;
 
 $count = 0;
 
