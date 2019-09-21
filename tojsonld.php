@@ -120,6 +120,31 @@ function zoobank_to_jsonld($obj, $format = 'nt')
 		{
 			$triples[] = '<' . $container_id . '> <http://schema.org/name> ' . '"' . addcslashes($obj->parentreference, '"') . '" .';						
 		}
+		
+		// Get type of parent publications
+		$type = '';
+		
+		if (isset($obj->referencetype))
+		{
+			switch ($obj->referencetype)
+			{
+
+				case 'Book Section':
+					$type = 'Chapter';	
+					break;
+	
+				case 'Journal Article':
+					$type = 'Periodical';	
+					break;
+			
+				default:
+					$type = 'CreativeWork';	
+					break;
+			}
+		}
+		
+		$triples[] = '<' . $container_id . '> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/' . $type . '> .';
+		
 	}
 	
 	// Identifiers
@@ -292,13 +317,19 @@ function zoobank_to_jsonld($obj, $format = 'nt')
 			
 				$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#rankString> ' . '"' . addcslashes(strtolower($rankstring), '"') . '" . ';
 
-				// names are store din all sorts of horribel ways so try and make sense of 
+				// names are stored in all sorts of horrible ways so try and make sense of 
 				// "cleanprotonym" which is complete name for a new name, but may be
 				// something entirely different for new combinations
 							
 				$r = $pp->parse($act->cleanprotonym);
+				
+				$triples[] = '<' . $act_id . '>  <http://purl.org/dc/elements/1.1/title> ' . '"' . addcslashes($act->cleanprotonym, '"') . '" . ';
+			
 	
-				//print_r($r);
+				if (0)
+				{
+					print_r($r);
+				}
 			
 				if ($r->scientificName->parsed)
 				{
@@ -373,10 +404,18 @@ function zoobank_to_jsonld($obj, $format = 'nt')
 			
 					}
 					
+					/*
 					if (isset($act->usageauthors))
 					{
 						$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#authorship> ' . '"' . addcslashes($act->usageauthors, '"') . '" . ';										
 					}
+					*/
+
+					if ($authorship != '')
+					{
+						$triples[] = '<' . $act_id . '>  <http://rs.tdwg.org/ontology/voc/TaxonName#authorship> ' . '"' . addcslashes($authorship, '"') . '" . ';										
+					}
+					
 					
 				}
 			}			
@@ -404,6 +443,7 @@ function zoobank_to_jsonld($obj, $format = 'nt')
 			'tn' => 'http://rs.tdwg.org/ontology/voc/TaxonName#',	
 			'taxrefprop' => 'http://taxref.mnhn.fr/lod/property/',			
 			'dwc' => 'http://rs.tdwg.org/dwc/terms/',
+			'dc' => 'http://purl.org/dc/elements/1.1/',
 		);
 	
 		/*
