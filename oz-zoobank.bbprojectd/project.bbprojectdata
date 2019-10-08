@@ -359,11 +359,11 @@
 				AAAAAOgBAIAMAgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/oz-zoobank/process-doi.php</string>
+				<string>file:///Users/rpage/Development/oz-zoobank/process-bad-doi.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./process-doi.php</string>
+				<string>./process-bad-doi.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>

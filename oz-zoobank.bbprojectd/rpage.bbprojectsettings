@@ -52,7 +52,7 @@
 	<key>OpenDocumentsExpanded</key>
 	<true/>
 	<key>OpenDocumentsSplitterProportion</key>
-	<real>0.83157894736842108</real>
+	<real>0.8327485380116959</real>
 	<key>ProjectItemsExpanded</key>
 	<true/>
 	<key>ProjectViewVisible</key>
@@ -61,93 +61,7 @@
 	<array>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
-			<key>Location</key>
-			<dict>
-				<key>BookmarkData</key>
-				<data>
-				Ym9vayQDAAAAAAQQMAAAAGSRrGxyf7+8Hjl3tTo8jbrD
-				JVAvhnLF+YQIIAzk6ukGFAIAAAQAAAADAwAAAAgAKAUA
-				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
-				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
-				bmsAAAoAAAABAQAAdG8tcmRmLnBocAAAFAAAAAEGAAAQ
-				AAAAIAAAADAAAABEAAAAWAAAAAgAAAAEAwAAEGcCAAAA
-				AAAIAAAABAMAAIV0DQAAAAAACAAAAAQDAAAjWA4AAAAA
-				AAgAAAAEAwAAdWV2AQMAAAAIAAAABAMAAEoEfwEDAAAA
-				FAAAAAEGAACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
-				BAAAQcFhpGKetv0YAAAAAQIAAAEAAAAAAAAADwAAAAAA
-				AAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMA
-				APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
-				bnRvc2ggSEQIAAAABAMAAADgBANpAAAACAAAAAAEAABB
-				vt1dYgAAACQAAAABAQAAMjVFNDI4NkQtNzEyQy0zODk5
-				LUI0M0YtNUQzRjZBOEJEMTIxGAAAAAECAACBAAAAAQAA
-				AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
-				AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
-				ZXJLZXkAAAQAAAADAwAAWu0AANgAAAD+////AQAAAAAA
-				AAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAAEBAA
-				AAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAA
-				BSAAAEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAA
-				AAAAEiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAAALAB
-				AAAAAAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAAEcAA
-				ACAAAAAAAAAAEsAAADQBAAAAAAAAENAAAAQAAAAAAAAA
-				5AEAgAgCAAAAAAAA
-				</data>
-				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/oz-zoobank/to-rdf.php</string>
-				<key>HasSecurityScope</key>
-				<true/>
-				<key>TypeID</key>
-				<string>_CFileLocator</string>
-				<key>Version</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
-			<key>Location</key>
-			<dict>
-				<key>BookmarkData</key>
-				<data>
-				Ym9vaywDAAAAAAQQMAAAAJzI2dsPEItSiJt+9ji5m27E
-				3TSARcjHn0SAJ7wzEWS2HAIAAAQAAAADAwAAAAgAKAUA
-				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
-				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
-				bmsAABMAAAABAQAAcHJvY2Vzcy1qb3VybmFsLnBocAAU
-				AAAAAQYAABAAAAAgAAAAMAAAAEQAAABYAAAACAAAAAQD
-				AAAQZwIAAAAAAAgAAAAEAwAAhXQNAAAAAAAIAAAABAMA
-				ACNYDgAAAAAACAAAAAQDAAB1ZXYBAwAAAAgAAAAEAwAA
-				2Ip+AQMAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQ
-				AAAACAAAAAAEAABBwWGkYp62/RgAAAABAgAAAQAAAAAA
-				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAA
-				AAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAA
-				AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAOAEA2kAAAAI
-				AAAAAAQAAEG+3V1iAAAAJAAAAAEBAAAyNUU0Mjg2RC03
-				MTJDLTM4OTktQjQzRi01RDNGNkE4QkQxMjEYAAAAAQIA
-				AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
-				LwAAAAAAAAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50
-				SWRlbnRpZmllcktleQAABAAAAAMDAABX7QAA2AAAAP7/
-				//8BAAAAAAAAABEAAAAEEAAAdAAAAAAAAAAFEAAA4AAA
-				AAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA
-				2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAAR
-				IAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAA
-				AAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEA
-				AAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAA
-				BAAAAAAAAADsAQCAEAIAAAAAAAA=
-				</data>
-				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/oz-zoobank/process-journal.php</string>
-				<key>HasSecurityScope</key>
-				<true/>
-				<key>TypeID</key>
-				<string>_CFileLocator</string>
-				<key>Version</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -190,7 +104,93 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
+			<key>Location</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vayQDAAAAAAQQMAAAAGSRrGxyf7+8Hjl3tTo8jbrD
+				JVAvhnLF+YQIIAzk6ukGFAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAAAoAAAABAQAAdG8tcmRmLnBocAAAFAAAAAEGAAAQ
+				AAAAIAAAADAAAABEAAAAWAAAAAgAAAAEAwAAEGcCAAAA
+				AAAIAAAABAMAAIV0DQAAAAAACAAAAAQDAAAjWA4AAAAA
+				AAgAAAAEAwAAdWV2AQMAAAAIAAAABAMAAEoEfwEDAAAA
+				FAAAAAEGAACIAAAAmAAAAKgAAAC4AAAAyAAAAAgAAAAA
+				BAAAQcFhpGKetv0YAAAAAQIAAAEAAAAAAAAADwAAAAAA
+				AAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMA
+				APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+				bnRvc2ggSEQIAAAABAMAAADgBANpAAAACAAAAAAEAABB
+				vt1dYgAAACQAAAABAQAAMjVFNDI4NkQtNzEyQy0zODk5
+				LUI0M0YtNUQzRjZBOEJEMTIxGAAAAAECAACBAAAAAQAA
+				AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
+				AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50aWZp
+				ZXJLZXkAAAQAAAADAwAAWu0AANgAAAD+////AQAAAAAA
+				AAARAAAABBAAAGwAAAAAAAAABRAAANgAAAAAAAAAEBAA
+				AAQBAAAAAAAAQBAAAPQAAAAAAAAAAiAAANABAAAAAAAA
+				BSAAAEABAAAAAAAAECAAAFABAAAAAAAAESAAAIQBAAAA
+				AAAAEiAAAGQBAAAAAAAAEyAAAHQBAAAAAAAAICAAALAB
+				AAAAAAAAMCAAANwBAAAAAAAAAcAAACQBAAAAAAAAEcAA
+				ACAAAAAAAAAAEsAAADQBAAAAAAAAENAAAAQAAAAAAAAA
+				5AEAgAgCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/to-rdf.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>Date</key>
+			<date>2019-10-08T15:59:20Z</date>
+			<key>Location</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vaywDAAAAAAQQMAAAAJzI2dsPEItSiJt+9ji5m27E
+				3TSARcjHn0SAJ7wzEWS2HAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAABMAAAABAQAAcHJvY2Vzcy1qb3VybmFsLnBocAAU
+				AAAAAQYAABAAAAAgAAAAMAAAAEQAAABYAAAACAAAAAQD
+				AAAQZwIAAAAAAAgAAAAEAwAAhXQNAAAAAAAIAAAABAMA
+				ACNYDgAAAAAACAAAAAQDAAB1ZXYBAwAAAAgAAAAEAwAA
+				2Ip+AQMAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQ
+				AAAACAAAAAAEAABBwWGkYp62/RgAAAABAgAAAQAAAAAA
+				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAA
+				AAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAA
+				AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAOAEA2kAAAAI
+				AAAAAAQAAEG+3V1iAAAAJAAAAAEBAAAyNUU0Mjg2RC03
+				MTJDLTM4OTktQjQzRi01RDNGNkE4QkQxMjEYAAAAAQIA
+				AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
+				LwAAAAAAAAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50
+				SWRlbnRpZmllcktleQAABAAAAAMDAABX7QAA2AAAAP7/
+				//8BAAAAAAAAABEAAAAEEAAAdAAAAAAAAAAFEAAA4AAA
+				AAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA
+				2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAAR
+				IAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAA
+				AAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEA
+				AAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAA
+				BAAAAAAAAADsAQCAEAIAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/process-journal.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>Date</key>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -233,7 +233,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -276,7 +276,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -319,7 +319,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -362,7 +362,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -405,7 +405,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -448,7 +448,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -491,7 +491,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -534,7 +534,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -577,7 +577,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -620,7 +620,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -663,7 +663,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-08-23T08:32:32Z</date>
+			<date>2019-10-08T15:59:20Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
