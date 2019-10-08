@@ -42,6 +42,8 @@ foreach ($files1 as $directory1)
 					$journal = "Invertebrate Systematics";
 					
 					$journal = "Zootaxa";
+					$journal = "Bulletin of The British Arachnological Society";
+					$journal = "Genus";
 										
 					if (preg_match('/' . $journal . '/i', $obj->parentreference))
 					{

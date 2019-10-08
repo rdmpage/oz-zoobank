@@ -27,25 +27,27 @@ $filename = '/14/14400153-ac4e-4385-b257-1468a2fd81be.json';
 // blind fish (no  nomen acts!!)
 //$filename = 'D6/D6547090-2354-428C-B7EA-59C8B3795394.json';
 
-$filename = '/ef/ef2e2649-a046-47b5-a4a8-fc2e0fa683e0.json';
+$filename = 'ef/ef2e2649-a046-47b5-a4a8-fc2e0fa683e0.json';
 
 //$filename = 'd2/d207fa08-c30c-4993-9870-0f60674f2744.json';
 
-$filename = 'F2/F2DEB5D3-A2EC-4599-8595-E57328D502E5.json';
+//$filename = 'F2/F2DEB5D3-A2EC-4599-8595-E57328D502E5.json';
 
-$filename = '32/327D7F9C-1ACC-4323-9D03-8D3A7B2E83D8.json';
+//$filename = '32/327D7F9C-1ACC-4323-9D03-8D3A7B2E83D8.json';
 
-$filename = '8c/8c2a02a8-31cd-4615-8d0d-a63fa46870bb.json';
-$filename = 'd3/d3b2a85b-82ca-45ef-9e13-2c68032a20b1.json';
+//$filename = '8c/8c2a02a8-31cd-4615-8d0d-a63fa46870bb.json';
+//$filename = 'd3/d3b2a85b-82ca-45ef-9e13-2c68032a20b1.json';
 
-$filename = 'd7/d7588a4e-d06e-4524-bb49-ac16c3fec849.json';
+//$filename = 'd7/d7588a4e-d06e-4524-bb49-ac16c3fec849.json';
 
 
-$json = file_get_contents($basedir . '/' . $filename);
+$json = file_get_contents($basedir . '/' . strtolower($filename));
 
 echo $json;
 
 $obj = json_decode($json);
+
+//print_r($obj);
 
 zoobank_to_jsonld($obj, 'jsonld');
 //zoobank_to_jsonld($obj);
