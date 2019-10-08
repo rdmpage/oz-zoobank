@@ -14,6 +14,7 @@
 		<string>B03828F9-9452-4A91-94AE-A2DDBC7F86CD</string>
 		<string>6906F7E4-A8A9-40C3-8D60-797F354E2510</string>
 		<string>945D8AB7-1950-4E9E-B71D-6700FCFAEDE8</string>
+		<string>2D95579D-B76E-44F8-BFE7-2C10DA7B7480</string>
 		<string>A2D9D2AA-0671-4DC2-A1D9-5D9BDDFEB606</string>
 		<string>6676173C-B7A7-45C3-9454-B34A9359EF4B</string>
 		<string>FE952F57-F0CA-4C76-B2DE-8D2573DD6CBB</string>
@@ -75,6 +76,56 @@
 			</dict>
 			<key>ItemName</key>
 			<string>add-doi-uuid.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>2D95579D-B76E-44F8-BFE7-2C10DA7B7480</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vazADAAAAAAQQMAAAAK4RIWzIJKVnWfrpqpSacXZy
+				+DbhU2wRxiJrxOVjy/GQIAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAKAAAAAQEAAG96LXpvb2Jh
+				bmsAABcAAAABAQAAcHJvY2Vzcy1ieS1kYXRlLWRvaS5w
+				aHAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAWAAAAAgA
+				AAAEAwAAEGcCAAAAAAAIAAAABAMAAIV0DQAAAAAACAAA
+				AAQDAAAjWA4AAAAAAAgAAAAEAwAAdWV2AQMAAAAIAAAA
+				BAMAAFPkuQEDAAAAFAAAAAEGAACUAAAApAAAALQAAADE
+				AAAA1AAAAAgAAAAABAAAQcFhpGKetv0YAAAAAQIAAAEA
+				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
+				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAADgBANp
+				AAAACAAAAAAEAABBvt1dYgAAACQAAAABAQAAMjVFNDI4
+				NkQtNzEyQy0zODk5LUI0M0YtNUQzRjZBOEJEMTIxGAAA
+				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
+				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAABfkAANgA
+				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
+				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
+				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
+				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
+				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
+				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
+				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/oz-zoobank/process-by-date-doi.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./process-by-date-doi.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>process-by-date-doi.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>
