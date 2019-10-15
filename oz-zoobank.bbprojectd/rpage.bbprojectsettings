@@ -4,7 +4,7 @@
 <dict>
 	<key>EmbeddedEditorHidden:rpage</key>
 	<false/>
-	<key>ExpandedEditorWidth:rpage:displays([(0, 0), (1440, 900)])</key>
+	<key>ExpandedEditorWidth:rpage:displays([(0, 0), (1440, 900)]:[(1440, 0), (800, 600)])</key>
 	<integer>646</integer>
 	<key>ExpandedItems:rpage</key>
 	<array/>
@@ -196,7 +196,7 @@
 	<key>OpenDocumentsExpanded</key>
 	<true/>
 	<key>OpenDocumentsSplitterProportion</key>
-	<real>0.8327485380116959</real>
+	<real>0.6502923976608187</real>
 	<key>ProjectItemsExpanded</key>
 	<true/>
 	<key>ProjectViewVisible</key>
@@ -205,7 +205,7 @@
 	<array>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -248,7 +248,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -291,7 +291,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -334,7 +334,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -377,7 +377,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -420,7 +420,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -463,7 +463,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -506,7 +506,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -549,7 +549,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -592,7 +592,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -635,7 +635,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -678,7 +678,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -721,7 +721,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -764,7 +764,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -807,7 +807,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2019-10-08T16:30:36Z</date>
+			<date>2019-10-11T10:56:02Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -859,7 +859,7 @@
 	<false/>
 	<key>ViewSplitterPosition:rpage</key>
 	<real>0.23910482227802277</real>
-	<key>WindowFrame:rpage:displays([(0, 0), (1440, 900)])</key>
-	<string>rect(45,66,900,915)</string>
+	<key>WindowFrame:rpage:displays([(0, 0), (1440, 900)]:[(1440, 0), (800, 600)])</key>
+	<string>rect(45,183,900,1032)</string>
 </dict>
 </plist>
