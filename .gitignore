@@ -1,6 +1,7 @@
 .DS_Store
 
 #data
+data/.DS_Store
 
 dwca-zoobank-v1
 dwca-zoobank-v1.378
