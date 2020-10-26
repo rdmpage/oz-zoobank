@@ -1,0 +1,2785 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoologia
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 05 September 2012, 07:45:43.760 by Carlo M. Cunha",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:4B0FB9C5-4BE9-4A41-8BA6-2C2FD3522FC1</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:4B0FB9C5-4BE9-4A41-8BA6-2C2FD3522FC1" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:4B0FB9C5-4BE9-4A41-8BA6-2C2FD3522FC1" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+							
+							
+								
+									
+								
+							
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+				
+				
+				
+					
+						
+						
+						
+						
+					
+				
+				
+				
+				
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoologia<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN<span style="font-size:smaller;">&nbsp;(Print)</span>:</th>
+                    <td>1984-4670</td>
+                </tr>
+                
+                    <tr>
+                        <th scope="row" class="entry_label"><span style="font-size:smaller;">(Online)</span>:</th>
+                        <td>1984-4689</td>
+                    </tr>	
+                
+                
+                <tr><th scope="row" class="entry_label">Online&nbsp;Archives:</th><td> Portico (added: Sep  5 2012  7:45PM UTC)  [<a href="http://www.portico.org" target="_blank">http://www.portico.org</a>] </td></tr>
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td>Sociedade Brasileira de Zoologia</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td>Brazil, Curitiba</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td>English</td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (188) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8ac22cea-d394-48bd-b141-b381af9ca871">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abba, Agustín M., Veronica V. Benitez & Santiago R. Doyle. 2017</span>
+					Population ecology of Chaetophractus vellerosus: the first report for an armadillo in South America. <em>Zoologia</em> <b>34</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d14fa2cf-39b4-41cf-bbc4-e576f1f1daf0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Agudelo, Antonio A. 2014</span>
+					Intersexuality in the holotype of <em>Photina gracilis</em> Giglio-Tos, 1915 (Mantodea, Mantidae, Photininae) and its taxonomic implications. <em>Zoologia</em> <b>31</b>: 408–411.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2a14d7d9-5b9c-44f8-a298-e8f3be657c3e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Agudelo, R. A. A. & José A. Rafael. 2016</span>
+					Review of <em>Paraphotina </em>(Mantodea: Photinaidae). <em>Zoologia</em> <b>33</b>(6): e20160055 [1-13].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5eedf047-806d-4454-aae5-14a72c78b858">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Almeida, Ana C. S., Facelucia B. C. Souza & Leandro M. Vieira. 2018</span>
+					A new species of <em>Cellaria </em>(Bryozoa: Cheilostomata) from northeastern Brazil, with a tabular identification key to the Atlantic species. <em>Zoologia</em> <b>35</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/001233eb-a34b-4fb1-b25a-8ae3ecfb6c7f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Almeida, Ana P. G., Everton L. Zardo, Candida Toni, Everton R. Behr, Leila P. da Silva, João P. Vieira, Vania L. Loro & Bernardo Baldisserotto. 2018</span>
+					Composition of gastrointestinal content, protease and lipase activities in summer and winter of four freshwater siluriforms (Teleostei: Actinopterygii) with two different feeding habits. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2139337d-1a2b-49f2-8d78-a5694b66a376">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Alonso, Mirella B., Débora R. De Carvalho, C. B. M. Alves, Marcelo Z. Moreira & Paulo S. Pompeu. 2019</span>
+					Changes in trophic characteristics of two fish species of <em>Astyanax </em>(Teleostei: Characidae) in response to aquatic pollution. <em>Zoologia</em> <b>35</b>: 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/26db11f0-3da6-4bf8-aa6a-3879f4e62253">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Aloquio, Sergio & Cristiano Lopes-Andrade. 2016</span>
+					Redescription of immature stages and adults of <em><em>Nilio</em></em> (<em><em>Nilio</em></em>) <em>brunneus</em> (Coleoptera: Tenebrionidae: Nilioninae). <em>Zoologia</em> <b>33</b>(2): e20150191 [1-8].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d49b896e-abe8-4463-8e03-e7238595550c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Aloquio, Sergio & Cristiano Lopes-Andrade. 2017</span>
+					A new species of <em>Lelegeis </em>(Coleoptera: Tenebrionidae: Diaperini)  from the Atlantic Forest of Brazil. <em>Zoologia</em> <b>34</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fad55a49-1b0f-4113-a206-c3f4254ce551">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Al-Razi, Hassan, Marjan Maria & Sabir B. Muzaffar. 2019</span>
+					Mortality of primates due to roads and power lines in two forest patches in Bangladesh. <em>Zoologia</em> <b>36</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3484ba4d-c23b-4427-9604-191ca7b14f1d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Alvim, Juliana & Alexandre D. Pimenta. 2015</span>
+					Taxonomic review of Berthella and Berthellina (Gastropoda: Pleurobranchoidea) from Brazil, with description of two new species. <em>Zoologia</em> <b>32</b>(6): 497–531.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/27929d4c-8cbd-45c8-ab27-28816ede5bed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Apolinario, Cristiane & Luís F. Silveira. 2019</span>
+					Hybridism between <em>Cyanocorax chrysops </em>and <em>Cyanocorax cyanopogon </em>(Aves: Corvidae) in Brazil. <em>Zoologia</em> <b>36</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3cd64a9d-daa6-4481-91cc-046b49200948">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Araújo, F. G., Aparecida A. Nascimento, Iracema D. Gomes, Armando Sales & Beatriz A. C. De Oliveira. 2019</span>
+					Gonadal development and reproductive period of the characin <em>Astyanax </em>aff. <em>bimaculatus </em>(Characiformes: Characidae) in a tropical reservoir in southeastern Brazil. <em>Zoologia</em> <b>36</b>: 1-14.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/adf3f1ce-f5e7-4d7b-87b7-546196fd35de">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Araujo, Lucimar S. de & Cristiano Lopes-Andrade. 2016</span>
+					A new species of <em>Falsocis </em>(Coleoptera: Ciidae) from the Atlantic Forest biome with new geographic records and an updated identification key for the species of the genus. <em>Zoologia</em> <b>33</b>(1): e20150173 [1-6].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/311ed60b-177b-4ca6-82f7-2a88a5428950">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Argañaraz, Carina I. & Raquel M. Gleiser. 2017</span>
+					Does urbanization have positive or negative effects on Crab spider (Araneae: Thomisidae) diversity? <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/18b257ed-3a86-41e2-a213-f08023091438">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ávila, Milton P., Rafaela N. Carvalho, Lilian Casatti, Juliana Simião-Ferreira, Lorrane F. De Morais & Fabrício B. Teresa. 2018</span>
+					Metrics derived from fish assemblages as indicators of environmental degradation in Cerrado streams. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bc820c46-b18e-4ba2-afd3-dcb6ea9861eb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Avila-Pires, Teresa C. S., Cristiano Nogueira & Marcio Martins. 2019</span>
+					A new ‘horned’ <em>Stenocercus </em>from the highlands of southeastern Brazil, and redescription of <em>Stenocercus </em><em>tricristatus </em>(Reptilia: Tropiduridae). <em>Zoologia</em> <b>36</b>: 1-16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ac7007e9-796a-41f8-9dd5-56702dbda8b0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Azeredo, Luane M. M., Monique S. Ximenes, Kleytone A. Pereira, Maria P. de A. Fracasso & Luiz C. S. Lopez. 2019</span>
+					Body mass index and glucose variations during the night in free-ranging <em>Artibeus planirostris </em>(Chiroptera: Phyllostomidae). <em>Zoologia</em> <b>36</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/edd93dca-0f64-45d5-ac2f-97b42af138e7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Azevedo, Celso O., Wesley D. Colombo, Isabel D. C. C. Alencar, Chirlei D. De Brito & Cecilia Waichert. 2016</span>
+					Couples in phoretic copulation, a tool for male-female association in highly dimorphic insects of the wasp genus <em>Dissomphalus </em>Ashmead (Hymenoptera: Bethylidae). <em>Zoologia</em> <b>33</b>(6): e20160076 [1-7].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/07dbd2af-187e-4cd9-9457-3467cc91d413">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Back, Janaína P., Adriane Suzin & Lucas M. Aguiar. 2019</span>
+					Activity budget and social behavior of urban capuchin monkeys, <em>Sapajus </em>sp. (Primates: Cebidae). <em>Zoologia</em> <b>36</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/aab205b6-5610-4644-82b0-3326ec9818b1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bahanak, Dieu N. D., Jacques Nack, Antoine Pariselle & Charles F. Bilong. 2016</span>
+					Description of three new species of <em>Quadriacanthus</em> (Monogenea: Ancyrocephalidae) gill parasites of <em>Clarias submarginatus </em>(Siluriformes: Clariidae) from Lake Ossa (Littoral region, Cameroon). <em>Zoologia</em> <b>33</b>(4): e20160044 [1/8].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7cc18488-b432-437c-a2d4-df7a42be5a59">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bertani, Rogério & Fernando Leal. 2016</span>
+					A new species of <em>Pterinopelma</em> (Araneae: Theraphosidae) from the highlands of the state of Minas Gerais, Brazil and description of the male of <em>P. sazimai</em>. <em>Zoologia</em> <b>33</b>(2): e20150190 [1-9].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d87e0ee8-6e3e-47d6-9e7c-bf19ebbc7b98">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bhat, Mohd Y., Kurzhykayev, Zhumagazy, Ashok Channa, Kuanysh Syzdykov, Ainur Assylbekova, Bilal A. Paray, Mohammed K. Al-Sadoon, Dinara Sabdinova, Viktor Fefelov, Irfan A. Rather. 2019</span>
+					Actual status of fishing reserves of the Yesil River. <em>Zoologia</em> <b>36</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1d624772-9194-4bcd-a13e-a43e61909075">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Biffi, Gabriel. 2016</span>
+					On the identity of <em>Chauliognathus flavipes </em>(Coleoptera: Cantharidae): revision of type specimens, new synonyms and new status. <em>Zoologia</em> <b>33</b>(6): e20160088 [1-20].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dd37b38a-555a-4f76-8f8f-84448ccd892a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Borda, Victor & Rina Ramírez. 2013</span>
+					Re-characterization of the Red-lip Megalobulimus (Gastropoda: Strophocheilidae) from Peru with description of a new species. <em>Zoologia</em> <b>30</b>(6): 675 - 691.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a73fd3ab-66cc-47d2-bfca-b4ff8569d0bc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boroni, Natália L., Luciana Lobo, Pedro S. R. Romano & Gisele Lessa. 2017</span>
+					Taxonomic identification using geometric morphometric approach  and limited data: an example using the upper molars of two sympatric species of <em>Calomys </em>(Cricetidae: Rodentia). <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/739e57d7-535d-4ef3-a6c9-49623563b31e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bouzan, Rodrigo S., João P. P. Pena-Barbosa & Antonio D. Brescovit. 2017</span>
+					Two new Brazilian species of Chelodesmidae of the genera <em>Iguazus </em>and <em>Tessarithys </em>(Diplopoda: Polydesmida). <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a127995a-5b57-4f7f-924f-e49e1afa7028">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Brisque, Thaís, Lucas A. Campos-Silva & Augusto J. Piratelli. 2017</span>
+					Relationship between bird-of-prey decals and bird-window collisions on a Brazilian university campus. <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/33be7282-c781-4a97-8a60-6b3f1fab2025">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Brito, Pedro, Cíntia P. Targueta, Walquíria Arruda, Fernanda Santos & Rogério P. Bastos. 2019</span>
+					The sexual dimorphic inguinal glands of the frog species <em>Ololygon centralis </em>(Anura: Hylidae) at light and transmission electron microscopy. <em>Zoologia</em> <b>36</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/24fc795a-c346-4c22-90ae-45b7f089d24f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carlos, Caio J., Jean-Francois Voisin, Hein V. Grouw & Ignacio B. Moreno. 2016</span>
+					A neotype designation for the Ascension Frigatebird <em>Fregata</em> <em>aquila </em>(Aves: Fregatidae). <em>Zoologia</em> <b>33</b>(6): e20160111 [1-6].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e44eb9cf-87e6-412e-892b-fdf164c43a38">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carvalho, Fernando R. 2020</span>
+					Chilling to the bone: Lower temperatures increase vertebrate predation by <em>Tonatia bidens </em>(Chiroptera: Phyllostomidae). <em>Zoologia</em> <b>37</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6ee0b6b2-8319-4766-94ce-6c4233ce96dc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Casimiro, Armando C. R., Diego A. Z. Garcia, Ana P. Vidotto-Magnoni, John R. Britton, Angelo A. Agostinho, Fernanda S. de Almeida & Mário L. Orsi. 2018</span>
+					Escapes of non-native fish from flooded aquaculture facilities: the case of Paranapanema River, southern Brazil. <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2c56aafe-fdb1-457d-b766-555ab018ca1f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cavichioli, Rodney R. & Gabriel Mejdalani. 2012</span>
+					A new species of <em>Tipuana</em> (Auchenorrhyncha: Cicadellidae: Cicadellini) from the state of Amazonas, Brazil, with a key to males of the genus. <em>Zoologia</em> <b>29</b>(5): 479–482.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5b2e5489-c59f-4389-9e23-a8fbbf9b94e0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cavichioli, Rodney R. & Gabriel Mejdalani. 2016</span>
+					A new species of the sharpshooter genus <em>Cardioscarta</em> (Hemiptera: Cicadellidae) from Bolivia and Peru. <em>Zoologia</em> <b>33</b>(1): e20150110 [1-6].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d0a6f9e3-e613-40cc-b180-170074dfcf39">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cezar, Adrielle M., Leila M. Pessôa & Cibele R. Bonvicino. 2017</span>
+					Morphological and genetic diversity in <em>Callithrix </em>hybrids in an anthropogenic area in southeastern Brazil  (Primates: Cebidae: Callitrichinae). <em>Zoologia</em> <b>34</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/29ebff54-4bff-4419-bda8-4d63a573d6f7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chaves, Marcio F., Geraldo J. B. M. Moura, Fernanda D. C. M. A. Tenório, Josemberg D. S. Baptista, Clovis J. C. L. Neto, Valeria W. Texeira & Álvaro A. C. Texeira. 2017</span>
+					Influence of rainfall and temperature on the spermatogenesis of <em>Leptodactylus macrosternum </em>(Anura: Leptodactylidae). <em>Zoologia</em> <b>34</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/500319e5-efa3-4b84-8188-b8be475b7d4a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Churata-Salcedo, Julissa M. & Lúcia M. de Almeida. 2017</span>
+					Review of <em>Coeliaria </em>(Coleoptera: Coccinellidae: Chnoodini). <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2f3aa08c-9f25-4e4c-813e-8e17bcf4829d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cifuentes, Yeimy, Sebastián Estrada-Gomez, Leidy J. Vargas-Muñoz & Carlos Perafán. 2016</span>
+					Description and molecular characterization of a new species of tarantula, <em>Pamphobeteus </em><em>verdolaga</em>, from Colombia (Araneae: Mygalomorphae: Theraphosidae). <em>Zoologia</em> <b>33</b>(6): e20160113 [1-6].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e03c0430-68c6-449b-a0af-9fb0968fb38c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cláudio, Vinícius C., Gedimar P. Barbosa, Vlamir J. Rocha, Ricardo Moratelli & Fabrício B. Rassy. 2020</span>
+					The bat fauna (Mammalia: Chiroptera) of Carlos Botelho State Park, Atlantic Forest of Southeastern Brazil, including new distribution records for the state of São Paulo. <em>Zoologia</em> <b>37</b>: 1-32.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8618f09c-6768-4852-a00f-7d2ccaccd245">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Costa, Cristiano S., Amazonas Chagas-Junior & Ricardo Pinto-da-Rocha. 2018</span>
+					Redescription of <em>Epiperipatus edwardsii</em>, and descriptions of five new species of Epiperipatus from Brazil (Onychophora: Peripatidae). <em>Zoologia</em> <b>35</b>: e23366.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7985fa64-639d-4aff-8bf5-b4eef45f67e2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Costa, Leonardo L., Phillipe M. Machado & Ilana R. Zalmon. 2019</span>
+					Do natural disturbances have significant effects on sandy beach macrofauna of Southeastern Brazil? <em>Zoologia</em> <b>36</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e7163ef0-6b9b-45c1-8edc-c82fce2aa10b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Costa, Mariellen C., Cesar A. B. Medolago, Amanda Murcia & Mercival R. Francisco. 2020</span>
+					Reproductive parameters of the Chestnut-capped Blackbird, <em>Chrysomus ruficapilus </em>(Passeriformes: Icteridae), in a natural wetland from southeastern Brazil. <em>Zoologia</em> <b>37</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/671582ad-9773-472c-804c-e22787040827">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Costa, Rodrigues D. 2018</span>
+					Length-based estimates of growth parameters and mortality rates of fish populations from a coastal zone in the Southeastern Brazil. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6995fec3-00d4-48c4-97d9-93fb9435b912">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Couri, Márcia & Adrian C. Pont. 2020</span>
+					Type specimens of Limnophorini (Diptera: Muscidae) deposited in the Museum für Naturkunde, Humboldt-Universität zu Berlin (Berlin, Germany) . <em>Zoologia</em> <b>37</b>: 1-57.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b15f738a-db7e-4296-af7a-f2e7894ae821">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Creão-Duarte, Antonio J. & Albino M. Sakakibara. 2016</span>
+					Two new species of <em>Sundarion</em> (Hemiptera: Membracidae: Darninae) and taxonomic notes on two congeneric taxa. <em>Zoologia</em> <b>33</b>(1): e20150119 [1-7].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9f576002-45e1-4a83-8269-c34c02407dcd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cseh, Amanda, Fernando Carbayo & Eudóxia M. Froehlich. 2017</span>
+					Observations on food preference of Neotropical land planarians (Platyhelminthes), with emphasis on <em>Obama anthropophila</em>, and their phylogenetic diversification. <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b7b6395-ee91-46aa-9774-89832fe0f47a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cuezzo, Maria G. & Meire S. Pena. 2017</span>
+					<em>Minaselates</em>, a new genus and new species of Epiphragmophoridae from Brazil (Gastropoda: Stylommatophora: Helicoidea). <em>Zoologia</em> <b>34</b>: 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/addc70e5-ac13-4608-90c1-32a891c78a79">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cunha, Carlo M. 2011</span>
+					A new species of <em>Acteon</em> (Opisthobranchia: <em>Acteon</em>idae) from Northeast Brazil. <em>Zoologia</em> <b>28</b>(2): 229-232.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b8530054-7700-4ac9-9ba2-68cc86e0a5ac">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Daros, Hermes, William B. Dutra & Charles Duca. 2018</span>
+					Breeding biology of <em>Tyrannus melancholicus </em>(Aves: Tyrannidae)  in a restinga reserve of southeastern Brazil. <em>Zoologia</em> <b>35</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d3ca2a3e-20a6-4a59-8d4e-a0242b3526a1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">De Assis, José E., José R. B. de Souza, Manuela M. De Lima, Gislaine V. De Lima, Ralf T. S. Cordeiro & Carlos D. Pérez. 2019</span>
+					Association between deep-water scale-worms (Annelida: Polynoidae) and black corals (Cnidaria: Antipatharia) in the Southwestern Atlantic. <em>Zoologia</em> <b>36</b>: 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2c4f6889-11ba-4c8a-9e1c-4c6cf36d50c6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">De Lucena, Carlos A. S., Amanda B. Zaluski & Z. M. S. de Lucena. 2017</span>
+					<em>Astyanax taurorum </em>a new species from dos Touros River, Pelotas River drainage, an upland southern Brazilian river (Characiformes: Characidae). <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d342b7da-7e36-4a4f-98ca-a1b87a7ded94">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">de Mendonca, Maria C. & Gabriel C. Queiroz. 2016</span>
+					A new Brazilian species of <em>Isotomiella</em> (Collembola: Isotomidae) from the state of Pará, Brazil. <em>Zoologia</em> <b>33</b>(3): e20160005 [1-4].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4187e372-19ba-446c-bc7d-f4fcbd2c6aa0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">de Mendonca, Maria C. & Tatiana C. Da Silveira. 2016</span>
+					New species of <em>Nothobrya </em>(Collembola: Entomobryidae) from Southeast Brazil. <em>Zoologia</em> <b>33</b>(6): e20160126 [1-6].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5c7a9255-0d5c-4b83-8258-e4e338acb878">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">de Pinho, Fernando F., Guilherme B. Ferreira & Adriano P. Paglia. 2017</span>
+					Influence of vegetation physiognomy, elevation and fire frequency on medium and large mammals in two protected areas of the Espinhaço Range. <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9ce10538-6d74-4d93-9626-efb27abda130">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Deliberalli, Wanessa, Rogério L. Cansian, Albanin A. M. Pereira, Rafael C. Loureiro, Luiz U. Hepp & Rozane M. Restello. 2018</span>
+					The effects of heavy metals on the incidence of morphological deformities in Chironomidae (Diptera). <em>Zoologia</em> <b>35</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9f763937-a33f-4a33-aaaa-b305499c10cf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dias, Cristina De O., Adriana V. De Araujo & Sérgio L. C. Bonecker. 2018</span>
+					Vertical distribution and structure of copepod (Arthropoda: Copepoda) assemblages in two different seasons down to 1,200 m in the tropical Southwestern Atlantic. <em>Zoologia</em> <b>35</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5fde8933-2b1a-468e-b28f-a858bc0f1cd1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Domahovski, Alexandre C. & Rodney R. Cavichioli. 2014</span>
+					A new species of Arapona from Peru (Hemiptera: Cicadellidae: Iassinae: Gyponini). <em>Zoologia</em> <b>31</b>(3): 281-284.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/db69a753-fdd2-4d16-8177-50d69b2a513d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Domahovski, Alexandre C. & Rodney R. Cavichioli. 2015</span>
+					A new species of Sulcana (Hemiptera: Cicadellidae: Gyponini) from the Brazilian Atlantic Forest. <em>Zoologia</em> <b>32</b>(5): 423-427.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bd72aa8f-d50e-4377-a34c-1e9b9ec501b0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Domahovski, Alexandre C. & Rodney R. Cavichioli. 2018</span>
+					Two new species of <em>Polana</em> (<em>Hobemanella</em>) (Hemiptera: Cicadellidae: Gyponini) and key to species. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/832451ee-fa02-4118-ac86-bed0de48628e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Domahovski, Alexandre C., Andressa Paladini & Rodney R. Cavichioli. 2015</span>
+					A new species of Gypona from southern Brazil (Hemiptera: Cicadellidae: Gyponini). <em>Zoologia</em> <b>32</b>(2): 139-144.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b50ff002-873c-491a-9206-0ff6878da853">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dong, Zimei, Changying Shi, Gengbo Chu, Yanping Dong, Guangwen Chen & Dezeng Liu. 2018</span>
+					Morphological changes of gonad and gene expression patterns during desexualization in Dugesia japonica (Platyhelminthes: Dugesiidae). <em>Zoologia</em> <b>35</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c4a2862f-20e9-47ce-aa81-ae74c6afec84">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Evangelista-Vargas, Oscar D. & Luís F. Silveira. 2018</span>
+					Morphological evidence for the taxonomic status of the Bridge’s Guan, <em>Penelope bridgesi</em>, with comments on the validity of <em>P. obscura bronzina </em>(Aves: Cracidae). <em>Zoologia</em> <b>35</b>: e12993.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a08cb770-d14e-4f5e-8480-377d56e7feef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fabio-Braga, Ana P. & Wilfried Klein. 2018</span>
+					Temperature and circadian effects on metabolic rate of South American echimyid rodents, <em>Trinomys setosus</em> and <em>Clyomys bishopi</em> (Rodentia: Echimyidae). <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b027422c-6443-4f76-a2e2-b36813057148">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fernandes, Maurício R. & Alexandre D. Pimenta. 2011</span>
+					Taxonomic review of <em>Metaxia </em>(Gastropoda: Triphoridae) from Brazil, with description of a new species. <em>Zoologia</em> <b>28</b>(6): 819-830.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e92572bc-c948-44a8-b384-6773fb58ca7a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferreguetti, Atilla C., Bruno C. Pereira & Helena G. Bergallo. 2018</span>
+					Assessing the population density of the spotted paca, <em>Cuniculus paca</em>, (Rodentia: Cuniculidae) on an Atlantic Forest island, southeastern Brazil. <em>Zoologia</em> <b>35</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6960acac-a5cb-4d76-b27e-54ec9e3edf5b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferreira, Aila S., Isabel M. dos Santos Rocha, Bruno C. Bellini & Alexandre Vasconcellos. 2018</span>
+					Effects of habitat heterogeneity on epiedaphic Collembola (Arthropoda: Hexapoda) in a semiarid ecosystem in Northeast Brazil. <em>Zoologia</em> <b>35</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fcf9538b-4804-4920-8450-2139f52c72d4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferreira, Giulianne S., Danilo A. A. D. Santos & Edson V. Lopes. 2019</span>
+					Richness, abundance and microhabitat use by Ardeidae (Aves: Pelecaniformes) during one seasonal cycle in the floodplain lakes of the lower Amazon River. <em>Zoologia</em> <b>36</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b7917f9e-769d-4f85-8521-b5d070e2b660">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">França, Leonardo F., Victória H. Figueiredo-Paixão, Thales A. Duarte-Silva & Kamila B. D. Santos. 2020</span>
+					The effects of rainfall and arthropod abundance on breeding season of insectivorous birds, in a semi-arid neotropical environment. <em>Zoologia</em> <b>37</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e11a9a9c-55c4-445a-bdc4-cc1faf8889e9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Freire, Carolina A., Leonardo De P. Rios, Eloísa P. Giareta & Giovanna C. Castellano. 2017</span>
+					Oxygen consumption remains stable while ammonia excretion is reduced upon short time exposure to high salinity in <em>Macrobrachium acanthurus </em>(Caridae: Palaemonidae), a recent freshwater colonizer. <em>Zoologia</em> <b>34</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8a5b6c6d-e0c7-469b-9763-13ba133708b7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Freitas, André V. L., Luísa L. Mota, Eduardo P. Barbosa & Junia Y. O. Carreira. 2019</span>
+					Immature stages of the <em>Selaginella</em>-feeding <em>Euptychia mollina </em>(Nymphalidae: Satyrinae) from the Brazilian Amazon. <em>Zoologia</em> <b>36</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2017d464-5a2d-4524-8d86-5052c7ae4907">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gaban-Lima, Renato, Jô De F. Lima & Célio Magalhães. 2017</span>
+					Description of ten additional ossicles in the foregut of the freshwater crabs <em>Sylviocarcinus pictus </em>and <em>Valdivia serrata </em>(Decapoda: Trichodactylidae). <em>Zoologia</em> <b>34</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5c056290-e2fe-4247-b441-35c34f8b8930">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gallão, Jonas E. & Maria E. Bichuette. 2016</span>
+					On the enigmatic troglobitic scorpion <em>Troglorhopalurus translucidus</em>: distribution, description of adult females, life history and comments on <em>Rhopalurus lacrau</em> (Scorpiones: Buthidae). <em>Zoologia</em> <b>33</b>(5): e20150193 [1/13].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/663f033f-e804-444f-a999-9f42993ff545">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Garbelotto, Thereza de A., Ana P. L. Kochenborger & Luiz A. Campos. 2018</span>
+					Revision of <em>Lineostethus </em>(Heteroptera: Pentatomidae: Discocephalini). <em>Zoologia</em> <b>35</b>: 1-24.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/89936c76-5f8e-4132-91b9-50f0e7efbe3b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">García-Ulloa, Diego. 2019</span>
+					Sexual and reproductive traits of the pearl oyster shrimp <em>Pontonia margarita </em>(Decapoda: Palemonidae), symbiotically inhabiting the mantle cavity of the rugose pen shell <em>Pinna rugosa </em>(Bivalvia: Pinnidae). <em>Zoologia</em> <b>36</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cd58b82b-b636-4abb-86ca-09ea45b421f7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gentile, Richard, Thiago S. Cardoso, Sócrates F. Costa-Neto, Bernardo R. Teixeira & Paulo S. D’Andrea. 2018</span>
+					Community structure and population dynamics of small mammals in an urban-sylvatic interface area in Rio de Janeiro, Brazil. <em>Zoologia</em> <b>35</b>: e14638.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/342ff666-882d-4ecb-a3b7-0740e876ee4e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gheler-Costa, Carla, Fábio H. Comin, Letícia C. Gilli & Luciano M. Verdade. 2018</span>
+					Foraging behavior of Brazilian cormorant, <em>Nannopterum brasilianus </em>(Suliformes: Phalacrocoracidae). <em>Zoologia</em> <b>35</b>: 1-4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9dd60207-1773-4a32-a0fd-25973bcb4f61">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gomez-Mesa, Laura, Juliane Pereira-Ribeiro, Atilla C. Ferreguetti, Marlon Almeida-Santos, Helena G. Bergallo & Carlos F. D. Rocha. 2017</span>
+					Ecological and reproductive aspects of <em>Aparasphenodon brunoi </em>(Anura: Hylidae) in an ombrophilous forest area of the Atlantic Rainforest Biome, Brazil. <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a65ffc07-75b6-4de4-be59-8ce6bb2d4448">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gonçalves, Macks W., Priscilla G. Gambale, Fernanda R. Godoy, Alessandro A. Alves, Pedro H. De A. Rezende, Aparecido D. D. Cruz, Natan M. Maciel, Fausto Nomura, Rogério P. Bastos, Paulo De Marco-Jr & Daniela De M. Silva. 2017</span>
+					The agricultural impact of pesticides on <em>Physalaemus cuvieri </em>tadpoles (Amphibia: Anura) ascertained by comet assay. <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b5bba46c-7fc5-44c3-b9ce-19f8e93faa1c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gong, Jie, Baohua Chen, Bijun Li, Zhixiong Zhou, Yue Shi, Qiaozhen Ke, Dianchang Zhang & Peng Xu. 2020</span>
+					Genetic analysis of whole mitochondrial genome of <em>Lateolabrax maculatus </em>(Perciformes: Moronidae) indicates the presence of two populations along the Chinese coast. <em>Zoologia</em> <b>37</b>: 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/52e45989-b00a-403f-9da9-6d9553c313bb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Goñi, Beatriz & Carlos R. Vilela. 2016</span>
+					Two new Neotropical species of Drosophilinae (Diptera: Drosophilidae) from Uruguay. <em>Zoologia</em> <b>33</b>(6): e20160142 [1-13].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/27dd8bce-fe46-4234-9202-619a11db3582">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">González-Ittig, Raúl E., Narayan P. Kandel, Cibele R. Bonvicino & Jorge Salazar-Bravo. 2019</span>
+					Does the widely distributed rodent <em>Calomys tener </em>(Cricetidae: Sigmodontinae) constitute a single evolutionary unit? <em>Zoologia</em> <b>36</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1c679170-04d6-42b7-ade7-a12ad8269243">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hartz, Sandra M., Elise A. Rocha, Fernanda T. Brum, André L. Luza, Taís De F. R. Guimarães & Fernando G. Becker. 2019</span>
+					Influences of the area, shape and connectivity of coastal lakes on the taxonomic and functional diversity of fish communities in Southern Brazil. <em>Zoologia</em> <b>36</b>: 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ac68618c-7534-45de-8762-d2404654c081">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Heidari, Nastaran. 2019</span>
+					Ecological niche differentiation between <em>Acanthodactylus micropholis </em>and <em>A. khamirensis </em>(Sauria: Lacertidae) in southern Iran. <em>Zoologia</em> <b>36</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/55315ec6-4c57-461a-a892-2a59b137b55c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Heleodoro, Raphael A., Ricardo Andreazze & José A. Rafael. 2017</span>
+					Redescription of <em>Malacomorpha cancellata </em>(Phasmatodea: Pseudophasmatidae): a geographically misplaced Neotropical species. <em>Zoologia</em> <b>34</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a2e63e0e-6f23-4f37-97ed-7090a6f30a2c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Huang, Xuan, Xiaoyu Quan, Xia Wang, Yueli Yun & Yu Peng. 2018</span>
+					Is the spider a good biological control agent for <em>Plutella xylostella </em>(Lepidoptera: Plutellidae)? <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fcb51525-88f8-496b-a150-95295405c627">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Isola, Tomás E., Martín A. Varisco & Néstor J. Cazzaniga. 2018</span>
+					Implanted byssal hairs on postlarval shells of <em>Mytilus edulis platensis </em>(Bivalvia: Mytilidae) from Patagonia. <em>Zoologia</em> <b>35</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fc9b791b-ae36-4c27-95f6-8f5a3dae38fc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Jorge, Jaqueiuto S. 2020</span>
+					Living among thorns: herpetofaunal community (Anura and Squamata) associated to the rupicolous bromeliad <em>Encholirium spectabile</em> (Pitcairnioideae) in the Brazilian semi-arid Caatinga. <em>Zoologia</em> <b>37</b>: 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e6f123a8-b168-4ab7-a45f-f0fd375051a1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kalhoro, Hameeda, Shengli Tong, Lei Wang, Ying Hua, Josie A. Volatiana & Qingjun Shao. 2018</span>
+					Morphological study of the gastrointestinal tract of <em>Larimichthys crocea </em>(Acanthopterygii: Perciformes). <em>Zoologia</em> <b>35</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ccef72bc-6d16-4ed3-93b5-2498affedaf5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Knoff, Marcelo & Berenice M. M. Fernandes. 2010</span>
+					A new species of <em>Tormopsolus </em>(Digenea: Acanthocolpidae) parasite of <em>Genypterus brasiliensis </em>(Teleostei: Ophidiidae) from the Brazilian coast. <em>Zoologia</em> <b>27</b>(3): 451–454.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5c9b9b66-6387-41a8-927b-7ecb3aa4e390">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lameiro, Fábio R., Mario V. Condini, Cíntia P. Brito & João P. Vieira. 2018</span>
+					The feeding habits of the endemic Remo flounder, <em>Oncopterus darwinii </em>(Actinopterygii: Pleuronectidae), in an exposed sandy beach’s surf zone in southern Brazil. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8ae55ee4-4553-46c1-9152-7828a6816f38">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lanna, Lucas L., Cristiano S. De Azevedo, Ricardo M. Claudino, Reisla Oliveira & Yasmine Antonini. 2017</span>
+					Feeding behavior by hummingbirds (Aves: Trochilidae) in artificial food patches in an Atlantic Forest remnant in southeastern Brazil. <em>Zoologia</em> <b>34</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f91d34d1-2037-4d48-872c-9642b156db91">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lemos, Túlio H., Valéria Tavares & Ligiane M. Moras. 2020</span>
+					Character variation and taxonomy of short-tailed fruit bats from <em>Carollia </em>in Brazil. <em>Zoologia</em> <b>37</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/19d13a31-e9e2-423b-a84e-1a113e348a02">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lencioni-Neto, Frederico & Albino M. Sakakibara. 2016</span>
+					Description of the last nymphal instar of <em>Talipes </em><em>appendiculatus </em>(Hemiptera: Membracidae: Membracinae), and notes on the biology of the immatures and adults. <em>Zoologia</em> <b>33</b>(6): e20160103 [1-5].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0d205f0e-6cea-44da-a438-187032994a8a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lima, Sheila, Rodrigo Vieira, Alexssandro Camargo & Cinthia Chagas. 2017</span>
+					<em>Ommatius</em>: synonyms, new record, redescription of <em><em>Ommatius</em> erythropus </em>and description of the female of <em><em>Ommatius</em> trifidus </em>(Diptera: Asilidae: Ommatiinae). <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8d353755-baa6-4d98-985d-1a5eaa17e961">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lopes, Sonia M. & Luiz R. Silva-da-Silva. 2016</span>
+					A new species of the <em>Xestoblatta </em>surinamensis group from Amazonia, northern Brazil, with redescriptions of <em>X. amaparica</em>, <em>X. surinamensis</em> and <em>X. vera</em> (Blattodea: Ectobiidae). <em>Zoologia</em> <b>33</b>(6): e20160041 [1-9].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/751b8890-b34a-4e1b-97be-ecf2bb0825ec">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lucas, Sylvia M., Victor Passanha & Antonio D. Brescovit. 2020</span>
+					New combination and redescription of <em>Bumba humile</em>, description of four new species and new records from Brazil (Araneae: Theraphosidae: Theraphosinae). <em>Zoologia</em> <b>37</b>: 1-17.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d8040bb9-d1a8-401f-aae5-c6faf83d472c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lucena, Z. M. S. & L. R. Malabarba. 2010</span>
+					Descrição de nove espécies novas de <em>Phenacogaster</em> (Ostariophysi: Characiformes: Characidae) e comentários sobre as demais espécies do gênero. <em>Zoologia</em> <b>27</b>(2): 263-304.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f64701f5-2bed-4fe4-9376-af5da5e71a50">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Maia, Valéria C. & Lazaro A. de Oliveira. 2019</span>
+					A new species of <em>Clinodiplosis</em> (Diptera: Cecidomyiidae) causing galls on <em>Banisteriopsis membranifolia</em> (Malpighiaceae), an endemic plant in Brazil. <em>Zoologia</em> <b>36</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f95d2409-4c3c-4440-8cf4-6817d77b689a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Maia-Carneiro, Thiago, Gisele R. Winck, Mariana R. Pereira & Carlos F. D. Rocha. 2018</span>
+					Body orientation for thermoregulation and daily activity cycle of <em>Mabuya macrorhyncha</em> (Squamata: Scincidae). <em>Zoologia</em> <b>35</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1f5bd8e4-db3d-4acd-b993-6d318a60eb42">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mângia, Sarah, Diego J. Santana & Lucas R. Mariotto. 2019</span>
+					The advertisement call of the phytotelm-breeding <em>Melanophryniscus xanthostomus </em>(Anura: Bufonidae). <em>Zoologia</em> <b>36</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a0a6366d-c82e-466f-9c40-23cffa3f49e0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Marques, Taísa M. & Walter A. Boeger. 2018</span>
+					Proposal of <em>Tiddergasilus </em>gen. nov. (Ergasilidae: Cyclopoida) for T. iheringi comb. nov. from the gills of <em>Hoplias malabaricus</em> (Erythrinidae: Characiformes) from Brazil. <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5b83a113-43a4-4872-965e-fb885acc7d44">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Marques, Taísa M., Elizangela S. Brito, Neliton R. F. Lara, Luciana M. Beloto, Rafael M. Valadão, Plínio B. De Camargo & Luciano M. Verdade. 2017</span>
+					The trophic niche of <em>Mesoclemmys vanderhaegei </em>(Testudines: Chelidae): evidence from stable isotopes. <em>Zoologia</em> <b>34</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6beec534-c983-4817-8799-fc8f89a1a9be">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Martins, Luciana & Marcos Tavares. 2018</span>
+					<em>Ypsilothuria bitentaculata bitentaculata</em> (Echinodermata: Holothuroidea) from the southwestern Atlantic, with comments on its morphology. <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ff623757-b153-4fab-9abf-5f1e6b7ac2b6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Martins, Rodrigo S. & Marcelo Juanicó. 2018</span>
+					Biology, distribution and geographic variation of loliginid squids (Mollusca: Cephalopoda) off southwestern Atlantic. <em>Zoologia</em> <b>35</b>: 1-16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4941b13f-7cce-4c10-98ad-ac13522f6593">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matias, Nathalia R. & Laura Verrastro. 2018</span>
+					Thermal biology of <em>Amphisbaena munoai</em> (Squamata: Amphisbaenidae). <em>Zoologia</em> <b>35</b>: 1-9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f90b9323-2304-4bfa-a037-3fcf3032cdb2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mattos, Tailan M., Dandhara R. Carvalho, Mateus S. De Brito & F. G. Araújo. 2018</span>
+					Occurrence of phoresy between <em>Ancistus multispinis </em>(Actinopterygii: Siluriformes) and <em>Ichthyocladius </em>sp. (Diptera: Chironomidae)  in Atlantic forest streams, Southeastern Brazil. <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0221ccff-d229-4189-8016-1491b4a6d322">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Medeiros, Reinaldo T., Flávia G. Chaves, Maurício B. Vecchi, Denise M. Nogueira & Maria A. S. Alves. 2019</span>
+					Molecular sexing and intersexual differences in the morphometry of the Hangnest Tody-Tyrant <em>Hemitriccus nidipendulus</em> (Passeriformes: Rhynchocyclidae). <em>Zoologia</em> <b>36</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/99211bad-903d-4e5b-bf7f-72c91e3d71c4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mejdalani, Gabriel & Rachel A. Carvalho. 2012</span>
+					On the identification of two Brazilian leafhoppers: redescription of <em>Scoposcartula frontaliana</em> comb. nov. and description of the female of <em>S. talitae</em> (Hemiptera: Cicadellidae: Cicadellini). <em>Zoologia</em> <b>29</b>(5): 459-466.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ba17e04e-636c-4212-80cb-fbb9d76e0aaa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mejdalani, Gabriel & Roberta d. S. da Silva. 2010</span>
+					Notes on Neotropical Proconiini (Hemiptera: Cicadellidae: Cicadellinae). VII: first detailed description of the female genitalia of a <em>Diestostemma</em> species. <em>Zoologia</em> <b>27</b>(5): 813-819.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e3d8395b-5fa2-4820-8719-c67bfad00047">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mejdalani, Gabriel & Rodney R. Cavichioli. 2013</span>
+					A new genus and species of Cicadellini (Hemiptera: Cicadellidae) from the Brazilian Atlantic Rainforest. <em>Zoologia</em> <b>30</b>(6): 669-674.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b3a1fb53-382a-413f-af18-413dd508f5ee">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mejdalani, Gabriel & Rodney R. Cavichioli. 2015</span>
+					Notes on Neotropical Proconiini (Insecta: Hemiptera: Cicadellidae). VIII: morphology of the male and female genitalia of <em>Paraulacizes munda</em>, revalidated from synonymy of <em>P. confusa</em>. <em>Zoologia</em> <b>32</b>(5): 403-408.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e4bd454c-6a86-4e4c-8416-ff1d6080787c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mejdalani, Gabriel, André Carpi & Rachel A. Carvalho. 2009</span>
+					Notes on Neotropical Proconiini (Hemiptera: Cicadellidae: Cicadellinae). VI: description of the male of <em>Deselvana falleni</em> from the Atlantic Rainforest of southeastern Brazil. <em>Zoologia</em> <b>26</b>(4): 769-773.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/857c6f74-3ce9-4b62-9ee8-a46142f20287">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Melo, Gabriel A. R. 2016</span>
+					<em>Plectoplebeia</em>, a new Neotropical genus of stingless bees (Hymenoptera: Apidae). <em>Zoologia</em> <b>33</b>(1): e20150153 [1-8].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/70d21fb8-3942-4d80-8af7-1d6f2b1cac3d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Melo, Gabriel A. R. & Brunno B. Rosa. 2019</span>
+					A new fossil species of the crabronid wasp genus <em>Tracheliodes </em>(Hymenoptera: Crabronidae) from Dominican amber. <em>Zoologia</em> <b>36</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/017e7df5-862e-4e9d-9423-752df0b451f2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Melo, Gabriel A. R., Luiz R. R. Faria & Leandro M. Santos. 2019</span>
+					<em>Xenochlora meridionalis </em>sp. nov. (Hymenoptera: Apidae), a new halictine bee from eastern Brazil as evidence of past connections between Amazonia and Atlantic Forest. <em>Zoologia</em> <b>36</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a21a19d6-01b0-4012-a59c-31c0462f2cc9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Melo, Marcelo R. S. & Rodrigo A. Caires. 2016</span>
+					On the taxonomic status of three eels (Teleostei: Anguilliformes) described from Leptocephali by Tommasi (1960). <em>Zoologia</em> <b>33</b>(5): e20160021 [1/5].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/68508fe5-9679-43e5-83ac-b2369249b68a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mohr, Luciane R. D. S., Eduardo Périco, Vanda S. D. S. Fonseca & Alexsandro R. Mohr. 2017</span>
+					The breeding biology, nest success, habitat and behavior of the endangered Saffron-cowled Blackbird, <em>Xanthopsar flavus </em>(Aves: Icteridae), at an Important Bird Area (IBA) in Rio Grande do Sul, Brazil. <em>Zoologia</em> <b>34</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ff4353e3-a5b8-41d8-bf48-d060f854783d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Morais, Rodrigo, Luiz C. De Araújo, Gleidson R. D. Silva & Charles Duca. 2019</span>
+					Multiple nesting attempts and long breeding seasons of <em>Mimus gilvus </em>(Aves: Mimidae) in southeastern Brazil. <em>Zoologia</em> <b>36</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c14792ec-04b6-4b27-a636-705a829d213b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moreira, Gilson R. P., Cristiano M. Pereira, Vitor O. Becker, Alexandre Specht & Gislene L. Gonçalves. 2019</span>
+					A new cecidogenous species of many-plumed moth (Alucitidae) associated with <em>Cordiera </em>A. Rich. ex DC. (Rubiaceae) in the Brazilian Cerrado. <em>Zoologia</em> <b>36</b>: 1-15.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3ae887ad-eca8-4e6b-8cad-c273518ce141">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moreira, Juliana, Tomaš Scholz & José L. Luque. 2016</span>
+					A new species of <em>Diaphorocleidus </em>(Monogenea: Ancyrocephalinae) from the gills of <em>Argonectes robertsi</em> (Characiformes) and new records of dactylogyrids parasitic on fishes from the Xingu River, Amazon Basin, Brazil. <em>Zoologia</em> <b>33</b>(4): e20160022 [1-6].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bf0a73b5-4f69-4b36-b822-d66ea8bd859d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Neves, Ana C. R., Maria C. De Mendonça & Gabriel C. Queiroz. 2019</span>
+					Two new species and new records of Neanuridae (Hexapoda: Collembola) from Brazilian central Amazonia. <em>Zoologia</em> <b>36</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/39d76202-7f54-44f3-806f-89484546ff86">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishiyama, Eric Y., Enilma M. Araujo & Otto M. P. Oliveira. 2016</span>
+					Species of <em>Lensia</em> (Cnidaria: Hydrozoa: Siphonophorae) from southeastern Brazilian waters. <em>Zoologia</em> <b>33</b>(6): e20160030 [1-14].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4b23e913-1690-433a-8ea2-199b7f3b5a3e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nunes-Silva, Aline. 2020</span>
+					Survival of the copepod <em>Mesocyclops longisetus </em>during simulations of transport from hatchery to target areas for biological control of mosquito larvae. <em>Zoologia</em> <b>37</b>: 1-4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4859469a-dd03-48ce-83db-7b43f6bff1ad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Onody, Helena C. & Angélica M. Penteado-Dias. 2016</span>
+					A new species of <em>Cryptophion</em> (Hymenoptera: Ichneumonidae) from southeastern Brazil. <em>Zoologia</em> <b>33</b>(1): e20150101 [1-5].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8c42ec2d-3a5d-445b-898d-94215f3b0144">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Osorio-Beristain, Marcela, Ángeles Rodríguez, Cristina Martínez-Garza & Raúl E. Alcalá. 2018</span>
+					Relating flight initiation distance in birds to tropical dry forest restoration. <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b3de9543-acb0-4023-bce4-ef165820852f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ouvernay, Daiane, Ildemar Ferreira & Juan J. Morrone. 2018</span>
+					Areas of endemism of hummingbirds (Aves: Apodiformes: Trochilidae) in the Andean and Neotropical regions. <em>Zoologia</em> <b>35</b>: 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/95e87889-a1b4-47d0-bcf4-3e48140e7467">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pantoja, Paulo, Marcos Drago-Bisneto & R. Saturnino. 2020</span>
+					Updates on <em>Berlandiella </em>(Araneae: Philodromidae): a new species, description of the male of <em>B. querencia </em>and new diagnosis for the genus. <em>Zoologia</em> <b>37</b>: 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/45958459-e3e6-4456-87d1-db40cd0f4249">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Paray, Bilal A. & Mohammed K. Al-Sadoon. 2017</span>
+					Ultrastructure of the dermal chromatophores in the Fringe-toed lizard, <em>Acanthodactylus orientalis</em>. <em>Zoologia</em> <b>34</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ccf52bcb-a2c2-44db-9b64-903bb1233748">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pereira, Cristiano M., Denis S. Silva, Hector A. Vargas & Gilson R. P. Moreira. 2018</span>
+					Description of immature stages and natural history of <em>Stigmella schinivora</em> (Lepidoptera: Nepticulidae), a leaf-miner associated with the Brazilian peppertree. <em>Zoologia</em> <b>35</b>: e24485.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/35a480d1-8e00-478a-8225-b96e779289e6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Perrella, Daniel F., Paulo V. Davanço, Leonardo S. Oliveira, Livia M. S. Sousa & Mercival R. Francisco. 2017</span>
+					Reproductive aspects of the Purple-throated Euphonia, <em>Euphonia chlorotica </em>(Aves: Fringillidae) in southeastern Brazil, and first record  of the species nesting inside a vespiary. <em>Zoologia</em> <b>34</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/39896000-bf4a-4908-8b11-6fe8d70fd5e0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Perrella, Daniel F., Vítor De Q. Piacentini, Paulo V. Q. Zima, Carlos H. Biagolini-Jr, Lais Ribeiro-Silva & Mercival R. Francisco. 2019</span>
+					First complete description of nest, eggs, and nestlings of the Squamate Antbird, <em>Myrmoderus squamosus </em>(Aves: Thamnophilidae). <em>Zoologia</em> <b>36</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1958a69a-870c-43a7-8845-aff87b9f40d2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinho, Irlane F. De, Lidiane M. D. Silva, Mariana B. Rodrigues, Bruno D. B. Lopes, Mariana S. Oliveira, Hermes R. Luz, Ildemar Ferreira, Carlos W. G. Lopes & Bruno P. Berto. 2018</span>
+					<em>Isospora machadoae </em>sp. nov. (Protozoa: Apicomplexa: Eimeriidae), a new coccidian species from white-necked thrushes <em>Turdus albicolis </em>(Passeriformes: Turdidae) of South America. <em>Zoologia</em> <b>35</b>: 1-4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2961994a-b275-4653-86db-80b5952c0d42">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinto, Ângelo P. & Tom Kompier. 2018</span>
+					In honor of conservation of the Brazilian Atlantic Forest: description  of two new damselflies of the genus <em>Forcepsioneura </em>discovered in private protected areas (Odonata: Coenagrionidae). <em>Zoologia</em> <b>35</b>: 1-19.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1933dcb9-6d70-406f-8afa-9c8b33595a7a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinto, Elaine C. & Cristina A. Rheims. 2016</span>
+					A new genus of Neotropical spiders of the family Sparassidae (Arachnida: Araneae). <em>Zoologia</em> <b>33</b>(6): e20160160 [1-15].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c2e41009-d762-4aa6-bafe-c7c210cda58e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinto-da-Rocha, Ricardo, Renata Andrade & Jairo A. Moreno-González. 2016</span>
+					Two new cave-dwelling genera of short-tailed whip-scorpions from Brazil (Arachnida: Schizomida: Hubbardiidae). <em>Zoologia</em> <b>33</b>(2): e20150195 [1-9].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bbe8a956-5591-4af7-a0e2-60d4f2b8f777">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pizá, Julia, Néstor J. Cazzaniga & Natalia S. Ghezzi. 2018</span>
+					Redescription of <em>Ventania avellanedae </em>(Stylommatophora: Odontostomidae), a land snail endemic to the Ventania Mountain System, Argentina. <em>Zoologia</em> <b>35</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/57333306-8c22-466e-ac70-594df0b28b53">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Porto, Willians & Pío A. Colmenares. 2014</span>
+					A new species of <em>Avima</em>, the first record of Agoristenidae (Opiliones: Laniatores) from the state of Roraima, Brazil. <em>Zoologia</em> <b>31</b>(6): 634–638.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/46103d35-ff85-4d30-9ccf-6e56dc4452a9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Proença, Barbara & Valéria C. Maia. 2018</span>
+					<em>Bruggmannia chapadensis </em>sp. nov. (Diptera: Cecidomyiidae), a new midge inducing galls on <em>Guapira pernambucensis</em> (Nyctaginaceae) from the Parque Nacional da Chapada dos Guimarães, Mato Grosso State, Brazil. <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b0f5b707-f5bd-46a6-9452-d4c04c880d8d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Quintas, Victor, Daniela M. Takiya, Isabele Côrte & Gabriel Mejdalani. 2020</span>
+					A remarkable new species of <em>Cavichiana </em>(Hemiptera: Cicadellidae: Cicadellinae) from southeastern Brazil. <em>Zoologia</em> <b>37</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6c12fdf8-3766-4a42-8011-95475498ba94">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rebolledo, Adriana P. & R. Collins. 2018</span>
+					Thermal tolerance of the zoea I stage of four Neotropical crab species (Crustacea: Decapoda). <em>Zoologia</em> <b>35</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4617dd09-6265-48bb-83d1-2dbc0af18ab9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Reshaid, Yamila, Luciana Cao, Francisco Brea, María O. Blanche, Santiago Torres & Gustavo Darrigran. 2017</span>
+					Variation in the distribution of <em>Corbicula</em> species (Mollusca: Bivalvia: Corbiculidae) after 25 years of its introduction in the Río de la Plata, Argentina. <em>Zoologia</em> <b>34</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/afd327db-177f-4533-9644-239ddb2f255b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ribeiro-Silva, Lais, Daniel F. Perrella, Carlos H. Biagolini-Jr, Paulo V. Q. Zima, Augusto J. Piratelli, Marcelo N. Schlindwein, Pedro M. G. Junior & Mercival R. Francisco. 2018</span>
+					Testing camera traps as a potential tool for detecting nest predation of birds in a tropical rainforest environment. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c6f0eae1-66a5-410b-9032-a170c0714238">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rocha, Matheus D. S., Guilherme L. D. Silva & Noeli J. Ferla. 2014</span>
+					A new species of Neoseiulus (Acari: Mesostigmata: Phytoseiidae) with a key for the Brazilian species of the genus. <em>Zoologia</em> <b>31</b>(3): 271–274.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/402bdda0-c7c6-47f2-8c08-4a9cee504b25">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rodrigues, Everton N. L., Erica H. Buckup & Antonio D. Brescovit. 2016</span>
+					New species, new records, and a key to the Brazilian species of <i>Gelanor</i> (Araneae: Mimetidae). <em>Zoologia</em> <b>33</b>(4): e20160034 [1/14].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/87858997-8113-4717-a67a-673cd99e3d52">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ruas, Lygia C. & André M. Vaz-dos-Santos. 2017</span>
+					Age structure and growth of the rough scad, <em>Trachurus lathami </em>(Teleostei: Carangidae), in the Southeastern Brazilian Bight. <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/81fc57dc-9305-4899-8959-f4b818d29dd1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rung, Alessandra. 2018</span>
+					A new species of Aulacigaster from Zurquí de Moravia,  a Costa Rican cloud forest (Diptera: Aulacigastridae). <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0d5249d2-063d-45b4-a2c2-bd7e5dc94933">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sampaio, Flavia D. F., Helena C. Silva-de-Assis, Franciele L. Bettim, Luís F. Fávaro & Carolina A. Freire. 2019</span>
+					Water acidification causes death of marine ornamental fish (Perciformes: Pomacentridae) during transport: contributing to the conservation of wild populations. <em>Zoologia</em> <b>36</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c8d91102-a2e8-466a-b1c0-519730b30bc9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Santos, Alfredo P., Jr., Danilo A. Almeida-Santos, Síria Ribeiro, Isla C. M. Carmargo & Ana L. D. C. Prudente. 2019</span>
+					Distribution extension of <em>Phimophis guerini </em>(Serpentes: Dipsadidae: Xenodontinae) in the Brazilian Amazon. <em>Zoologia</em> <b>36</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1c15f3e1-d20a-47b5-b708-4681464c5eed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Santos, Allan P. M. & Jorge L. Nessimian. 2010</span>
+					The occurrence of the microcaddisfly <em>Costatrichia</em> (Trichoptera: Hydroptilidae: Hydroptilinae) in Brazil with description of two new species. <em>Zoologia</em> <b>27</b>(5): 837-843.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1212afdc-779b-4476-8953-436524aaf3ec">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Santos, Allan P. M., Leandro L. Dumas, Ana L. Henriques-Oliveira, Wagner R. M. De Souza, Lucas M. De Camargos, Adolfo R. Calor & Ana M. Oliveira Pes. 2020</span>
+					Taxonomic Catalog of the Brazilian Fauna: order Trichoptera (Insecta), diversity and distribution. <em>Zoologia</em> <b>37</b>: 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fd43851e-d39c-4831-9459-a2ccd2ebe7c6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Santos, Fernanda M. D., Omar M. Entiauspe-Neto, Jailini D. S. Araújo, Moisés B. De Souza, Thales De Lema, Christine Strüssmann & Nelson R. De Albuquerque. 2018</span>
+					A new species of burrowing snake (Serpentes: Dipsadidae: <em>Apostolepis</em>) from the state of Mato Grosso, Central-West region of Brazil. <em>Zoologia</em> <b>35</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d07b9a81-072f-4317-aee2-8488243027ed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Santos, Inaura P. D. S., Nikolas G. Cipola, José W. De Morais & Bruno C. Bellini. 2016</span>
+					A new species of <em>Campylothorax</em> (Collembola: Paronellidae: Paronellinae) from Northern Brazil. <em>Zoologia</em> <b>33</b>(3): e20160013 [1-6].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/80ce3581-5d36-4575-a911-513924ad987b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Santos, Mauricio L., Valéria M. Lemos & João P. Vieira. 2018</span>
+					No mullet, no gain: cooperation between dolphins and cast net fishermen in southern Brazil. <em>Zoologia</em> <b>35</b>: 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6fffab9d-04b5-49c7-a7ce-53a6f9e9196c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Santos-Silva, Lorhaine, Tamaris G. Pinheiro, Marinêz I. Marques & Leandro D. Battirola. 2018</span>
+					Phenology of <em>Promestosoma boggianii </em>(Diplopoda: Polydesmida: Paradoxosomatidae) in a Neotropical floodplain. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/825eb39e-c240-45ce-80ea-d6a13620f299">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Scultori, Carolina & Wesley R. Silva. 2018</span>
+					Does frugivory in <em>Citharexylum solanaceum</em> (Verbenaceae) drive nomadism in the Ipanema bat <em>Pygoderma bilabiatum </em>(Chiroptera: Phyllostomidae)? <em>Zoologia</em> <b>35</b>: 1-5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/51469941-5834-4aa2-a1db-a424f0377392">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Segovia, Júlio M. G., Lúcia C. Neco & Rodrigo H. Willemart. 2018</span>
+					On the habitat use of the Neotropical whip spider <em>Charinus asturius </em>(Arachnida: Amblypygi). <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5815b107-136f-4711-9563-6f7c3e448d8c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sepúlveda, Tatiana A., Claudio J. B. De Carvalho & Alessandre Pereira-Colavite. 2019</span>
+					Systematics of the Neotropical genus <em>Loxozus</em> (Diptera: Neriidae), with notes on distribution and sexual dimorphism. <em>Zoologia</em> <b>36</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6e6a087a-2c62-494c-be5e-650ed69bf6ea">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Serafim-Júnior, Moacyr, Gilmar Perbiche-Neves & Fabio A. Lansac-Tôha. 2019</span>
+					An assessment of the factors determining rotifer assemblage in river-lake systems: the effects of seasonality and habitat. <em>Zoologia</em> <b>36</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b29af1e9-f78a-475d-af1f-3aecebaba626">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Serrano-Villavicencio, José E. & Luís F. Silveira. 2019</span>
+					Notes on <em>Lagothrix flavicauda </em>(Primates: Atelidae): oldest known specimen and the importance of the revisions of museum specimens. <em>Zoologia</em> <b>36</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/962071a9-11fa-4de9-90df-d80ad3493c69">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Silva, Guilherme L. D., Maicon H. Metzelthin, Tairis Da-Costa, Matheus S. Rocha, Darliane E. Silva, Noeli J. Ferla & Onilda S. D. Silva. 2017</span>
+					Responses of water mite assemblages (Acari) to environmental parameters at irrigated rice cultivation fields and native lakes. <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4af9a5f7-8dd3-4ceb-b106-f5fae92b5aba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Silva, Guilherme L. D., Thayná F. De S. Radaelli, Maicon H. Metzelthin, Júlia J. Ferla & Noeli J. Ferla. 2016</span>
+					Two new species of Tydeidae (Acari: Prostigmata), records of species of this family and Triophtydeidae from Brazil. <em>Zoologia</em> <b>33</b>(2): e20150130 [1-8].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/94b1a213-d259-4366-8eb4-86e2a8e05443">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Silva, Henrique A. M. D., Thiago Silva-Soares & Lycia De Brito-Gitirana. 2017</span>
+					Comparative analysis of the integument of different tree frog species from <em>Ololygon </em>and <em>Scinax </em>genera (Anura: Hylidae). <em>Zoologia</em> <b>34</b>: 1-17.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/77080203-3319-4efb-87a8-7bb838b22634">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Silva, L. & Paulo C. Lana. 2017</span>
+					<em>Owenia caissara </em>sp. n. (Annelida, Oweniidae) from Southern Brazil: addressing an identity crisis. <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e168a70d-56ca-4959-94f5-d057966cfdb8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Silva, Leonardo De O. C. D. & Sonia M. Lopes. 2018</span>
+					Six new species of <em>Poeciloderrhis </em>from Brazil (Blattaria: Blaberidae)  with a new record and a new combination. <em>Zoologia</em> <b>35</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b1e05b5f-628b-43f0-8645-33c3be373b4c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Simões, Thyara N., Arley C. D. Silva & Carina C. De M. Moura. 2017</span>
+					Influence of artificial lights on the orientation of hatchlings of <em>Eretmochelys imbricata </em>in Pernambuco, Brazil. <em>Zoologia</em> <b>34</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d9131c5f-def6-49df-9876-cfa578cfaa9a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Soares, Geusivam B., João F. D. S. Neto & Marcus V. Domingues. 2018</span>
+					Dactylogyrids (Platyhelminthes: Monogenoidea) from the gills  of <em>Hassar gabiru </em>and <em>Hassar orestis </em>(Siluriformes: Doradidae)  from the Xingu Basin, Brazil. <em>Zoologia</em> <b>35</b>: 1-16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/63164075-3a27-4d5a-b86d-1c2eafd0b5f0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Soria-Díaz, Leroy, Jaime L. Rábago-Castro, Hublester Domínguez-Vega, Yuriana Gómez-Ortiz & Javier Manjarrez. 2019</span>
+					Parasites in feces of the endemic rattlesnake, <em>Crotalus triseriatus </em>(Serpentes: Viperidae), from Mexican highlands. <em>Zoologia</em> <b>36</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2b7dc28e-6ebf-4031-803d-2329edf2071e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sousa, Viviane R. de & Márcia S. Couri. 2017</span>
+					Phytobia (Diptera: Agromyzidae) from Brazil: new species, new record and a key to the Neotropical species. <em>Zoologia</em> <b>34</b>: 1-25.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ea96c395-7ebc-40d5-925d-cb15d5b4b8ae">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sousa, Wesley O. De, Lincey E. Sousa, Fátima R. J. D. Silva, Wildio I. D. G. Santos & Rodrigo Aranda. 2019</span>
+					Composition and structure of the frugivorous butterfly community (Lepidoptera: Nymphalidae) at the Serra Azul State Park (PESA), Mato Grosso, Brazil. <em>Zoologia</em> <b>36</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ba1f702c-377f-4e25-bc1e-d060dc79504a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Souza, Cynthia D., Vandick S. Batista & N. N. Fabré. 2018</span>
+					What are the main local drivers determining richness and fishery yields in tropical coastal fish assemblages? <em>Zoologia</em> <b>35</b>: 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e6b8e187-01a7-4eab-ad79-4d74da5ec644">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Souza, Diego De S., Marcela L. Monné & Luciane Marinoni. 2017</span>
+					Phylogeny of the Neotropical longhorn beetle genus <em>Ateralphus </em>(Coleoptera: Cerambycidae: Lamiinae). <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ad8cd2c0-589b-480f-8c36-86c652825a28">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Souza, Leonardo S. & Alexandre D. Pimenta. 2014</span>
+					<em>Fusceulima</em> and <em>Halielloides</em> (Gastropoda: Eulimidae) in the southwestern Atlantic, with descriptions of two new species of <em>Fusceulima</em>. <em>Zoologia</em> <b>31</b>(6): 621-633.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/55b5ae5a-84ab-4963-bf0b-8c141703995d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Souza-Gonçalves, Igor & Cristiano Lopes-Andrade. 2017</span>
+					Taxonomy of Xylographellini (Coleoptera: Ciidae) from the Australian and Oriental regions with descriptions of new species  of <em>Scolytocis </em>and <em>Xylographella</em>. <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1fdace4c-ba94-4046-b685-a1d675968afa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Spotorno-Oliveira, Paula & Luiz R. L. Simone. 2013</span>
+					First record of <em>Thylaeodus</em> (Gastropoda: Vermetidae) from the Equatorial Atlantic Ocean, with the description of a new species. <em>Zoologia</em> <b>30</b>(1): 88-96.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7663da60-0907-40ac-8b39-d968e96097ff">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Studer, Anita, Marcelo C. De Sousa & Begoña Barcena-Goyena. 2018</span>
+					The breeding biology and nest success of the Short-tailed Antthrush <em>Chamaeza campanisona </em>(Aves: Formicariidae) in the Atlantic  rainforest of northeastern Brazil. <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8b54170f-f62c-4d33-91db-430773241a76">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sublett, Clayton A., Jerry L. Cook & John P. Janovec. 2019</span>
+					Species richness and community composition of sphingid moths (Lepidoptera: Sphingidae) along an elevational gradient in southeast Peru. <em>Zoologia</em> <b>36</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/eda3e6b1-d15b-451a-87d2-f912245a065c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Suzuki, Kei K., Tomoya Yoshida, Y Yamane, Tatsuki Shimamoto, Ryuji G. Furukawa & <?GivenName> Hisashi Yanagawa. 2017</span>
+					Temporal differences in breeding site use between tits and mice. <em>Zoologia</em> <b>34</b>: 1-3.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d811f345-6865-4000-b2f7-0e025bdada2c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tonetti, Vinicius R., Marco A. Rego, A. C. de Luca, Pedro F. Develey, Fábio Schunck & Luís F. Silveira. 2017</span>
+					Historical knowledge, richness and relative representativeness of the avifauna of the largest native urban rainforest in the world. <em>Zoologia</em> <b>34</b>: 1-18.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1adb499a-1195-4b60-be87-dda5c1e4d623">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Torquetti, Camila G., Marcos X. Silva & Sônia A. Talamoni. 2017</span>
+					Differences between caves with and without bats in a Brazilian karst habitat. <em>Zoologia</em> <b>34</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/72f19481-a9db-4856-b505-b8136d3ed6b0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vaissi, Somaye, Paria Parto & Mozafar Sharifi. 2017</span>
+					Anatomical and histological study of the liver and pancreas of two closely related mountain newts <em>Neurergus microspilotus </em>and <em>N. kaiseri</em> (Amphibia: Caudata: Salamandridae). <em>Zoologia</em> <b>34</b>: 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6d556f84-4011-4f8b-a024-e3ad7fe3a4f3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Valverde-Castro, César, Eliana Buenaventura, Juan D. Sánchez-Rodríguez & Marta Wolff. 2017</span>
+					Flesh flies (Diptera: Sarcophagidae: Sarcophaginae) from the Colombian Guajira biogeographic province, an approach to their ecology and distribution. <em>Zoologia</em> <b>34</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bff5754d-b3e5-468e-b94c-e9e1db70f2bb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vieira, Leandro M. & Dennis P. Gordon. 2010</span>
+					<em>Eutaleola</em>, a replacement name for the homonym <em>Euteleia </em>(Bryozoa: Pasytheidae). <em>Zoologia</em> <b>27</b>(4): 646–648.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b868285-93ec-4cbb-9499-2d5bfeb654bf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vilas-Boas, Ana C., Maria C. D. Silva, Orane F. De S. Alves, Francisco J. V. De Castro & Eraldo P. Pinheiro-Junior. 2016</span>
+					A new species of <em>Trileptium </em>(Nematoda: Thoracostomopsidae) from Bahia, Brazil. <em>Zoologia</em> <b>33</b>(1): e20150043 [1-10].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fdff2dff-72f2-4ea2-a833-a70cf71de709">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wendt, Lisiane D. & Luciane Marinoni. 2019</span>
+					Taxonomic revision of <em>Megalothoraca </em>(Diptera: Richardiidae) with description of a new species, synonyms and new combination. <em>Zoologia</em> <b>36</b>: 1-15.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e5da5a16-878f-4678-9df5-b4804a75131f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wolff, Luciano L. & Norma S. Hahn. 2017</span>
+					Fish habitat associations along a longitudinal gradient in a preserved coastal Atlantic stream, Brazil. <em>Zoologia</em> <b>34</b>: 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cf1aa15e-fa8b-4bec-a32b-bb4d601ae2f3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Younis, Elsayed M., Nasser A. Al-Asgah, Abdel-Wahab A. Abdel-Warith, Mohamed H. Gabr & Fozi S. Shamlol. 2020</span>
+					Analysis of reproductive biology and spawning season of the pink ear emperor <em>Lethrinus lentjan</em>, from marine ecosystem. <em>Zoologia</em> <b>37</b>: 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5fd4d07b-2efb-4e01-96ca-6c7853c8069f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zan, Nur D. 2020</span>
+					Occurrence and ecological implication of a tropical anguillid eel, <em>Anguilla marmorata</em>, in Brunei Darussalam, Borneo Island. <em>Zoologia</em> <b>37</b>: 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/993a04d5-5899-44f5-aada-904b08e9013b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zanella, Noeli & Fernanda D’Agostini. 2018</span>
+					Ecology of the snake <em>Atractus paraguayensis </em>(Dipsadidae) in southern Brazil. <em>Zoologia</em> <b>35</b>: 1-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/165e0ae9-7ea0-4043-80c7-479895a9735c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhu, Dongmei, Kun Yang, Ning Sun, Weimin Wang & Xiaoyun Zhou. 2018</span>
+					Embryonic and larval development of the topmouth gudgeon, <em>Pseudorasbora parva </em>(Teleostei: Cyprinidae). <em>Zoologia</em> <b>35</b>: 1-8.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">162 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=zh-cn">中文</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=nl">Nederlands</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=en-us">English</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=fr">Français</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=de">Deutsch</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=it">Italiano</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=ja">日本語</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=pt">Português</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=ru">Русский</a>&nbsp;<a href="/References/4b0fb9c5-4be9-4a41-8ba6-2c2fd3522fc1?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

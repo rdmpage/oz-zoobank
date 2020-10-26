@@ -1,0 +1,894 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoologica
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 15 July 2009, 12:25:47.890 by William N. Eschmeyer",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:82EC3E39-D02F-40D3-ABF2-46CC8FBF93B5</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:82EC3E39-D02F-40D3-ABF2-46CC8FBF93B5" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:82EC3E39-D02F-40D3-ABF2-46CC8FBF93B5" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								 | 
+								<a href="http://biodiversity.org.au/afd.publication/d53ba7dc-9886-4904-b193-dcf016cca00a" target="_blank">
+									
+										<img src="http://zoobank.org/images/AFDLogo.jpg" title="AFD-Pub: d53ba7dc-9886-4904-b193-dcf016cca00a" alt="Australian Faunal Directory Publications" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								 | 
+								
+									
+										<img src="http://zoobank.org/images/CASicon.jpg" title="CAS-Journals: ZOOL" alt="Eschmeyer Journal Abbreviations" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+							
+							
+								 | 
+								<a href="http://hol.osu.edu/journal-full.html?id=432" target="_blank">
+									
+										<img src="http://zoobank.org/images/HOLlogo.gif" title="HNS-Journals: 432" alt="Hymenoptera Name Server - Journals" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								 | 
+								
+									
+										<img src="/images/link-logo.png" title="UHLIB-H: QL1 .N6" alt="UH-Hamilton library Call Number" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoologica<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN:</th>
+                    <td></td>
+                </tr>
+                
+                
+                
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td></td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (42) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3fb0e11b-34c9-44dd-a8c1-2e4e4ea44c42">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. 1929</span>
+					<i>Haplophryne hudsonius</i>. A new species; description and osteology. <I>Zoologica</I> <B>12</B>(2): 21-36.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9dc3cb16-1001-4902-8984-cae44e80dd85">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. 1929</span>
+					Deep sea fish of the Hudson Gorge taken at station 113 of the Arcturus and station 114 of the eleventh expedition of the Department of Tropical Research. <I>Zoologica</I> <B>12</B>(1): 1-19.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/60916fd0-e7d9-487b-8235-b8c9dd4e6e13">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. 1932</span>
+					Nineteen new species and four post-larval deep-sea fish. <I>Zoologica</I> <B>13</B>(4): 47-107.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1dfc2847-a029-47b2-bae5-5637d98cc104">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. 1933</span>
+					Deep-sea fishes of the Bermuda oceanographic expeditions. No. I--Introduction. No. 2--Family Alepocephalidae. No. 3--Family Argentinidae. <I>Zoologica</I> <B>16</B>(1-3): 1-147.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5482ba36-ec80-48cc-90b5-a20d0eec96f9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. 1933</span>
+					Deep-sea isospondylous fishes. Two new genera and four new species. <I>Zoologica</I> <B>13</B>(8): 159-167.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/081c17ad-1985-40e2-a91d-e4aa0fe8583d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. 1942</span>
+					Eastern Pacific expeditions of the New York Zoological Society. XXX. Atlantic and Pacific fishes of the genus <i>Dixonina</i>. <I>Zoologica</I> <B>27</B>(8): 43-48.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/70de56e0-e528-488a-8b69-c64ebf9b8a5b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & G. Hollister. 1933</span>
+					New species of fish from the West Indies. <I>Zoologica</I> <B>12</B>(9): 83-88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bf95ee1f-8df5-44c8-b662-9b5a69dbda39">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & G. Hollister. 1935</span>
+					The fishes of Union Island, Grenadines, British West Indies, with the description of a new species of star-gazer. <I>Zoologica</I> <B>19</B>(6): 209-224.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1e50f5f2-0512-4e91-b15b-76a16f5e81b9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Crane. 1947</span>
+					Eastern Pacific expeditions of the New York Zoological Society. XXXVII. Deep-sea ceratioid fishes. <I>Zoologica</I> <B>31</B>(4): 151-181, pls. 1-3.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6fdd7502-8673-40b0-8e89-b5753f1a3bd3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1928</span>
+					The fishes of Port-au-Prince Bay, Haiti, with a summary of the known species of marine fishes of the island of Haiti and Santo Domingo. <I>Zoologica</I> <B>10</B>(1): 1-279.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/06558cb1-afab-4443-a219-70c367a8eb45">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1932</span>
+					New Bermuda fish, including six new species and forty-three species hitherto unrecorded from Bermuda. <I>Zoologica</I> <B>13</B>(5): 109-120.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/30bc1508-b9b1-4182-8205-e07ea200180b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1933</span>
+					Nomenclatural notes on the shore fishes of Bermuda. <I>Zoologica</I> <B>13</B>(7): 133-158.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f428e644-7e32-43fb-84fe-c6ea5026490d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1937</span>
+					A new species of <i>Caulolatilus</i> from Trinidad, British West Indies. <I>Zoologica</I> <B>22</B>(1): 93-95.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f5c4c25a-960e-4a04-9ee5-a3e59d23895d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1938</span>
+					Eastern Pacific expeditions of the New York Zoological Society, XV. Seven new marine fishes from Lower California. <I>Zoologica</I> <B>23</B>(3): 299-312.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/83f57ff7-9399-4ae5-bfeb-12eaf0d9be91">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1941</span>
+					Eastern pacific expeditions of the New York Zoological Society. XXIV. Fishes from the tropical eastern Pacific. [From Cedros Island, Lower California, south to the Galápagos Islands and northern Peru.] Part I. Lancelets and hag-fishes. <I>Zoologica</I> <B>26</B>(2): 89-91.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/73f2182e-ac1c-4a80-aa4d-a266b4121b58">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1941</span>
+					Eastern Pacific expeditions of the New York Zoological Society. XXV. Fishes from the tropical eastern Pacific. [From Cedros Island, Lower California, South to the Galápagos Islands and northern Peru.] Part 2. Sharks. <I>Zoologica</I> <B>26</B>(2): 93-122.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cc6564c1-e7cb-4530-8b91-413e8135d7ad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Beebe, W. & J. Tee-Van. 1941</span>
+					Eastern Pacific expeditions of the New York Zoological Society. XXVIII. Fishes from the tropical eastern Pacific. [From Cedros Island, Lower California, south to the Galápagos Islands and northern Peru.] Part 3. Rays, Mantas and Chimaeras. <I>Zoologica</I> <B>26</B>(3): 245-280.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f5dd0745-b84d-4b23-91b4-c39933721d20">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Böhlke, James E. 1953</span>
+					A new stathmonotid blenny from the Pacific coast of Mexico. <I>Zoologica</I> <B>38</B>(3): 145-149.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7369e5b0-31cc-4412-8605-5e2b9b50f474">	
+										
+					
+					<span class="biblio-authors">Breder, C. M., Jr. 1925</span>
+					. <I>Zoologica</I> <B>4</B>(4).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0c05c83a-d29e-47dc-a951-b1d7c1366f2d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cohen, Daniel M. 1956</span>
+					<i>Neonesthes gnathoprora</i>, a new species of astronesthid fish from the Atlantic Ocean. <I>Zoologica</I> <B>41</B>(2): 81-83.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/13530f75-3595-4d98-a0bd-344051fa96cc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ginsburg, I. 1948</span>
+					The species of <i>Bathystoma</i> (Pisces, Haemulonidae). <I>Zoologica</I> <B>33</B>(3): 151-156.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d07704b8-7e1c-415a-8833-65fffe728004">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ginsburg, I. 1951</span>
+					Western Atlantic tonguefishes with descriptions of six new species. <I>Zoologica</I> <B>36</B>(Part 3): 185-201.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/36acd974-f6d1-4337-a2a6-7315dd629942">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Harry, Robert R. 1951</span>
+					Deep-sea Fishes of the Bermuda oceanographic expeditions. Family Paralepididae. <I>Zoologica</I> <B>36</B>(1): 17-35.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/546e7a4a-bb3f-4d9d-a779-f58df3db4922">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Harry, Robert R. 1952</span>
+					Deep-sea fishes of the Bermuda oceanographic expeditions. Families Cetomimidae and Rondeletiidae. <I>Zoologica</I> <B>37</B>(1): 55-72.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ec6cd112-6b9a-439d-a058-30a8a722d83c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hubbs, Clark. 1953</span>
+					Revision of the eastern Pacific fishes of the clinid genus <i>Labrisomus</i>. <I>Zoologica</I> <B>38</B>(3): 113-136.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/e4215458-c2f3-4b17-a3f9-38e3d3b34727">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">La Monte, F. 1941</span>
+					A new <i>Corydoras</i> from Brazil. <I>Zoologica</I> <B>26</B>(1): 5-6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/179c55ca-31f4-4e5a-bfe3-3682ad370135">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mead, G. W. 1953</span>
+					<i>Tarletonbeania taylori</i>, a new lantern fish from the western North Pacific. <I>Zoologica</I> <B>38</B>(2): 105-108.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ffdd24af-9e8d-4c2c-8ccb-fd340f03016d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mead, G. W. 1958</span>
+					A catalog of the type specimens of fishes formerly in the collections of the Department of Tropical Research, New York Zoological Society. <I>Zoologica</I> <B>43</B>(4): 131-134.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/785eea55-8be2-42f0-b0e0-7199ade70c4d">	
+										
+					
+					<span class="biblio-authors">Miers, Edward J. 1886</span>
+					Brachyura.  Rep. Sci. Res. Voy. H.M.S. Challenger during the years 1873-76. <I>Zoologica</I> <B>17</B>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d6be5cc5-379d-4fe8-a60b-71615776ad92">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Myers, G. S. 1935</span>
+					An annotated list of the cyprinodont fishes of Hispaniola, with descriptions of two new species. <I>Zoologica</I> <B>10</B>(3): 301-316.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fc7a0ecc-3906-4fa5-9d14-13b0a4ea144e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nichols, John T. 1924</span>
+					A contribution to the ichthyology of the Galapagos. <I>Zoologica</I> <B>5</B>(4): 63-65.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d4bdbe13-d918-4c5f-97cb-a1f521c2a46c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nichols, John T. & C. M. Breder, Jr. 1928</span>
+					An annotated list of the Synentognathi with remarks of their development and relationships. <I>Zoologica</I> <B>8</B>(7): 423-448.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bbec163e-1428-432a-b933-dc99137644ed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. 1955</span>
+					A revision of the surgeon fish genus <i>Ctenochaetus</i>, family Acanthuridae, with descriptions of five new species. <I>Zoologica</I> <B>40</B>(4): 149-166, pls. 1-2.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f43843f5-3c2e-40c5-816c-5bed285f5181">	
+										
+					
+					<span class="biblio-authors">Randall, John E. & Alan R. Emery. 1971</span>
+					On the resemblance of the young of the fishes <i>Platax pinnatus</i> and <i>Plectorhynchus chaetodontoides</i> to flatworms and nudibranchs. <I>Zoologica</I>(Fall): 115-119.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3259a812-96ec-487a-8d70-4e2d06730c25">	
+										
+					
+					<span class="biblio-authors">Randall, John E. & Helen A. Randall. 1963</span>
+					The spawning and early development of the Atlantic parrotfish <i>Sparisoma rubripinne</i>, with notes on other scarid and labrid fishes. <I>Zoologica</I> <B>48</B>(2): 49-59.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2b3889a3-a71b-4f42-84b2-d9d8d38968bf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rosen, Don E. & M. Gordon. 1951</span>
+					A new fish of the genus <i>Gambusia</i> from southern Veracruz, Mexico, with a discussion of the tribe Gambusiini Hubbs. <I>Zoologica</I> <B>36</B>(4): 267-272.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/474c8da8-e0f0-4973-b250-b5a71055e723">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rosen, Don E. & Reeve M. Bailey. 1959</span>
+					Middle-American poeciliid fishes of the genera <i>Carlhubbsia</i> and <i>Phallichthys</i> with descriptions of two new species. <I>Zoologica</I> <B>44</B>(1): 1-44.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4b1bf17f-3e29-488c-af6a-314e82064190">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Schultz, Leonard P. 1944</span>
+					Two new species of fishes (Gymnotidae, Loricariidae) from Caripito, Venezuela. <I>Zoologica</I> <B>29</B>(1): 39-44.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/87a51a25-7fe9-4e7d-b9c9-d39447663710">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tee-Van, J. 1935</span>
+					Cichlid fishes in the West Indies with especial reference to Haiti, including the description of a new species of <i>Cichlasoma</i>. <I>Zoologica</I> <B>10</B>(2): 281-300.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a092c47f-dbbd-4645-942f-e13a6e679f94">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tee-Van, J. 1940</span>
+					Eastern Pacific Expeditions of the New York Zoological Society. XVII. A review of the American fishes of the family Cirrhitidae. <I>Zoologica</I> <B>25</B>(5): 53-64.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8abac396-515b-4719-b0df-b4a696606d26">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Trotter, E. S. 1926</span>
+					Brotulid fishes from the Arcturus oceanographic expedition. <I>Zoologica</I> <B>8</B>(3): 107-125.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3d0789fd-800e-4258-a47a-3a3993818844">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wilson, Charles B. 1924</span>
+					Parasitic copepods from the Williams Galapagos Expedition. <em>Zoologica</em> <b>5</b>(19): 211-217.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">16 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=zh-cn">中文</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=nl">Nederlands</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=en-us">English</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=fr">Français</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=de">Deutsch</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=it">Italiano</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=ja">日本語</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=pt">Português</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=ru">Русский</a>&nbsp;<a href="/References/82ec3e39-d02f-40d3-abf2-46cc8fbf93b5?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

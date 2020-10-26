@@ -8,6 +8,7 @@
     ],
     "require": {
         "digitalbazaar/json-ld": "^0.4.7",
-        "semsol/arc2": "^2"
+        "semsol/arc2": "^2",
+        "sunra/php-simple-html-dom-parser": "^1.5"
     }
 }

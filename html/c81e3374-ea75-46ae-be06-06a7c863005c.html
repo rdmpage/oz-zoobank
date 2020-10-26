@@ -1,0 +1,4556 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoological Science
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 15 July 2009, 12:25:47.890 by William N. Eschmeyer",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:C81E3374-EA75-46AE-BE06-06A7C863005C</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:C81E3374-EA75-46AE-BE06-06A7C863005C" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:C81E3374-EA75-46AE-BE06-06A7C863005C" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								 | 
+								<a href="http://www.biodiversitylibrary.org/bibliography/61647" target="_blank">
+									
+										<img src="http://zoobank.org/images/BHLIcon.jpg" title="BHL-Title: 61647" alt="Biodiversity Heritage Library Title" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								 | 
+								
+									
+										<img src="http://zoobank.org/images/CASicon.jpg" title="CAS-Journals: ZOOSCI" alt="Eschmeyer Journal Abbreviations" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+							
+							
+								 | 
+								<a href="http://hol.osu.edu/journal-full.html?id=1602" target="_blank">
+									
+										<img src="http://zoobank.org/images/HOLlogo.gif" title="HNS-Journals: 1602" alt="Hymenoptera Name Server - Journals" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+							
+							
+								
+									
+								
+							
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+				
+				
+				
+					
+						
+						
+						
+						
+					
+				
+				
+				
+				
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoological Science<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN<span style="font-size:smaller;">&nbsp;(Print)</span>:</th>
+                    <td>0289-0003</td>
+                </tr>
+                
+                    <tr>
+                        <th scope="row" class="entry_label"><span style="font-size:smaller;">(Online)</span>:</th>
+                        <td>2212-3830</td>
+                    </tr>	
+                
+                
+                <tr><th scope="row" class="entry_label">Online&nbsp;Archives:</th><td> Portico (added: Mar 29 2018  7:53AM UTC)  [<a href="http://www.portico.org" target="_blank">http://www.portico.org</a>] </td></tr>
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td>The Zoological Society of Japan</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td>Tokyo</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td>English</td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (321) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b9081eaa-d4cd-4685-8cdd-0aa9a1b0c5f4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abé, Hiroshi. 1990</span>
+					Three new species of the genus <em>Rhombognathus</em> (Acari, Halacaridae) from Japan. <em>Zoological Science</em> <b>7</b>(3): 517–535.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5aa2205b-0da1-49c6-8cbc-971574ee16da">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abé, Hiroshi. 1990</span>
+					Two species of the genus <em>Actacarus</em> (Acari, Halacaridae) from Japan. <em>Zoological Science</em> <b>7</b>(1): 111–126.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d9bd0185-043a-40f9-a436-616f412ad6e1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abe, Wataru & Kimiko Okabe. 2006</span>
+					A new mite of the winterschmidtiid genus <em>Ensliniella</em> (Acari: Astigmata) associated with the vespid wasp <em>Allodynerus</em> <em>mandschuricus</em> (Insecta: Hymenoptera) from Japan. <em>Zoological Science</em> <b>23</b>(10): 929–935.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f11e423f-5953-420f-9377-092878e4795a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abe, Wataru & Masatsune Takeda. 2000</span>
+					A new <em>Calcarobiotus</em> (Tardigrada: Macrobiotidae) from the Imperial Palace of Japan. <em>Zoological Science</em> <b>17</b>(2): 259–263.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0ba022e1-2670-4dbe-b71c-6366d7098d31">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abe, Wataru. 2004</span>
+					A new species of the genus <em>Hypsibius</em> (Tardigrada: Parachela: Hypsibiidae) from Sakhalin Island, Far East Russia. <em>Zoological Science</em> <b>21</b>(9): 957–962.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/efa0d811-9863-4ca6-a701-fad65bdfacce">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abe, Wataru. 2005</span>
+					<em>Insuetifurca</em> <em>austronipponica</em>, a new tardigrade (Eutardigrada: Macrobiotidae) from Kagoshima, southern Japan. <em>Zoological Science</em> <b>22</b>(11): 1295–1299.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/27ccfa2c-7ed3-49f4-b029-747884d2763b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Adrianov, Andrey V., Chisato Murakami & Yoshihisa Shirayama. 2002</span>
+					Taxonomic study of the Kinorhyncha in Japan. III. <em>Echinoderes</em> <em>sensibilis</em> n. sp. (Kinorhyncha: Cyclorhagida) from Tanabe Bay. <em>Zoological Science</em> <b>19</b>(4): 463–473.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/50e445b5-8b64-4b58-8914-8998556655cc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Aoki, Jun-Ichi & Sheng-Hao Hu. 1993</span>
+					Oribatid mites from tropical forests of Yunnan Province in China II. Families Galumnidae and Galumnellidae. <em>Zoological Science</em> <b>10</b>(5): 835–848.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/48e4c46a-ef8e-4f40-991f-27421cfa42a6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Aoki, Jun-Ichi. 1984</span>
+					New and unrecorded oribatid mites from Amami-Oshima Island, Southwest Japan. <em>Zoological Science</em> <b>1</b>(1): 132–147.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ee57e414-af6a-4ae7-aeb0-ba24875279d8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Artois, Tom, Wim Willems, Els De Roeck, Merlijn Jocqué & Luc Brendonck. 2004</span>
+					Freshwater Rhabdocoela (Platyhelminthes) from ephemeral rock pools from Botswana, with the description of four new species and one new genus. <em>Zoological Science</em> <b>21</b>(10): 1063–1072.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8374947f-b3f0-4c0d-a51d-529db022ef01">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Atsumi, Masako O. & Yasunori Saito. 2011</span>
+					Studies on Japanese botryllid ascidians. V. A new species of the genus <em>Botrylloides</em> very similar to <em>Botrylloides</em> <em>simodensis</em> in morphology. <em>Zoological Science</em> <b>28</b>(7): 532–542.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e97e09c7-5fec-4010-9e8b-0c8cf2eff1a6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Back, Jinwook, Rony Huys & Wonchoel Lee. 2010</span>
+					A new species of the genus <em>Tegastes</em> (Copepoda: Harpacticoida: Tegastidae) from hydrothermal vents in the Okinawa Trough. <em>Zoological Science</em> <b>27</b>(8): 678-688.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/325dfa2a-d1f5-42b7-b635-72c2839c8c8d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bayartogtokh, Badamdorj & Jun-Ichi Aoki. 2000</span>
+					A new and some little known species of <em>Eporibatula</em> (Acari: Oribatida: Oribatulidae), with remarks on taxonomy of the genus. <em>Zoological Science</em> <b>17</b>(7): 991–1012.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3ff91c78-77d5-4493-9963-bfc2fdbd5dd4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bochert, Ralf & Michael L. Zettler. 2009</span>
+					A new species of <em>Heterospio</em> (Polychaeta, Longosomatidae) from offshore Angola. <em>Zoological Science</em> <b>26</b>(10): 735-737.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9fccc352-e000-4eba-93c3-781221214c81">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Brusa, Francisco. 2006</span>
+					Macrostomida (Platyhelminthes: Rhabditophora) from Argentina, with descriptions of two new species of <em>Macrostomum</em> and of stylet ultrastructure. <em>Zoological Science</em> <b>23</b>(10): 853–862.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b03910d-4038-4a01-b7b3-9939379e0641">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Caldart, Vinícius M., Maurício B. dos Santos, Samanta Iop, Luiz C. Pinho & Sonia Z. Cechin. 2016</span>
+					Haematophagic flies attracted to frog calls in a preserved seasonal forest of the Austral Neotropics, with the description of a new species of <em>Corethrella</em> (Diptera: Corethrellidae). <em>Zoological Science</em> <b>33</b>(5): 527–536.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c2e23107-55e0-46e3-910d-a1c67a67796e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carpintero, Diego L. & Pablo M. Dellapé. 2006</span>
+					<em>Pehuencoris</em>, a new genus of Cardiastethini (Heteroptera: Anthocoridae) from southern Argentina and Chile (Patagonia). <em>Zoological Science</em> <b>23</b>(11): 1039–1042.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8c4d61fa-2f2a-4a8a-b575-24e2abffed97">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carpintero, Diego L. & Pablo M. Dellapé. 2006</span>
+					<em>Williamsocoris</em>, a new genus of Schizopteridae (Heteroptera) from Argentina. <em>Zoological Science</em> <b>23</b>(7): 653–655.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e6d0d791-31ff-4547-9efc-0090c2416744">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carter, Michelle C. & Dennis P. Gordon. 2007</span>
+					Substratum and morphometric relationships in the bryozoan genus <em>Odontoporella</em>, with a description of a new paguridean-symbiont species from New Zealand. <em>Zoological Science</em> <b>24</b>(1): 47-56.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dde108a0-71bb-4262-99bd-84f369fa8d7a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chang, Cheon Y., Łukasz Kaczmarek, Jimin Lee & Łukasz Michalczyk. 2007</span>
+					<em>Pseudobiotus</em> <em>spinifer</em>, a new tardigrade species (Eutardigrada: Hypsibiidae) from Nakdong River, South Korea, with a redescription of <em>P</em>. <em>vladimiri</em> Biserov, Dudichev & Biserova. <em>Zoological Science</em> <b>24</b>(6): 623-629.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0c5eeabb-e228-44d0-848c-eba5d697823f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, Jing, Zhicai Xie & Shunping He. 2006</span>
+					A taxonomic study of <em>Oconnorella</em> (Enchytraeidae, Oligochaeta) from Changbaishan Mountain, China. <em>Zoological Science</em> <b>23</b>(10): 917–922.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/080c91cf-2f38-472b-b117-ac3e77b6fe54">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Coca-Abia, Maria M. 2008</span>
+					Revision of the genus <em>Miridiba</em> Reitter, 1901 (Coleoptera, Scarabaeidae, Melolonthinae). <em>Zoological Science</em> <b>25</b>(6): 673-685.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/919e8622-2482-4e97-a7ff-e027f0431e21">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cui, Yongde & Hongzhu Wang. 2005</span>
+					<em>Potamothrix</em> <em>scleropenis</em> sp. nov. (Oligochaeta: Tubificidae) from Fuxian Lake, the deepest lake in southwest China. <em>Zoological Science</em> <b>22</b>(12): 1353–1357.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ef4ecf41-26aa-4563-bfec-db061091a078">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dai, Wu, Chandra A. Viraktamath & Ya-Lin Zhang. 2010</span>
+					A review of the leafhopper genus <em>Hishimonoides</em> Ishihara (Hemiptera: Cicadellidae: Deltocephalinae). <em>Zoological Science</em> <b>27</b>(9): 771–781.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6f188ab4-1852-42d5-82c0-ff11025ed974">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dai, Wu, Chandra A. Viraktamath, Ya-Lin Zhang & Michael D. Webb. 2009</span>
+					A review of the leafhopper genus <em>Scaphotettix</em> Matsumura (Hemiptera: Cicadellidae: Deltocephalinae), with description of a new genus. <em>Zoological Science</em> <b>26</b>(9): 656-663.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/bed1253e-a7ab-4a1b-8301-ebf4abec480f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dai, Wu, Christopher H. Dietrich & Ya-Lin Zhang. 2011</span>
+					Review of the oriental leafhopper genus <em>Lampridius</em> (Hemiptera: Cicadellidae: Deltocephalinae), with description of a related new genus. <em>Zoological Science</em> <b>28</b>(5): 380-387.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/038b6eb3-cf30-42b4-b61f-c77ef3754778">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Damborenea, Cristina, Francisco Brusa & Carolina Noreña. 2005</span>
+					New species of <em>Gieysztoria</em> (Platyhelminthes, Rhabdocoela) from Peruvian Amazon floodplain with description of their stylet ultrastructure. <em>Zoological Science</em> <b>22</b>(12): 1319–1329.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/63f15fe4-d46a-439f-9899-e782811f6af5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Damborenea, Cristina, Francisco Brusa & Carolina Noreña. 2007</span>
+					New Dalyelliidae (Platyhelminthes, Rhabditophora) from Buenos Aires Province, Argentina, and their stylet ultrastructure. <em>Zoological Science</em> <b>24</b>(8): 803-810.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/da37b0d2-ee6b-46a2-929b-373445b8c326">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dankittipakul, Pakawin & Zhi-Sheng Zhang. 2008</span>
+					<em>Acutipetala</em> gen. nov., a new genus of funnel-web spiders from northern Thailand (Araneae, Agelenidae). <em>Zoological Science</em> <b>25</b>(5): 546-553.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2e56f292-7b81-48a0-8c42-ea15fbc393a8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">De Lima, Silvio F. B., Franklin N. Santos & Ricardo S. Absalão. 2013</span>
+					New species of <em>Caecum</em> (Caenogastropoda: Rissooidea: Caecidae) from the Atlantic coast of South America (Brazil) with a description of the protoconch and growth stage. <em>Zoological Science</em> <b>30</b>(9): 767–778.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/aaa3131b-d5ed-4dd2-b54d-8d6807d129d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dick, Matthew H. 2008</span>
+					Unexpectedly high diversity of <em>Monoporella</em> (Bryozoa: Cheilostomata) in the Aleutian Islands, Alaska: Taxonomy and distribution of six new species. <em>Zoological Science</em> <b>25</b>(1): 36-52.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b24c0516-9fe5-4c18-969b-c1734aab2403">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dick, Matthew H., Shunsuke F. Mawatari, JoAnn Sanner & Andrei V. Grischenko. 2011</span>
+					Cribrimorph and other <em>Cauloramphus</em> species (Bryozoa: Cheilostomata) from the northwestern Pacific. <em>Zoological Science</em> <b>28</b>(2): 134-147.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a10ccdfc-b03e-4d43-bb93-2b217bba895e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Djong, Hon T., Masafumi Matsui, Mitsuru Kuramoto, Midori Nishioka & Masayuki Sumida. 2011</span>
+					A new species of the <em>Fejervarya</em> <em>limnocharis</em> complex from Japan (Anura, Dicroglossidae). <em>Zoological Science</em> <b>28</b>(12): 922-929.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/442f72a9-fd4f-4612-af5b-2f1df59f599b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Doignon, Gilles, Tom J. Artois & Dimitri Deheyn. 2003</span>
+					<em>Discoplana</em> <em>malagasensis</em> sp. nov., a new turbellarian (Platyhelminthes: Polycladida: Leptoplanidae) symbiotic in an ophiuroid (Echinodermata), with a cladistic analysis of the <em>Discoplana</em>/<em>Euplana</em> species. <em>Zoological Science</em> <b>20</b>(3): 357–369.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/aa785187-60dc-4d90-94cf-6ad5798c6df1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ehara, Shôzô & Tetsuo Gotoh. 1987</span>
+					Notes on the genus <em>Sasanychus</em> Ehara, new status, with description of a new species from Hokkaido (Acarina, Tetranychidae). <em>Zoological Science</em> <b>4</b>(2): 375–378.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c14e3628-8fed-4e54-ad95-cdac17aadc5c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ehara, Shôzô. 1985</span>
+					Five species of phytoseiid mites from Japan with descriptions of two new species (Acarina, Phytoseiidae). <em>Zoological Science</em> <b>2</b>(1): 115–121.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b406ae27-911c-437c-9af7-d84d1bf70c8d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fend, Steven V. & Akifumi Ohtaka. 2004</span>
+					<i>Yamaguchia</i> <i>toyensis</i> n. sp., n. gen. (Annelida, Clitellata, Lumbriculidae) from profundal lake habitat in Japan. <em>Zoological Science</em> <b>21</b>(6): 677–683.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f1719c08-6d0c-46e8-8f40-8a4b3bc7aee5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Feng, Qing, Song Li & Yingxiang Wang. 2008</span>
+					A new species of bamboo bat (Chiroptera: Vespertilionidae: <em>Tylonycteris</em>) from southwestern China. <em>Zoological Science</em> <b>25</b>(2): 225-234.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/71fe6219-29cd-430f-b8b0-d4a1f8b53ed0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferreira, Cláudio P. & Adriano B. Kury. 2010</span>
+					A review of <em>Roquettea</em>, with description of three new Brazilian species and notes on <em>Gryne</em> (Opiliones, Cosmetidae, Discosomaticinae). <em>Zoological Science</em> <b>27</b>(8): 697-708.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3d03dc79-46c9-4f89-a2e2-13a0af865118">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fujikura, Katsunori, Yoshihiro Fujiwara & Masaru Kawato. 2006</span>
+					A new species of <em>Osedax</em> (Annelida: Siboglinidae) associated with whale carcasses off Kyushu, Japan. <em>Zoological Science</em> <b>23</b>(8): 733–740.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3cba827e-04bf-4364-aca0-b93ae6a2cc1e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fujimoto, Shinta & Katsumi Miyazaki. 2013</span>
+					<em>Neostygarctus</em> <em>lovedeluxe</em> n. sp. from the Miyako Islands, Japan: The first record of Neostygarctidae (Heterotardigrada: Arthrotardigrada) from the Pacific. <em>Zoological Science</em> <b>30</b>(5): 414-419.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e59f7a4e-6db5-4e6e-93e0-08a260fff04b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Furuya, Hidetaka, Kazuhiko Tsuneki & Yutaka Koshida. 1992</span>
+					Two new species of the genus <em>Dicyema</em> (Mesozoa) from octopuses of Japan with notes <em>D</em>. <em>misakiense</em> and <em>D</em>. <em>acuticephalum</em>. <em>Zoological Science</em> <b>9</b>(2): 423–437.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/957a1c6c-56c2-4601-b2c2-74c1422a253a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Furuya, Hidetaka. 2006</span>
+					Three new species of dicyemid mesozoans (Phylum Dicyemida) from <em>Amphioctopus</em> <em>fangsiao</em> (Mollusca: Cephalopoda), with comments on the occurrence patterns of dicyemids. <em>Zoological Science</em> <b>23</b>(1): 105–119.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2ef23262-925d-44cc-a709-fed22bcaba12">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gao, Jianjun, Hide-aki Watabe, Masanori J. Toda, Ya-Ping Zhang & Tadashi Aotsuka. 2003</span>
+					The <em>Drosophila</em> <em>obscura</em> species-group (Diptera, Drosophilidae) from Yunnan Province, southern China. <em>Zoological Science</em> <b>20</b>(6): 773–782.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1955f7e6-6a89-47ad-8d51-44cd06859103">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gibson, Ray & Per Sundberg. 2001</span>
+					Some nemerteans (Nemertea) from Queensland and the Great Barrier Reef, Australia. <em>Zoological Science</em> <b>18</b>(9): 1259–1273.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ba1651bc-df93-4713-b4c0-e93d7860b597">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gleadall, Ian G., Jürgen Guerrero-Kommritz, Frederick G. Hochberg & Vladimir V. Laptikhovsky. 2010</span>
+					The inkless octopuses (Cephalopoda: Octopodidae) of the Southwest Atlantic. <em>Zoological Science</em> <b>27</b>(6): 528-553.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/173aca35-418b-43be-87f7-3c78da23b323">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Goto, Ryutaro, Yoichi Hamamura & Makoto Kato. 2011</span>
+					Morphological and ecological adaptation of <em>Basterotia</em> bivalves (Galeommatoidea: Sportellidae) to symbiotic association with burrowing echiuran worms. <em>Zoological Science</em> <b>28</b>(3): 225-234.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bd753d19-496e-4c0b-9b39-8e83858f5272">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Grischenko, Andrei V., Paul D. Taylor & Shunsuke F. Mawatari. 2002</span>
+					A new cheilostome bryozoan with gigantic zooids from the north-west Pacific. <em>Zoological Science</em> <b>19</b>(11): 1279–1289.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ea588f6c-a127-4d82-afb0-0f7a40ad2cbe">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Grischenko, Andrei V., Paul D. Taylor & Shunsuke F. Mawatari. 2004</span>
+					<em>Doryporella</em> <em>smirnovi</em> sp. nov. (Bryozoa: Cheilostomata) and its impact on phylogeny and classification. <em>Zoological Science</em> <b>21</b>(3): 327–332.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ee71bfed-5353-45ac-8114-90f4bbdcdfe7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Grismer, L. L., Hidetoshi Ota & Satoshi Tanaka. 1994</span>
+					Phylogeny, classification, and biogeography of <em>Goniurosaurus</em> <em>kuroiwae</em> (Squamata: Eublepharidae) from the Ryukyu Archipelago, Japan, with description of a new subspecies. <em>Zoological Science</em> <b>11</b>(2): 319–335.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6330de41-869a-476b-aeb2-ffdcaabfb4d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Guo, Hua, Hongying Sun, Changyuan Qian, Hong Shen & Kai-Ya Zhou. 2010</span>
+					A new genus and two new species of the subfamily Pauropodinae (Myriapoda: Pauropoda: Pauropodidae) from China. <em>Zoological Science</em> <b>27</b>(11): 895-899.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b5dfe770-34a0-427d-a4fa-17fc3899acf9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gururaja, Kotambylu V., Nilavara A. Aravind, Sammer Ali, T. V. Ramachandra, Thirumalaisamy P. Velavan, Vaithilingam Krishnakumar & Ramesh K. Aggarwal. 2007</span>
+					A new frog species from the central Western Ghats of India, and its phylogenetic position. <em>Zoological Science</em> <b>24</b>(5): 525–534.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6a33f2b6-381c-44d1-9d45-e0db67720579">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hajiqanbar, Hamidreza, Alexandr A. Khaustov & Karim Kamali. 2011</span>
+					A new species of <em>Parapygmephorus</em> Cross, 1965 (Acari; Heterostigmatina; Neopygmephoridae) phoretic on <em>Halictus</em> <em>quadricinctus</em> (Fabricius, 1776) (Hym.; Halictidae) from Iran. <em>Zoological Science</em> <b>28</b>(1): 56-60.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fe20c255-00c8-40ec-949a-09a67e441faa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Harrath, Abdul H., Ronald Sluys, Waleed Aldahmash, Abdulkarim Al-Rasaki & Saleh Alwasel. 2013</span>
+					Reproductive strategies, karyology, parasites, and taxonomic status of <em>Dugesia</em> populations from Yemen (Platyhelminthes: Tricladida: Dugesiidae). <em>Zoological Science</em> <b>30</b>(6): 502-508.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6fbd332f-ee67-4301-8f0c-51a9a81082d0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hartini, Sri & Gen Takaku. 2003</span>
+					Javanese species of the mite genus <em>Macrocheles</em> (Arachnida: Acari: Gamasina: Macrochelidae). <em>Zoological Science</em> <b>20</b>(10): 1261–1272.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4d17a568-070a-4057-a2f2-3c69d150909b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hasegawa, Hideo & Masamitsu Otsuru. 1984</span>
+					<em>Pseudabbreviata</em> <em>yambarensis</em> sp. n. (Nematoda: Physalopteridae) from the tree lizard, <em>Japarula</em> <em>polygonata</em> <em>polygonata</em> (Agamidae), on Okinawa Island, Japan. <em>Zoological Science</em> <b>1</b>(4): 677–680.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fa388017-568b-461f-8240-93409f216d93">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hasegawa, Hideo. 1984</span>
+					<em>Skrjabinelazia</em> <em>machidai</em> sp. n. (Nematoda: Seuratidae) from <em>Gekko</em> <em>japonicus</em> on Okinawa Island, Japan. <em>Zoological Science</em> <b>1</b>(3): 483–486.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3c30d1de-2cb6-4d4b-b51d-bac07c2cd030">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hayashi, Ken-Ichi & Yasuki Ogawa. 1987</span>
+					<em>Spongicola</em> <em>levigata</em> sp. nov., a new shrimp associated with a hexactinellid sponge from the East China Sea (Decapoda, Stenopodidae). <em>Zoological Science</em> <b>4</b>(2): 367–373.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/290a0ae9-8111-4f93-af57-3f241deafb71">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">He, Xuebao, Yongde Cui & Hongzhu Wang. 2010</span>
+					<em>Limnodrilus</em> <em>simplex</em> sp. nov. (Oligochaeta: Naididae: Tubificinae) from Changjiang River, China. <em>Zoological Science</em> <b>27</b>(9): 768–770.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/47a0c221-18d6-4e71-8b40-45965c84baa4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hiebert, Terra C. & Svetlana Maslakova. 2015</span>
+					Integrative taxonomy of the <em>Micrura</em> <em>alaskensis</em> Coe, 1901 species complex (Nemertea: Heteronemertea), with descriptions of a new genus <em>Maculaura</em> gen. nov. and four new species from the NE Pacific. <em>Zoological Science</em> <b>32</b>(6): 615–637.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0f51ef90-6aa6-4d2d-9c0a-3b90d8bc17d6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Higgins, Robert P. & Yoshihisa Shirayama. 1990</span>
+					Dracoderidae, a new family of the cyclorhagid Kinorhyncha from the Inland Sea of Japan. <em>Zoological Science</em> <b>7</b>(5): 939–946.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/389e8305-56a6-4446-b46f-979e7357dc6e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirano, Yoshiaki J. & Manabu Ito. 1998</span>
+					“<em>Facelinella</em> <em>quadrilineata</em> (Baba, 1930)”, a pair of cryptic species of <em>Facelina</em> from Japan. <em>Zoological Science</em> <b>15</b>(5): 791–797.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5c9bf339-c92f-4d2a-8076-054bc2149d5d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirayama, Akira. 1986</span>
+					Two new subspecies of <em>Synchelidium</em> (Crustacea: Amphipoda: Oedicerotidae) from the sea shore of Northeast Japan. <em>Zoological Science</em> <b>3</b>(2): 357–366.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bd72fe9a-6495-4d52-843b-2e18032910aa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirayama, Akira. 1987</span>
+					Two peculiar species of corophiid amphipods (Crustacea) from the Seto Inland Sea, Japan. <em>Zoological Science</em> <b>4</b>(1): 175–181.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/99f44c16-9caf-4863-b719-4f4e639dd1c6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirayama, Akira. 1988</span>
+					A ghost shrimp with four-articulate fifth pereopods (Crustacea: Caprellidea: Phtisicidae) from Northwest Australia. <em>Zoological Science</em> <b>5</b>(5): 1089–1093.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/555fe0a5-24b7-410d-9432-26bd62e0848a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirayama, Akira. 1990</span>
+					A new species of the genus <em>Paramoera</em> (Crustacea: Amphipoda) from the intertidal zone of Hokkaido, northern Japan. <em>Zoological Science</em> <b>7</b>(5): 955–959.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d5d3be75-3af0-4fb5-866d-b30e510dd0b7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirose, Euichi & Atsushi T. Oka. 2008</span>
+					A new species of photosymbiotic ascidian from the Ryukyu Archipelago, Japan, with remarks on the stability of stigma number in photosymbiotic <em>Diplosoma</em> species. <em>Zoological Science</em> <b>25</b>(12): 1261–1267.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9467f953-eb3d-4334-9c0e-4e42e27d75a9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirose, Euichi & Mamiko Hirose. 2011</span>
+					A new didemnid sscidian <em>Lissoclinum</em> <em>midui</em> sp. nov. from Kumejima Island (Okinawa, Japan), with remarks on the absence of a common cloacal system and the presence of an unknown organ. <em>Zoological Science</em> <b>28</b>(6): 462-468.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f03d2e94-6653-4cd1-a285-14b40ed8f059">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirose, Euichi, Atsushi T. Oka & Mamiko Hirose. 2009</span>
+					Two new species of photosymbiotic ascidians of the genus <em>Diplosoma</em> from the Ryukyu Archipelago, with partial sequences of the COI gene. <em>Zoological Science</em> <b>26</b>(5): 362-368.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4d5fc7b0-074a-4f43-844b-4c218a51af00">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirose, Mamiko & Euichi Hirose. 2009</span>
+					DNA barcoding in photosymbiotic species of <em>Diplosoma</em> (Ascidiacea: Didemnidae), with the description of a new species from the Southern Ryukyus, Japan. <em>Zoological Science</em> <b>26</b>(8): 564-568.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/56c0d4b6-f250-4d6a-92d4-054463d1f25e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hiruta, Shin-ichi. 1991</span>
+					A new species of marine interstitial Ostracoda of the genus <em>Psammocythere</em> Klie from Hokkaido, Japan. <em>Zoological Science</em> <b>8</b>(1): 113–120.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/42ad9ac4-0acf-4bb7-bd8e-2a129a4513e1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ho, Ju-Shey & Ching-Long Lin. 2002</span>
+					New species of <em>Metacaligus</em> (Caligidae, Copepoda) parasitic on the cutlassfish (<em>Trichiurus</em> <em>lepturus</em>) of Taiwan, with a cladistic analysis of the family Caligidae. <em>Zoological Science</em> <b>19</b>(12): 1363–1375.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8fa42857-0b4d-4e21-a93a-8b0427a8084b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ho, Ju-Shey, Il-hoi Kim & Kazuya Nagasawa. 2005</span>
+					Copepod parasites of the fatheads (Pisces, Psychrolutidae) and their implication on the phylogenetic relationships of psychrolutid genera. <em>Zoological Science</em> <b>22</b>(4): 411–425.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/23a04c3b-3783-4930-ba3c-f90e4c60fc89">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ho, Ju-Shey, Il-hoi Kim, Kazuya Nagasawa & Toshiro Saruwatari. 2003</span>
+					<em>Paeonocanthus</em> <em>antarcticensis</em> (Hewitt, 1965): a rare copepod parasite of bathypelagic fish, <em>Bathylagus</em> <em>antarcticus </em>Günther, from the Antarctic Ocean. <em>Zoological Science</em> <b>20</b>(10): 1315–1321.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1a76866f-4f37-40c5-b488-71580f73639b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ho, Ju-Shey, Susumu Ohtsuka & Nobuto Nakadachi. 2006</span>
+					A new family of poecilostomatoid copepods (Umazuracolidae) based on specimens parasitic on the black scraper (<em>Thamnaconus</em> <em>modestus</em>) in Japan. <em>Zoological Science</em> <b>23</b>(5): 483–496.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f8e67723-e0eb-410a-a2d7-d4e012d00cac">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hookabe, Natsumi & Hiroshi Kajihara. 2020</span>
+					Taxonomic reappraisal of <em>Lineus longifissus</em> auct. (Nemertea: Pilidiophora) from Japan for the first time in 122 years. <em>Zoological Science</em> <b>37</b>(5).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/69a92420-4ce5-4d6a-9ae7-f6b45164ee23">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hou, Zhonge, Shuqiang Li & Hiroshi Morino. 2002</span>
+					Three new species of the genus <em>Gammarus</em> (Crustacea, Amphipoda, Gammaridae) from Yunnan, China. <em>Zoological Science</em> <b>19</b>(8): 939–960.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ea8654b5-8e69-461e-8b3f-b8b47f90ac24">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hu, Yao-Guang & Masanori J. Toda. 2005</span>
+					A new species group in the genus <em>Dichaetophora</em> Duda (Diptera: Drosophilidae) based on a phylogenetic analysis, with descriptions of four new species from China. <em>Zoological Science</em> <b>22</b>(11): 1265–1276.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dacb2e21-2993-4d24-8c1f-ca2785eae79b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Huys, Rony, Susumu Ohtsuka, Geoffrey A. Boxshall & Tatsunori Itô. 1992</span>
+					<em>Itoitantulus</em> <em>misophricola</em> gen. et sp. nov.: first record of Tantulocarida (Crustacea: Maxillopoda) in the North Pacific region. <em>Zoological Science</em> <b>9</b>(4): 875–886.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4125fa1d-9533-4270-ac28-893af2f56155">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ikezawa, Hiromi & Shunsuke F. Mawatari. 1993</span>
+					A systematic study of three species of <em>Celleporina</em> (Bryozoa, Cheilostomata) from Hokkaido, Japan with special reference to their early astogeny. <em>Zoological Science</em> <b>10</b>(6): 1029–1043.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4472f130-e7f5-4e18-af44-9621fe0ea78a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Imai, Soichi. 1985</span>
+					Rumen ciliate protozoal faunae of Bali cattle (<em>Bos</em> <em>javanicus</em> <em>domesticus</em>) and water buffalo (<em>Bubalus</em> <em>bubalis</em>) in Indonesia, with the description of a new species, <em>Entodinium</em> <em>javanicum</em> sp. nov. <em>Zoological Science</em> <b>2</b>(4): 591–600.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9d39c187-272b-4f63-a82b-665194b1b45e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Imai, Soichi. 1986</span>
+					Rumen ciliate protozoal fauna of zebu catle (<em>Bos</em> <em>taurus</em> <em>indicus</em>) in Sri Lanka, with the descirption of a new species, <em>Diplodinium</em> <em>sinhalicum</em> sp. nov. <em>Zoological Science</em> <b>3</b>(4): 699–706.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/50340896-75ed-4994-8b33-c5b930ce9106">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ise, Yuji & Jean Vacelet. 2010</span>
+					New carnivorous sponges of the genus <em>Abyssocladia</em> (Demospongiae, Poecilosclerida, Cladorhizidae) from Myojin Knoll, Izu-Ogasawara Arc, southern Japan. <em>Zoological Science</em> <b>27</b>(11): 888-894.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d276acf7-2869-4152-9b34-8eb08424deef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Iseto, Tohru, Nagisa Sugiyama & Euichi Hirose. 2008</span>
+					A new sponge-inhabiting <em>Loxosomella</em> (Entoprocta: Loxosomatidae) from Okinawa Island, Japan, with special focus on foot structure. <em>Zoological Science</em> <b>25</b>(11): 1171–1178.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/86dd6de2-60e3-45a7-8fd2-48f02cf6c3b7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Iseto, Tohru. 2001</span>
+					Three new <em>Loxosomella</em> (Entoprocta: Loxosomatidae) from coral reef shore in Okinawa, Ryukyu Archipelago, Japan. <em>Zoological Science</em> <b>18</b>(6): 879–887.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b26f34d5-e4b7-4ea2-b0c8-53056d3b189b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Iseto, Tohru. 2002</span>
+					<em>Loxocorone</em>, a new genus of the family Loxosomatidae (Entoprocta: Solitaria), with descriptions of two new <em>Loxomitra</em> (<em>sensu</em> <em>stricto</em>) and a new <em>Loxocorone</em> from Okinawa, the Ryukyu Archipelago, Japan. <em>Zoological Science</em> <b>19</b>(3): 359–367.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7395f453-1f40-49f5-b910-ae655293ef84">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ishikawa, Kazuo. 1994</span>
+					Two new species of the genus <em>Holaspulus</em> (Acarina: Gamasida: Parholaspidae) from the Ryukyu Islands, Japan. <em>Zoological Science</em> <b>11</b>(1): 139–142.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3e8afd75-8a2b-45ba-9dba-37fab86dd298">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ishimaru, Shin-ichi & Koji Ikehara. 1986</span>
+					A new genus and species of the subfamily Amphilochinae (Amphipoda, Gammaridea, Amphilochidae) found in the Japan Sea. <em>Zoological Science</em> <b>3</b>(1): 193–197.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/40df384e-1ad1-4f84-86a7-b8bd5fa69467">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ito, Akira & Soichi Imai. 1990</span>
+					Ciliated Protozoa in the rumen of Holstein-Friesian cattle (<em>Bos</em> <em>taurus</em> <em>taurus</em>) in Hokkaido, Japan, with the description of two new species. <em>Zoological Science</em> <b>7</b>(3): 449–458.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5fe1ba82-f58f-44ab-a409-588bf6a76057">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ito, Minako, Takumi Onishi & Matthew H. Dick. 2015</span>
+					<em>Cribrilina</em> <em>mutabilis</em> n. sp., an eelgrass-associated bryozoan (Gymnolaemata: Cheilostomata) with large variationin zooid morphology related to life history. <em>Zoological Science</em> <b>32</b>(5): 485–497.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/99c63aa3-255a-4c9b-8653-20f832011fb5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Itô, Tatsunori & Mark J. Grygier. 1990</span>
+					Description and complete larval development of a new species of <em>Baccalaureus</em> (Crustacea: Ascothoracida) parasitic in a zoanthid from Tanabe Bay, Honshu, Japan. <em>Zoological Science</em> <b>7</b>(3): 485–515.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/311e56f3-4aa4-4ae7-8ea1-4851644f2b51">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Iturrondobeitia, Juan C. & Ana I. Caballero. 2000</span>
+					A new species of <em>Edwardzetes</em> (Acari, Oribatida, Ceratozetidae) from Biscay (The Basque Country, Northern Spain). <em>Zoological Science</em> <b>17</b>(6): 821–826.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/752329e6-84c3-401c-ba02-cc6704337c92">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Iturrondobeitia, Juan C. & Marta I. Saloña. 1998</span>
+					A new species of <em>Corynoppia</em> (Acari, Oribatida, Oppiidae) from Biscay (the Basque Country, Northern Spain). <em>Zoological Science</em> <b>15</b>(1): 153–157.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/994a4f62-3d57-41af-9479-272bddec4910">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Iwata, Akihisa, Harumi Sakai, Koichi Shibukawa & S.-R. Jeon. 2001</span>
+					Developmental characteristics of a freshwater goby, <i>Micropercops swinhonis</i>, from Korea. <em>Zoological Science</em> <b>18</b>: 91-97.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4ca292f4-8af1-40af-ad8b-2297c232fc08">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Izumi, Takato, Kensuke Yanagi & Toshihiko Fujita. 2016</span>
+					The ‘antenna balloon anemone’ found in the Seto Inland Sea: new genus and species of sea anemone, <em>Antennapeachia</em> <em>setouchi </em>(Cnidaria, Actinaria, Haloclavidae). <em>Zoological Science</em> <b>33</b>(4): 448–453.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/062fe87b-56cc-4009-be2c-261d28d8750b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Izumi, Takato, Yuji Ise, Kensuke Yanagi, Daisuke Shibata & Rei Ueshima. 2018</span>
+					First detailed record of symbiosis between a sea anemone and homoscleromorph sponge, with a description of <em>Tempuractis rinkai</em> gen. et sp. nov. (Cnidaria: Anthozoa: Actiniaria: Edwardsiidae). <em>Zoological Science</em> <b>35</b>(2): 188–198.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b2e32837-51e2-45c6-a448-dcc7a67deae3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Jaafar, Zeehan & Helen K. Larson. 2008</span>
+					A new species of mudskipper, <em>Periophthalmus</em> <em>takita</em> (Teleostei: Gobiidae: Oxudercinae), from Australia, with a key to the genus. <em>Zoological Science</em> <b>25</b>(9): 946-952.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9d3009a3-3da0-4796-8a52-34393cec5d6e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Jaafar, Zeehan, Marco Perrig & Loke M. Chou. 2009</span>
+					<em>Periophthalmus</em> <em>variabilis</em> (Teleostei: Gobiidae: Oxudercinae), a valid species of mudskipper, and a re-diagnosis of <em>Periophthalmus</em> <em>novemradiatus</em>. <em>Zoological Science</em> <b>26</b>(4): 309-314.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fc160f31-69ec-4c20-83da-398a2dc2ce6e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kajihara, Hiroshi, Keiichi Kakui, Hiroshi Yamasaki & Shimpei Hiruta. 2015</span>
+					<em>Tubulanus</em> <em>tamias</em> sp. nov. (Nemertea: Palaeonemertea) with two different types of epidermal eyes. <em>Zoological Science</em> <b>32</b>(6): 596–604.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/62356ff6-f843-413c-b9a2-87007dc57c9c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kajihara, Hiroshi, Maho Ikoma, Hiroshi Yamasaki & Shimpei F. Hiruta. 2019</span>
+					<em>Diurodrilus kunii</em> sp. nov. (Annelida: Diurodrilidae) and a molecular phylogeny of the genus. <em>Zoological Science</em> <b>36</b>(3): 250–258.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/68383fd4-b2df-4d81-8ee1-7f8ee02bf5b9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kajihara, Hiroshi, Maho Ikoma, Hiroshi Yamasaki & Shimpei Hiruta. 2015</span>
+					<em>Trilobodrilus</em> <em>itoi</em> sp. nov., with a re-description of <em>T</em>. <em>nipponicus</em> (Annelida: Dinophilidae) and a molecular phylogeny of the genus. <em>Zoological Science</em> <b>32</b>(4): 405–417.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ab0600aa-7a92-4638-8f58-ea6b0612e088">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kajihara, Hiroshi, Ray Gibson & Shunsuke F. Mawatari. 2000</span>
+					Redescription and taxonomic reassessment of <em>Nemertellina</em> <em>minuta</em> Friedrich, 1935, <em>sensu</em> Yamaoka, 1940 (Nemertea, Hoplonemertea, Monostilifera). <em>Zoological Science</em> <b>17</b>(2): 265–276.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b7a3d9da-25f8-418b-96aa-c555e511d5f2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kajihara, Hiroshi, Ray Gibson & Shunsuke F. Mawatari. 2003</span>
+					<em>Potamostoma</em> <em>shizunaiense</em> gen. et sp. nov. (Nemertea: Hoplonemertea: Monostilifera): a new brackish-water nemertean from Japan. <em>Zoological Science</em> <b>20</b>(4): 491–500.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/de302a8f-75a7-4019-82cf-e5a1a7536209">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kantor, Yuri I., Nicolas Puillandre, Baldomero M. Olivera & Philippe Bouchet. 2008</span>
+					Morphological proxies for taxonomic decision in turrids (Mollusca, Neogastropoda): a test of the value of shell and radula characters using molecular data. <em>Zoological Science</em> <b>25</b>(11): 1156-1170.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ffcb13f7-05e3-4533-abaf-280118425323">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kanzaki, Natsumi, Erik J. Ragsdale, Matthias Herrmann, Waltraud Röseler & Ralf J. Sommer. 2013</span>
+					Two new species of <em>Pristionchus</em> (Nematoda: Diplogastridae) support the biogeographic importance of Japan for the evolution of the genus <em>Pristionchus</em> and the model system <em>P</em>. <em>pacificus</em>. <em>Zoological Science</em> <b>30</b>(8): 680-692.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e98fa247-74c8-4a7f-ac24-6eb0a669fb60">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kanzaki, Natsumi, Erik J. Ragsdale, Matthias Herrmann, Werner E. Mayer & Ralf J. Sommer. 2012</span>
+					Description of three <em>Pristionchus</em> species (Nematoda: Diplogastridae) from Japan that form a cryptic species complex with the model organism <em>P</em>. <em>pacificus</em>. <em>Zoological Science</em> <b>29</b>(6): 403-417.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/df760a9e-aa07-463d-a0a6-f22e8ddfdf0b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kanzaki, Natsumi, Hajime Kosaka, Katsuhiko Sayama, Jun-ichi Takahashi & Shun'ichi Makino. 2007</span>
+					<em>Sphaerularia</em> <em>vespae</em> sp. nov. (Nematoda, Tylenchomorpha, Sphaerularioidea), an endoparasite of a common Japanese hornet, <em>Vespa</em> <em>simillima</em> Smith (Insecta, Hymenoptera, Vespidae). <em>Zoological Science</em> <b>24</b>(11): 1134-1142.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9e0b0cd2-5fc2-4086-bdb9-3ee2cb88c4fe">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kanzaki, Natsumi, Noritoshi Maehara, Takuya Aikawa & Katsumi Togashi. 2008</span>
+					First report of parthenogenesis in the genus <em>Bursaphelenchus</em> Fuchs, 1937: a description of <em>Bursaphelenchus</em> <em>okinawaensis</em> sp. nov. isolated from <em>Monochamus</em> <em>maruokai</em> (Coleoptera: Cerambycidae). <em>Zoological Science</em> <b>25</b>(8): 861-873.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ce1598bc-753c-4fc1-9a26-b3e0d8a7f878">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kanzaki, Natsumi, Robin M. Giblin-Davis, Kerrie A. Davies, Weimin Ye, Barbara J. Center & W. K. Thomas. 2009</span>
+					<em>Teratodiplogaster</em> <em>fignewmani</em> gen. nov., sp. nov. (Nematoda: Diplogastridae) from the syconia of <em>Ficus</em> <em>racemose</em> in Australia. <em>Zoological Science</em> <b>26</b>(8): 569-578.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e58fd419-768b-428c-aed1-78874418d82d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Karasawa, Shigenori & Valerie M. Behan-Pelletier. 2007</span>
+					Description of a sexually dimorphic oribatid mite (Arachnida: Acari: Oribatida) from canopy habitats of the Ryukyu Archipelago, southwestern Japan. <em>Zoological Science</em> <b>24</b>(10): 1051-1058.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b40627d-f07d-4dd3-8277-1356d4575615">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kato, Makoto, Atsushi Kawakita & Toru Kato. 2010</span>
+					Colonization to aquifers and adaptations to subterranean interstitial life by a water beetle clade (Noteridae) with description of a new <em>Phreatodytes</em> species. <em>Zoological Science</em> <b>27</b>(9): 717-722.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/561fc00b-d193-48f3-a130-6d4d340b5d3a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kawakatsu, Masaharu & Robert W. Mitchell. 1984</span>
+					<em>Oahuhawaiiana</em> <em>kazukolinda</em> gen. et sp. nov. (Turbellaria, Tricladida, Maricola), a new freshwater planarian from Honolulu, Oahu Island, Hawaii, U.S.A. <em>Zoological Science</em> <b>1</b>(3): 487–500.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c529e9d4-363a-46dc-ad67-aa16fcf215a0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Khan, Muhammad M. & Yuen K. Ip. 1986</span>
+					Parasites of toads from Singapore, with a description of <em>Balantidium</em> <em>singaporensis</em> sp. n. (Ciliophora: Balantidiidae). <em>Zoological Science</em> <b>3</b>(3): 543–546.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5d0f6450-3d98-4715-a58d-79eaa152b99b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kim, Byung-Woo & Wonchoel Lee. 2007</span>
+					A new species of the genus <em>Galloisiana</em> (Grylloblattodea, Grylloblattidae) from Korea. <em>Zoological Science</em> <b>24</b>(7): 733-745.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/175f7073-c04f-4be7-b1a8-b0fcffa0e119">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kim, Byung-Woo, Ho Y. Soh & Wonchoel Lee. 2005</span>
+					A new species of the genus <em>Attheyella</em> (Copepoda: Harpacticoida: Canthocamptidae) from Gosu cave in Korea. <em>Zoological Science</em> <b>22</b>(11): 1279–1293.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0d321fcc-402d-4542-a224-1fe7ca0e4c32">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kim, Ji H., Atef Omar & Jae-Ho Jung. 2019</span>
+					Morphology and phylogeny of the soil ciliate <em>Parabistichella multilineae</em> nov. spec. (Protozoa, Ciliophora, Hypotricha). <em>Zoological Science</em> <b>36</b>(3): 242–249.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/77dea517-1537-4d42-b6dd-24f107928678">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kim, Jong-Bum, Mi-sook Min & Masafumi Matsui. 2003</span>
+					A new species of lentic breeding Korean salamander of the genus <em>Hynobius</em> (Amphibia, Urodela). <em>Zoological Science</em> <b>20</b>(9): 1163–1169.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ee80dcc6-297c-4307-9c32-7430e31a7e8f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kim, Jung N. & Ken-Ichi Hayashi. 2003</span>
+					<em>Syncrangon</em>, a new crangonid genus, with redescriptions of <em>S</em>. <em>angusticauda</em> (De Haan) and <em>S</em>. <em>dentata</em> (Balss) (Crustacea, Decapoda, Caridea) from East Asian waters. <em>Zoological Science</em> <b>20</b>(5): 669–682.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d16e3b02-f978-4465-b792-339089c98724">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kise, Hiroki & James D. Reimer. 2019</span>
+					A new <em>Epizoanthus</em> species (Cnidaria: Anthozoa: Epizoanthidae) associated with the gastropod mollusk <em>Guildfordia triumphans</em> from southern Japan. <em>Zoological Science</em> <b>36</b>(3): 259–265.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a2640e35-64ae-4197-9e3b-05677bdc70a1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kitagawa, T., M. Watanabe, T. Kobayashi, M. Yoshioka, M. Kashiwagi & T. Okazaki. 2001</span>
+					Two genetically divergent groups in the Japanese spined loach, <i>Cobitis takatsuensis</i>, and their phylogenetic relationships among Japanese <i>Cobitis</i> inferred from Mitochondrial DNA analyses. <I>Zoological Science</I> <B>18</B>: 249-259.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0fd018ab-576a-4772-90b3-e5116c74526e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Komai, Tomoyuki & Kunio Amaoka. 1993</span>
+					A new species of the genus <em>Pasiphaea</em> (Crustacea, Decapoda, Pasiphaeidae) from the North Pacific. <em>Zoological Science</em> <b>10</b>(2): 367–373.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dbf5d521-4fb3-4bc5-9dd9-9bd192d56329">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Komai, Tomoyuki & Masayuki Osawa. 2001</span>
+					A new distinctive species of pagurid hermit crab (Crustacea: Decapoda: Anomura) from Japan. <em>Zoological Science</em> <b>18</b>(9): 1291–1301.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c3080399-9f55-4e5f-a4ea-0c41d36660a6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Komai, Tomoyuki & Masayuki Osawa. 2004</span>
+					A new hermit crab species of <em>Pylopaguropsis</em> (Crustacea: Decapoda: Anomura: Paguridae) from the western Pacific, and supplemental note on <em>P</em>. <em>laevispinosa</em> McLaughlin and Haig. <em>Zoological Science</em> <b>21</b>(1): 93–104.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/686d5a00-1036-4278-8e2b-d61b3f1d9091">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Komatsu, Hironori & Masatsune Takeda. 2001</span>
+					On <em>Merocryptoides</em>, a leucosiid crab genus (Crustacea: Decapoda: Brachyura) endemic to Japan, with description of two new species. <em>Zoological Science</em> <b>18</b>(7): 993–1002.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a232e908-4eaa-4357-a9d2-18939ab5563a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Krämer, Daria & Jörn von Döhren. 2015</span>
+					<em>Arenogigas</em> <em>armoricus</em>, a new genus and species of a monostiliferous hoplonemertean (Nemertea) from the north-west coast of France. <em>Zoological Science</em> <b>32</b>(6): 605–614.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/47d8ec6c-b2a0-422c-9edc-6ce0898e274e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kristensen, Reinhardt M. & Yoshihisa Shirayama. 1988</span>
+					<em>Pliciloricus</em> <em>hadalis</em> (Pliciloricidae), a new loriciferan species collected from the Izu-Ogasawara Trench, Western Pacific. <em>Zoological Science</em> <b>5</b>(4): 875–881.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4e8f0327-2c0c-4bef-a9c5-6d82553fe73c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kubota, Shin & Takushi Horita. 1992</span>
+					A new hydromedusa of the genus <em>Eirene</em> (Leptomedusae; Eirenidae) from Toba, Japan. <em>Zoological Science</em> <b>9</b>(2): 413–421.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e88416e3-12aa-4e2b-98b9-a480325b1153">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kurita, Kazuki & Tsutomu Hikida. 2014</span>
+					A new species of <em>Plestiodon</em> (Squamata: Scincidae) from Kuchinoshima Island in the Tokara Group of the Northern Ryukyus, Japan. <em>Zoological Science</em> <b>31</b>(7): 464–474.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1d3ce3fc-0721-45c7-93fb-128224aa03f8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Jimin & Cheon Y. Chang. 2003</span>
+					Two new marine gastrotrichs of the genus <em>Ptychostomella</em> (Macrodasyida, Thaumastodermatidae) from South Korea. <em>Zoological Science</em> <b>20</b>(4): 481–489.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/446c13b0-3408-42df-84e0-9de3a15c184a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Wonchoel. 2003</span>
+					A marine harpacticoid, <em>Quinquelaophonte</em> <em>koreana</em> sp. nov. from a sandy beach in Korea (Crustacea: Copepoda). <em>Zoological Science</em> <b>20</b>(5): 657–668.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9caad5e7-ae6c-4076-b4bf-5eaefd485377">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Wonhoon, Hyojoong Kim, Jan Havelka & Seunghwan Lee. 2011</span>
+					A new species of the genus <em>Aulacorthum</em> (Hemiptera: Aphididae) from the Korean Peninsula and its discrimination from a closely—related species using morphological and molecular characters. <em>Zoological Science</em> <b>28</b>(4): 304-311.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/783c62d6-0408-4202-8690-55756831e6c1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Li, Peng, Dong Liu & Chang-Fa Zhou. 2006</span>
+					A new species of <em>Thraulus</em> from Nanjing (Eastern China) with single first gill (Insecta: Ephemeroptera: Leptophlebiidae). <em>Zoological Science</em> <b>23</b>(7): 641–645.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a28c6b40-f1c3-4094-9d93-31c149d3b15c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Li, Xiaochen & Hongqun Li. 2008</span>
+					Tardigrades from Taiwan, with the description of a new species of <em>Doryphoribius</em> (Tardigrada, Hypsibiidae). <em>Zoological Science</em> <b>25</b>(5): 554-559.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2874ac07-33a9-4b77-80cf-91e43fdfcc3b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Liang, Xingcai & Xueyan Li. 2005</span>
+					Study on the genus <em>Euops</em> Schoenherr (Coleoptera: Attelabidae) from China, with descriptions of a new subgenus and six new species. <em>Zoological Science</em> <b>22</b>(2): 257–268.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/77f9c629-9535-4627-9f8d-545d72bb0cb5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lopes-Andrade, Cristiano. 2010</span>
+					The first record of <em>Orthocis</em> Casey (Coleoptera: Ciidae) from the Andean Region, with the description of a distinctive new species. <em>Zoological Science</em> <b>27</b>(10): 830–833.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0e3e0857-c5fe-42fa-98d5-20ba47914ad5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lützen, Jørgen, Gyo Itani, Åse Jespersen, Jae-sang Hong, David Rees & Henrik Glenner. 2016</span>
+					On a new species of parasitic barnacle (Crustacea: Rhizocephala), <em>Sacculina</em> <em>shiinoi</em> sp. nov., parasitizing Japanese mud shrimps <em>Upogebia</em> spp. (Decapoda: Thalassinidea: Upogebiidae), including a description of a novel morphological structure in the Rhizocephala. <em>Zoological Science</em> <b>33</b>(2): 204–212.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a0725d4e-1dce-4d65-87ba-e20a15b7332f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Maeda, Kishio & Sumiko Matsumura. 1998</span>
+					Two new species of vespertilionid bats, <em>Myotis</em> and <em>Murina</em> (Vespertilionidae: Chiroptera) from Yanbaru, Okinawa Island, Okinawa Prefecture, Japan. <em>Zoological Science</em> <b>15</b>(2): 301–307.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d1577234-5bb8-4e0c-8984-8bbdf4e3ccdd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Martin, Daniel, Maria T. Aguado & Temir A. Britayev. 2009</span>
+					Review of the symbiotic genus <em>Haplosyllides</em> (Polychaeta: Syllidae), with a description of a new species. <em>Zoological Science</em> <b>26</b>(9): 646-655.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/05b72162-800d-4468-a750-a741450e6a0c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi & Ibrahim Jaafar. 2006</span>
+					A new cascade frog of the subgenus <em>Odorrana</em> from Peninsular Malaysia. <em>Zoological Science</em> <b>23</b>(7): 647–651.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/820506b4-4e63-4ff1-a7f7-3c5b952240cd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi & Jarujin Nabhitabhata. 2006</span>
+					A new species of <em>Amolops</em> from Thailand (Amphibia, Anura, Ranidae). <em>Zoological Science</em> <b>23</b>(8): 727–732.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1d82dabd-2eac-449d-a572-65875061e010">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi & Kôji Miyazaki. 1984</span>
+					<em>Hynobius</em> <em>takedai</em> (Amphibia, Urodela), a new species of salamander from Japan. <em>Zoological Science</em> <b>1</b>(4): 665–671.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/faf4e8f7-e80f-4d48-8279-d85a7b23e02a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi & Nikolai L. Orlov. 2004</span>
+					A new species of <em>Chirixalus</em> from Vietnam (Anura: Rhacophoridae). <em>Zoological Science</em> <b>21</b>(6): 671–676.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/216dab3f-26c0-479f-ad87-59f1b54f987e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi & Somsak Panha. 2006</span>
+					A new species of <em>Rhacophorus</em> from eastern Thailand (Anura: Rhacophoridae). <em>Zoological Science</em> <b>23</b>(5): 477–481.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/71c1d060-3fe1-4281-af96-e06bb4195f09">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Daicus M. Belabut, Norhayati Ahmad & Hoi-Sen Yong. 2009</span>
+					A new species of <em>Leptolalax</em> (Amphibia, Anura, Megophryidae) from Peninsular Malaysia. <em>Zoological Science</em> <b>26</b>(3): 243-247.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0a348640-25da-450a-9280-a0917d8bf9ee">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Kanto Nishikawa & Atsushi Tominaga. 2017</span>
+					Taxonomic relationships of <em>Hynobius</em> <em>stejnegeri</em> and <em>H.</em> <em>yatsui</em>, with description of the amber-colored salamander from Kyushu, Japan (Amphibia: Caudata). <em>Zoological Science</em> <b>34</b>(6): 538–545.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d8731c2f-ac0e-45be-a20d-6271d69e4f21">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Kanto Nishikawa, Koshiro Eto & Mohamad Y. B. Hossman. 2017</span>
+					A new species of <em>Pelophryne</em> from western Sarawak, Malaysian Borneo (Anura, Bufonidae). <em>Zoological Science</em> <b>34</b>(4): 345–350.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cd4de768-9066-4889-bad5-a83b259f75c1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Paul Yambun & Ahmad Sudin. 2007</span>
+					Taxonomic relationships of <em>Ansonia</em> <em>anotis</em> Inger, Tan, and Yambun, 2001 and <em>Pedostibes</em> <em>maculatus</em> (Mocquard, 1890), with a description of a new genus (Amphibia, Bufonidae). <em>Zoological Science</em> <b>24</b>(11): 1159–1166.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f3aa854d-878b-404e-ba80-555ccaf99a70">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Ramlah Zainudin & Kanto Nishikawa. 2014</span>
+					A new species of <em>Leptolalax</em> from Sarawak, Western Borneo (Anura: Megophryidae). <em>Zoological Science</em> <b>31</b>(11): 773–779.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8c1c6507-04e6-4072-8443-da933f981651">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Tomohiko Shimada & Ahmad Sudin. 2010</span>
+					A new species of <em>Meristogenys</em> (Amphibia, Anura, Ranidae) from Sabah, Borneo. <em>Zoological Science</em> <b>27</b>(1): 61–66.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/38335467-5485-430f-a3ac-0be3a0caf7cc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Tomohiko Shimada & Ahmad Sudin. 2014</span>
+					First record of the tree-frog genus <em>Chiromantis</em> from Borneo with the description of a new species (Amphibia: Rhacophoridae). <em>Zoological Science</em> <b>31</b>(1): 45–51.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7c701d3c-31fe-4f2d-8860-9b900cf84075">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Wichase Khonsue & Jarujin Nabhitabhata. 2005</span>
+					A new <em>Ansonia</em> from the isthmus of Kra, Thailand (Amphibia, Anura, Bufonidae). <em>Zoological Science</em> <b>22</b>(7): 809–814.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b1affef9-0e5d-47f8-931b-b386d8a55e25">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Wichase Khonsue & Somsak Panha. 2018</span>
+					Two new species of <em>Ansonia</em> from Thailand (Anura: Bufonidae). <em>Zoological Science</em> <b>35</b>(1): 39–48.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/289d258c-de15-406d-bc83-9cc1fb13cd02">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Wichase Khonsue, Somsak Panha & Koshiro Eto. 2015</span>
+					A new tree grog of the genus <em>Gracixalus</em> from Thailand (Amphibia: Rhacophoridae). <em>Zoological Science</em> <b>32</b>(2): 204–210.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/82c58059-3dd1-4131-b1dc-d286fccbd70f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi, Yasuhiro Kokuryo, Yasuchika Misawa & Kanto Nishikawa. 2004</span>
+					A new species of salamander of the genus <em>Hynobius</em> from central Honshu, Japan (Amphibia, Urodela). <em>Zoological Science</em> <b>21</b>(6): 661–669.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/35c2f5cf-0250-4f41-a7ad-6ddabcd49301">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi. 2006</span>
+					Three new species of <em>Leptolalax</em> from Thailand (Amphibia, Anura, Megophryidae). <em>Zoological Science</em> <b>23</b>(9): 821–830.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/33c7da0c-0642-4b41-bbc1-3f8ccfac779e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi. 2009</span>
+					A new species of <em>Kalophrynus</em> with a unique male humeral spine from Peninsular Malaysia (Amphibia, Anura, Microhylidae). <em>Zoological Science</em> <b>26</b>(8): 579–585.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/24bd3dd7-55f2-4f28-a6fa-2112f04a106d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi. 2009</span>
+					A new species of <em>Philautus</em> (Amphibia, Anura, Rhacophoridae) from the lowland of Sarawak, western Borneo. <em>Zoological Science</em> <b>26</b>(6): 437–442.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3e457928-00dd-4013-affc-73df2db739d5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Matsui, Masafumi. 2014</span>
+					Description of a new brown frog from Tsushima Island, Japan (Anura: Ranidae: <em>Rana</em>). <em>Zoological Science</em> <b>31</b>(9): 613–620.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/61e59024-a76b-4b18-8f8c-a7a53c4fb313">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Messouli, Mohammed, Nicole Coineau & Claude Boutin. 2002</span>
+					Revision, phylogeny and biogeography of the groundwater amphipods Salentinellidae. I. Description of <em>Salentinella</em> <em>anae</em> nov. sp. from Spain with remarks on the genera <em>Salentinella</em> and <em>Parasalentinella</em>. <em>Zoological Science</em> <b>19</b>(10): 1147–1154.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f9b78a8a-48e5-4a6b-90cb-74513ba3eb90">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Metcalfe, Kristin, Dennis P. Gordon & Ellie Hayward. 2007</span>
+					An amphibious bryozoan from living mangrove leaves—<em>Amphibiobeania</em> new genus (Beaniidae). <em>Zoological Science</em> <b>24</b>(6): 563-570.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c2b3bcfc-1352-4bc9-8ba1-0ba438e12c72">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mihara, Motohiro, Takehiko Sakai, Koushin Nakao, Leonardo de Oliveira Martins, Kazumi Hosoya & Jun-Ichi Miyazaki. 2005</span>
+					Phylogeography of loaches of the genus <i>Lefua</i> (Balitoridae, Cypriniformes) inferred from mitochondrial DNA sequences. <em>Zoological Science</em> <b>22</b>(2): 157–168.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a9ce0856-d262-4eb5-bfc0-ecf03bc3b749">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Misaka, Tadashi & Masanori Sato. 2003</span>
+					A new species of <em>Euzonus</em> (Polychaeta: Opheliidae) from subtidal zones in Japan. <em>Zoological Science</em> <b>20</b>(9): 1171–1177.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e3c8d271-2732-4646-bbf5-0961385c2bd2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Miura, Tomoyuki & Jun Hashimoto. 1993</span>
+					<em>Mytilidiphila</em>, a new genus of nautiliniellid polychaetes living in the mantle cavity of deep-sea mytilid bivalves collected from the Okinawa Trough. <em>Zoological Science</em> <b>10</b>(1): 169–174.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c115f73e-94fc-4111-93fa-ffdae57f2d40">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Miura, Tomoyuki & Lucien Laubier. 1989</span>
+					<em>Nautilina</em> <em>calyptogenicola</em>, a new genus and species of parasitic polychaete on a vesicomyid bivalve from the Japan Trench, representative of a new family Nautilinidae. <em>Zoological Science</em> <b>6</b>(2): 387–390.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/52509d07-7657-4d66-8c18-553e5fce0caf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Miura, Tomoyuki & Lucien Laubier. 1990</span>
+					Nautiliniellid polychaetes collected from the Hatsushima cold-seep site in Sagami Bay, with descriptions of new genera and species. <em>Zoological Science</em> <b>7</b>(2): 319–325.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/360b2fd8-9f08-4eb4-83ce-d02fda23e558">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Miura, Tomoyuki & Suguru Ohta. 1991</span>
+					Two polychaete species from the deep-sea hydrothermal vent in the middle Okinawa Trough. <em>Zoological Science</em> <b>8</b>(2): 383–387.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a35444cc-9faa-4434-981f-abf1509edaed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Miura, Tomoyuki, Masako Kawane & Keiji Wada. 2007</span>
+					A new species of <em>Deiratonotus</em> (Crustacea: Brachyura: Camptandriidae) found in the Kumanoe River Estuary, Kyushu, Japan. <em>Zoological Science</em> <b>24</b>(10): 1045-1050.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ebd7a1d3-d023-407f-93e5-59617d190469">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Miyamoto, Norio & Yasunori Saito. 2007</span>
+					Morphology and development of a new species of <em>Balanoglossus</em> (Hemichordata: Enteropneusta: Ptychoderidae) from Shimoda, Japan. <em>Zoological Science</em> <b>24</b>(12): 1278–1285.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b3f5da46-9efc-4fe0-b182-5d7d16b0814a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Miyamoto, Norio, Teruaki Nishikawa & Hiroshi Namikawa. 2020</span>
+					<em>Cephalodiscus planitectus</em> sp. nov. (Hemichordata: Pterobranchia) from Sagami Bay, Japan. <em>Zoological Science</em> <b>37</b>(1): 79–90.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3e7c7120-d45a-42be-876a-ca7ce5aeedc1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Montemayor, Sara I. 2008</span>
+					A new genus and two new species of Tingidae (Heteroptera) from Central America. <em>Zoological Science</em> <b>25</b>(4): 444-450.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/93372e86-eb53-4484-a2aa-c0699dbb5010">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Munir, Misbahul, Amir Hamidy, Masafumi Matsui, Mirza D. Kusrini & Kanto Nishikawa. 2020</span>
+					A new species of <em>Micryletta</em> (Amphibia: Anura) from Sumatra, Indonesia. <em>Zoological Science</em> <b>37</b>(3): 295–301.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3efa2ecd-abde-4562-a878-5d3275339154">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nagatomi, Akira, Hiroki Imaizumi & Hisako Nagatomi. 1989</span>
+					Revision of <em>Molobratia</em> from Japan and Taiwan (Insecta, Diptera, Asilidae). <em>Zoological Science</em> <b>6</b>(5): 983–1003.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9f287870-370f-4f57-9a1a-5f61d666d8be">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nagatomi, Akira, Toyohei Saigusa, Hisako Nagatomi & Leif Lyneborg. 1991</span>
+					Apsilocephalidae, a new family of the orthorrhaphous Brachycera (Insecta, Diptera). <em>Zoological Science</em> <b>8</b>(3): 579–591.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7a6ce9ac-534c-412a-a252-3cd3c9387f36">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakamura, Koichiro & C. A. Child. 1986</span>
+					New species of Pycnogonida from waters adjacent to Japan. <em>Zoological Science</em> <b>3</b>(5): 893–897.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7e181cfb-1652-4de3-a887-09a9217a24d9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakano, Takafumi & Ko Tomikawa. 2018</span>
+					Reassessment of the groundwater amphipod <em>Paramoera </em><em>relicta </em>synonymizes the genus <em>Relictomoera </em>with <em>Paramoera </em>(Crustacea: Amphipoda: Pontogeneiidae). <em>Zoological Science</em> <b>35</b>(5): 459–467.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/33ec8453-956a-421d-bf0f-6813631f9198">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakano, Takafumi, Yoh Ihara, Yusuke Kumasaki, Yuki G. Baba & Ko Tomikawa. 2017</span>
+					Evaluation of the systematic status of geographical variations in <em>Arcuphantes</em> <em>hibanus</em> (Arachnida: Araneae: Linyphiidae), with descriptions of two new species. <em>Zoological Science</em> <b>34</b>(4): 331–344.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cb6d38bd-9dc4-4e8c-a7e4-38ce6f14e6f2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakano, Takafumi. 2010</span>
+					A new species of the genus <i>Orobdella</i> (Hirudinida: Arhynchobdellida: Gastrostomobdellidae) from Kumamoto, Japan, and a redescription of <i>O</i>. <i>whitmani</i> with the designation of the lectotype. <em>Zoological Science</em> <b>27</b>(11): 880–887.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b147d91-ebbc-472f-a0ac-f61c16daaf22">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakano, Takafumi. 2017</span>
+					A new species of <em>Orobdella</em> (Hirudinida: Arhynchobdellida: Orobdellidae) from Japan reveals the function of the <em>Orobdella</em> gastroporal duct. <em>Zoological Science</em> <b>34</b>(2): 161–172.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e73d95ec-d7b6-4e44-b86c-66bcf2682d57">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakase, Yuta & Makoto Kato. 2013</span>
+					Cryptic diversity and host specificity in giant <em>Xenos</em> strepsipterans parasitic in large <em>Vespa</em> hornets. <em>Zoological Science</em> <b>30</b>(4): 331–336.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8cb95c3c-4ba0-4608-9e24-b5c360fabd42">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakasone, Yukio. 1988</span>
+					Land hermit crabs from the Ryukyus, Japan, with a description of a new species from the Philippines (Crustacea, Decapoda, Coenobitidae). <em>Zoological Science</em> <b>5</b>(1): 165–178.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/396e2ee4-5722-4fee-a960-8a920be14328">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nambu, Hisao. 1991</span>
+					<em>Hynobius</em> <em>tenuis</em> (Caudata, Hynobiidae), a new species of salamander from Centeral Japan. <em>Zoological Science</em> <b>8</b>(5): 991–997.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/da3c32c9-3762-4309-84fd-2acf40792062">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Namikawa, Hiroshi. 1991</span>
+					A new species of the genus <em>Stylactaria</em> (Cnidaria, Hydrozoa) from Hokkaido, Japan. <em>Zoological Science</em> <b>8</b>(4): 805–812.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/521393de-266f-44e5-b01b-f2dbf3e1fc8a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishi, Eijiroh, Michel R. Bhaud & Byoung-Seol Koh. 2004</span>
+					Two new species of <em>Spiochaetopterus</em> (Annelida: Polychaeta) from Sagami Bay and Tokyo Bay, Central Japan with a comparative table of species from Japanese and adjacent waters. <em>Zoological Science</em> <b>21</b>(4): 457–464.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3842eab5-feea-4347-9064-095e20793ad4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishi, Eijiroh, Tetsuya Kato & Isao Hayashi. 2004</span>
+					<em>Sabellaria</em> <em>tottoriensis</em> n. sp. (Annelida: Polychaeta: Sabellariidae) from shallow water off Tottori, the Sea of Japan. <em>Zoological Science</em> <b>21</b>(2): 211–217.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/06b928ec-0bf5-4787-8b13-bd2663308204">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishikawa, Kanto, Jian-Ping Jiang, Masafumi Matsui & Yun-Ming Mo. 2011</span>
+					Unmasking <em>Pachytriton</em> <em>labiatus</em> (Amphibia: Urodela: Salamandridae), with description of a new species of <em>Pachytriton</em> from Guangxi, China. <em>Zoological Science</em> <b>28</b>(6): 453-461.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/af3eb9d9-393e-41ed-81ba-0f8b1318887b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishikawa, Teruaki & Xavier Turon. 1993</span>
+					Taxonomy and geographic variation of <em>Pyura</em> <em>microcosmus</em> (Savigny) from Lusitanian waters and the Red Sea (Urochordata, Ascidiacea). <em>Zoological Science</em> <b>10</b>(6): 1045–1056.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/aa5162f0-4ee2-4382-a7a7-ed5a07e0a0d4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishikawa, Teruaki. 2004</span>
+					A new deep-water lancelet (Cephalochordata) from off Cape Nomamisaki, SW Japan, with a proposal of the revised system recovering the genus <em>Asymmetron</em>. <em>Zoological Science</em> <b>21</b>(11): 1131–1136.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a5422cd5-4e46-43b2-bb11-f407d41647d0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nomura, Keiichi & Ken-Ichi Hayashi. 1992</span>
+					<em>Rhynchocinetes</em> <em>striatus</em>, a new species (Decapoda, Caridea, Rhynchocinetidae) from southern Japan. <em>Zoological Science</em> <b>9</b>(1): 199–206.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f02524f6-abb8-4fb7-a5ca-b5bcf3e3da97">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oda, Shuzitu & Hideo Mukai. 1989</span>
+					Systematic position and biology of <em>Pectinatella</em> <em>gelatinosa</em> Oka (Bryozoa: Phylactolaemata) with the description of a new genus. <em>Zoological Science</em> <b>6</b>(2): 401–408.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/05963972-b815-4a88-8086-37caad589ac1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ogawa, Kazunari, Kanae Matsuzaki & Hiroshi Misaki. 1997</span>
+					A new species of <em>Balaenophilus</em> (Copepoda: Harpacticoida), an ectoparasite of a sea turtle in Japan. <em>Zoological Science</em> <b>14</b>(4): 691–700.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/10a2b3aa-b9b7-4ee2-b0e7-8aeb8fb994bc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ogawa, Kazuo. 1986</span>
+					<em>Pseudodactylogyroides</em> gen. n. (Monogenea: Ancyrocephalidae, Pseudodactylogyrinae subf. n.), with a redescription of <em>P</em>. <em>apogonis</em> (Yamaguti, 1940) comb. n. <em>Zoological Science</em> <b>3</b>(1): 181–185.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cfd1c9e3-aed9-4760-87ce-f29547732256">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohkubo, Norihide. 1987</span>
+					A new species of <em>Zetomimus</em> (Acari: Oribatei) from Japan. <em>Zoological Science</em> <b>4</b>(5): 897–902.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c3c3fdd3-23d2-420b-a9d5-1395c7c0b804">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohkubo, Norihide. 1990</span>
+					A new species of <em>Ramusella</em> (Acari: Oribatei) from Japan. <em>Zoological Science</em> <b>7</b>(5): 979–983.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9a94e929-8dc1-45cc-b279-1e1c0b140521">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtaka, Akifumi. 1995</span>
+					A new species of the genus <em>Rhyacodrilus</em> Bretscher (Oligochaeta, Tubificidae) from Japanese lakes. <em>Zoological Science</em> <b>12</b>(4): 491–498.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a176f9fc-cc6b-467e-9577-737103ff053e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtaka, Akifumi. 2004</span>
+					A new species of the subterranean genus <em>Krenedrilus</em> Dumnicka (Oligochaeta, Tubificidae) from the deep bottom of an oligotrophic caldera lake in Japan. <em>Zoological Science</em> <b>21</b>(4): 465–471.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ea2292ae-ea40-44c0-9761-a34849cdd36e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Audun Fosshagen & Akio Go. 1991</span>
+					The hyperbenthic calanoid copepod <em>Paramisophria</em> from Okinawa, South Japan. <em>Zoological Science</em> <b>8</b>(4): 793–804.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/df9dfe56-7b24-4f47-b305-83edc76717eb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Ephrime Metillo & Geoffrey A. Boxshall. 2015</span>
+					First record of association of copepods with highly venomous box jellyfish <em>Chironex</em>, with description of new species of <em>Paramacrochiron</em> (Cyclopoida: Macrochironidae). <em>Zoological Science</em> <b>32</b>(2): 195–203.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/347a7f33-6318-495e-9592-8570452ff370">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Geoffrey A. Boxshall & Khwanruan Srinui. 2012</span>
+					A new species of <em>Paramacrochiron</em> (Copepoda: Cyclopoida: Macrochironidae) associated with the rhizostome medusa <em>Rhopilema</em> <em>hispidum</em> collected from the Gulf of Thailand, with a phylogenetic analysis of the family Macrochironidae. <em>Zoological Science</em> <b>29</b>(2): 127-133.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b8d8a560-ed6d-42a7-a7eb-057e9c362bb9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Hayato Tanaka & Geoffrey A. Boxshall. 2016</span>
+					A new species of hyperbenthic cyclopoid copepod from Japan: first record of the genus <em>Cyclopicina</em> in the Indo-Pacific region. <em>Zoological Science</em> <b>33</b>(6): 659–666.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/319878e8-9bc7-41b9-a163-945a9d12994c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Ho Y. Soh & Hiroshi Ueda. 1998</span>
+					<em>Platycopia</em> <em>compacta</em> n. sp., the second species of Platycopioida (Crustacea: Copepoda) in the Indo-Pacific region, with remarks on development, feeding, swimming, and zoogeography. <em>Zoological Science</em> <b>15</b>(3): 415–424.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/457f9f03-cd9d-4b69-bebb-220042e82b97">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Kota Kitazawa & Geoffrey A. Boxshall. 2010</span>
+					A new genus of endoparasitic copepods (Cyclopoida: Enterognathidae), forming a gall in the calyx of deep-sea crinoids. <em>Zoological Science</em> <b>27</b>(8): 689-696.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/48fde3e3-6035-4034-9bbf-5928b470d347">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Masato Nitta, Toru Nakamura & Yoichi Maekawa. 2019</span>
+					A new species of <em>Lagochondria</em> (Crustacea: Copepoda) parasitic on callionymid fish: first record of precopulatory mate guarding in fish-parasitic cyclopoid copepods, and of the occurrence of the genus in the North Pacific. <em>Zoological Science</em> <b>36</b>(5): 432–439.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a6aa96f9-30d2-426e-830a-0e054e7a89f5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Rony Huys, Geoffrey A. Boxshall & Tatsunori Itô. 1992</span>
+					<em>Misophriopsis</em> <em>okinawensis</em> sp. nov. (Crustacea: Copepoda) from hyperbenthic waters off Okinawa, South Japan, with definitions of related genera <em>Misophria</em> Boeck, 1864 and <em>Stygomisophria</em> gen. nov. <em>Zoological Science</em> <b>9</b>(4): 859–874.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/835a2abb-ce08-448e-a70e-e95c6488e83b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtsuka, Susumu, Tomoki Kase & Yukio Hanamura. 2002</span>
+					A new species of <em>Thetispelecaris</em> (Crustacea: Peracarida) from submarine cave on Grand Cayman Island. <em>Zoological Science</em> <b>19</b>(5): 611–624.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/51e8b1db-b979-4deb-bf0b-0b0381f7d52c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oji, Tatsuo & Richard J. Twitchett. 2015</span>
+					The oldest post-Palaeozoic crinoid and Permian-Triassic origins of the Articulata (Echinodermata). <em>Zoological Science</em> <b>32</b>(2): 211–215.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0891d858-b614-45bf-a6bd-216298ba11ee">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oka, Atsushi T., Mayu Suetsugu & Euichi Hirose. 2005</span>
+					Two new species of <em>Diplosoma</em> (Ascidiacea: Didemnidae) bearing prokaryotic algae <em>Prochloron</em> from Okinawajima (Ryukyu Archipelago, Japan). <em>Zoological Science</em> <b>22</b>(3): 367–374.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a57e362e-fe3b-47ab-8f2b-e4b1196c0d24">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Okada, Toyohi. 1989</span>
+					A proposal of establishing tribes for the family Drosophilidae with key to tribes and genera (Diptera). <em>Zoological Science</em> <b>6</b>(2): 391–399.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f79fb348-da88-444e-9b9c-fadb7c8a7b76">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Okajima, Shûji. 1990</span>
+					Some <em>Nesothrips</em> (Insecta, Thysanoptera, Phlaeothripidae) from East Asia. <em>Zoological Science</em> <b>7</b>(2): 311–318.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/32ca5f98-a3f4-4f40-a236-b3f280f3c5b1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Okanishi, Masanori & Toshihiko Fujita. 2011</span>
+					A taxonomic review of the genus <em>Astrocharis</em> Koehler (Echinodermata: Ophiuroidea: Asteroschematidae), with a description of a new species. <em>Zoological Science</em> <b>28</b>(2): 148-157.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a9601e9d-c416-41a3-b23f-9014fe918908">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Okanishi, Masanori & Toshihiko Fujita. 2018</span>
+					Description of a new subfamily, Astrocloninae (Ophiuroidea: Euryalida: Gorgonocephalidae), based on molecular phylogeny and morphological observations. <em>Zoological Science</em> <b>35</b>(2): 179–187.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/91a27a70-7a7f-4325-b3f1-21e9b7957ec5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oku, Yutaro, Tohru Naruse & Hironobu Fukami. 2017</span>
+					Morpho-molecular evidence for polymorphism in the mushroom coral <em>Cycloseris</em> <em>hexagonalis</em> (Scleractinia: Fungiidae), with a new phylogenetic position and the establishment of a new genus for the species. <em>Zoological Science</em> <b>34</b>(3): 242–251.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d51f7faa-fd31-4803-b4b5-e0722335770e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Okuno, Junji. 2004</span>
+					<em>Periclimenes</em> <em>speciosus</em>, a new species of anthozoan associated shrimp (Crustacea: Decapoda: Palaemonidae) from southern Japan. <em>Zoological Science</em> <b>21</b>(8): 865–875.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/159f8476-1233-4210-a1c2-d4b18228bfc2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Okuyama, Makiko & Yasunori Saito. 2001</span>
+					Studies on Japanese botryllid ascidians. I. A new species of the genus <em>Botryllus</em> from the Izu Islands. <em>Zoological Science</em> <b>18</b>(2): 261–267.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7f211845-3b57-42ce-9645-9f96de8dc0ea">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Okuyama, Makiko & Yasunori Saito. 2002</span>
+					Studies on Japanese botryllid ascidians. II. A new species of the genus <em>Botryllus</em> from the vicinity of Shimoda. <em>Zoological Science</em> <b>19</b>(7): 809–815.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/adfa00a2-2f32-40e9-bc5e-449b23f2bce6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ota, Yuzo, Katsuhiko Tanaka & Euichi Hirose. 2007</span>
+					A new species of <em>Gnathia</em> (Isopoda: Cymothoida: Gnathiidae) from Okinawajima Island, Ryukyu Archipelago, southwestern Japan. <em>Zoological Science</em> <b>24</b>(12): 1266-1277.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ca0d35bb-fd67-4972-bc79-73ff3adfd3fb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Otto, Jürgen C. 1999</span>
+					<em>Corallihalacarus</em> <em>chilcottensis</em>, a new genus and species of marine mite from the Coral Sea (Acarina: Halacaridae). <em>Zoological Science</em> <b>16</b>(5): 839–843.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a9f567af-6aaf-4db6-98a7-3d9e6a18144c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Owada, Masato. 2018</span>
+					Phylogenetic relationships among Japanese species of the genus <em>Ischnochiton</em> (Polyplacophora: Ischnochitonidae), including a new species. <em>Zoological Science</em> <b>35</b>(3): 281–291.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/817dfe80-5fbe-4ef5-8688-2251ec862d28">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Park, Taeseo & Won Kim. 2017</span>
+					Description of a new species for Asian populations of the “cosmopolitan” <em>Perinereis</em> <em>cultrifera</em> (Annelida: Nereididae). <em>Zoological Science</em> <b>34</b>(3): 252–260.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c028e97a-a9c8-403f-8a2d-2548e07373a5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Reimer, James D., Shusuke Ono, Atsushi Iwama, Kiyotaka Takishita, Junzo Tsukahara & Tadashi Maruyama. 2006</span>
+					Morphological and molecular revision of <em>Zoanthus</em> (Anthozoa: Hexacorallia) from southwestern Japan, with descriptions of two new species. <em>Zoological Science</em> <b>23</b>(3): 261–275.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8dd4a0ce-6bc0-45d6-ae8d-84ecf84fbe13">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rho, Hyun S. & Won Kim. 2005</span>
+					A new marine nematode species of the genus <em>Dinetia</em> (Nematoda: Draconematidae) from South Korea. <em>Zoological Science</em> <b>22</b>(5): 599–608.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a0a85ffa-716d-4cab-9211-a58d0f6f238a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rho, Hyun S., Wilfrida Decraemer, Martin V. Sørensen, Won G. Min, Jongwoo Jung & Won Kim. 2011</span>
+					<em>Megadraconema</em> <em>cornutum</em>, a new genus and species from Korea, with a discussion of its classification and relationships within the family Draconematidae (Nematoda, Desmodorida) based on morphological and molecular characters. <em>Zoological Science</em> <b>28</b>(1): 68-84.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2b36f0db-20b6-48ae-ab8a-3b0d5a130edd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Robillard, Tony & Akihiko Ichikawa. 2009</span>
+					Redescription of two <em>Cardiodactylus</em> species (Orthoptera, Grylloidea, Eneopterinae): the supposedly well-known <em>C</em>. <em>novaeguineae</em> (Haan, 1842), and the semi-forgotten <em>C</em>. <em>guttulus</em> (Matsumura, 1913) from Japan. <em>Zoological Science</em> <b>26</b>(12): 878-891.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/56cdf970-266d-463c-a538-4420fc092727">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Roncin, Eric & Louis Deharveng. 2003</span>
+					<em>Leptogenys</em> <em>khammouanensis</em> sp. nov. (Hymenoptera: Formicidae). A possible troglobitic species of Laos, with a discussion on cave ants. <em>Zoological Science</em> <b>20</b>(7): 919–924.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c77a45a2-3452-465d-b64d-bcfad274c38d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Saito, Fuki, Jun-Ichi Kojima, Lien T. P. Nguyen & Mikiko Kanuka. 2007</span>
+					<em>Polistes</em> <em>formosanus</em> Sonan, 1927 (Hymenoptera: Vespidae), a good species supported by both morphological and molecular phylogenetic analyses, and a key social wasp in understanding the historical biogeography of the Nansei Islands. <em>Zoological Science</em> <b>24</b>(9): 927-939.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/29eb0619-5578-4cad-84bd-525f39db5934">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Saito, Yasunori & Makiko Okuyama. 2003</span>
+					Studies on Japanese botryllid ascidians. IV. A new species of the genus <em>Botryllus</em> with a unique colony shape, from the vicinity of Shimoda. <em>Zoological Science</em> <b>20</b>(9): 1153–1161.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1a77d790-1d73-4cae-a768-8ff134e3fee9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Saito, Yasunori & Naoko Nagasawa. 2003</span>
+					Studies on Japanese botryllid ascidians. III. A new species of the genus <em>Botryllus</em> with a vivid colony color from the vicinity of Shimoda. <em>Zoological Science</em> <b>20</b>(6): 765–771.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fab6c8e4-c883-42e9-b6c3-3cf05b45913a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sakagami, Shôich F. & Meiyo Munakata. 1990</span>
+					<em>Lasioglossum</em> <em>blakistoni</em> sp. nov., the northernmost representative of the palaeotropic subgenus <em>Ctenonomia</em> (Insecta, Hymenoptera, Halictidae). <em>Zoological Science</em> <b>7</b>(5): 985–987.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/98a02156-855b-4aa6-a7d1-39de60687634">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sakai, Harumi, Akira Goto & S.-R. Jeon. 2002</span>
+					Speciation and dispersal of <i>Tribolodon</i> species (Pisces, Cyprinidae) around the sea of Japan. <em>Zoological Science</em> <b>19</b>: 1291-1303.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3aaeb2d2-50da-401a-87e4-ccb78ff32597">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">San Martín, Guillermo & Eijiroh Nishi. 2003</span>
+					A new species of <em>Alcyonosyllis</em> Glasby and Watson, 2001 (Polychaeta: Syllidae: Syllinae) from Shimoda, Japan, commensal with the gorgonian <em>Melithaea</em> <em>flabellifera</em>. <em>Zoological Science</em> <b>20</b>(3): 371–375.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/11dbb456-0c04-497e-8776-4890a08fffb8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sasakawa, Kôji. 2005</span>
+					Phylogenetic studies of the subgenus <em>Nialoe</em> (s. lat.) (Coleoptera, Carabidae, genus <em>Pterostichus</em>), Part 1: Homology of the component parts of male genitalia and higher phylogeny. <em>Zoological Science</em> <b>22</b>(11): 1205–1216.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a91264c7-afcf-47d2-8c9c-ab24526d87e9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sasakawa, Kôji. 2005</span>
+					Phylogenetic studies of the subgenus <em>Nialoe</em> (s. lat.) (Coleoptera, Carabidae, genus <em>Pterostichus</em>), Part 2: The <em>asymmetricus</em> species group. <em>Zoological Science</em> <b>22</b>(11): 1217–1228.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7c14edec-f078-4534-af2a-f279b6c26071">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu & Abdul L. Molan. 1988</span>
+					Two new hymenolepidid cestodes, <em>Vampirolepis</em> <em>molani</em> sp. n. and <em>V</em>. <em>iraqensis</em> sp. n., from Iraqi bats. <em>Zoological Science</em> <b>5</b>(2): 483–487.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1db626dd-8c3d-4d3d-a206-6968dad8a36f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu & Giiti Kugi. 1987</span>
+					Three new species of avian dilepidid cestodes from Oita Prefecture, Japan. <em>Zoological Science</em> <b>4</b>(1): 183–186.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a4ed6195-0c24-4fc1-be4f-c86f3b58098f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu & Kazuhiro Koyasu. 1991</span>
+					<em>Pseudhymenolepis</em> <em>nepalensis</em> sp. nov. (Cestoda: Hymenolepididae) parasitic on the house shrew, <em>Suncus</em> <em>murinus </em>(Soricidae), from Nepal. <em>Zoological Science</em> <b>8</b>(3): 575–578.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/43f059f6-f8a1-40ab-b992-59efcf1c4bdc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu & Masashi Harada. 1985</span>
+					A survey on bat cestodes from Thailand with descriptions of six new species. <em>Zoological Science</em> <b>2</b>(2): 271–283.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1fa08cde-b36d-40b3-8d9b-ac67e7d7ed15">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu & Masashi Harada. 1986</span>
+					Bat cestodes from Bolivia, South America, with descriptions of six new species. <em>Zoological Science</em> <b>3</b>(2): 367–377.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7f80f83e-e77e-4d17-91a1-94086113ac7d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu & Masashi Harada. 1989</span>
+					Cestode parasites of some Taiwanese shrews. <em>Zoological Science</em> <b>6</b>(2): 377–385.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0652d703-a3ed-4c7f-8b16-4de5bfa76724">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu & Masashi Harada. 1990</span>
+					Cestodes of field micromammalians (Insectivora) from central Honshu, Japan. <em>Zoological Science</em> <b>7</b>(3): 469–475.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a56ee16e-63ed-4c61-a4eb-c7aaa7a31a27">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu, Kazuhiro Koyasu & Krishna C. Shrestha. 1993</span>
+					Two new species of the genus <em>Staphylocystis</em> (Cestoda: Hymenolepididae) from the house shrew, <em>Suncus</em> <em>murinus</em>, in Nepal. <em>Zoological Science</em> <b>10</b>(1): 147–154.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f4b8cb5b-17d8-4a4a-ba55-99a8411a8a1f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu. 1984</span>
+					Cestodes of bats from Japan, with descriptions of new species of the genus <em>Vampirolepis</em> (Cestoda: Hymenolepididae). <em>Zoological Science</em> <b>1</b>(5): 819–827.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cb740658-3685-46a9-ada2-58a4b77b12ef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu. 1984</span>
+					Two new species of cestodes belonging to the genus <em>Vampirolepis</em> (Cyclophyllidea: Hymenolepididae) from cave bats of Taiwan. <em>Zoological Science</em> <b>1</b>(2): 327–331.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/975f6ffd-c347-48b2-89e8-abf58b1c22ad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu. 1985</span>
+					<em>Vampirolepis</em> <em>shirotanii</em> sp. n. (Cestoidea: Hymenolepididae), with records of known cestodes, from bats of Japan. <em>Zoological Science</em> <b>2</b>(3): 405–409.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9902f008-47e8-4160-86b1-4a23dd448ddd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu. 1986</span>
+					Two new hymenolepidid tapeworms, <em>Vampirolepis</em> <em>kawasakiensis</em> and <em>Insectivorolepis</em> <em>mukooyamai</em>, with records of known tapeworms from bats of Japan. <em>Zoological Science</em> <b>3</b>(4): 707–713.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5f4f0b8b-91e6-461a-8195-1494fc4a6aae">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sawada, Isamu. 1987</span>
+					Further studies on cestodes of Japanese bats, with descriptions of three new species of the genus <em>Vampirolepis</em> (Cestoda: Hymenolepididae). <em>Zoological Science</em> <b>4</b>(4): 721–729.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/402f4d0a-0473-4f1a-88e0-63a6b11f2181">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shimada, Tomofumi, Kenneth P. Aplin & Hitoshi Suzuki. 2010</span>
+					<em>Mus</em> <em>lepidoides</em> (Muridae, Rodentia) of central Burma is a distinct apecies of potentially great evolutionary and biogeographic significance. <em>Zoological Science</em> <b>27</b>(5): 449-459.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/822de7fb-48e2-4809-9f90-ec9937f6e7bf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shimada, Tomohiko, Masafumi Matsui, Kanto Nishikawa & Koshiro Eto. 2015</span>
+					A new species of <em>Meristogenys</em> (Anura: Ranidae) from Sarawak, Borneo. <em>Zoological Science</em> <b>32</b>(5): 474–484.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0ae994f1-96ed-4c89-8198-4ffe13d1665f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shimazu, Takeshi & Kazuya Nagasawa. 1985</span>
+					<em>Lepocreadium</em> <em>kamegaii</em> sp. n. (Trematoda: Lepocreadiidae), a new parasite of marine fishes from Moroiso Bay, Misaki, Kanagawa Prefecture, Japan. <em>Zoological Science</em> <b>2</b>(5): 817–819.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c7e9496b-1995-48a0-8d93-4f348db699d7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shimazu, Takeshi & Shigeru Shimura. 1984</span>
+					<em>Paralepidapedon</em> g. n. (Trematoda: Lepocreadiidae), with descriptions of metacercariae of <em>Paralepidapedon</em> <em>hoplognathi</em> (Yamaguti, 1938) comb. n. and of two other species from sea urchins. <em>Zoological Science</em> <b>1</b>(5): 809–817.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a1c2ea0f-b6ac-4ed7-b1df-530e3bf30dd4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shimazu, Takeshi. 1986</span>
+					<em>Lepocreadium</em> <em>misakiense</em> sp. n. and <em>Neopechona</em> <em>olssoni</em> (Yamaguti, 1934), comb. n. (Trematoda:  Lepocreadiidae), parasites of a Japanese marine fish, <em>Scomber</em> <em>japonicus</em>. <em>Zoological Science</em> <b>3</b>(3): 569–571.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9acb435e-174d-4f1d-b7d0-f54c92ae9146">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shimazu, Takeshi. 1989</span>
+					Two new species of the genus <em>Diploproctodaeum</em> (Trematoda:  Lepocreadiidae:  Diploproctodaeinae), with some comments on species in the subfamily Diploproctodaeinae, from Japanese marine fishes. <em>Zoological Science</em> <b>6</b>(3): 579–588.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/93b7b5f4-98c6-45ac-babf-1dc38813ab4d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shimazu, Takeshi. 1990</span>
+					Trematodes of the genus <em>Orientocreadium</em> (Digenea: Orientocreadiidae) from freshwater fishes of Japan. <em>Zoological Science</em> <b>7</b>(5): 933–938.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b348369-3401-4991-b2f1-9416170fd98d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shirai, S. & Kazuhiro Nakaya. 1992</span>
+					Functional morphology of feeding apparatus of the cookie-cutter shark, <i>Isistius brasiliensis</i> (Elasmobranchii, Dalatiinae). <I>Zoological Science</I> <B>9</B>(4): 811-821.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6089d344-b492-42d0-91f0-69a0025eb344">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Soh, Ho Y., Seong Y. Moon, Susumu Ohtsuka, Se J. Pae & Hyeon G. Jeong. 2013</span>
+					Reconstruction of arietellid copepod phylogenetic relationship, with description of a new species of <em>Sarsarietellus</em> (Copepoda, Calanoida, Arietellidae) from Korean waters. <em>Zoological Science</em> <b>30</b>(11): 998-1004.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4bb8b06b-767d-43a5-ba80-c5a8453efa00">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sohn, Jae-Cheon. 2014</span>
+					Morphology-based phylogeny and biogeography of <em>Wockia</em> (Lepidoptera: Urodidae) with description of a new species from Japan and South Korea. <em>Zoological Science</em> <b>31</b>(4): 258-265.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bd9fde2c-2756-4a56-a743-6cb09a3787ba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Song, Sung J., Won Kim & Cheon Y. Chang. 2003</span>
+					A new species of <em>Parastenhelia</em> (Copepoda: Harpacticoida: Parastenheliidae) from Korea. <em>Zoological Science</em> <b>20</b>(2): 221–228.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3bbf858a-4c4b-4766-bcdc-3b1c8bb0343c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sørensen, Martin V., Hyun S. Rho & Dongsung Kim. 2010</span>
+					A new species of <em>Condyloderes</em> (Cyclorhagida, Kinorhyncha) from Korea. <em>Zoological Science</em> <b>27</b>(3): 234-242.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e5ebbc7f-491f-4dcc-b5dc-aeb776364c08">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sruoga, Virginijus & Rimantas Puplesis. 2003</span>
+					A remarkable new species of <em>Stephensia</em> Stainton (Insecta: Lepidoptera: Elachistidae) from Belize rainforest (Central America). <em>Zoological Science</em> <b>20</b>(10): 1273–1277.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/af223974-042c-4a37-b5d2-4de91763e8f1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Stonis, Jonas R. & Arūnas Diškus. 2007</span>
+					Description of <em>Tischeria</em> <em>gouaniae</em> sp. n. from the tropical forest of Belize – an exotic new addition to the American fauna of <em>Tischeria</em> (Insecta: Lepidoptera: Tischeriidae). <em>Zoological Science</em> <b>24</b>(12): 1286–1291.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f46768cd-0cd0-4435-b4a9-6195161b1b0f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Stonis, Jonas R. & Arūnas Diškus. 2008</span>
+					Checklist of American <em>Coptotriche</em> (Insecta: Lepidoptera: Tischeriidae) with descriptions of two new species from the tropical forest of Belize (Central America). <em>Zoological Science</em> <b>25</b>(1): 99-106.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0366ed5b-c1c1-485a-a124-2e5ab871cd8b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sugiura, Kenta, Hiroki Minato, Midori Matsumoto & Atsushi C. Suzuki. 2020</span>
+					<em>Milnesium</em> (Tardigrada: Apochela) in Japan: the first confirmed record of <em>Milnesium</em> <em>tardigradum</em> s.s. and description of <em>Milnesium</em> <em>pacificum</em> sp. nov. <em>Zoological Science</em> <b>37</b>(5).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6009812b-43f9-4914-bdba-ecd080b44496">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sundaran, A. K. & J. P. Gupta. 1991</span>
+					The species of the genus <em>Mycodrosophila</em> Oldenberg (Diptera: Drosophilidae) from India. <em>Zoological Science</em> <b>8</b>(2): 371–376.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ed17516d-67eb-4f0f-b257-8d88a69a79f4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Suwa, Tsuyoshi, Matthew H. Dick & Shunsuke F. Mawatari. 1998</span>
+					A new species of <em>Microporella</em> (Bryozoa, Cheilostomata) from Alaska. <em>Zoological Science</em> <b>15</b>(4): 589–592.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d088a2e2-65c8-4e33-917f-413fb12c68db">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takashima, Yoshikazu & Shunsuke F. Mawatari. 1998</span>
+					<em>Mitinokuidrilus</em> <em>excavatus</em> n. g., n. sp., a marine tubificid (Oligochaeta) with a unique mode of reproduction. <em>Zoological Science</em> <b>15</b>(4): 593–597.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b84150b4-2378-47b1-aff4-c12d8f8399b4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takeda, Masatsune & Norikazu Shikatani. 1990</span>
+					Crabs of the genus <em>Calappa</em> from the Ryukyu Islands, with description of a new species. <em>Zoological Science</em> <b>7</b>(3): 477–484.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/46b77a9d-e7f1-47ac-a422-4eb1f6952058">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takeda, Masatsune & Peter K. L. Ng. 2001</span>
+					The freshwater crab fauna (Crustacea, Brachyura) of the Philippines. VI. A new cavernicolous crab from Mindanao. <em>Zoological Science</em> <b>18</b>(8): 1123–1127.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4bf6982a-b297-4579-90c6-7c0c79d3cf5c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takeda, Masatsune & Seiji Nagai. 1986</span>
+					Establishment of a new genus on two Japanese crabs. <em>Zoological Science</em> <b>3</b>(3): 547–550.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5fbac68b-6780-427c-83e7-c11d97456af7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takeda, Masatsune & Yukio Hanamura. 1996</span>
+					Establishment of a new genus <em>Bathystylodactylus</em> (Crustacea: Decapoda: Stylodactylidae), with description of a new species from northwestern Pacific. <em>Zoological Science</em> <b>13</b>(6): 929–934.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9f484fdd-908c-408f-a755-534aae4e9365">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takekawa, Atsushi & Shin-ichi Ishimaru. 2000</span>
+					A new species of the genus <em>Scopelocheirus</em> (Crustacea: Amphipoda: Gammaridea) from Onagawa Bay, Northeastern Japan. <em>Zoological Science</em> <b>17</b>(5): 681–687.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3a1ed827-5b75-47a3-92e3-d11f713b97d0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takekawa, Atsushi & Shin-ichi Ishimaru. 2001</span>
+					Two new species of the genus <em>Anonyx</em> (Amphipoda: Gammaridea: Lysianassoidea) from Onagawa Bay, northeastern Japan. <em>Zoological Science</em> <b>18</b>(3): 405–416.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/121be2c0-e54c-4b59-887b-1f7e6b28d059">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tan, Koh S. & Li-Lian Liu. 2001</span>
+					Description of a new species of <em>Thais</em> (Mollusca: Neogastropoda: Muricidae) from Taiwan, based on morphological and allozyme analyses. <em>Zoological Science</em> <b>18</b>(9): 1275–1289.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1aeaf358-fb35-4b1a-96ed-b40531283af3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tanabe, Tsutomu. 1990</span>
+					A new milliped of the genus <em>Riukiaria</em> from Is. Yaku-shima, Japan (Diplopoda: Polydesmida: Xystodesmidae). <em>Zoological Science</em> <b>7</b>(3): 443–447.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c651c0b0-8f3b-4417-9075-6abcd04f63a2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tanaka, Hayato & Akira Tsukagoshi. 2014</span>
+					Intraspecific variation in male upper lip morphology of <em>Parapolycope</em> <em>watanabei</em> n. sp. (Crustacea: Ostracoda) and its implications for speciation. <em>Zoological Science</em> <b>31</b>(11): 758–765.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e38ff2d6-d2d0-4a60-b71e-c981f546758d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tanaka, Hayato & Moriaki Yasuhara. 2016</span>
+					A new deep-sea hydrothermal vent species of Ostracoda (Crustacea) from the western Pacific: implications for adaptation, endemism, and dispersal of ostracodes in chemosynthetic systems. <em>Zoological Science</em> <b>33</b>(5): 555–565.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dd9afd8c-be7c-4338-a1e2-d1fb51817403">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tanaka, Hayato, Fumiaki Sodeyama & Hisanori Kohtsuka. 2020</span>
+					A new species of ostracod (Crustacea) associated with a feather star: the first report of Ostracoda from Crinoidea. <em>Zoological Science</em> <b>37</b>(5).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2a7feb1f-b204-42de-8c33-e1e0b7e1766b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Terossi, Mariana, Alexandre O. Almeida & Fernando L. Mantelatto. 2019</span>
+					Morphology and DNA data reveal a new shrimp species of genus <em>Latreutes</em> Stimpson, 1860 (Decapoda: Hippolytidae) from the Western Atlantic. <em>Zoological Science</em> <b>36</b>(5): 440–447.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/284144b9-8bf4-4894-82e7-45a590c07cda">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Toda, Masanori J. & Tong X. Peng. 1989</span>
+					Eight species of the subgenus <em>Drosophila</em> (Diptera: Drosophilidae) from Guangdong Province, southern China. <em>Zoological Science</em> <b>6</b>(1): 155–166.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/12ba92f1-d478-4d54-8e7f-9fc81fd4447c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Toda, Masanori J., Vasily S. Sidorenko, Hide-aki Watabe, Sergey K. Kholin & Nikolai N. Vinokurov. 1996</span>
+					A revision of the Drosophilidae (Diptera) in East Siberia and Russian Far East: taxonomy and biogeography. <em>Zoological Science</em> <b>13</b>(3): 455–477.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3115598a-9611-4c06-aefe-8ee5ca778605">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tojo, Koji & Kei Matsukawa. 2003</span>
+					A description of the second species of the family Dipteromimidae (Insecta, Ephemeroptera), and genetic relationship of two dipteromimid mayflies inferred from mitochondrial 16S rRNA gene sequences. <em>Zoological Science</em> <b>20</b>(10): 1249–1259.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a2a5a605-3f93-4ad1-8f16-1bc34497b41f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tokuda, Makoto, Man-miao Yang & Junichi Yukawa. 2008</span>
+					Taxonomy and molecular phylogeny of <em>Daphnephila</em> gall midges (Diptera: Cecidomyiidae) inducing complex leaf galls on Lauraceae, with descriptions of five new species associated with <em>Machilus</em> <em>thunbergii</em> in Taiwan. <em>Zoological Science</em> <b>25</b>(5): 533-545.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6aa3f24d-c028-44e6-9ec7-58600c8a38bc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tomikawa, Ko & Hiroshi Morino. 2003</span>
+					Two new freshwater species of the genus <em>Jesogammarus</em> (Crustacea: Amphipoda: Anisogammaridae) from northern Japan. <em>Zoological Science</em> <b>20</b>(2): 229–241.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2981bd76-0d1e-4512-b193-f7ba0f65291b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tomikawa, Ko, Hiroshi Morino & Shunsuke F. Mawatari. 2003</span>
+					A new freshwater species of the genus <em>Jesogammarus</em> (Crustacea: Amphipoda: Anisogammaridae) from northern Japan. <em>Zoological Science</em> <b>20</b>(7): 925–933.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1e60b410-c0ba-4023-af68-40be099db20f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tomikawa, Ko, Keiichi Kakui & Hiroshi Yamasaki. 2010</span>
+					A new species of <em>Psammogammarus</em> (Amphipoda: Melitidae) from Kuchinoerabu Island, Japan, with a note on its feeding habits. <em>Zoological Science</em> <b>27</b>(7): 615–626.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/70ff1c73-d346-4729-980e-a9913edb039c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tomikawa, Ko, Norio Kobayashi, Masaki Kyono, Shin-ichi Ishimaru & Mark J. Grygier. 2014</span>
+					Description of a new species of <em>Sternomoera</em> (Crustacea: Amphipoda: Pontogeneiidae) from Japan, with an analysis of the phylogenetic relationships among the Japanese species based on the 28S rRNA gene. <em>Zoological Science</em> <b>31</b>(7): 475–490.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/69872698-13ec-4186-aa53-0e27e359e239">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tomikawa, Ko, Tomiko Ito, Noboru Minakawa & Shunsuke F. Mawatari. 2005</span>
+					Two new species of <em>Ochridacyclops</em> (Kiefer, 1937) (Copepoda, Cyclopoida) from Kenya and Nepal. <em>Zoological Science</em> <b>22</b>(4): 477–487.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ee3eada3-3217-4906-9f8a-510fad787fe5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tominaga, Atsushi & Masafumi Matsui. 2008</span>
+					Taxonomic status of a salamander species allied to <em>Hynobius</em> <em>naevius</em> and a reevaluation of <em>Hynobius</em> <em>naevius</em> <em>yatsui</em> Oyama, 1947 (Amphibia, Caudata). <em>Zoological Science</em> <b>25</b>(1): 107–114.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/148cd510-660f-4b60-8314-f9807bb86dac">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tominaga, Hideyuki, Mamiko Hirose, Hikaru Igarashi, Masato Kiyomoto & Miéko Komatsu. 2017</span>
+					A new species of sexually dimorphic brittle star of the genus <em>Ophiodaphne</em> (Echinodermata: Ophiuroidea). <em>Zoological Science</em> <b>34</b>(4): 351–360.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2b4ea6e5-e254-46e8-b47f-a05c85a9756d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tsurusaki, Nobuo & Da-Xiang Song. 1993</span>
+					Two new species of <em>Sabacon</em> from Sichuan Province, China (Arachnida: Opiliones: Sabaconidae). <em>Zoological Science</em> <b>10</b>(1): 155–159.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e454069e-5120-45dd-ae8e-f3c6651db8fd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tsurusaki, Nobuo. 1991</span>
+					Some harvestmen (Arachnida, Opiliones) from Taiwan. I. Phalangiidae, Leiobuninae. <em>Zoological Science</em> <b>8</b>(1): 179–185.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/358bf5eb-922f-44ff-ab63-dc088ca7f1b9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tuda, Midori & Katsura Morimoto. 2004</span>
+					A new species <em>Megabruchidius</em> <em>sophorae</em> (Coleoptera, Bruchidae), feeding on seeds of <em>Styphnolobium</em> (Fabaceae) new to Bruchidae. <em>Zoological Science</em> <b>21</b>(1): 105–110.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/48b6dfe4-67d1-421a-aaeb-bb9e36d4ba66">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tuda, Midori. 2008</span>
+					A new species of <em>Bruchidius</em> (Coleoptera: Chrysomelidae: Bruchinae) from <em>Albizia</em> in Northern Thailand and a review of <em>Bruchidius</em> Group 5. <em>Zoological Science</em> <b>25</b>(4): 451-454.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8682a4aa-12bb-4b05-b869-fa98287f78d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uchida, Shigekazu & Hiroki Maruyama. 1987</span>
+					What is <em>Scopura</em> <em>longa</em> Uéno, 1929 (Insecta, Plecoptera)? A revision of the genus. <em>Zoological Science</em> <b>4</b>(4): 699–709.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6ece5e9c-1f90-44bb-b8d2-a74feaeb8c99">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uchikawa, Kimito, Barry M. OConnor & Hans Klompen. 1991</span>
+					New Myobiidae (Acarina: Trombidiformes) from Philippine mammals. <em>Zoological Science</em> <b>8</b>(1): 157–168.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ac5ff9f6-c999-476c-9b83-05f76991548a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uchikawa, Kimito, Keisuke Nakata & Kenichi Takahashi. 1997</span>
+					<em>Radfordia</em> (<em>Microtimyobia</em>) (Acari, Myobiidae) associated with arvicolirte voles (Rodentia, Muridae) in Japan. <em>Zoological Science</em> <b>14</b>(4): 671–682.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6af7e60c-1187-4e19-9564-b8b380ff7b38">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uchikawa, Kimito. 1986</span>
+					<em>Chimarrogalobia</em> <em>yoshiyukiae</em> gen. n., sp. n. (Acarina, Myobiidae) parasitic on <em>Chimarrogale</em> (Insectivora, Soricidae). <em>Zoological Science</em> <b>3</b>(1): 187–192.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f994108e-9d78-46a6-8e9a-6dd88d2784d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uchikawa, Kimito. 1991</span>
+					<em>Myobia</em> <em>kobayashii</em> <em>draconis</em> ssp. n. (Acarina, Myobiidae) parasitic on <em>Apodemus</em> <em>draco</em> <em>semotus</em> (Mammalia, Muridae). <em>Zoological Science</em> <b>8</b>(2): 377–381.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9b347ce0-c634-47c4-924c-2cc8eddafbfd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uyeno, Daisuke & Euichi Hirose. 2018</span>
+					<em>Lomanoticola nishiharai </em>n. sp., a new species of copepod parasitic on the facelinid nudibranch, <em>Sakuraeolis enosimensis </em>(Baba, 1930), from the Seto Inland Sea, western Japan, including histological observations of the female lateral body process. <em>Zoological Science</em> <b>35</b>(4): 382–387.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/902af572-756d-4b6a-b462-e1dfddaf05c9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Van Steenkiste, Niels, Paul Davison & Tom Artois. 2010</span>
+					<em>Bryoplana</em> <em>xerophila</em> n. g. n. sp., a new limnoterrestrial microturbellarian (Platyhelminthes, Typhloplanidae, Protoplanellinae) from epilithic mosses, with notes on its ecology. <em>Zoological Science</em> <b>27</b>(3): 285-291.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cf9b2c3c-5fcc-45ba-afd9-3d5ad2371f32">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Volonterio, Odile. 2010</span>
+					Two new species of <em>Temnocephala</em> (Platyhelminthes, Temnocephalida) from the South American snake-necked turtle <em>Hydromedusa</em> <em>tectifera</em> (Testudines, Chelidae). <em>Zoological Science</em> <b>27</b>(12): 965-970.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b850906b-089b-4fcd-a994-d3843ae5f4bf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vonk, Ronald & Michael Gable. 2014</span>
+					Infaunal zoogeography and intergeneric character blending: the case of <em>Metaniphargus</em> <em>shiroi</em> sp. nov. (Crustacea: Amphipoda: Hadziidae), from interstitial beach water on Akajima Island, the Kerama Islands, southwestern Japan. <em>Zoological Science</em> <b>31</b>(7): 491–499.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5594b8c3-a2d2-4b32-aa90-208c6e7a76d6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wang, An-Tai, Li Deng & Hong-Tao Liu. 2012</span>
+					A new species of <em>Hydra</em> (Cnidaria: Hydrozoa: Hydridae) and molecular phylogenetic analysis of six congeners from China. <em>Zoological Science</em> <b>29</b>(12): 856-862.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/62979933-c1d1-4b0c-9fb9-7c94e199070a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wang, An-Tai, Li Deng, Jing-Qi Lai & Juan Li. 2009</span>
+					A new species of green <em>Hydra</em> (Hydrozoa: Hydrida) from China. <em>Zoological Science</em> <b>26</b>(9): 664-668.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4689b87f-58d7-4272-a28f-5e6d1ddbe7ff">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wang, Chong-Rui, Wen-Wen Suo, Xiang-Rong Huang, Fu-Chu Liao, Zhi-Qiang Liang & Li-Na Du. 2018</span>
+					A new species of <em>Sulcospira </em>(Gastropoda: Pachychilidae) from Hunan, China. <em>Zoological Science</em> <b>35</b>(5): 476–482.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b83e4336-b482-4fe3-91bf-ac55e8482d7d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Watabe, Hajime & Jun Hashimoto. 2002</span>
+					A new species of the genus <em>Rimicaris</em> (Alvinocarididae: Caridea: Decapoda) from the active hydrothermal vent field, “Kairei Field,” on the Central Indian Ridge, the Indian Ocean. <em>Zoological Science</em> <b>19</b>(10): 1167–1174.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/38e3801f-6c8e-46b2-b8e2-31145770df76">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Watabe, Hide-aki & Tong X. Peng. 1991</span>
+					The <em>Drosophila</em> <em>virilis</em> Section (Diptera: Drosophilidae) from Guangdong Province, southern China. <em>Zoological Science</em> <b>8</b>(1): 147–156.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c95efb59-aa1e-45bb-aabf-d04114a09bb9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Watabe, Hide-aki, Xingcai Liang & Wen-Xia Zhang. 1990</span>
+					The <em>Drosophila</em> <em>polychaeta</em> and the <em>D</em>. <em>quadrisetata</em> species-groups (Diptera: Drosophilidae) from Yunnan Province, southern China. <em>Zoological Science</em> <b>7</b>(3): 459–467.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/57d8b71e-c0ca-4938-9bf8-0ff46d17d139">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Watabe, Hide-aki, Xingcai Liang & Wen-Xia Zhang. 1990</span>
+					The <em>Drosophila</em> <em>robusta</em> species-group (Diptera: Drosophilidae) from Yunnan Province, southern China, with the revision of its geographic distribution. <em>Zoological Science</em> <b>7</b>(1): 133–140.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8ee76abc-4059-4ff9-ab19-f9e272eb8154">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Willems, Wim R., Tom J. Artois, Wouter Vermin, Thierry Backeljau & Ernest Schockaert. 2004</span>
+					Reports on the free-living Platyhelminthes from Australia: Typhloplanoida, with the description of three new taxa. <em>Zoological Science</em> <b>21</b>(3): 333–341.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d3fef109-e2b8-4223-b101-7cd887945ed2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wu, Yi & Vu D. Thong. 2011</span>
+					A new species of <em>Rhinolophus</em> (Chiroptera: Rhinolophidae) from China. <em>Zoological Science</em> <b>28</b>(3): 235-241.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/825653b9-f4fc-4df8-8a7d-500e0a499192">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wu, Yi, Masaharu Motokawa & Masashi Harada. 2008</span>
+					A new species of horseshoe bat of the genus <em>Rhinolophus</em> from China (Chiroptera: Rhinolophidae). <em>Zoological Science</em> <b>25</b>(4): 438–443.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e884661c-16f5-4186-949e-374af6c4b704">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wynn, Soe, Masanori J. Toda & Tong X. Peng. 1990</span>
+					The genus <em>Phorticella</em> Duda (Diptera: Drosophilidae) from Burma and southern China. <em>Zoological Science</em> <b>7</b>(2): 297–302.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3d1a6f66-aa9e-4b62-9bf5-e85eb3778aa9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yamada, Shinnosuke & Akira Tsukagoshi. 2010</span>
+					Two new species of <em>Semicytherura</em> (Podocopa: Ostracoda) from Akkeshi Bay, Hokkaido, Japan, with comments on their speciation and related species. <em>Zoological Science</em> <b>27</b>(3): 292-302.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8558e7ed-80a2-40cc-9e71-b6ecb7f35fd8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yang, Qing, Yurong Zhu, Bangxi Xiong & Huanzhang Liu. 2011</span>
+					<em>Acheilognathus</em> <em>changtingensis</em> sp. nov., a new species of the cyprinid genus <em>Acheilognathus</em> (Teleostei: Cyprinidae) from Southeastern China based on morphological and molecular evidence. <em>Zoological Science</em> <b>28</b>(2): 158-167.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0232ea08-8954-451d-8cb2-2dd502258709">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yasukawa, Yuichirou, Hidetoshi Ota & John B. Iverson. 1996</span>
+					Geographic variation and sexual size dimorphism in <em>Mauremys</em> <em>mutica</em> (Reptilia: Bataguridae), with description of a new subspecies from the southern Ryukyus, Japan. <em>Zoological Science</em> <b>13</b>(2): 303–317.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8871d3e7-85dd-47f2-b33b-518df918de8c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yeo, Darren C. J. & Tohru Naruse. 2007</span>
+					A revision of the freshwater crab genus <em>Hainanpotamon</em> Dai, 1995 (Crustacea: Decapoda: Brachyura: Potamidae: Potamiscinae), with a redescription of <em>Potamon</em> (<em>Potamon</em>) <em>orientale</em> (Parisi, 1916) and descriptions of three new species. <em>Zoological Science</em> <b>24</b>(11): 1143-1158.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/550800c9-a0b0-4e98-a681-2e30e89074e1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yoshida, Ryuta, Masayuki Osawa, Mamiko Hirose & Euichi Hirose. 2011</span>
+					A new genus and two new species of Peltogastridae (Crustacea: Cirripedia: Rhizocephala) parasitizing hermit crabs from Okinawa Island (Ryukyu Archipelago, Japan), and their DNA-barcodes. <em>Zoological Science</em> <b>28</b>(11): 853-862.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4039b3f5-1320-4a7c-9d06-ec26e95dcbab">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yoshimura, Katsuki. 1990</span>
+					Two new species of the genus <em>Monhystrium</em> Cobb, 1920 (Monhysteridae: Nematoda) from terrestrial crabs of subfamily Sesarminae (Brachyura) in Japan. <em>Zoological Science</em> <b>7</b>(4): 755–761.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/221491d8-8d25-4fde-a43c-1eb485f308b8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zannat, Mst. T. & Masanori J. Toda. 2002</span>
+					Morphological comparison among <em>Drosophila</em> <em>lini</em> and its two new sibling species (Diptera: Drosophilidae). <em>Zoological Science</em> <b>19</b>(12): 1377–1388.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/13694a50-6b33-45f8-a788-00fb4a27ddb4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, Wen-Xia & Masanori J. Toda. 1988</span>
+					The <em>Drosophila</em> <em>immigrans</em> species-group of the subgenus <em>Drosophila</em> (Diptera: Drosophilidae) in Yunnan, China. <em>Zoological Science</em> <b>5</b>(5): 1095–1103.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e43d98a9-5b4b-4188-ac59-4aa33f8b86b1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, Ya-Lin & Wu Dai. 2006</span>
+					A taxonomic study on the leafhopper genus <em>Scaphoidella</em> Vilbaste (Hemiptera: Cicadellidae: Deltocephalinae) from China. <em>Zoological Science</em> <b>23</b>(10): 843–851.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2a630d7a-1564-4bda-b078-c34759905ef7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, Ya-Lin, Cong Wei & Michael D. Webb. 2007</span>
+					The Oriental ‘fly-like’ leafhoppers of the subfamily Stegelytrinae – the <em>Doda</em> group (Hemiptera: Cicadellidae). <em>Zoological Science</em> <b>24</b>(4): 414-426.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/247403ca-e55a-43fb-a5a8-499050016e60">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, Zhi-Sheng & Ming-Sheng Zhu. 2010</span>
+					Revision of the coelotine spider genus <em>Himalcoelotes</em> Wang, 2002 (Araneae: Amaurobiidae) from Tibet, China. <em>Zoological Science</em> <b>27</b>(1): 56-60.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">295 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=zh-cn">中文</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=nl">Nederlands</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=en-us">English</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=fr">Français</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=de">Deutsch</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=it">Italiano</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=ja">日本語</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=pt">Português</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=ru">Русский</a>&nbsp;<a href="/References/c81e3374-ea75-46ae-be06-06a7c863005c?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

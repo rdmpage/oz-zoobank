@@ -1,0 +1,1925 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoologicheskii Zhurnal
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 15 July 2009, 12:25:47.890 by William N. Eschmeyer",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:61BDA2D4-7D0B-4079-8A4E-9A1E51808231</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:61BDA2D4-7D0B-4079-8A4E-9A1E51808231" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:61BDA2D4-7D0B-4079-8A4E-9A1E51808231" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								 | 
+								<a href="http://www.biodiversitylibrary.org/bibliography/42574" target="_blank">
+									
+										<img src="http://zoobank.org/images/BHLIcon.jpg" title="BHL-Title: 42574" alt="Biodiversity Heritage Library Title" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								 | 
+								
+									
+										<img src="http://zoobank.org/images/CASicon.jpg" title="CAS-Journals: ZZ" alt="Eschmeyer Journal Abbreviations" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+							
+							
+								 | 
+								<a href="http://hol.osu.edu/journal-full.html?id=3" target="_blank">
+									
+										<img src="http://zoobank.org/images/HOLlogo.gif" title="HNS-Journals: 3" alt="Hymenoptera Name Server - Journals" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+							
+							
+								 | 
+								
+									
+										<img src="/images/link-logo.png" title="UHLIB-H: QL1 .Z747" alt="UH-Hamilton library Call Number" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoologicheskii Zhurnal<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN:</th>
+                    <td>0044-5134</td>
+                </tr>
+                
+                
+                
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td></td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (120) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/80f3a6cc-4154-46d1-8cc3-ca64e49af73c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Alekseev, V. N. 1979</span>
+					A new species of the genus Isolia (Hymenoptera, Platygastridae) from Central Asia. <em>Zoologicheskii Zhurnal</em> <b>58</b>: 763-764.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cc8f7001-596d-49e2-b66e-94470f1d9f62">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Aliev, A. R. 1987</span>
+					Morphology of new and poorly studied species of the genus <em>Euplotes </em>(Hypotrichida, Euplotidae) from natural water bodies of Azerbaijan. <em>Zoologicheskii Zhurnal</em> <b>66</b>(12): 1781-1788.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5444df1a-ea39-4d70-b5fe-0b079281867d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Andriashev, A. P. 1959</span>
+					On the systematic position of the South African lycodid fish (<i>Lycodes agulhensis</i> sp. n.) confused with the Arctic species, <i>Lycodes figidus</i> Collett. <I>Zoologicheskii Zhurnal</I> <B>38</B>(3): 465-468.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d9fdf4ff-0201-4eac-a4f8-0906e2bd1e77">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Andriashev, A. P. 1960</span>
+					Families of fishes new to the Antarctic. 1. <i>Paradiplospinus antarcticus</i> gen. et sp. n. (Pisces, Trichiuridae). <I>Zoologicheskii Zhurnal</I> <B>39</B>(2): 244-249.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2d136554-b8e9-424d-ab7b-e1bb7447ab1b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Andriashev, A. P. 1960</span>
+					Families of fishes new to the Antarctic. Communique 3. Pelagic young of flatfish (Pisces, Bothidae) off the Antarctic coast. <I>Zoologicheskii Zhurnal</I> <B>39</B>(7): 1056-1061.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/517b995d-8595-46b4-99b6-b1e57cceb7a0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Andriashev, A. P. 1980</span>
+					On the deepest occurrence of a zoarcid fish (<i>Lycenchelys atacamensis</i> sp. n.) from the Atacama Trench. <I>Zoologicheskii Zhurnal</I> <B>59</B>(7): 1105-1108.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ea1895ec-c202-4dbf-85ad-4e343021d822">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Andriashev, A. P. 1982</span>
+					A review of fishes of the genus <i>Paraliparis</i> Collett (Liparidae) from the Kerguelen area, Subantarctic. <I>Zoologicheskii Zhurnal</I> <B>61</B>(5): 716-725.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ae1fc099-9a52-4c61-afe5-3e7a19157e5e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ataev, A. M. 1970</span>
+					Description of <em>Monovitella cyclointestina </em>gen. et sp. n. and some remarks on the taxonomy of the family Halipegidae. <em>Zoologicheskii Zhurnal</em> <b>49</b>: 1465-1470.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/623b6f1d-01e3-436d-97aa-667c979da233">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Balushkin, A. V. 1989</span>
+					<i>Gvozdarus svetovidovi</i> gen. et sp. n. (Pisces, Nototheniidae) from the Ross Sea (Antarctic). <I>Zoologicheskii Zhurnal</I> <B>68</B>(1): 83-88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9ec34f87-e8e4-41f4-928d-e1e9f0822d25">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Barilo, A. B. 1991</span>
+					Two new species Cunaxidae (Acariformes) from Central Asia. <I>Zoologicheskii Zhurnal</I> <B>70</B>(9).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f4177c9a-4677-45d6-92eb-c7e3ca079d03">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Barsukov, V. V. & Yu. E. Permitin. 1958</span>
+					A new species of the genus <i>Pagetopsis</i> (family Chaenichthyidae). <I>Zoologicheskii Zhurnal</I> <B>37</B>(9): 1409-1411.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/637c4992-6848-47ba-ba18-85213fed462e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Belogurov, O. I. & L. S. Zueva. 1967</span>
+					New and rare species of helminths from the birds of the Far East. <em>Zoologicheskii Zhurnal</em> <b>46</b>: 999-1008.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9be9fca2-24e7-4738-af99-022b8663d722">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bessednov, L. N. 1966</span>
+					A new shark species from the Tonkin Gulf -- <i>Negogaleus longicaudatus</i> Bessednov sp. n. (Pisces, Carcharinidae). <I>Zoologicheskii Zhurnal</I> <B>45</B>: 302-304.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8aa835b0-5913-411c-9af7-f02bc7ba21b0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bessednov, L. N. 1966</span>
+					Electric rays of the genus <i>Narcine</i> Henle (Torpedinidae) of the Tonkin Gulf. <I>Zoologicheskii Zhurnal</I> <B>45</B>: 77-82.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e9f48bff-21cb-485f-bccc-21b191571131">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bessednov, L. N. 1967</span>
+					Sea stinging catfishes of the genus <i>Plotosus</i> Lacépède from the Tonkin Bay. <I>Zoologicheskii Zhurnal</I> <B>46</B>: 443-447.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5b402545-4839-44da-a202-13079f10d402">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Busakhin, S. V. 1981</span>
+					<i>Trachichthodes druzhinini</i> Busakhin, a new species of the family Berycidae (Osteichthyes) from the Indian Ocean. <I>Zoologicheskii Zhurnal</I> <B>60</B>(11): 1728-1731.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3d28b6bd-d24f-4238-ab4e-0323b7fe3e9e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chalikov, B. G. 1944</span>
+					A new species of the genus <i>Acipenser</i> from north Caspian Sea - <i>Acipenser primigenius</i> sp. nov. <I>Zoologicheskii Zhurnal</I> <B>23</B>(1): 47-50.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/53fd2637-173c-4455-91e5-344aa7a7d29d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chernyshev, Alexei V. 1995</span>
+					On the higher taxa of the phylum Nemertea with the taxonomic review of the subclass Anopla. <em>Zoologicheskii Zhurnal</em> <b>74</b>(1): 7-18.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9f76b0da-9ba8-44bb-9750-640fd3606b7f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Davidian, E. M. 2005</span>
+					On aphid wasps of the genus <em>Betuloxys</em> (Hymenoptera, Aphidiidae) of the fauna of Russia. <em>Zoologicheskii Zhurnal</em> <b>84</b>(6): 761-765.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/430ddb89-4592-4a6b-b405-1185da532d42">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dolganov, V. N. 1984</span>
+					A new shark from the family Squalidae caught on the Naska submarine ridge. <I>Zoologicheskii Zhurnal</I> <B>63</B>(10): 1589-1591.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e47ba4a3-6755-4b4b-b604-b59126b3af26">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dolganov, V. N. 1985</span>
+					<i>Raja (Rajella) kukujevi</i> sp. n. (Elasmobranchii, Rajidae) from the North-Atlantic Ridge. <I>Zoologicheskii Zhurnal</I> <B>64</B>(2): 304-307.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2c5b4578-12b2-4c3e-a9fd-7694ebcf40df">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dolganov, V. N. 1986</span>
+					Description of new species of sharks of the family Squalidae (Squaliformes) from the north-western part of the Pacific Ocean with remarks of validity of <i>Etmopterus frontimaculatus</i>. <I>Zoologicheskii Zhurnal</I> <B>65</B>(1): 149-153.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ac518910-a244-4e65-972f-c499ba63dc82">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dolgikh, A. V. & N. N. Naidenova. 1968</span>
+					Some comments to trematodes of the family Gorgoderidae with description of a new species. <em>Zoologicheskii Zhurnal</em> <b>47</b>: 1717-1719.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/892f9c05-de71-41ee-a340-6e874d8e4623">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dryagin, P. A. 1948</span>
+					On some morphological and biological differences between the sturgeon living in the rivers of Yakutia and Siberian sturgeon <i>Acipenser baeri</i> Brandt. <I>Zoologicheskii Zhurnal</I> <B>27</B>(6): 525-534.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/317d6da2-5a6a-4ece-beb4-fa580138b667">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fedorov, V. V. & A. V. Balushkin. 1983</span>
+					The first finding of a representative of the family Cetomimidae <i>Gyrinomimus notius</i> sp. n. (Osteichthyes, Cetomimiformes) in the Antarctic waters. <I>Zoologicheskii Zhurnal</I> <B>62</B>(5): 737-747.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/3017d5a2-c982-4efe-8711-ce9bd9c87534">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gaevskaya, A. V. 1983</span>
+					New species of trematodes from the family Lepocreadiidae, parasites of South Atlantic fish. <em>Zoologicheskii Zhurnal</em> <b>62</b>(5): 788- 791.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5a8bd277-0af5-462d-9efe-f9f56a68508b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gaevskaya, A. V. 1989</span>
+					Revision of the genus <em>Lecithophyllum </em>(Trematoda, Lecithasteridae). <em>Zoologicheskii Zhurnal</em> <b>68</b>(9): 130-134.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/551a730d-c22b-4db1-b205-3b3285a7ded8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gromov, Alexander V. 1998</span>
+					[A new family, genus and species of scorpions (Arachnida, Scorpiones) from southern Central Asia]. <em>Zoologicheskii Zhurnal</em> <b>77</b>(9): 1003-1008.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/80d6fc53-3df1-4532-a3bb-58d34234941a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Komarova, Lyudmila A. 2016</span>
+					Обзор детритниц рода <i>Leptosciarella</i> Tuomikoski 1960 (Diptera, Sciaridae) фауны Алтая с описанием трех новых видов. <em>Zoologicheskii Zhurnal</em> <b>95</b>(2): 196-203.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/74dbb3dc-f751-404a-81b4-200436dcfe98">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kononova, Svetlana V. & Victor N. Fursov. 2007</span>
+					[A review of the genera <i>Calotelea</i>, <i>Calliscelio</i>, and <i>Oxyscelio</i> (Scelioninae, Scelionidae, Proctotrupoidea) from the Palaearctic fauna]. <I>Zoologicheskii Zhurnal</I> <B>86</B>(1): 52-65.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4c49fcb6-fe19-4ca0-b891-f473e0b04173">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Korb, Stanislav. 1994</span>
+					Vertical distribution of butterflies (Lepidoptera, Rhopalocera) in Kyrghyz mountain ridge. <em>Zoologicheskii Zhurnal</em> <b>73</b>(7, 8): 123 - 129.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9c3e7a70-171c-4bd1-9a70-9d926eaf8d2b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Korb, Stanislav. 1997</span>
+					To the knowledge of faunagenesis of butterflies (Lepidoptera, Rhopalocera) of Middle Asia. <em>Zoologicheskii Zhurnal</em> <b>76</b>(9): 1046 - 1058.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0c5df5be-86e1-4e7a-b4db-cc7369570497">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. 1978</span>
+					<i>Hoplostethus</i> (<i>Hoplostethus</i>) <i>natalensis</i> sp. n. a new species of the family Trachichthyidae (Berycoidei, Beryciformes) from the south-western part of the Indian Ocean. <I>Zoologicheskii Zhurnal</I> <B>57</B>(11): 1681-1685.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2c65eb54-2aa2-4e97-bf61-8ba467742ccf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. 1980</span>
+					<i>Paratrachichthys (Aulotrachichthys) novaezelandicus</i> sp. n. (Pisces, Beryciformes, Trachichthyidae) from the New Zealand waters. <I>Zoologicheskii Zhurnal</I> <B>59</B>(2): 309-312.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/74e4d262-e1ee-44fc-8852-af7ac1d4ce4f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. 1980</span>
+					A new species of the genus <i>Hoplostethus</i> (Trachichthyidae, Beryciformes) from the north-west Pacific. <I>Zoologicheskii Zhurnal</I> <B>59</B>(7): 1054-1059.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f9003142-dbec-4f61-b329-3a70ad5096d5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. 1982</span>
+					<i>Polymixia yuri</i> sp. n. (Beryciformes, Polymixiidae) from the South-west Pacific. <I>Zoologicheskii Zhurnal</I> <B>61</B>(9): 1380-1384.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0073af13-29a2-4973-9562-d2db6cd58387">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. 1984</span>
+					A new genus and species of fishes (Beryciformes, Trachichthyidae) from the Pacific. <I>Zoologicheskii Zhurnal</I> <B>63</B>(10): 1591-1594.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/203f7743-a605-4333-b0be-16a21dbed9d1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. 1987</span>
+					A new species of the family Diretmidae (Osteichthyes, Beryciformes) from the Indo-Pacific. <I>Zoologicheskii Zhurnal</I> <B>66</B>(4): 628-630.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e38222a5-d368-4e9d-bfbd-f82235adb8a3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. 1991</span>
+					New species of genus <i>Polymixia</i> from the Sala-y-Gomes Ridge (Polymixiidae, Beryciformes). <I>Zoologicheskii Zhurnal</I> <B>70</B>(7): 83-86.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c9025591-6bdf-468b-88f3-69110f423159">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kotlyar, A. N. A. & Nik V. Parin. 1986</span>
+					Two new species of <i>Chlorophthalmus</i> (Osteichthyes, Myctophiformes, Chlorophthalmidae) from submarine mountain ridges in the south-eastern part of the Pacific Ocean. <I>Zoologicheskii Zhurnal</I> <B>65</B>(3): 369-377.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/438d25a2-888a-474e-b14e-d56e63b26008">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kovaleva, A. A. & A. V. Gaevskaya. 1974</span>
+					New representatives of the genus <em>Plagioporus </em>(Trematoda, Opecoelidae) from Antarctic fishes. <em>Zoologicheskii Zhurnal</em> <b>53</b>: 1407-1409.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/85784956-049b-4cb4-91ce-f308a797cdc9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Krivolutsky, D. A. 1966</span>
+					On the Oribatei (Acariformes) dwelling in the soils of Middle Asia. <em>Zoologicheskii Zhurnal</em> <b>45</b>(11): 1628-1639.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/311ec733-cdbf-4ce4-a6c1-e3f816f7fc0b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Nguyen T. 1978</span>
+					A new species of trematodes a parasite of mammals in North Vietnam. <em>Zoologicheskii Zhurnal</em> <b>57</b>(12): 1891-1893.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a64cde14-180b-4276-8adc-1efadc033dc8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Legalov, A. A. 2002</span>
+					Species of the genus Lasiorhynchites (Coleoptera, Rhynchitidae) from the Far East. <em>Zoologicheskii Zhurnal</em> <b>81</b>(12): 1523–1525.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/283c779b-e8be-461b-9ce6-ef8abd6c1dc7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lelej, Arkady S. 1979</span>
+					[A new genus of velvet ants (Hymenoptera, Mutillidae) from south-east Asia]. <em>Zoologicheskii Zhurnal</em> <b>58</b>(7): 1065–1067.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d29e10c8-a04e-4eeb-b084-9cf007864f90">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lelej, Arkady S. 1981</span>
+					[Velvet ants of the subfamilies Kudakrumiinae and Myrmosinae (Hymenoptera, Mutillidae) of the Palaearctic fauna]. <em>Zoologicheskii Zhurnal</em> <b>60</b>(3): 371–379.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fe104e09-fdf3-4181-a7a8-8f3675b5bfc3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lelej, Arkady S. 1984</span>
+					[A new genus of wasps (Hymenoptera, Mutillidae, Myrmosinae) with Indo-Malayan-North-African range]. <em>Zoologicheskii Zhurnal</em> <b>63</b>(9): 1432–1433.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/42807535-6bc3-4b18-8dd5-0eccdf366d29">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lutaenko, Konstantin. 1993</span>
+					[A new species of the genus <em>Anadara</em> (Bivalvia, Arcidae) from the South China Sea]. <em>Zoologicheskii Zhurnal</em> <b>72</b>(11): 140-143.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/74259543-2572-4a04-8224-fa450ef52ce0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Maksimov, V. P. & P. T. Hognestad. 1969</span>
+					On <i>Pterycombus brama</i> Fries and its southern subspecies <i>P. b. thynniculina</i> ssp. n. <I>Zoologicheskii Zhurnal</I> <B>48</B>(6): 860-863.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/08ae8ceb-38e6-464f-98c8-d068cc275dff">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mandrytsa, S. A. 1991</span>
+					New species of the genus <i>Eumicrotremus</i> (Pisces, Cyclopteridae) from the Sea of Okhotsk. <I>Zoologicheskii Zhurnal</I> <B>70</B>(7): 148-151.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f027d736-dad7-47f1-8f57-ff8c85d3b7e7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mandrytsa, S. A. 1991</span>
+					New species of the genus <i>Inimicus</i> (Scorpaeniformes, Synanceiidae) from the Coral Sea. <I>Zoologicheskii Zhurnal</I> <B>70</B>(1): 151-154.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cd97512d-0d39-4468-bc92-61b58a28bad0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Marti, V. J. 1940</span>
+					Systematics and biology of the Russian sturgeon of the Caucasian coast of the Black Sea. <I>Zoologicheskii Zhurnal</I> <B>19</B>(6): 865-872.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1f032b64-88d2-4715-859c-338b4b8d9169">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Medvedev, Lev & Alexandr B. Ryvkin. 1989</span>
+					Новые виды Rhagonycha (Coleoptera, Cantharidae) Сибири и Дальнего Востока. <em>Zoologicheskii Zhurnal</em> <b>68</b>(10): 138-141.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f7ae4325-ea2b-457a-95a1-362e2e6cc4cd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Meissner, E. E. 1987</span>
+					A new species of ray (Rajidae, Batoidei) from the Indian Ocean sector of the Antarctic. <I>Zoologicheskii Zhurnal</I> <B>66</B>(12): 1840-1849.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0b6ff70a-48dc-42bf-b0bf-d02bef7b61ca">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Minichev, YU. S. 1966</span>
+					Morphological peculiarities of abyssal Cephalaspidea (Gastropoda, Opisthobranchia). <em>Zoologicheskii Zhurnal</em> <b>45(4)</b>: 509-517.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a8b23158-2859-46d8-995a-4a4558434489">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Molodtsova, Tina N. 2001</span>
+					Cerianthids (Anthozoa, Cnidaria) from Bengual upwelling region. 3. Botrucnidifer shtockmani. <em>Zoologicheskii Zhurnal</em> <b>80</b>: 1027–1037.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f11f4732-5c5a-4a8d-bdde-13d8888b11dc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Molodtsova, Tina N. 2001</span>
+					Cerianthids (Anthozoa, Cnidaria) of the region of Bengual upwelling 1I. Ceriantheopsis nikitai n.sp. <em>Zoologicheskii Zhurnal</em> <b>80</b>: 773-780 .</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/19c94262-7563-42c8-8d9b-3a53d8cc27d2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Molodtsova, Tina N. 2001</span>
+					Cerianthids (Anthozoa, Cnidaria) of the region of Bengual upwelling 2II. Cerianthus malakhovi n.sp. and composition of the genus Cerianthus. <em>Zoologicheskii Zhurnal</em> <b>80</b>: 909-920.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0a9dea20-edc1-4b31-8ebe-b76e7b7b8a17">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mordvinova, T. N. 1989</span>
+					A new trematoda species <em>Nematobothrium atlanticus </em>(Didymozoidae), a parasite of flying fish. <em>Zoologicheskii Zhurnal</em> <b>68</b>(11): 135-137.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6b7646fd-e097-48c6-92f4-f217c1501841">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mordvinova, T. N. & V. M. Nikolaeva. 1991</span>
+					A new species - <em>Didymozoon musculi </em>sp. n. (Trematoda, Didymozoidae) from the musculature of <em>Platycephalus pristis</em>. <em>Zoologicheskii Zhurnal</em> <b>70</b>(6): 128-130.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/debd7ab3-338b-4d68-8128-2c27772f1b73">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nekrasov, V. V. 1966</span>
+					A new subspecies of jackmackerel (<i>Trachurus mediterraneus indicus</i> Necrassov subsp. n.) from the Indian Ocean. <I>Zoologicheskii Zhurnal</I> <B>45</B>: 141-144.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/891aa72f-24d8-4607-ba36-a094ff074559">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nikolaeva, V. M. & A M. Parukhin. 1970</span>
+					A new genus of trematodes from the family Didymozoidae in the Red Sea fishes. <em>Zoologicheskii Zhurnal</em> <b>48</b>: 1247-1249.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d9e3a750-9013-4e2b-aa6f-c34bdf05ca1d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nikolaeva, V. M. & A. V. Gaevskaya. 1985</span>
+					A new species of the genus <em>Gonapodasmius </em>(Trematoda, Didymozoidae) from a new for the family host. <em>Zoologicheskii Zhurnal</em> <b>64</b>(3): 444-446.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/63b4ed3c-9619-4f9c-8294-ee44c86038d2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nikolaeva, V. M. & T. N. Mordvinova. 1988</span>
+					<em>Skrjabinozoum delamurei </em>sp. n. (Trematoda, Didymozoidae) from <em>Cubicers </em>[<em>Cubiceps</em>] <em>pauciradiatus</em> (Nomeidae) of east Atlantic. <em>Zoologicheskii Zhurnal</em> <b>67</b>(8): 1238-1239.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1d06f92b-8694-48e3-9914-6a987046bf10">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oshmarin, P. G. 1964</span>
+					Some new for science species and genera of trematodes from birds of the Democratic Republic of Vietnam. <em>Zoologicheskii Zhurnal</em> <b>43</b>: 652-661.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dce03368-fbfe-4186-b844-14204cdd9dfa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oshmarin, P. G. & A M. Parukhin. 1960</span>
+					The helminth fauna of <em>Pandion haliaetus </em>as an example of how the helminth fauna of animals if formed. <em>Zoologicheskii Zhurnal</em> <b>39</b>(9): 1303-1311 .</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d15516ac-f29e-4c98-9aee-836f20c6eed0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oshmarin, P. G. & Y. L. Mamaev. 1963</span>
+					A new subfamily of the trematodes with the closing mechanism of bursa from a fish caught in the South-Chinese Sea. <em>Zoologicheskii Zhurnal</em> <b>42</b>: 665-668.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6a872d99-1d0b-410a-aebb-9d64a8e59fea">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parin, Nik V. 1958</span>
+					A new species of flying fish from the western part of the Pacific Ocean, <i>Cypselurus vitiazi</i> Parin, sp. n. (Pisces, Exocoetidae). <I>Zoologicheskii Zhurnal</I> <B>37</B>(9): 1412-1416.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/77abf0a9-59e2-48c8-8a1f-0c8cbe216697">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parin, Nik V. 1982</span>
+					New species of the genus <i>Draconetta</i> and a key for the family Draconettidae (Osteichthyes). <I>Zoologicheskii Zhurnal</I> <B>61</B>(4): 554-563.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/df8fb363-04ad-430f-a3d8-ee4341c6bacc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parin, Nik V. 1983</span>
+					<i>Noemacheilus (Troglocobitis) starostini</i> sp. n. (Osteichthyes, Cobitidae), a new blind fish from subterraneous waters of Kugitangtau (Turkmenia). <I>Zoologicheskii Zhurnal</I> <B>62</B>: 83-89.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f82fb932-8cae-4089-897a-b5ec3c374895">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parin, Nik V. 1983</span>
+					<i>Noemacheilus</i> (Troglocobitis) Starostini sp. n. (Osteichthyes, Cobitidae) a new blind fish from subterranean waters of Kugitangtau (Turkmenia). <I>Zoologicheskii Zhurnal</I> <B>62</B>(1): 83-89.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6d8fd96c-55dd-4318-960d-15ea243f91ba">	
+										
+					
+					<span class="biblio-authors">Parin, Nik V. 1989</span>
+					<i>Zenopsis oblongus</i> sp. n. (Osteichthyes, Zeidae) from the Nuska Ridge. <I>Zoologicheskii Zhurnal</I> <B>68</B>(4): 150-153.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/806ba9ba-519c-49cc-932c-339351033e31">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parin, Nik V. & A. N. A. Kotlyar. 1984</span>
+					A new species of the family Aulopidae (Myctophiformes, Osteichthyes) from the east Pacific. <I>Zoologicheskii Zhurnal</I> <B>63</B>(9): 1435-1437.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/986c1349-6741-4ea2-8c5a-eed21ce9c376">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parin, Nik V. & Emma S. Karmovskaya. 1985</span>
+					Two new species of nettastomid eels (Nettastomatidae, Anguilliformes) from submarine mountains of the south-eastern Pacific. <I>Zoologicheskii Zhurnal</I> <B>64</B>(10): 1524-1530.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/344d4084-b019-473f-98b8-92831271670a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parukhin, A M. 1966</span>
+					Some new trematode species from the marine fish of the Tonkin Gulf. <em>Zoologicheskii Zhurnal</em> <b>45</b>: 1462-1466.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1407bbf6-3283-4c6a-9ffb-cf6a4cadd92a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parukhin, A M. 1977</span>
+					<em>Yamagutiplectognathotrema </em>nom.nov., a new name for <em>Plectognathotrematoides </em>Yamaguti 1971 (Digenea). <em>Zoologicheskii Zhurnal</em> <b>56</b>(3): 459.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e8e973da-c7b7-4e47-9c68-0560148cfa98">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parukhin, A M. 1983</span>
+					New species of trematodes from commercial fishes of the Indian Ocean. <em>Zoologicheskii Zhurnal</em> <b>62</b>(7): 1106-1108.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0103a2d6-f49f-4cbb-b088-c449acbd8e61">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parukhin, A M. & V. M. Nikolaeva. 1967</span>
+					<em>Profundiella alepisauri </em>sp. n. - a new trematode from a fish caught in the Gulf of Mexico. <em>Zoologicheskii Zhurnal</em> <b>46</b>: 757-759.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/90b35a5d-78ee-4221-b8c3-7e632c92c079">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parukhin, A M. & V. N. Lyadov. 1979</span>
+					New genus and species of trematodes, fish parasites in the Subantarctic zone of the Indian Ocean. <em>Zoologicheskii Zhurnal</em> <b>58</b>: 637-642.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/880800eb-a75c-4d1b-a218-6413bb9946ac">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pavlov, P. I. 1956</span>
+					Comparison between the Danubian and Dneprovian bream. <I>Zoologicheskii Zhurnal</I> <B>35</B>: 891-896.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/da8c80f3-e6b8-4fb1-98d1-880161383b84">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pavlov, P. I. 1961</span>
+					Morphometric characteristics of the Dnepr Sea roach and its economical importance. <I>Zoologicheskii Zhurnal</I> <B>40</B>: 244-250.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c6cf249a-4632-4c0d-a748-763426665f23">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinchuk, V. I. 1978</span>
+					A new species of goby from the western part of the Black Sea, <i>Knipowitschia geoghievi</i> Pinchuk, sp. n. (Gobiidae, Pisces). <I>Zoologicheskii Zhurnal</I> <B>57</B>(5): 796-799.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2091c671-035d-463e-ac07-b98099ac9ebf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinchuk, V. I. & D. B. Rahimov. 1979</span>
+					<i>Benthophilus svetovidovi</i> Pinchuk & Rahimov, sp. n. (Pisces, Gobiidae) from the Caspian Sea and a key of species of the genus <i>Benthophilus</i>. <I>Zoologicheskii Zhurnal</I> <B>58</B>(4): 515-519.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2cae29f8-db78-4dc1-bca7-494b2d44d3d0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Poltarukha, Oleg. 1997</span>
+					Composition, phylogeny and position in system of the barnacle subfamily Euraphiinae (Crustacea, Chthamalidae). <em>Zoologicheskii Zhurnal</em> <b>76</b>(10): 1109-1117.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/04ac8944-b410-41a9-9147-43929cef4c6e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pozdnyakov, S. E. 1990</span>
+					Revision of the genus <em>Didymocystis </em>and validation of the genus <em>Didymosulcus </em>gen. n. (Trematoda, Didymozoidae). <em>Zoologicheskii Zhurnal</em> <b>69</b>(12): 5-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f2e4fce6-9fa8-4b5e-bbd9-dc888b6a51f7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pozdnyakov, S. E. & V. A. Gordeev. 1993</span>
+					<em>Didymophaselus allothunni </em>gen. n., sp. n. (Trematoda, Didymozoidae) a parasite of scombroid fish <em>Allothunnus fallai </em>from the subtropical southern Pacific. <em>Zoologicheskii Zhurnal</em> <b>72</b>(11): 147-151.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0a21f3b6-f9a1-4272-9884-e1e0ca51fb4e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Prokofiev, Artem M. 2008</span>
+					New species and new records of lizardfishes of the genus <em>Synodus</em> (Teleostei, Synodontidae) from the western Indian Ocean. <em>Zoologicheskii Zhurnal</em> <b>84</b>(4): 424-435.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6421c7fd-2a3a-453c-9a91-6486ddb3d8e8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ragimov, D. B. 1976</span>
+					<i>Benthophilus mahmudbejovi</i> sp. nov. (Pisces, Gobiidae) from the Caspian Sea. <I>Zoologicheskii Zhurnal</I> <B>55</B>(8): 1196-1200.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0a1fbb3c-1922-4380-9f34-b730fb794e77">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rahimov, D. B. 1982</span>
+					New subspecies of Caspian gobies (Gobiidae, <i>Benthophilus</i>). <I>Zoologicheskii Zhurnal</I> <B>61</B>(1): 47-55.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/94bc1e1b-1590-49a3-ba29-606f74d35da5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rass, T. S. 1961</span>
+					<i>Prososcopa stilbia</i> Rass, gen. n., sp. n.--a new deep sea fish from the Indian Ocean. <I>Zoologicheskii Zhurnal</I> <B>40</B>(12): 1858-1861.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/55d88f36-c385-4787-a5f9-8366b3b5c467">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rass, T. S. 1962</span>
+					<i>Prososcopa stilbia</i> Rass, 1961, equals <i>Xenophthalmichthys danae</i> Regan, 1925 (Xenophthalmichthyidae, Pisces). <I>Zoologicheskii Zhurnal</I> <B>42</B>(10): 1578-1579.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/32576002-558d-4f74-86de-b90f8eeb6c70">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ryvkin, Alexandr B. 1985</span>
+					<em>Stenus</em> (<em>Hemistenus</em>) <em>flavipes</em> (Coleoptera, Staphylinidae) и близкие виды фауны Палеарктики. <em>Zoologicheskii Zhurnal</em> <b>64</b>(6): 851-856.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/61225747-ab7a-4d42-bc72-e0dacff57de3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ryvkin, Alexandr B. 1989</span>
+					Статус <em>Lathrobium </em>(s. str.) <em>concolor </em>(Coleoptera, Staphylinidae) и два новых вида из Восточной Азии. <em>Zoologicheskii Zhurnal</em> <b>68</b>(7): 81-88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/97693dd3-fd0a-40eb-bd23-b73b0fd7afba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sazonov, Yu. I. 1981</span>
+					<i>Idiolophorhynchus andriashevi</i> gen. et sp. n. (Osteichthyes, Macrouridae) from the Australia-New Zealand region. <I>Zoologicheskii Zhurnal</I> <B>60</B>(9): 1357-1363.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5b234667-2126-4fad-bc09-7348b193ef3f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sazonov, Yu. I. 1986</span>
+					<i>Physiculus cynodon</i> sp. n. (Gadiformes, Moridae) from submarine mountains in the northern part of the Pacific Ocean. <I>Zoologicheskii Zhurnal</I> <B>65</B>(2): 305-308.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f1ecabce-27c3-4541-ba43-1237316c494a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sazonov, Yu. I. 1988</span>
+					New species <i>Bajacalifornia</i> (Salmoniformes, Alepocephalidae) from Indo-West-Pacific. <I>Zoologicheskii Zhurnal</I> <B>67</B>(10): 1593-1596.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3d72cb1c-c72d-416b-aa40-a947a700c657">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sazonov, Yu. I. & Yu. N. Shcherbachev. 1986</span>
+					A new species of the genus <i>Tripterophycis</i> (Gadiformes, Moridae) from the Thalassobathyal Zone of the Southern Hemisphere. <I>Zoologicheskii Zhurnal</I> <B>65</B>(7): 1099-1103.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d4a04366-7b38-4c82-b738-f21c77400fd1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shiganova, T. A. 1989</span>
+					A new species of the genus <i>Parataeniophorus</i> (Osteichthyes, Mirapinnidae) from the north--eastern part of the Atlantic Ocean. <I>Zoologicheskii Zhurnal</I> <B>68</B>(3): 147-150.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4add6b06-cb11-4f2d-aebc-7ecd30e76ddd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sidorov, D. A. 2006</span>
+					A new species of the genus <em>Pseudocrangonyx</em> (Crustacea, Amphipoda, Pseudocrangonyctidae) from Primorye region (Russia). <em>Zoologicheskii Zhurnal</em> <b>85</b>(12): 1486–1494.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ed0a8041-fc36-4177-a784-a951d1969fb2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sokolov, S. G. & I. I. Gordeev. 2015</span>
+					<em><em>Paralepidapedon </em>variabile</em> sp. n. (Trematoda, Lepocreadioidea, Lepidapedidae) and other representatives of the genus <em>Paralepidapedon </em>from Antarctic fish. <em>Zoologicheskii Zhurnal</em> <b>94</b>(7): 756-763.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ae3499ea-01b3-4c7a-b005-e4191ea254ba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sokolov, S. G. & I. I. Gordeev. 2015</span>
+					PARALEPIDAPEDON VARIABILE SP. N. (TREMATODA, LEPOCREADIOIDEA, LEPIDAPEDIDAE) AND OTHER REPRESENTATIVES OF THE GENUS PARALEPIDAPEDON FROM ANTARCTIC FISH. <em>Zoologicheskii Zhurnal</em> <b>94</b>(7): 756-763.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/026a5b2f-ba64-4350-bd89-599a3980cf4a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Svetovidov, A. N. 1958</span>
+					[The species composition of the Blenniidae of the Black Sea]. <I>Zoologicheskii Zhurnal</I> <B>37</B>(4): 584-593.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ceb51089-3b2c-42b1-ba5d-3e5a7de0f489">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Svetovidov, A. N. 1969</span>
+					On the systematic position of <i>Euclichthys</i> (Pisces, Gadiformes). <I>Zoologicheskii Zhurnal</I> <B>48</B>(12): 1824-1831.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5dfa3a52-1abc-4941-9ddc-16f4182e7deb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tkachuk, L. P. 1979</span>
+					New species of trematodes from the deepwater Zeidae of the Indian and Atlantic Oceans. <em>Zoologicheskii Zhurnal</em> <b>58</b>(9): 1290-1295.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/982fa52c-ee85-462e-8d66-9c4b3c97aa2e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Treshchev, V. V. 1968</span>
+					The new campulid <em>Orthosplanchus albamarinus </em>sp. n. (Trematoda, Campulidae)-parasite of the white whale. <em>Zoologicheskii Zhurnal</em> <b>47</b>: 937-940.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ef5547e0-8670-4517-b8c1-a03dbc9d0884">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tshernyshev, Sergei E. 1996</span>
+					A new species of lycidbeetles (Coleoptera, Lycidae) from the Russian Far East. <em>Zoologicheskii Zhurnal</em> <b>75</b>(7): 1092-1095.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/44f3190a-ac72-4bd5-afbf-9c4398924d75">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vasil'yeva, E. D. & V. P. Vasil'ev. 1985</span>
+					<i>Cobitis lebedevi</i> sp. n. (Osteichthyes, Cobitidae) from the Amur Basin. <I>Zoologicheskii Zhurnal</I> <B>64</B>(3): 463-468.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b9b44e87-6e01-4fa0-a853-ef59a62f21f2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Veselova, Elena M. 1981</span>
+					О некоторых представителях рода <em>Tachinus </em>(Coleoptera, Staphylinidae) из Китая. <em>Zoologicheskii Zhurnal</em> <b>60</b>(11): 1724-1726.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a9386281-c506-47ea-b0d6-de23465540b7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vinarski, Maxim V. & Dmitry M. Palatov. 2019</span>
+					A survey of the Belgrandiella-like gastropods of the Northern Black Sea Region (Mollusca, Gastropoda, Hydrobiidae s.l.): Morphological variability and morphospecies. <em>Zoologicheskii Zhurnal</em> <b>98</b>(9): 988-1002.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2be54149-f6ee-4a5e-b232-eced23145c6f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Voskoboinikova, O. S. 2000</span>
+					Comparative osteology of <i>Dacodraco hunteri</i> and its position within the family Channichthyidae (Notothenioidei). <I>Zoologicheskii Zhurnal</I> <B>79</B>(3): 321-332.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6dce459a-bb58-4fb5-87a9-1b7c24008277">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zarenkov, Nikolai A. 1965</span>
+					Revision of the genera <em>Crangon </em>Fabricius and <em>Sclerocrangon </em>G. O. Sars (Decapoda, Crustacea). <em>Zoologicheskii Zhurnal</em> <b>44</b>(12): 1761–1775.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b755f26b-b545-4672-aca2-290d3ae0a230">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zevina, G. B. 1973</span>
+					Scalpellidae (Cirripedia) from the Indian Ocean. 1. Species of the subgenera <em>Scalpellum</em> and <em>Arcoscalpellum</em> of the genus <em>Scalpellum</em>. <em>Zoologicheskii Zhurnal</em> <b>52</b>(6): 842-848.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/735ea6b5-925a-4deb-9227-944fd0a9af02">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zevina, G. B. 1976</span>
+					Abyssal species of barnacles (Cirripedia, Thoracica) of the North Atlantic. <em>Zoologicheskii Zhurnal</em> <b>55</b>(8): 1149-1156.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d627b899-22e9-4e08-9a13-eed2ae3e8226">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zevina, G. B. 1980</span>
+					A new classification of the Lepadomorpha (Cirripedia). <em>Zoologicheskii Zhurnal</em> <b>59</b>(5): 689-698.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/58da7809-ef6a-41fc-828b-a5e4542bc010">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zevina, G. B. 1987</span>
+					Deep-sea Verrucomorpha (Cirripedia, Thoracica) of the Paciﬁc. 1. The North Paciﬁc. <em>Zoologicheskii Zhurnal</em> <b>66</b>(12): 1812-1821.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/217366f2-7056-4136-a0de-e779a7cd2a07">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zevina, G. B. & S. V. Galkin. 1989</span>
+					New species of cirripeds (Cirripedia, Thoracica) from thermal waters. <em>Zoologicheskii Zhurnal</em> <b>68</b>(3): 134-136.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d6de4de0-766f-4f36-840a-b23e6f6a9f23">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhokhov, A. E. & M. N. Pugacheva. 1998</span>
+					<em>Crepidostomum oschmarini </em>sp. n. (Trematoda, Binoderidae [Bunoderidae]) of <em>Nemachelius </em>[<em>Nemacheilus</em>] <em>barbatulus </em>(Cobitidae) from the Upper Volga River basin. <em>Zoologicheskii Zhurnal</em> <b>77</b>(11): 1329-1331.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cd457c59-e0dc-48ce-9768-9b359176d219">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhukov, E. V. 1957</span>
+					New genera and species of trematodes parasites of fish in the Far-Eastern seas. <em>Zoologicheskii Zhurnal</em> <b>36</b>: 840-846.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7917c937-f902-491e-803d-e9c1d5c0174a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhukova, E. V. 1934</span>
+					Eine neue Trematodenform der Hausente. <em>Zoologicheskii Zhurnal</em> <b>13</b>(1): 148-149.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9ec6e315-65fd-44cc-8b8d-9e111621ac58">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zueva, L. S. & O. I. Belogurov. 1965</span>
+					A new trematode species from <em>Squatarola squatarola </em>from the Far East. <em>Zoologicheskii Zhurnal</em> <b>44</b>: 1722-1723.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">94 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=zh-cn">中文</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=nl">Nederlands</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=en-us">English</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=fr">Français</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=de">Deutsch</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=it">Italiano</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=ja">日本語</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=pt">Português</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=ru">Русский</a>&nbsp;<a href="/References/61bda2d4-7d0b-4079-8a4e-9a1e51808231?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

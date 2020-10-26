@@ -1,0 +1,1376 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoologica Scripta
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 11 April 2009, 11:02:35.743 by Sven O. Kullander",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:A2F794AA-2039-4F44-8B5C-30916460A731</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:A2F794AA-2039-4F44-8B5C-30916460A731" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:A2F794AA-2039-4F44-8B5C-30916460A731" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								 | 
+								
+									
+										<img src="http://zoobank.org/images/CASicon.jpg" title="CAS-Journals: ZS" alt="Eschmeyer Journal Abbreviations" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+							
+							
+								
+									
+								
+							
+                    
+				
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+				
+				
+				
+					
+						
+						
+						
+						
+					
+				
+				
+				
+				
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoologica Scripta<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN<span style="font-size:smaller;">&nbsp;(Print)</span>:</th>
+                    <td>0300-3256</td>
+                </tr>
+                
+                    <tr>
+                        <th scope="row" class="entry_label"><span style="font-size:smaller;">(Online)</span>:</th>
+                        <td>1463-6409</td>
+                    </tr>	
+                
+                
+                <tr><th scope="row" class="entry_label">Online&nbsp;Archives:</th><td> British Library Online Archive (added: Mar 27 2019 10:38AM UTC)  [<a href="http://www.bl.uk/aboutus/legaldeposit/websites/elecpubs/" target="_blank">http://www.bl.uk/aboutus/legaldeposit/websites/elecpubs/</a>] </td></tr>
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td></td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (79) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f7ca20b4-6bad-4899-8704-00a3c2ff33eb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Amon, Diva J., Helena Wiklund, Thomas G. Dahlgren, Jonathan T. Copley, Craig R. Smith, Alan J. Jamieson & Adrian G. Glover. 2014</span>
+					Molecular taxonomy of <em>Osedax </em>(Annelida: Siboglinidae) in the Southern Ocean. <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c6fa1f0c-0455-449d-9cac-c081557713f4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Anderson, G. R. & Thomas H. Cribb. 1994</span>
+					Five new didymozoid trematodes (Platyhelminthes, Digenea) from Australian platycephalid fishes. <em>Zoologica scripta</em> <b>23</b>(2): 83-93.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0407e571-4836-4c80-8dee-3d4a9c3b2335">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Arias, Federico J. 2018</span>
+					Diversity of teiid lizards from Gran Chaco and Western Cerrado (Squamata: Teiidae). <em>Zoologica Scripta</em> <b>47</b>(2): 144-158.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/259c041a-abc4-4676-b693-753484319a73">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Barco, Andrea, Stefano Schiaparelli, Roland Houart & M. Oliverio. 2012</span>
+					Cenozoic evolution of Muricidae (Mollusca, Neogastropoda) in the Southern Ocean, with the description of a new subfamily. <em>Zoologica scripta</em> <b>41</b>(6): 596-616.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/af872e68-415c-4440-812c-0f68a584755a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Basibuyuk, Hasan H., Alexandr P. Rasnitsyn, Cees V. Achterberg, Michael G. Fitton & Donald L. J. Quicke. 1999</span>
+					A new, putatively primitive Cretaceous fossil braconid subfamily from New Jersey amber (Hymenoptera, Braconidae). <em>Zoologica scripta</em> <b>28</b>(1/2): 211-214.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d366abb5-efa0-42aa-8e56-12e8030daf34">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bilqees, Fatima M. 1978</span>
+					<em>Tergestia karachiense </em>sp. n. (Trematoda, Fellodistomidae) from the fish <em>Stromateus sinensis </em>of the Karachi coast. <em>Zoologica scripta</em> <b>7</b>(4): 255-256.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3793cf39-6a43-482d-981a-6f7c7c94796a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bilqees, Fatima M. 1980</span>
+					Three trematodes including two new species from fishes of the Karachi coast. <em>Zoologica scripta</em> <b>9</b>(22): 89-91.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b577fb97-dde4-40e4-bbf9-d4d392ccc35b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bonato, Lucio, Francesca Bortolin, Leandro Drago, Orlando Marco & László Dányi. 2017</span>
+					Evolution of <em>Strigamia </em>centipedes (Chilopoda): a first molecular assessment of phylogeny and divergence times. <em>Zoologica scripta</em> <b>46</b>(4): 486–495; [1-15](Appendix S1); Tabs S1-S2; Figs S1-S4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8203a0c4-fc22-4491-9607-541051313d59">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Borda, Elizabeth, Jerry D. Kudenov, Christina Bienhold & Greg W. Rouse. 2012</span>
+					Towards a revised Amphinomidae (Annelida, Amphinomida): description and affinities of a new genus and species from the Nile Deep-sea Fan, Mediterranean Sea. <em>Zoologica Scripta</em> <b>41</b>(3): 307-325.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/23135d31-b30d-4b9b-bae7-bba929d02bd3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Brandt, Angelika. 1992</span>
+					New Asellota from the Antarctic deep sea (Crustacea, Isopoda, Asellota), with descriptions of two new genera. <I>Zoologica scripta</I> <B>21</B>(1): 57–78.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b73b6b75-28e5-403b-a115-e88360729c08">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bussau, Christian. 1992</span>
+					New deep-sea Tardigrada (Arthrotardigrada, Halechiniscidae) from a manganese nodule area of the eastern South Pacific. <em>Zoologica scripta</em> <b>21</b>: 79-91.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c9e06103-0179-4739-af18-a159097a3902">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carbayo, Fernando, Marta Alvarez-Presas, C. U. T. Olivares, Fernando P. de Luna Marques, Eudóxia M. Froehlich & Marta Riutort. 2013</span>
+					Molecular phylogeny of Geoplaninae (Platyhelminthes) challenges current classification: Proposal of taxonomic actions. <em>Zoologica Scripta</em> <b>42</b>: 508.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/01db01a5-af03-475e-978d-be4be2ed7989">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carneiro, L. S., Gustavo A. Bravo & Alexandre Aleixo. 2020</span>
+					Phenotypic similarity leads to taxonomic inconsistency: A revision of the lowland's antpittas - supplementary materials. <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bdd3a461-3253-492c-91f0-c76d2901ff5f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Carneiro, Lincoln S., Gustavo A. Bravo & Alexandre Aleixo. 2018</span>
+					Phenotypic similarity leads to taxonomic inconsistency: A revision of the lowland's antpittas. <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/98beb93f-addd-47e7-9da8-3a5b5d97a907">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Criscione, Francesco & Frank Köhler. 2013</span>
+					Conserved shell disguises diversity in Mesodontrachia land snails from the Australian Monsoon Tropics (Gastropoda: Camaenidae). <em>Zoologica scripta</em> <b>42</b>(4): 389–405.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/27f59ad0-917f-4b87-bb59-51938a7c28a0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dawson, Charles E. 1982</span>
+					Descriptions of <i>Cosmocampus retropinnis</i> sp. n., <i>Minyichthys sentus</i> sp. n. and <i>Amphelikturus</i> sp. (Pisces, Syngnathidae) from the eastern Atlantic region. <I>Zoologica Scripta</I> <B>11</B>(2): 135-140.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c24bbfca-eb8c-4d72-9e48-a3e5c89c6521">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Decraemer, Wilfrida & Nicole Gourbault. 1997</span>
+					Deep-sea nematodes (Nemata, Prochaetosomatinae): new taxa from hydrothermal vents and a polymetallic nodule formation of the Pacific (East Rise; North Fiji and Lau Basins; Clarion-Clipperton fracture zone). <em>Zoologica Scripta</em> <b>26</b>(1): 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2ae48769-9332-4970-bf2d-ca031bad6210">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Delić, Teo, Vid Švara, Charles O. Coleman, Peter Trontelj & Cene Fišer. 2017</span>
+					The giant cryptic amphipod species of the subterranean genus Niphargus (Crustacea, Amphipoda). <em>Zoologica scripta</em> <b>46</b>: 740–752.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a4dbd8f3-2dca-4a33-b8a9-7128ec8c0337">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Delicado, Diana, A. Machordom & Marian A. Ramos. 2015</span>
+					Effects of habitat transition on the evolutionary patterns of the microgastropod genus Pseudamnicola (Mollusca, Hydrobiidae). <em>Zoologica Scripta</em> <b>44</b>: 403-417.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/237d0e8b-1239-401d-96c7-9f7935f353d7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fang, Fang, Michael Norén, Te Y. Liao, Mari Källersjö & Sven O. Kullander. 2009</span>
+					Molecular phylogenetic interrelationships of the south Asian cyprinid genera Danio, Devario and Microrasbora (Teleostei, Cyprinidae, Danioninae). <em>Zoologica Scripta</em> <b>38</b>(3): 237–256.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b03e9fa9-9434-4f16-94c8-b571902404bc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fischthal, Jacob H. 1977</span>
+					Some digenetic trematodes of marine fishes from the Barrier Reef and Reef Lagoon of Belize. <em>Zoologica scripta</em> <b>6</b>: 81-88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dd4dd5de-a4e2-4ceb-8659-682c101ca272">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fischthal, Jacob H. 1980</span>
+					Some digenetic trematodes of marine fishes from Israel's Mediterranean coast and their zoogeography, especially those from Red Sea immigrant fishes. <em>Zoologica scripta</em> <b>9</b>: 11-23.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7e004566-3173-48d9-b506-9c4c80e76a0f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fischthal, Jacob H. & Robert E. Kuntz. 1981</span>
+					Additional records of digenetic trematodes of birds from Taiwan. <em>Zoologica Scripta</em> <b>10</b>(4): 241-249.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b9e50b12-d22c-46f2-8e8b-45decc0689ba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fischthal, Jacob H. & Robert E. Kuntz. 1981</span>
+					Additional records of Trematodes of amphibians and reptiles from Taiwan. <em>Zoologica Scripta</em> <b>10</b>: 161-166.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/58af8bbd-7a7b-4a9e-a1be-570f5b2f3bf1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Foissner, Wilhelm & Hans Adam. 1983</span>
+					Morphologie und morphogenese des bondenciliaten Oxytricha granulifera sp. n. (Ciliophora, Oxytrichidae). <em>Zoologica scripta</em> <b>12</b>(1): 1-11.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/d858aedb-6ff4-4665-84f4-e78ddaca27c7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gąsiorek, Piotr & Łukasz Michalczyk. 2020</span>
+					Phylogeny of Itaquasconinae in light of the evolution of the flexible pharyngeal tube in Tardigrada. <em>Zoologica Scripta</em> <b>49</b>(4): 499–515.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2a6b089d-8704-4f64-973d-09b9da34a346">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gjøsaeter, J. 1989</span>
+					<i>Diaphus pallidus</i> sp. n., a new lanternfish from the Gulf of Aden (Pisces, Myctophidae). <I>Zoologica Scripta</I> <B>18</B>(4): 537-539.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9859674f-2e8a-420f-a95e-f115e6a12a19">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Harrison, K. 1987</span>
+					Deep-sea asellote isopods of the north-east Atlantic: the family Thambematidae. <em>Zoologica scripta</em> <b>16</b>(1): 51–72.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/28d9f304-f4dd-47f5-a36a-2e15f53ac91e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hawlitschek, Oliver & Frank Glaw. 2012</span>
+					The complex colonization history of nocturnal geckos (<i>Paroedura</i>) on the Comoros Archipelago. <em>Zoologica scripta</em> <b>42</b>: 135-150.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b44b62ce-09bc-48be-8f63-be8e0b258fc9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Henschel, Elisabeth, José L. Mattos, Axel M. Katz & Wilson J. E. M. Costa. 2017</span>
+					Position of enigmatic miniature trichomycterid catfishes inferred from molecular data (Siluriformes). <em>Zoologica scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/82edc813-9bce-4c26-a36c-70ed4cee8776">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Holmquist, C. 1978</span>
+					Revision of the genus <em>Peloscolex</em> (Oligochaeta, Tubificidae). 1. Morphological and anatomical scrutiny; with discussion on the generic level. <em>Zoologica scripta</em> <b>7</b>: 187-208.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ed2bb873-a8fd-4c3a-92d2-28ce30f403e1">	
+										
+					
+					<span class="biblio-authors">Humes, Arthur G. 1984</span>
+					Harpacticoid copepods associated with cnidarians in the tropical Pacific Ocean. <I>Zoologica Scripta</I> <B>13</B>(3): 209-221.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d562dc09-3385-41ea-b190-9d5a069a8ba3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kånneby, Tobias, David. C. Bernvi & Ulf Jondelius. 2015</span>
+					Distribution, delimitation, and description of species of <em>Archaphanostoma</em> (Acoela). <em>Zoologica Scripta</em> <b>44</b>(2): 218–231.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d9857318-101d-4df2-a785-59ecfc2345cb">	
+										
+					
+					<span class="biblio-authors">Karling, T. G., Valeria Mack-Firă & J. Dörjes. 1972</span>
+					First report on marine microturbellarians from Hawaii. <I>Zoologica Scripta</I> <B>1</B>(6): 251-269.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8302fd73-a8e9-46ba-a793-348d1a8244df">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kawauchi, Gisele Y., Prashant Sharma & Gonzalo Giribet. 2012</span>
+					Sipunculan phylogeny based on six genes, with a new classification and the descriptions of two new families. <em>Zoologica scripta</em> <b>41</b>(2): 186–210.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/209a35ce-31d5-43a3-9cdb-d276faa94cbb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ketmaier, V., P. G. Bianco, M. Cobolli & E. de Mattha. 2003</span>
+					Genetic differentiation and biogeography in southern European populations of the genus <i>Scardinius</i> (Pisces, Cyprinidae) based on allozyme data. <I>Zoologica Scripta</I>(32): 13-22.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/10be6583-d506-4e17-ac2d-f20013eaf474">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Köhler, Frank & Ingo Burghardt. 2016</span>
+					Cryptic diversity in a widespread land snail: Revision of the genus <em>Xanthomelon</em> Martens, 1860 from the Australian Monsoon Tropics (Pulmonata, Camaenidae). <em>Zoologica Scripta</em> <b>45</b>(2): 127-144.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1d0d38ee-5409-4535-b0a3-ec81639786e0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Köhler, Frank & Matthias Glaubrecht. 2003</span>
+					Morphology, reproductive biology and molecular genetics of ovoviviparous freshwater gastropods (Cerithioidea, Pachychilidae) from the Philippines, with description of a new genus <em>Jagora</em>. <em>Zoologica scripta</em> <b>32</b>: 35-59.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dbf26d5b-bae6-4c50-b6fc-65873cffd712">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Korshunova, Tatiana, Alexander V. Martynov, Torkild Bakken & Bernard Picton. 2017</span>
+					External diversity is restrained by internal conservatism: new giant nudibranch from Europe contributes to the cryptic species problem. <em>Zoologica scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6c73bf13-06b0-456a-b62b-285e3062fdbc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kramer, Bernd, H. van der Bank & M. Wink. 2004</span>
+					<i>Hippopotamyrus ansorgii</i> species complex in the Upper Zambezi River System with a description of a new species, <i>H. szaboi</i> (Mormyridae). <I>Zoologica Scripta</I> <B>33</B>(1): 1-18.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e5c6288a-7982-41c8-8e96-d92397ddc474">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Krämer, Daria, Christian Schmidt, Lars Podsiadlowski, Patrick Beckers, Lisa Horn & Jörn von Döhren. 2016</span>
+					Unravelling the Lineus ruber/viridis species complex (Nemertea, Heteronemertea). <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2956e254-e7df-4159-9e0d-364ceb3c90c8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kronestedt, Torbjörn. 1975</span>
+					Studies of species of Holarctic <em>Pardosa</em> groups (Araneae, Lycosidae). I. Redescription of <em>Pardosa</em> <em>albomaculata</em> Emerton and description of two new species from North America, with comments on some taxonomic characters. <em>Zoologica Scripta</em> <b>4</b>(5-6): 217-228.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a73d78b8-7413-4151-9adf-4ee35e0390df">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Krug, Patrick J., N. L. W. S. Wong, Melanie Medina, Terrence M. Gosliner & Ángel Valdés. 2018</span>
+					Cryptic speciation generates extraordinary mimics of toxic green algae: A new genus and four new species of sea slugs that masquerade as their diet, <em>Caulerpa</em> spp. <em>Zoologica scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d0a9d253-0959-4715-8d96-2a4f3384474b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kullander, Sven O. 1977</span>
+					<i>Papiliochromis</i> gen. n., a new genus of South American cichlid fish (Teleostei, Perciformes). <I>Zoologica Scripta</I> <B>6</B>(3): 253-254.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/53f3a521-3bc5-4252-9759-1949316519f4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kullander, Sven O. 1979</span>
+					Species of <i>Apistogramma</i> (Teleostei, Cichlidae) from the Orinoco drainage basin, South America, with descriptions of four new species. <I>Zoologica Scripta</I> <B>8</B>(1): 69-79.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5c2bf8e1-2326-46e4-96d0-86afe1cc4815">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kullander, Sven O. 1983</span>
+					Cichlid fishes from the La Plata basin. Part IV. Review of the <i>Apistogramma</i> species, with description of a new species (Teleostei, Cichlidae). <I>Zoologica Scripta</I> <B>11</B>(4): 307-313.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cac08a91-48e4-4c06-9d5b-a089ff7516c4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kullander, Sven O. 1984</span>
+					Cichlid fishes from the La Plata basin. Part V. Description of <i>Aequidens plagiozonatus</i> sp. n. (Teleostei, cichlidae) from the Paraguay River system. <I>Zoologica Scripta</I> <B>13</B>(2): 155-159.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/798a7f92-2ad1-4440-8de6-c64ee800ac45">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kullander, Sven O. 1987</span>
+					A new <i>Apistogramma</i> species (Teleostei, Cichlidae) from the Rio Negro in Brazil and Venezuela. <I>Zoologica Scripta</I> <B>16</B>(3): 259-270.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/39b2cccc-2986-4a2e-8582-0ce6fa260aba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kullander, Sven O. 1989</span>
+					Description of a new <i>Acaronia</i> species (Teleostei: Cichlidae) from the Rio Orinoco and Rio Negro drainages. <I>Zoologica Scripta</I> <B>18</B>(3): 447-452.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8b8ab966-d48b-430e-bf71-fa19694929d0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kullander, Sven O. & E. J. G. Ferreira. 1991</span>
+					A new <i>Aequidens</i> species from the Rio Trombetas, Brasil [sic], and redescription of <i>Aequidens pallidus</i> (Teleostei, Cichlidae). <I>Zoologica Scripta</I> <B>19</B>(4): 425-433.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/51548b5f-1381-4f3a-8b6d-7a63b13e973a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lang, Karl. 1973</span>
+					Taxonomische und phylogenetische Untersuchungen über die Tanaidaceen (Crustacea). 8. Die Gattungen <em>Leptochelia</em> Dana, <em>Paratanais</em> Dana, <em>Heterotanais</em> G. O. Sars und <em>Nototanais</em> Richardson. Dazu einige Bemerkungen über die Monokonophora und ein Nachtrag. <em>Zoologica scripta</em> <b>2</b>(5-6): 197-229.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/efc81e03-82ad-4ae0-8591-8d2c28168a70">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Layton, Kara K. S., Peter Middelfart, Nikolai J. Tatarnic & Nerida G. Wilson. 2019</span>
+					Erecting a new family for <em>Spirostyliferina</em>, a truncatelloidean microgastropod, and further insights into truncatelloidean phylogeny. <em>Zoologica Scripta</em> <b>48</b>(6): 727-744.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/96aa39ea-7142-411e-ab2a-77f8978312b0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Leiva, Carlos, Ana Riesgo, Conxita Avila, Greg W. Rouse & Sergio Taboada. 2018</span>
+					Population structure and phylogenetic relationships of a new shallow‐water Antarctic phyllodocid annelid. <em>Zoologica scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/de689150-cbdf-4d44-a76f-5cf394732616">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Linkowski, T. B. 1985</span>
+					A new species of lanternfish (Osteichthyes, Myctophidae) from the South Atlantic. <I>Zoologica Scripta</I> <B>14</B>(4): 319-324.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/10fed62e-0ee2-4736-95a7-2e656ba120c7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lissovsky, Andrey, S. P. Yatsentyuk & Narayan Koju. 2019</span>
+					Multilocus phylogeny and taxonomy of pikas of the subgenus <em>Ochotona</em>. <em>Zoologica Scripta</em> <b>48</b>(1): 1-16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/704e5b03-0b79-4ce1-8740-e9f1c9cb4a99">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lissovsky, Andrey, T. V. Petrova, S. P. Yatsentyuk, F. N. Golenishchev, N. I. Putincev, I. V. Kartavtseva, I. N. Sheremetyeva & N. I. Abramson. 2018</span>
+					Phylogeny and taxonomy of East Asian voles <em>Alexandromys </em>(Rodentia, Arvicolinae) inferred from multilocus analysis. <em>Zoologica scripta</em> <b>47</b>(1): 9-20.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/abaa000e-a59e-41f1-9c16-f06364e5649c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lopes-Lima, Manuel, Lyubov Burlakova, Alexandrer Karatayev, André Gomes-dos-Santos, Alexandra Zieritz, Elsa Froufe & Arthur E. Bogan. 2019</span>
+					Revisiting the North American freshwater mussels of Quadrula sensu lato (Bivalvia:Unionidae): Pphylogeny, taxonomy and species delimitation. <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/87c61d41-5e26-470b-8215-862c8290fd33">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lowry, James K. & Helen E. Stoddart. 1989</span>
+					<em>Stephonyx</em>, a new, widespread genus of lysianassoid Amphipoda. <em>Zoologica Scripta</em> <b>18</b>(4): 519–525.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/38c93935-079d-4517-86eb-e4c0b1a6faad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Marramà, Giuseppe, Giorgio Carnevale, Gavin J. P. Naylor & Jürgen Kriwet. 2019</span>
+					Reappraisal of the Eocene whiptail stingrays (Myliobatiformes, Dasyatidae) of the Bolca Lagerstätte, Italy. <em>Zoologica Scripta</em> <b>48</b>: 168-184.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1a82384c-9f16-4f5b-a7a8-c1159be6804d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">McLean, James H. 1989</span>
+					New archaeogastropod limpets from hydrothermal vents: new family Peltospiridae, new superfamily Peltospiracea. <em>Zoologica scripta</em> <b>18</b>(1): 49–66.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4207f78b-8502-42f5-b7b9-f7c48563e8ad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moles, Juan, Heike Wägele, Michael Schrödl & Conxita Avila. 2017</span>
+					A new Antarctic heterobranch clade is sister to all other Cephalaspidea (Mollusca: Gastropoda). <em>Zoologica scripta</em> <b>46</b>(2): 127-137.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bd399331-b6e8-4569-b47b-aed1fa258cdf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Monika, NebelsicK. 1990</span>
+					<em>Antygomonas incomitata</em> gen. et sp.n. (Cyclorhagida, Kinorhyncha) and its phylogenetic relationships. <em>Zoologica scripta</em> <b>19</b>(2): 143-152.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3ae4a995-dd2c-4662-bfe4-534abd4c0994">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Montano, Simone, Roberto Arrigoni, Daniela Pica, Davide Maggioni & Stefania Puce. 2015</span>
+					New insights into the symbiosis between Zanclea (Cnidaria, Hydrozoa) and scleractinians. <em>Zoologica scripta</em> <b>44</b>(1): 92-105.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2aeb2b01-766b-40e7-91d1-369b2fd63fc7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nakano, Takafumi, Ramlah Zainudin & Tsutomu Hikida. 2012</span>
+					Phylogenetic position of gastrostomobdellid leeches (Hirudinida, Arhynchobdellida, Erpobdelliformes) and a new family for the genus <i>Orobdella</i>. <em>Zoologica Scripta</em> <b>41</b>(2): 177–185.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d7267788-35f0-40be-9c15-df08f62aea5b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Overstreet, Robin M. 1982</span>
+					<em>Forticulcita glabra </em>gen. et sp. n. (Digenea, Haploporidae) in Red Sea mullet. <em>Zoologica scripta</em> <b>11</b>(2): 83-85.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/92000430-86b9-47f2-9826-75e7d1cfce84">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinder, Adrian M. & Ralph O. Brinkhurst. 1997</span>
+					The family <em>Capilloventridae </em>(Annelida, Clitellata) in Australia, with descriptions of two new species of <em>Capilloventer</em>. <em>Zoologica Scripta</em> <b>26</b>(3): 255–265.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/80d313da-168b-41a1-9416-cdaeb462d20b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pitombo, Fábio B. 2004</span>
+					Phylogenetic analysis of the Balanidae (Cirripedia, Balanomorpha). <em>Zoologica scripta</em> <b>33</b>(3): 261-276.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6ae5d4a6-b76f-42d7-b03a-495cb45fa4e4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Qi, Xin, Xiao-Long Lin, Torbjørn Ekrem, Rolf G. Beutel, Chao Song, Igor Orlov, Chun-Tang Chen & Xin-Hua Wang. 2018</span>
+					A new surface gliding species of Chironomidae: An independent invasion of marine environments and its evolutionary implications. <em>Zoologica scripta</em> <b>48</b>: 81-92.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5b0193f2-5ef0-49cf-878a-77d1d89a8eca">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rajaei, Hossein, Carola Greve, Harald Letsch, Dieter Stüning, Niklas Walhberg, Joël Minet & Bernhard Misof. 2015</span>
+					Advances in Geometroidea phylogeny, with characterization of a new family based on<em> Pseudobiston pinratanai</em> (Lepidoptera, Glossata). <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/91947911-e3ac-4bb7-a285-9e9281bd6c39">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Scharhauser, Florian P., Judith Zimmermann, Jörg A. Ott, Nikolaus Leisch & Harald R. Gruber-Vodicka. 2020</span>
+					Morphology of obligate ectosymbionts reveals Paralaxus gen. nov.: A new circumtropical genus of marine stilbonematine nematodes. <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b5f8a40-4ea5-49f7-9e6a-6f2d057b75bc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Schomann, Andrea M. & Alexey Y. Solodovnikov. 2016</span>
+					Phylogenetic placement of the austral rove beetle genus <em>Hyperomma</em> triggers changes in classification of Paederinae (Coleoptera: Staphylinidae). <em>Zoologica Scripta</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d08f4556-e6ff-417f-8ab3-b1848493f19d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Stefani, Fabrizio, Francesca Benzoni, Michel Pichon, Carlotta Cancelliere & Paolo Galli. 2008</span>
+					A multidisciplinary approach to the definition of species boundaries of the branching species of the coral genus <em>Psammocora</em> (Cnidaria, Scleractinia). <em>Zoologica scripta</em> <b>37</b>: 71-91.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e4c99d5b-6a2f-42e2-95b6-2dc6477133f7">	
+										
+					
+					<span class="biblio-authors">Sterrer, W. 1991</span>
+					Gnathostomulida from Hawaii. <I>Zoologica Scripta</I> <B>20</B>(2): 129-136.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/811a27c8-96cb-473a-8cb6-960128b57a83">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Teixeira, Marcos, Pedro E. Vieira, Fredrik Pleijel, Ascensão Ravara, Bruno R. Sampieri, Felipe O. Costa & Arne Nygren. 2019</span>
+					Molecular and morphometric analyses identify new lineages within a large Eumida (Annelida) species complex. <em>Zoologica Scripta</em> <b>49</b>(2): 222-235.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/041cb037-298e-463f-ba6a-76c76ae4732b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tessler, Michael, Amalie Barrio, Elizabeth Borda, Rebecca Rood-Goldman, Morgan Hill & Mark E. Siddall. 2016</span>
+					Description of a soft-bodied invertebrate with microcomputed tomography and revision of the genus <em>Chtonobdella</em> (Hirudinea: Haemadipsidae). <em>Zoologica Scripta</em> <b>45</b>(5): 552–565.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/29f6d805-8d37-4034-a06d-58a9d3d10dde">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vergara-Solana, Francisco J., Francisco J. García-Rodríguez, José J. Tavera, Efrain de Luna & José De La Cruz-Agüero. 2014</span>
+					Molecular and morphometric systematics of <em>Diapterus</em> (Perciformes, Gerreidae). <em>Zoologica Scripta</em> <b>43</b>(4): 338-350.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fff3de0c-420e-40d8-9fae-03a3656dd757">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wahlberg, Niklas, Jadranka Rota, Michael F. Braby, Naomi E. Pierce & Christopher W. Wheat. 2014</span>
+					Revised systematics and higher classification of pierid butterflies (Lepidoptera: Pieridae) based on molecular data. <em>Zoologica scripta</em> <b>43</b>: 641-650.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6de5e12b-c6ae-44b1-84be-b188f4456bc1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wu, Lei, Xiaoxiao Jiao, Zhuo Shen, Zhenzhen Yi, Jiqiu Li, Alan Warren & Xiaofeng Lin. 2017</span>
+					New taxa refresh the phylogeny and classification of pleurostomatid ciliates (Protozoa, Ciliophora, Litostomatea). <em>Zoologica scripta</em> <b>46</b>: 245-253.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ba8bd603-85b6-4c9c-a25c-a6b531f788e9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, Feng, Sopark Jantarit, Areeruk Nilsai, Mark I. Stevens, Yinhuan Ding & Chutamas Satasook. 2018</span>
+					Species delimitation in the morphologically conserved Coecobrya (Collembola: Entomobryidae): a case study integrating morphology and molecular traits to advance current taxonomy. <em>Zoologica Scripta</em> <b>47</b>: 342-356.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">53 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=zh-cn">中文</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=nl">Nederlands</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=en-us">English</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=fr">Français</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=de">Deutsch</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=it">Italiano</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=ja">日本語</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=pt">Português</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=ru">Русский</a>&nbsp;<a href="/References/a2f794aa-2039-4f44-8b5c-30916460a731?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

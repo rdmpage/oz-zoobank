@@ -1,0 +1,497 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoological Journal of the Linnean Society
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 01 October 2018, 08:14:14.297 by Rasa Binkiene",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:99C12253-3F77-42D6-98A1-77696B01FEED</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:99C12253-3F77-42D6-98A1-77696B01FEED" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:99C12253-3F77-42D6-98A1-77696B01FEED" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								
+									
+								
+							
+                    
+				
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoological Journal of the Linnean Society<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN<span style="font-size:smaller;">&nbsp;(Print)</span>:</th>
+                    <td>0947-5745</td>
+                </tr>
+                
+                    <tr>
+                        <th scope="row" class="entry_label"><span style="font-size:smaller;">(Online)</span>:</th>
+                        <td>1439-0469</td>
+                    </tr>	
+                
+                
+                
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td>Wiley</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td>English</td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (14) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/886812fd-8ffa-47a6-b34e-0222a1c99e03">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ebert, Martin. 2019</span>
+					A new genus of Pycnodontidae (Actinopterygii) from the Upper Jurassic of France and Germany, included in a phylogeny of Pycnodontiformes. <em>Zoological Journal of the Linnean Society</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1d1dc46e-268e-4a45-9716-c654db88eed7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferreira, Vinicius S., Oliver Keller, Marc A. Branham & Michael A. Ivie. 2019</span>
+					Molecular data support the placement of the enigmatic <em>Cheguevaria </em>as a subfamily of Lampyridae (Insecta: Coleoptera). <em>Zoological Journal of the Linnean Society</em> <b>187</b>(4): 1253-1258.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8cb6e450-d298-4c3a-b718-df40b9fe396b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gaimari, Stephen D. & Michael E. Irwin. 2000</span>
+					Phylogeny, classification, and biogeography of the cycloteline Therevinae (Insecta: Diptera: Therevidae). <em>Zoological Journal of the Linnean Society</em> <b>129</b>(2): 129-240.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e3a70b56-000d-4974-aac6-f1b198c86bc4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Golestani, Haleh, Fabio Crocetta, Vinicius Padula, Yolanda Camacho, Joachim Langeneck, Dimitris Poursanidis, Marta Pola, Mehmet B. Yokeş, J. L. Cervera, Dae-Wui Jung, Terrence M. Gosliner, Juan F. Araya, Jerry Hooker, Michael Schrödl & Ángel Valdés. 2019</span>
+					The little Aplysia is coming of age: from one species to a complex of species complexes in Aplysia parvula (Mollusca: Gastropoda: Heterobranchia). <em>Zoological Journal of the Linnean Society</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/180d854b-16af-4042-a797-d737086af80b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kallal, Robert J. & Gustavo Hormiga. 2018</span>
+					Systematics, phylogeny and biogeography of the Australasian leaf-curling orb-weaving spiders (Araneae: Araneidae: Zygiellinae), with a comparative analysis of retreat evolution. <em>Zoological Journal of the Linnean Society</em> <b>184</b>(4): 1055-1141.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f7564c93-d0fa-4907-ac35-d3ef3bb2a151">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Karpiński, Lech, Wojciech T. Szczepański & Lech Kruszelnicki. 2020</span>
+					Revision of the <em>Ropalopus ungaricus</em>/<em>insubricus</em> group (Coleoptera: Cerambycidae: Callidiini) from the western Palaearctic region. <em>Zoological Journal of the Linnean Society</em>: [1-41].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d9a80022-5883-4f53-a309-0e92a9692971">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kundrata, Robin & Ladislav Bocak. 2019</span>
+					Molecular phylogeny reveals the gradual evolutionary transition to soft-bodiedness in click-beetles and identifies Sub-Saharan Africa as a cradle of diversity for Drilini (Coleoptera: Elateridae). <em>Zoological Journal of the Linnean Society</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a49a0216-fb08-46b0-aea8-a151ff681326">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kundrata, Robin, Stephan M. Blank, Alexander S. Prosvirov, Eliška Šormová, Matthew L. Gimmel, Dominik Vondráček & Katja Kramp. 2019</span>
+					One less mystery in Coleoptera systematics: the position of Cydistinae (Elateriformia incertae sedis) resolved by multigene phylogenetic analysis. <em>Zoological Journal of the Linnean Society</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/829c43b0-a670-468e-ada3-f8307709b5c6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Li, Xin-yu, Thomas Pape & Dong Zhang. 2020</span>
+					Taxonomy, phylogeny and evolution of the bumblebee bot flies (Oestridae: Hypodermatinae, <em>Portschinskia</em> Semenov). <em>Zoological Journal of the Linnean Society</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a96fdb05-0c79-4824-84ee-284e1aab5383">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Martin, Storm B., Abigail J. Downie & Thomas H. Cribb. 2020</span>
+					A new subfamily for a clade of opecoelids (Trematoda: Digenea) exploiting marine fishes as second-intermediate hosts, with the first report of opecoelid metacercariae from an elasmobranch. <em>Zoological Journal of the Linnean Society</em> <b>188</b>: 455–472.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/052fb382-f322-4049-bd67-3a76f3956d19">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Souza, Bruno H. M., Flávio D. Passos, Mauricio Shimabukuro & Paulo Y. G. Sumida. 2020</span>
+					An integrative approach distinguishes three new species of Abyssochrysoidea (Mollusca: Caenogastropoda) associated with organic falls of the deep south-west Atlantic. <em>Zoological Journal of the Linnean Society</em> <b>XX</b>: 1-24.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5f7fbec9-457d-4b65-b27f-a229d7ff4b32">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vásquez-Restrepo, Juan D., Roberto Ibáñez, Santiago J. Sánchez-Pacheco & Juan M. Daza. 2019</span>
+					Phylogeny, taxonomy and distribution of the Neotropical lizard genus Echinosaura (Squamata: Gymnophthalmidae). <em>Zoological Journal of the Linnean Society</em> <b>189 (2020)</b>: 287–314.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/76970cf4-c1f0-4637-bc8c-b24c0bd2366d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Worthy, Trevor H. & David V. Burley. 2020</span>
+					Prehistoric avifaunas from the Kingdom of Tonga. <em>Zoological Journal of the Linnean Society</em> <b>189</b>: 998-1045.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/81c5bdfe-31ba-481d-b269-526669931821">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zaharias, Paul, Yuri I. Kantor, Alexander E. Fedosov, Francesco Criscione, Anders Hallan, Yasunori Kano, Jérémie Bardin & Nicolas Puillandre. 2020</span>
+					Just the once will not hurt: DNA suggests species lumping over two oceans in deep-sea snails. <em>Zoological Journal of the Linnean Society</em>.</a>
+					</li>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=zh-cn">中文</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=nl">Nederlands</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=en-us">English</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=fr">Français</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=de">Deutsch</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=it">Italiano</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=ja">日本語</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=pt">Português</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=ru">Русский</a>&nbsp;<a href="/References/99c12253-3f77-42d6-98a1-77696b01feed?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

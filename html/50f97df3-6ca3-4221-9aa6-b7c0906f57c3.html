@@ -1,0 +1,2031 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoologische Mededelingen,&nbsp;Leiden
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 15 July 2009, 12:25:47.890 by William N. Eschmeyer",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:50F97DF3-6CA3-4221-9AA6-B7C0906F57C3</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:50F97DF3-6CA3-4221-9AA6-B7C0906F57C3" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:50F97DF3-6CA3-4221-9AA6-B7C0906F57C3" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								 | 
+								<a href="http://biodiversity.org.au/afd.publication/ea4f4a03-0f75-4309-8b54-e02a2572167e" target="_blank">
+									
+										<img src="http://zoobank.org/images/AFDLogo.jpg" title="AFD-Pub: ea4f4a03-0f75-4309-8b54-e02a2572167e" alt="Australian Faunal Directory Publications" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								 | 
+								
+									
+										<img src="http://zoobank.org/images/CASicon.jpg" title="CAS-Journals: ZML" alt="Eschmeyer Journal Abbreviations" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+							
+							
+								 | 
+								<a href="http://hol.osu.edu/journal-full.html?id=986" target="_blank">
+									
+										<img src="http://zoobank.org/images/HOLlogo.gif" title="HNS-Journals: 986" alt="Hymenoptera Name Server - Journals" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								
+									
+								
+							
+                    
+				
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoologische Mededelingen<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td>Leiden</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN<span style="font-size:smaller;">&nbsp;(Print)</span>:</th>
+                    <td>0024-0672</td>
+                </tr>
+                
+                    <tr>
+                        <th scope="row" class="entry_label"><span style="font-size:smaller;">(Online)</span>:</th>
+                        <td>1876-2174</td>
+                    </tr>	
+                
+                
+                
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td>uitgegeven vanwege 's Rijksmuseum van Natuurlijke Historie te Leiden</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td>Leiden, Netherlands</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td></td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (130) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6e7f3609-abd3-4f1c-914f-7789f0ac73ef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Achituv, Yair & Bert W. Hoeksema. 2003</span>
+					<em>Cantellius cardenae</em> spec. nov. (Cirripedia: Pyrgomatinae) from Acropora (Isopora) brueggemanni (Brook, 1893) (Anthozoa:Acroporidae), a case of host specificity in a generalist genus. <em>Zoologische Mededelingen, Leiden</em> <b>77</b>(1): 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9d525ad6-c363-406b-a2fc-051eed78815d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Achterberg, C. v. 2002</span>
+					<em>Sigalphus meridionalis </em>spec. nov. (Hymenoptera: Braconidae: Sigalphinae) from France. <em>Zoologische Mededelingen, Leiden</em> <b>76</b>(4): 45-52.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a1630c55-8938-42b6-8b91-91b1cea4a525">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Achterberg, C. v. 2006</span>
+					European species of the genus <em>Helorus</em> Latreille (Hymenoptera: Heloridae), with description of a new species from Sulawesi (Indonesia). <em>Zoologische Mededelingen, Leiden</em> <b>80</b>(1): 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3237c95a-5a3b-42ae-820d-2c1e4ad698ad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Achterberg, C. v. 2014</span>
+					<em>Sigalphus anjae </em>spec. nov. (Hymenoptera: Braconidae: Sigalphinae) from southern Vietnam. <em>Zoologische Mededelingen, Leiden</em> <b>88</b>(2): 9-17.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/00ea9c91-f707-4e00-b196-07ad5da9eb75">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Alderslade, Philip. 2000</span>
+					Four new genera of soft corals (Coelenterata: Octocorallia), with notes on the classification of some established taxa. <em>Zoologische Mededelingen, Leiden</em> <b>74</b>: 237-249.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e252c944-ddb5-419a-adac-0ea366310352">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Alfred, E. R. 1969</span>
+					The Malayan cyprinoid fishes of the family Homalopteridae. <em>Zoologische Mededelingen , Leiden</em> <b>43</b>(18): 213-237.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/55fc3a88-966b-4ea1-8be5-a747afe099e2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Almeida, Alexandre O. & Arthur Anker. 2011</span>
+					<em>Alpheus rudolphi </em>spec. nov., a new snapping shrimp from northeastern Brazil (Crustacea: Decapoda: Alpheidae). <em>Zoologische Mededelingen, Leiden</em> <b>85</b>(1): 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e37cab9b-9fe5-4813-8443-7c00a9cb10e7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bănărescu, Petre M. 1977</span>
+					Vaillantellinae, a new subfamily of Cobitidae (Pisces, Cypriniformes). <em>Zoologische Mededelingen , Leiden</em> <b>52</b>(8): 99-105.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/80bcac8f-3da1-4b5e-b21b-299e98cd6dd9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bath, Hans & Peter Wirtz. 1992</span>
+					On a collection of blenniid fishes from Mauritania, with a redescription of <i>Spaniblennius riodournsis</i> (Metzelaar, 1919). <em>Zoologische Mededelingen , Leiden</em> <b>66</b>: 265-275.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e79692eb-0a08-49df-853d-bf999c7526ef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bayer, F. M. & K. Muzik. 1976</span>
+					New Genera and Species of the Holaxonia Family Chrysogorgiidae (Octocorallia: Gorgonacea). <em>Zoologische Mededelingen, Leiden</em> <b>50</b>(5): 65-90.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f6ead807-320e-4324-ba70-f5d288505c8a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Becker, Th. 1924</span>
+					Dolichopodidae von Formosa. Nachtrag zu den dipterologischen Studien "Dolichopodidae der indo-australischen Region" ("Capita Zoologica", Deel I, Aflevering-4, 1922). <em>Zoologische Mededelingen, Leiden</em> <b>8</b>(2): 120-131.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/929b1f24-1530-4ead-8166-515984023b39">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Belle, Jean. 1995</span>
+					On the female sex of some elusive South-American Gomphidae with the descriptions of three new genera and four new species (Odonata). <em>Zoologische Mededelingen, Leiden</em> <b>69</b>(2): 19-36.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/98241f01-c00d-4180-88ea-07f3df09748a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Blöte, H. C. 1934</span>
+					Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie. Part I. Corizinae, Alydinae. <em>Zoologische Mededelingen, Leiden</em> <b>17</b>(10): 253-285.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/266deaf2-93a6-4a86-a711-0fa4319db56a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Blöte, H. C. 1935</span>
+					Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie. Part II. Coreinae, first part. <em>Zoologische Mededelingen, Leiden</em> <b>18</b>(8): 181-227.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f0f69929-3b56-49f9-8936-e1e1771f74a1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Blöte, H. C. 1936</span>
+					Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie : Part III. Coreinae, Second Part. <em>Zoologische Mededelingen, Leiden</em> <b>19</b>(2): 23-66.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/07465835-c29e-4e34-afe4-5381d70b4f52">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Blöte, H. C. 1938</span>
+					Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie : Part IV. Coreinae, third Part. <em>Zoologische Mededelingen, Leiden</em> <b>20</b>(25): 275-308.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/04b3df51-4006-45b6-9a73-2f5746858a6d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1947</span>
+					Revision of the fishes collected by Burger and Von Siebold in Japan. <em>Zoologische Mededelingen , Leiden</em> <b>28</b>: i-vii, 1-242.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f891790d-aa0d-40bd-9864-74db8b0c28d8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1948</span>
+					Some preliminary notes on Surinam sting rays, including the description of a new species. <em>Zoologische Mededelingen , Leiden</em> <b>30</b>(2): 31-47.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f9d35f5c-3051-4a69-8726-732488d125c0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1952</span>
+					Note on the characid genus <i>Brachychalcinus</i> Boulenger (1892), including the description of a new species. <em>Zoologische Mededelingen , Leiden</em> <b>31</b>: 301-305.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f6686d78-d711-48fe-9fec-17bbd0d8e3cc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1953</span>
+					Scientific results of the Surinam Expedition 1948-1949. Part II. Zoology No. 2. The Fishes (I). <em>Zoologische Mededelingen , Leiden</em> <b>32</b>(1): 1-24.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e481eb23-9e86-4bc4-b5b0-0a927c24dcbe">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1954</span>
+					On <i>Sciadeichthys (Selenaspis) walrechti</i>, a new South American catfish. <em>Zoologische Mededelingen , Leiden</em> <b>33</b>(9): 59-62.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e8dcc9ac-8f12-4438-a9f5-f9aa5f69cd2a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1957</span>
+					On a collection of East Asian fishes. <em>Zoologische Mededelingen , Leiden</em> <b>35</b>(7): 69-78.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4bcdefc3-cff0-413a-8950-a016ae866aa6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1957</span>
+					On a collection of fishes from Stanley Pool (Belgian Congo). <em>Zoologische Mededelingen , Leiden</em> <b>35</b>(11): 139-151.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2392d057-6b9f-4983-a2ea-88c6dba10b70">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1960</span>
+					Notes on marine fishes from the Netherlands Antilles, with the description of a new species, <i>Eutyx tumidifrons</i> Brotulidae. <em>Zoologische Mededelingen , Leiden</em> <b>37</b>(2): 11-16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f134c51a-e5ff-4919-85a5-91aa7c0a562c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1963</span>
+					Notes on new or rare marine fishes from Surinam. <em>Zoologische Mededelingen , Leiden</em> <b>38</b>(18): 295-301.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/e5796a96-8c0f-4c56-bc44-4e94d2b9f9d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1964</span>
+					Notes on the fishes of western New Guinea II. <i>Lophichthys boschmai</i>, a new genus and species from the Arafoera Sea. <em>Zoologische Mededelingen , Leiden</em> <b>39</b>: 12-18.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bad8f9e6-7f40-453a-bde7-9690c78eee3e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1970</span>
+					The vicissitudes and dispersal of Albertus Seba’s zoological specimens. <em>Zoologische Mededelingen , Leiden</em> <b>44</b>(13): 177-206.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ff69302a-8f80-4117-a6f4-088a2bbdbb9b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1972</span>
+					Notes on South American catfishes, including remarks on Valenciennes and Bleeker types in the Leiden Museum. <em>Zoologische Mededelingen , Leiden</em> <b>47</b>: 293-320.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cee80918-7c82-4223-8a3b-d6524e22d767">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1976</span>
+					A short review of the Surinam Loricariinae; with additional information on Surinam Harttiinae, including the description of a new species (Loricariidae, Siluriformes). <em>Zoologische Mededelingen , Leiden</em> <b>50</b>(11): 153-177.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/be151522-bc9e-4dc4-a70e-fa1acc59d3e3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1979</span>
+					Some remarks on the identity of the Japanese rays <i>Raja kenojei</i> Müller & Henle, 1841, and <i>Raja meerdervoortii</i> Bleeker, 1860. <em>Zoologische Mededelingen , Leiden</em> <b>53</b>: 273-281.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/82cd43b9-4c9c-4c97-b0c0-4c5d6b1c6fac">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1983</span>
+					Some remarks on the South American pimelodid catfish usually known by the name of <i>Phractocephalus hemiliopterus</i> (Bloch & Schneider) (Pimelodidae, Siluriformes). <em>Zoologische Mededelingen , Leiden</em> <b>57</b>(12): 105-114.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f81f92dc-c003-46af-b788-ac985559adfd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Boeseman, M. 1994</span>
+					A hidden early source of information on north-eastern Brazilian zoology. <em>Zoologische Mededelingen , Leiden</em> <b>68</b>(12): 113-125.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4cc09afb-8aa8-4121-b83a-69238c0ce578">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bor, P. H. F., M. J. P. van Oijen & C. Magenta. 2003</span>
+					The egg capsule of the coral cat shark, <i>Atelomycterus marmoratus</i> (Bennett, 1830) (Chondrichthyes: Scyliorhinidae). <em>Zoologische Mededelingen , Leiden</em> <b>77</b>: 325-330.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dc77cbce-44a1-4c0a-a325-41b34b72a68b">	
+										
+					
+					<span class="biblio-authors">Boschma, H. 1953</span>
+					The Rhizocephala of the Pacific. <em>Zoologische Mededelingen , Leiden</em> <b>32</b>(17): 185-201.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8df56979-f56e-4e60-a110-77beaa07041b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bruce, Alexander J. 1969</span>
+					Preliminary descriptions of sixteen new species of the genus Periclimenes Costa, 1844 (Crustacea, Decapoda Natantia, Pontoniinae). <em>Zoologische Mededelingen, Leiden</em> <b>43</b>: 253-278.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/faafc166-263c-4edb-a114-817621543c15">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chabanaud, P. 1930</span>
+					Revision du genre <i>Aseraggodes</i> Kaup. <em>Zoologische Mededelingen , Leiden</em> <b>13</b>(3-4): 180-192.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c8b84673-7288-464d-8e82-b87eb3050e61">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Collette, Bruce B. 1974</span>
+					South American freshwater needlefishes (Belonidae) of the genus <i>Pseudotylosurus</i>. <em>Zoologische Mededelingen , Leiden</em> <b>48</b>(16): 169-186.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9fd8109a-8d88-40c7-b2df-25b16512ab63">	
+										
+					
+					<span class="biblio-authors">De Grave, S. & C. H. J. M. Fransen. 2011</span>
+					Carideorum catalogus: the recent species of the dendrobranchiate, stenopodidean, procarididean and caridean shrimps (Crustacea: Decapoda). <em>Zoologische Mededelingen, Leiden</em> <b>85</b>(9): 195-589.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5284b680-0947-4b33-a66c-5b864ce9b106">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">de Zeeuw, Marnix P., M. Mietes, P. Niemantsverdriet, S. T. Huurne & Frans Witte. 2010</span>
+					Seven new species of detritivorous and phytoplanktivorous haplochromines from Lake Victoria. <em>Zoologische Mededelingen, Leiden</em>(84): 201-250.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fd4e4eab-1ab8-42c7-9d10-1167060a9cca">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Deelder, C. L. 1942</span>
+					Revision of the Erotylidae (Coleoptera) of the Leiden Museum. <em>Zoologische Mededelingen, Leiden</em> <b>24</b>(3): 49-115.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2ebbbbab-069b-4026-a988-7d377e040f3f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">den Hartog, J. c. 1977</span>
+					Descriptions of two new Ceriantharia from the Caribbean region, Pachycerianthus curancaoensis n.sp. and Arachnanthus nocturnus n.sp. with a discussion of the Cnidom and of the classification of the Ceriantharia. <em>Zoologische Mededelingen, Leiden</em> <b>51</b>: 211-242.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/81a0fbf1-926c-49c9-b1c3-50cecbcd1c7a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">den Hartog, J. C. 1997</span>
+					Notes on the genus <i>Amphiprion</i> Bloch & Schneider 1801 (Teleostei: Pomacentridae(and its host sea anemones in the Seychelles. <em>Zoologische Mededelingen , Leiden</em> <b>71</b>(1-18): 181-188.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d0725ad8-9fb1-445d-8378-d20745dadcd8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dijkstra, Henk H. 1997</span>
+					Results of the Rumphius Biohistorical Expedition to Ambon (1990). <em>Zoologische Mededelingen , Leiden</em> <b>71</b>(27): 313-343, 49 figs, 3 tabs.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/edd4078d-83b9-4221-adfc-cd85c7e5b906">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Doesburg, Pieter H. v. & Dimitri Forero. 2012</span>
+					Revision of the genus <i>Salyavata</i> Amyot & Audinet-Serville, 1843 (Heteroptera: Reduviidae: Salyavatinae). <em>Zoologische Mededelingen , Leiden</em> <b>86</b>(6): 515-568.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b1db6d85-5247-40df-b396-a0922cf33d4d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Edwards, Alasdair J. 1986</span>
+					A new damselfish <i>Chromis lubbocki</i> (Teleostei: Pomacentridae) from the Cape Verde Archipelago, with notes on other eastern Atlantic pomacentrids. <em>Zoologische Mededelingen , Leiden</em> <b>60</b>(12): 181-207.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1efafc6e-8314-49b4-b762-939af44a0fed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Galil, Bella S. 2001</span>
+					A revision of <em>Myra</em> Leach, 1817 (Crustacea: Decapoda: Leucosioidea). <em>Zoologische Mededelingen, Leiden</em> <b>75</b>(24): 409-446.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a631f54f-5afc-486e-bfd1-f9dc24dcedd6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Galil, Bella S. 2001</span>
+					A revision of the genus <em>Arcania</em> Leach, 1817 (Crustacea: Decapoda: Leucosioidea). <em>Zoologische Mededelingen, Leiden</em> <b>75</b>(11): 169-206.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0334ad39-ac44-467b-b78c-9b96dce3d41c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Galil, Bella S. 2003</span>
+					Contribution to the knowledge of Leucosiidae. I, The identity of <em><em>Leucosia</em> craniolaris</em> (Linnaeus, 1758), and redefinition of the genus <em>Leucosia</em> Weber, 1795 (Crustacea: Brachyura). <em>Zoologische Mededelingen, Leiden</em> <b>77</b>(8): 181-191.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/29e1e3d5-155e-48ac-9e2a-eee1cbc799e3">	
+										
+					
+					<span class="biblio-authors">Gates, G. E. 1961</span>
+					On some species of the Oriental earthworm genus Pheretima Kinberg, 1867. <em>Zoologische Mededelingen , Leiden</em> <b>37</b>(18): 293-312.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/997b1989-16eb-47d7-87bb-2860c1b0c4dc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Goren, Menachem & I. Karplus. 1980</span>
+					<i>Fowleria abocellata</i>, a new cardinal fish from the Gulf of Elat -- Red Sea (Pisces, Apogonidae). <em>Zoologische Mededelingen , Leiden</em> <b>55</b>(20): 231-234.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c264177b-f7a8-4cd7-90ae-c50c86339a4a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Goren, Menachem. 1982</span>
+					<i>Quisquilius flavicaudatus</i>, a new gobioid fish from the coral reefs of the Red Sea. <em>Zoologische Mededelingen , Leiden</em> <b>56</b>(11): 139-142.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0a8a97d9-8b86-46af-83d4-36c42c8b56e8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Groves, Colin P. & Lipke B. Holthuis. 1985</span>
+					The nomenclature of the Orang Utan. <em>Zoologische Mededelingen, Leiden</em> <b>59</b>(31): 411-417.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/515c84d0-2439-42df-bf79-9c9e00b4f1a1">	
+										
+					
+					<span class="biblio-authors">Holthuis, Lipke B. 1963</span>
+					On red coloured shrimps (Decapoda, Caridea) from tropical land-locked saltwater pools. <em>Zoologische Mededelingen , Leiden</em> <b>38</b>(16): 261-279.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c3a2cafb-ddd1-43ae-ae41-ab0b6b369eda">	
+										
+					
+					<span class="biblio-authors">Holthuis, Lipke B. 1983</span>
+					Notes on the genus <i>Enoplomentopus</i> with descriptions of a new subgenus and two new species (Crustacea, Decapoda, Axiidae). <em>Zoologische Mededelingen , Leiden</em> <b>56</b>: 281-298.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6db49b1c-5495-4fcf-9860-332268fa225c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hoogmoed, Marinus S. & Jean-Paul Lescure. 1984</span>
+					A new genus and two new species of minute leptodactylid frogs from northern South America, with comments upon <em>Phyzelaphryne</em> (Amphibia: Anura: Leptodactylidae). <em>Zoologische Mededelingen, Leiden</em> <b>58</b>: 85–115.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7383d187-4ef2-4f1a-a3c9-9de6412782c5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hubbs, Carl L. & R. L. Wisner. 1964</span>
+					<i>Parvilux</i>, a new genus of myctophid fishes from the northeastern Pacific, with two new species. <em>Zoologische Mededelingen , Leiden</em> <b>39</b>: 445-463.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ba191b74-9316-4d8e-b85d-904d31986d0a">	
+										
+					
+					<span class="biblio-authors">Hughes, A. M. 1956</span>
+					The mite genus Lardoglyphus Oudemans, 1927 (=Hoshikadania Sasa and Asanuma, 1951). <em>Zoologische Mededelingen, Leiden</em> <b>34</b>(20): 271-285.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a0749d46-85c6-4771-bb90-dd1b0ee9f7ad">	
+										
+					
+					<span class="biblio-authors">Kabat, Alan R. 2000</span>
+					Results of the Rumphius Biohistorical Expedition to Ambon (1990). Part 10. Mollusca, Gastropoda, Naticidae. <em>Zoologische Mededelingen, Leiden</em> <b>73</b>(25): 345-380.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cc63948f-c2cf-483d-81d4-471b4037d883">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kolosvary, G. 1950</span>
+					On some balanids living in corals, collected by the Snellius Expedition in 1930. <em>Zoologische Mededelingen, Leiden</em> <b>30</b>(19): 289-296.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/76e09988-5194-4346-a6b8-7d49f9325000">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kottelat, Maurice. 1994</span>
+					Rediscovery of <i>Sewellia lineolat</i> in Annam, Viet Nam (Teleostei: Balitoridae). <em>Zoologische Mededelingen , Leiden</em> <b>68</b>(1): 109-112.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/30ec3772-e8c2-428c-b40d-0ca0763bce02">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1932</span>
+					Notes on gobioid fishes. <em>Zoologische Mededelingen , Leiden</em> <b>15</b>(1-2): 1-16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cb83a6b3-0a63-4d51-8c92-c1b0716c4ed3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1933</span>
+					On a new genus and species of Apogonidae. <em>Zoologische Mededelingen , Leiden</em> <b>16</b>(1-2): 78.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/318ff790-a3a4-4152-be28-ab73c2bc628d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1935</span>
+					Notes on Gobioid fishes. 6. On the synonymy of some species from the Indo-Australian Archipelago. <em>Zoologische Mededelingen , Leiden</em> <b>18</b>: 121-150.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/afb88c52-b3ed-4b95-a488-2e5022b5bec5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1936</span>
+					Notes on gobioid fishes. 7. On the Indo-Australian species of <i>Oxyeleotris</i> Bleeker. <em>Zoologische Mededelingen , Leiden</em> <b>19</b>: 128-134.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0fc94c91-b4fe-460e-9a42-4762bda04af6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1937</span>
+					Notes on gobioid fishes. 10. On a collection of the museum of Basle, with description of a new species of <i>Apocryptodon</i>. <em>Zoologische Mededelingen , Leiden</em> <b>20</b>: 24-26.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/17953e08-834c-45f9-933d-39f6321e2a29">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1937</span>
+					Notes on gobioid fishes. 9. Notes on the synonymy (continuation of Note 8). <em>Zoologische Mededelingen , Leiden</em> <b>20</b>: 11-23.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f85788af-63e3-496d-93bc-aa711bf3dd29">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1937</span>
+					On a collection of fishes from Siam. <em>Zoologische Mededelingen , Leiden</em> <b>20</b>: 61-64.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d665707d-39a0-4ae9-8eee-44b243d7dc00">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Koumans, F. P. 1940</span>
+					Results of a reexamination of types and specimens of gobioid fishes, with notes on the fishfauna [sic] of the surroundings of Batavia. <em>Zoologische Mededelingen , Leiden</em> <b>22</b>: 121-210.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/30861600-7c10-4488-a9b2-5f031dcbbc0a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Krikken, Jan. 1977</span>
+					Notes on African Onitini, mainly from southwestern Kenya (Coleoptera: Scarabaeidae). <em>Zoologische Mededelingen, Leiden</em> <b>51</b>(9): 141-170; pls. 1-4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/32e613e4-fb31-4dba-81d5-1c7f0ad20f5c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Landry, Bernard. 1993</span>
+					Additions to the knowledge of the Pterophoridae (Lepidoptera) of the Galápagos archipelago, Ecuador, with descriptions of two new species. <em>Zoologische Mededelingen , Leiden</em> <b>67</b>: 474-485.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9aa209b1-789d-4302-83e8-b4b1cec7f24f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1964</span>
+					A new fish of the family Scorpaenidae from New Guinea. <em>Zoologische Mededelingen , Leiden</em> <b>40</b>(1): 1-4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/884a47ec-9d51-4273-aa75-5a48673afa7a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1964</span>
+					Further revisional notes on the Belonidae. <em>Zoologische Mededelingen , Leiden</em> <b>39</b>: 311-326.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f6be1f1c-cd73-4e95-9fbc-818f8f4f8f5f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1967</span>
+					Freshwater fishes of Suriname: the genus <i>Heptapterus</i> (Pimelodidae). <em>Zoologische Mededelingen , Leiden</em> <b>42</b>(20): 215-229.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cb57137f-c5ca-4b0d-bea9-af6f600d64e7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1971</span>
+					Revisional notes on some species of the genus <i>Therapon</i> (Pisces, Theraponidae). <em>Zoologische Mededelingen , Leiden</em> <b>45</b>(20): 197-224.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4375bdfd-a0e1-41a8-a7c1-bdbe7e6514a2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1978</span>
+					On the identity of <i>Arius oncinus</i> R. H. Schomburgk (Pisces, Nematognathi, Auchenipteridae). <em>Zoologische Mededelingen , Leiden</em> <b>52</b>: 267-276.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b8ff2593-3efa-462f-911b-020072fefd64">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1978</span>
+					Two new species of Pimelodidae from northwestern South America (Pisces, Nematognathi). <em>Zoologische Mededelingen , Leiden</em> <b>53</b>: 253-261.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3d011fc5-765f-4373-ac8f-68c9162c2bf5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1983</span>
+					Naked catfishes from French Guiana (Pisces, Nematognathi). <em>Zoologische Mededelingen , Leiden</em> <b>57</b>(5): 43-58.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/33c656e9-9b01-460d-a1bd-e6cbfc0dfde2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mees, G. F. 1985</span>
+					Further records of Auchenipteridae and Pimelodidae from Suriname (Pisces: Nematognathi). <em>Zoologische Mededelingen , Leiden</em> <b>59</b>: 239-249.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c88ef813-d414-4463-98db-3cdd4b1fda55">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mohr, E. 1934</span>
+					<i>Zenarchopterus</i>-Studien. <em>Zoologische Mededelingen , Leiden</em> <b>17</b>(1-2): 11-14.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1bd749e7-5bec-4f0f-b86c-12667e144860">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moolenbeek, Robert G., Henk Dekker & Sancia E. T. van der Meij. 2008</span>
+					<em>Lioconcha lamprelli </em>spec. nov. (Bivalvia: Veneridae) from Australia. <em>Zoologische Mededelingen, Leiden</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c47ada4e-8f63-472a-a05a-ab96c0a50e46">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Motomura, Hiroyuki & M. J. P. van Oijen. 2003</span>
+					<i>Polynemus kapuasensis</i>, a new threadfin (Perciformes: Polynemidae) from the Kapuas River, western Kalimantan, Indonesia and redescription of <i>P. multifilis</i> Temminck & Schlegel, 1843. <em>Zoologische Mededelingen , Leiden</em> <b>77</b>: 393-407.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e8df1b73-7d93-4e76-af29-613d75c7d8ba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nalbant, Teodor T. & Petre M. Bănărescu. 1977</span>
+					Vaillantellinae, a new subfamily of Cobitidae (Pisces, Cypriniformes). <em>Zoologische Mededelingen , Leiden</em> <b>52</b>(8): 99-105.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a347a1fe-0b1a-418d-b831-695bf285c6d8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ng, Heok H. 2000</span>
+					<i>Bagrichthys vaillantii</i> (Popta, 1906), a valid species of bagrid catfish from eastern Borneo (Teleostei: Siluriformes). <em>Zoologische Mededelingen , Leiden</em> <b>73</b>(12-33): 327-332.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8a4e68c2-50f6-47e2-8fab-3913ae1af0c2">	
+										
+					
+					<span class="biblio-authors">Ng, Peter K. L. 2002</span>
+					A note on the names Aberrothelphusa Fransen, Holthuis & Adema, 1997, and Torhusa Ng, 1997 (Crustacea: Decapoda: Brachyura: Gecarcinucidae). <em>Zoologische Mededelingen, Leiden</em> <b>76</b>(11): 103-104.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5da15af8-dc51-45a9-a95b-73618a2f4627">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nijssen, H. & I. J. H. Isbrücker. 1967</span>
+					Notes on the Guiana species of <i>Corydoras</i> Lacépède, 1883, with descriptions of seven new species and designation of a neotype for <i>Corydoras punctatus</i> (Bloch, 1794)-(Pisces, Cypriniformes, Callichthyidae). <em>Zoologische Mededelingen , Leiden</em> <b>42</b>(5): 21-50.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ea3a5a94-756f-4287-9691-b00238c49300">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nilsson-Cantell, C. a. 1934</span>
+					Cirripeds from the Malay Archipelago in the Zoological Museum of Amsterdam. <em>Zoologische Mededelingen, Leiden</em> <b>17</b>: 31-63.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1f0aa375-bd38-4ca9-afb6-7f7f7be73899">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nussbaum, Ronald A. & Marinus S. Hoogmoed. 1979</span>
+					Surinam Caecilians, with notes on <em>Rhinatrema bivittatum</em> and the description of a new species of <em>Microcaecilia</em> (Amphibia, Gymnophiona). <em>Zoologische Mededelingen, Leiden</em> <b>54</b>(14).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4aa425fe-5778-4da8-8c8b-fb4980a96fef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Opresko, Dennis M. 2001</span>
+					Revision of the Antipatharia (Cnidaria: Anthozoa). Part I. Establishment of a New Family, Myriopathidae. <em>Zoologische Mededelingen, Leiden</em> <b>75</b>(17): 343-370.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ea51582f-1153-4592-a9a8-c1d026ccec79">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Opresko, Dennis M. 2002</span>
+					Revision of the Antipatharia (Cnidaria: Anthozoa). Part II. Schizopathidae. <em>Zoologische Mededelingen, Leiden</em> <b>76</b>: 411-442.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f0956373-0494-4427-a53e-02bdfd22e2b8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Opresko, Dennis M. 2003</span>
+					Redescription of <em>Antipathes dichotoma </em>Pallas, 1766 (Cnidaria: Anthozoa: Antipatharia). <em>Zoologische Mededelingen, Leiden</em> <b>77</b>(30): 481-493.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0130d210-99f3-439b-b8f0-be4a107f064d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Opresko, Dennis M. 2003</span>
+					Revision of the Antipatharia (Cnidaria: Anthozoa). Part III. Cladopathidae. <em>Zoologische Mededelingen, Leiden</em> <b>77</b>(31): 495-536.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b5fcc540-8245-46fb-8e81-bce13e1fb5e1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Opresko, Dennis M. 2004</span>
+					Revision of the Antipatharia (Cnidaria: Anthozoa, Antipatharia). Part IV. Establishment of a new family, Aphanipathidae. <em>Zoologische Mededelingen, Leiden</em> <b>78</b>(11): 209-240.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a06ce7a2-2d3b-44d0-8836-6e9d7fb160bb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Opresko, Dennis M. 2005</span>
+					New genera and species of antipatharian corals (Cnidaria: Anthozoa) from the North Pacific. <em>Zoologische Mededelingen, Leiden</em> <b>79</b>(7): 129-165.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/74e48c36-4710-411d-92dd-710efb291d60">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Opresko, Dennis M. 2006</span>
+					Revision of the Antipatharia (Cnidaria: Anthozoa). Part V. Establishment of a new family, Stylopathidae. <em>Zoologische Mededelingen, Leiden</em> <b>80</b>(11): 109-138.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f0feb31f-1f4d-4638-86f8-c4b8916ed20f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Popta, C. M. L. 1919</span>
+					Description of <i>Clarias nigeriae</i> n. sp. from the Wari, mouth of the Niger, West Africa. <em>Zoologische Mededelingen , Leiden</em> <b>5</b>: 4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ab02cf4d-fef9-4abd-a030-709089373c8f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Popta, C. M. L. 1921</span>
+					Dritte Fortsetzung der Beschreibung von neuen Fischarten der Sunda-Expedition. <em>Zoologische Mededelingen , Leiden</em> <b>6</b>: 203-214.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/59c083c1-6f43-4e46-9098-14f8e66fbc5b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Popta, C. M. L. 1922</span>
+					Vierte und letzte fortsetzung der Beschreibung von neuen Fischarten der Sunda-Expedition. <em>Zoologische Mededelingen , Leiden</em> <b>7</b>: 27-39.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6f55b3a2-0510-4615-83ea-4d72da49cb44">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Popta, C. M. L. 1924</span>
+					<i>Anguilla borneensis</i> n. sp. <em>Zoologische Mededelingen , Leiden</em> <b>8</b>: 73-76.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3c6a36f7-434e-4bad-828f-b5413a8b214c">	
+										
+					
+					<span class="biblio-authors">Priesner, ?. 1920</span>
+					. <em>Zoologische Mededelingen, Leiden</em> <b>5</b>: [211?].</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b2727b4-376d-4f02-8257-4673da260bda">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rookmaaker, Kees. 1975</span>
+					The history of some Komodo Dragons (Varanus komodoensis) captured on Rintja in 1927. <em>Zoologische Mededelingen, Leiden</em> <b>49</b>(6): 65-71.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2559cfc5-64b8-4fb4-bb62-44af3cb16c9f">	
+										
+					
+					<span class="biblio-authors">Sérène, Raoul. 1973</span>
+					Notes on Indo-West Pacific species of Macropthalmus (Crustacea, Brachyura). <em>Zoologische Mededelingen , Leiden</em> <b>46</b>(8): 99-116.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2243eaaa-46e6-4364-8984-f06a0595a897">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Speijer, E. A. M. 1931</span>
+					Bemerkungen über Pedipalpi (Fortsetzung). <em>Zoologische Mededelingen, Leiden</em> <b>14</b>: 194–201.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b77040f8-2b67-4aa1-85a3-fb1595a6d035">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Speijer, E. A. M. 1931</span>
+					Bemerkungen über Pedipalpi. <em>Zoologische Mededelingen, Leiden</em> <b>14</b>: 79–88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bb4ba2a6-5c6a-4dea-8da1-666ad76c4711">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Speijer, E. A. M. 1933</span>
+					Die Pedipalpi des Zoologischen Museums in Buitenzorg und die der Sammlung Dr. F. Kopstein. <em>Zoologische Mededelingen, Leiden</em> <b>16</b>: 67–76.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2744dfd8-e38f-4312-b205-152085ed5fef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tilak, R. 1970</span>
+					A new sisorid catfish of the genus <i>Gagata</i> Bleeker from India. <em>Zoologische Mededelingen , Leiden</em> <b>44</b>(14): 207-215.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e3387f32-004a-4cdd-a7dc-4668f39b5484">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tooren, D. v. d. 2002</span>
+					(2002). Pseudoscorpions (Pseudoscorpiones: Olpiidae) of the genus <i>Apolpium</i> from Venezuela, and the genera <i>Pachyolpium</i>, <i>Leptolpium</i> gen. nov. and <i>Serianus</i> from Curaçao, Aruba and Bonaire. <em>Zoologische Mededelingen, Leiden</em> <b>76</b>: 141–192.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d169a593-072d-4b2c-8431-a4dc0ad363cd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tooren, D. v. d. 2008</span>
+					New Neotropical pseudoscorpions (Pseudoscorpiones) from Aruba, Trinidad and Saba (Lesser Antilles), with some new localities of pseudoscorpions from Aruba and Bonaire. <em>Zoologische Mededelingen, Leiden</em> <b>82</b>: 423–440.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0215846f-d994-4a9a-a91f-a92d84f12eab">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tooren, D. v. d. 2011</span>
+					New records of olpiid pseudoscorpions (Pseudoscorpiones: Olpiidae) from the Caribbean area and Surinam, with descriptions of four new species of the genera <i>Pachyolpium</i> Beier, <i>Tricholpium</i> gen. nov. and <I>Heterohorus</i> gen. nov. <em>Zoologische Mededelingen, Leiden</em> <b>95</b>: 169–194.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a49c32b3-5d9e-48b0-b648-778d40843a4f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Achterberg, Cornelis & Jocelyn A. Berry. 2004</span>
+					<em>Neptihormius</em> gen. nov. (Hymenoptera: Braconidae: Hormiinae), a parasitoid of Nepticulidae (Lepidoptera) from New Zealand. <em>Zoologische Mededelingen, Leiden</em> <b>78</b>(18): 291-299.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d2921a8a-fb41-4fb6-8fdf-5306d12c31be">	
+										
+					
+					<span class="biblio-authors">van Achterberg, Cornelis & Kaoru Maeto. 1990</span>
+					Two new and aberrant species of Braconidae (Hymenoptera) from Japan. <em>Zoologische Mededelingen, Leiden</em> <b>64</b>(1-6): 59-70.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d9023e28-6647-42a4-9b7f-dd2a2cdf4d63">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Achterberg, Cornelis, L. Berndt, E. Brockerhoff & Jocelyn A. Berry. 2004</span>
+					A new species of the genus <em>Aleiodes</em> Wesmael from New Zealand (Hymenoptera: Braconidae: Rogadinae). <em>Zoologische Mededelingen, Leiden</em> <b>78</b>(19): 301-311.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/49aea835-f156-4fd9-877a-c81c650a6753">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Achterberg, Cornelis. 1992</span>
+					Revision of the genera of the subfamily Microtypinae (Hymenoptera: Braconidae). <em>Zoologische Mededelingen, Leiden</em> <b>66</b>(16-40): 369-380.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7c15b3de-abd0-41f0-8087-61f8e29b50c7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Deinse, A. B. & M. J. Adriani. 1953</span>
+					On the absence of gill rakers in specimens of the basking shark, <i>Cetorhinus maximus</i> (Gunner). <em>Zoologische Mededelingen , Leiden</em> <b>31</b>: 307-310.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0d3c300b-61bf-4262-89d1-6905f700cd12">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van der Hammen, L. 1977</span>
+					Studies on Opilioacarida (Arachnida). IV. The genera <em>Panchaetes</em> Naudo and <em>Salfacarus</em>, gen. nov. <em>Zoologische Mededelingen, Leiden</em> <b>51</b>: 43–78.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3959f028-b5ff-4ff9-9947-1403d3d1ad17">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van der Land, J. 1968</span>
+					A new aschelminth, probably related to the Priapulida. <em>Zoologische Mededelingen, Leiden</em> <b>42</b>: 237-250.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/349b3de3-7b5d-4048-8d1e-453e82eb65e6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Van der Stigchel, J. W. R. 1946</span>
+					The South American Nematognathi of the Museums at Leiden and Amsterdam. <em>Zoologische Mededelingen , Leiden</em> <b>27</b>: 1-204.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/629a9559-408f-4250-8a50-833c0b798f2f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Van der Stigchel, J. W. R. 1964</span>
+					A new species of pimelodid catfish from eastern Brazil, <i>Pimelodella boschmai</i> nov. spec. <em>Zoologische Mededelingen , Leiden</em> <b>39</b>: 327-330.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/74a5c27c-84bb-465a-a62e-9a4efce33fc9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van der Vecht, J. 1957</span>
+					On some Hymenoptera from the collection of Guérin-Méneville in the Leiden Museum. <em>Zoologische Mededelingen, Leiden</em> <b>35</b>(3): 21-31.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c23fb246-fb67-44cf-a625-2a0de9047314">	
+										
+					
+					<span class="biblio-authors">van Ofwegen, L. P. 1996</span>
+					Octocorallia from the Bismarck Sea (part II). <em>Zoologische Mededelingen, Leiden</em> <b>70</b>(13): 207-215.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/137217a4-befa-40cc-9740-39afd3363e83">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Oijen, M. J. P. 2004</span>
+					. <em>Zoologische Mededelingen , Leiden</em> <b>78</b>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/277cef27-fc31-4fb9-85a7-4da9cdbec172">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Oijen, M. J. P. & F. Witte. 2003</span>
+					A redescription of <i>Haplochromis labriformis</i> (Nichols & LaMonte 2003). <em>Zoologische Mededelingen , Leiden</em> <b>77</b>: 473-479.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d8a601e9-1f0c-4e7a-b16d-0618427b10e0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Oijen, Martien J. P. 1992</span>
+					<i>Haplochromis howesi</i> spec. nov., a crab and fish eating cichlid from Lake Victoria. <em>Zoologische Mededelingen , Leiden</em> <b>66</b>: 561-579.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c3d10b53-3cec-47d3-9787-08dd11c14928">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Oijen, Martien J. P. & Marnix P. de Zeeuw. 2008</span>
+					<em>Haplochromis vonlinnei</em> spec. nov., a piscivorous haplochromine cichlid (Teleostei, Perciformes) from the Mwanza Gulf area of Lake Victoria, Tanzania. <em>Zoologische Mededelingen, Leiden</em> <b>82</b>(17): 167-175.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/566424f3-909a-40b8-a069-579b2c320ecc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Soest, Rob W. M., Elly J. Beglinger & Nicole J. De Voogd. 2013</span>
+					Microcionid sponges from Northwest Africa and the Macaronesian Islands (Porifera, Demospongiae, Poecilosclerida). <em>Zoologische Mededelingen, Leiden</em> <b>87</b>(4): 275-404.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/83fb3427-4587-409d-88bb-4e9fe9dc77fe">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">van Soest, Rob W. M., Elly J. Beglinger & Nicole J. De Voogd. 2014</span>
+					Mycale species (Porifera: Poecilosclerida) of Northwest Africa and the Macaronesian Islands. <em>Zoologische Mededelingen, Leiden</em> <b>88</b>(4): 59-109.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5a41d088-4ff4-4447-b8fa-dd8319480aa4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Verseveldt, J. & A. Tursch. 1979</span>
+					Octocorallia from the Bismarck Sea (Part 1). <em>Zoologische Mededelingen, Leiden</em> <b>54</b>(11): 133-148,Plate 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a936b687-67fd-42f2-abea-a10378c037e4">	
+										
+					
+					<span class="biblio-authors">Vervoort, W. 1946</span>
+					Exotic hydroids in the collections of the Rijksmuseum van Natuurlijke Historie and the Zoological Museum at Amsterdam. <em>Zoologische Mededelingen , Leiden</em> <b>26</b>: 287-351.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ef4dc975-b434-4e0b-839c-da8d7eba97d5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wells, John W. 1964</span>
+					The recent solitary mussid scleractinian corals. <em>Zoologische Mededelingen, Leiden</em> <b>39</b>: 375‒384.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/62270723-9389-416a-a5bf-96fb08d47a60">	
+										
+					
+					<span class="biblio-authors">Wiebes, J. T. 1963</span>
+					Indo-malayan and Papuan fig wasps (Hymenoptera, Chalcidoidea) 2. The genus Pleistodontes Saunders (Agaonidae). <em>Zoologische Mededelingen, Leiden</em> <b>38</b>(19): 303-321.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8d416ed1-126f-4b7a-9de9-613000ce7ab1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wiebes, J. T. 1980</span>
+					The genus <em>Odontofroggatia</em> Ishii (Hymenoptera Chalcidoidea, Pteromalidae Epichrysomallinae). <em>Zoologische Mededelingen, Leiden</em> <b>56</b>(1): 1-6, plate 1.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">104 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=zh-cn">中文</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=nl">Nederlands</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=en-us">English</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=fr">Français</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=de">Deutsch</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=it">Italiano</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=ja">日本語</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=pt">Português</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=ru">Русский</a>&nbsp;<a href="/References/50f97df3-6ca3-4221-9aa6-b7c0906f57c3?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

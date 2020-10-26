@@ -1,0 +1,2260 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoological Studies
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 15 July 2009, 12:25:47.890 by William N. Eschmeyer",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:916FF81B-F8BE-4B9B-A41F-4F4670BCD156</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:916FF81B-F8BE-4B9B-A41F-4F4670BCD156" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:916FF81B-F8BE-4B9B-A41F-4F4670BCD156" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								 | 
+								
+									
+										<img src="http://zoobank.org/images/CASicon.jpg" title="CAS-Journals: ZOOLS" alt="Eschmeyer Journal Abbreviations" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            
+                        
+                    
+				
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+							
+							
+								
+									
+								
+							
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+				
+				
+				
+					
+						
+						
+						
+						
+					
+				
+				
+				
+				
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoological Studies<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN<span style="font-size:smaller;">&nbsp;(Print)</span>:</th>
+                    <td>1021-5506</td>
+                </tr>
+                
+                    <tr>
+                        <th scope="row" class="entry_label"><span style="font-size:smaller;">(Online)</span>:</th>
+                        <td>1810-522X</td>
+                    </tr>	
+                
+                
+                <tr><th scope="row" class="entry_label">Online&nbsp;Archives:</th><td> Zenodo (added: Dec 19 2016  6:55AM UTC)  [<a href="http://zenodo.org" target="_blank">http://zenodo.org</a>] </td></tr>
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td>Biodiversity Research Center, Academia Sinica</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td>Taiwan</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td>English</td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (147) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/db856582-44aa-45a6-a21b-01900837a9ed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Abramov, Alexei V., Alexander E. Balakirev & Viatcheslav V. Rozhnov. 2014</span>
+					An enigmatic pygmy dormouse: molecular and morphological evidence for the species taxonomic status of Typhlomys chapensis (Rodentia: Platacanthomyidae). <em>Zoological Studies</em> <b>53</b>(34).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0f1969f0-8211-4b1d-842d-ec9bd544fefe">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ahyong, Shane T. & Peter K. L. Ng. 2017</span>
+					East Asian Cymonomid Crabs (Crustacea: Brachyura). <em>Zoological Studies</em> <b>56</b>(24): 1-20.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6d5b58dc-a3d7-4a08-a51b-080eab8ec294">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Allen, Gerald R. & M. Adrim. 2003</span>
+					Coral reef fishes of Indonesia. <em>Zoological studies</em> <b>42</b>(1): 1-72.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3a99e656-a4c7-491b-95e9-419413d9abc0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Allen, Gerald R. & Mark V. Erdmann. 2007</span>
+					A new species of <em>Manonichthys</em> Gill, 2004 (Pisces: Pseudochromidae) from Irian Jaya Barat Province, Indonesia. <em>Zoological Studies</em> <b>46</b>(5): 541-546.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/900bee26-2b3d-405a-8927-54d1b77b9316">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Allen, Gerald R. & Mark V. Erdmann. 2010</span>
+					<em>Pentapodus numberii</em>, a new species of whiptail (Pisces: Nemipteridae) from eastern Indonesia. <em>Zoological Studies</em> <b>48</b>(2): 280-286.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dc4e0561-df1f-4f3b-88a4-ee7df5041288">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Altenburger, Andreas, Hyun S. Rho, Cheon Y. Chang & Martin V. Sørensen. 2015</span>
+					<em><em>Zelinkaderes</em> yong</em> sp. nov. from Korea - the first recording of <em>Zelinkaderes</em> (Kinorhyncha: Cyclorhagida) in Asia. <em>Zoological Studies</em> <b>54</b>(25): 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f921eb71-bb82-4f88-a74a-1dafed37bcef">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Angelini, Fernando & Stewart B. Peck. 2000</span>
+					<em>Besuchetionella</em> new genus, with descriptions of eighteen new species from Asia (Coleoptera: Leiodidae: Agathidiini). <em>Zoological Studies</em> <b>39</b>(4): 328–343.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/63cb32d4-523a-4ff5-bab9-1cfa100cf709">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Aspe, Nonillon M. & Samuel W. James. 2016</span>
+					New species of <em>Pheretima</em>, <em>Amynthas</em>, <em>Polypheretima</em>, and <em>Pithemera</em> (Clitellata: Megascolecidae) from Mindanao and associated islands, Philippines. <em>Zoological Studies</em> <b>55</b>: 1-33.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d1b78026-edb6-46e2-a86e-afc5cc0594a3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bochnak, Marcin, Katarzyna Vončina, Reinhardt M. Kristensen & Piotr Gąsiorek. 2020</span>
+					Continued exploration of Tanzanian rainforests reveals a new echiniscid species (Heterotardigrada). <em>Zoological Studies</em> <b>59</b>(18).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/16e1670d-aff3-4848-99a4-0502fe229edb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Camerik, Anne M. & Wojciech Ł. Magowski. 2016</span>
+					A new species of Zambedania (Acari: Heterostigmatina: Pygmephoridae) from the Two Rivers Platinum Mine in South Africa and notes on the life-cycle of the genus. <em>Zoological Studies</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a0f7a1bb-56eb-4c65-90ba-fe765a99c689">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Camerik, Anne M., Wojciech Ł. Magowski, Peter G. Hawkes, Edward A. Ueckermann, Ronald Ochoa & Gary R. Bauchan. 2016</span>
+					A new species of <em>Zambedania</em> (Acari: Heterostigmatina: Pygmephoridae) from the Two Rivers Platinum Mine in South Africa and notes on the life-cycle of the genus. <em>Zoological Studies</em> <b>55</b>(11): 1-21.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7e6f38d6-14af-4719-89db-6643ac4fc027">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cao, Yanmin & Hongqu Tang. 2017</span>
+					Taxonomic Review of <em>Zavreliella</em> Kieffer from East Asia. <em>Zoological Studies</em> <b>56</b>(5): 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b770f689-05c3-489b-b191-00a2ecf6132f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, H.-M. & Eugenia B. Böhlke. 1996</span>
+					Redescription and new records of a rare moray eel, <i>Echidna xanthospilos</i> (Bleeker, 1859) (Anguilliformes: Muraenidae). <em>Zoological studies</em> <b>35</b>(4): 300-304.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/52e14102-fed3-48e0-b815-4c004776d7d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, H.-M., Kwang-Tsao Shao & C.-T. Chen. 1994</span>
+					A review of the muraenid eels (family Muraenidae) from Taiwan with descriptions of twelve new records. <em>Zoological studies</em> <b>33</b>(1): 44-64.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/56708393-cb7c-4a52-b852-fed10e04127f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, H.-M., Kwang-Tsao Shao & C.-T. Chen. 1996</span>
+					A new moray eel, <i>Gymnothorax niphostigmus</i>, (Anguilliformes: Muraenidae) from northern and eastern Taiwan. <em>Zoological studies</em> <b>35</b>(1): 20-24.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/655aca01-1327-4bea-8f65-30cadec4df4f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, I.-S. & K.-S. Shao. 1996</span>
+					A taxonomic review of the gobiid fish genus <i>Rhinogobius</i> Gill, 1859, from Taiwan, with description of three new species. <em>Zoological studies</em> <b>35</b>(3): 200-214.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fad59472-630a-427c-9af9-9629d1fbd00f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, I.-S. & L.-S. Fang. 2000</span>
+					Redescription of the types of <i>Ischikauia macrolepis</i> Regan, 1908, an extinct cyprinid (Teleostei: cyprnidae) from Taiwan and the replacement in the genus, <i>Rasborinus</i> Oshima, 1920. <em>Zoological studies</em> <b>39</b>(1): 13-17.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/27acefff-dd16-4528-9e60-11c7b87c023a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, I.-S., B. Séret, C. Pöllabauer & Kwang-Tsao Shao. 2001</span>
+					<i>Schismatogobius fuligimentus</i>, a new species of freshwater goby (Teleostei: Gobiidae) from New Caledonia. <em>Zoological studies</em> <b>40</b>(2): 141-146.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/10df8409-311d-4cfa-8216-31fdef8bbf13">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, I.-S., C.-C. Han & L.-S. Fang. 1995</span>
+					New records of the commensal gobiid genus, <i>Bryaninops</i> (Pisces: Gobiidae), from southern Taiwan. <em>Zoological studies</em> <b>34</b>(4): 284-286.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/99662fde-5eeb-4969-8df9-dedd0bbbb10f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, I.-S., Jeng-Ping Chen & Kwang-Tsao Shao. 1997</span>
+					Twelve new records and two rare species of marine gobioids from Taiwan. <em>Zoological studies</em> <b>36</b>(2): 127-135.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/55c8426e-a6da-43af-b93a-636ea4e6bf7d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, I.-S., Kwang-Tsao Shao & L.-S. Fang. 1995</span>
+					A new species of freshwater goby <i>Schismatogobius ampluvinculus</i> (Pisces: Gobiidae) from southeastern Taiwan. <em>Zoological studies</em> <b>34</b>(3): 202-205.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e8483b87-10c3-4678-ad87-b0897581c2b6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, I.-S., Maurice Kottelat & Peter J. Miller. 1999</span>
+					Freshwater gobies of the genus <i>Rhinogobius</i> from the Mekong basin in Thailand and Laos, with descriptions of three new species. <em>Zoological studies</em> <b>38</b>(1): 19-32.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/80e5ed16-4234-4a7e-b34a-815be8a6e2ce">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, J.-p., H.-C. Ho & Kwang-Tsao Shao. 2007</span>
+					A new lizardfish (Aulopiformes: Synodontidae) from Taiwan with descriptions of three new records. <em>Zoological Studies</em> <b>46</b>(2): 148-154.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8142f8ff-9ec7-47a4-b245-852ccdf11b6a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, Jeng-Ping & Kwang-Tsao Shao. 2002</span>
+					<i>Plectranthias sheni</i>, a new species and <i>P. kamii</i>, a new record of anthiine fishes (Perciformes: Serranidae) from Taiwan. <em>Zoological studies</em> <b>41</b>(1): 63-68.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/11a5a5d0-afe3-4cbe-b108-185eb2d50b69">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, Jeng-Ping, I.-S. Chen & Kwang-Tsao Shao. 1998</span>
+					Review of the marine gobiid genus, <i>Amblyeleotris</i> (Pisces: Gobiidae) with seven new records from Taiwan. <em>Zoological studies</em> <b>37</b>(2): 111-118.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/9c53ef7d-f803-4772-acd9-544bfb06f66f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, X.-Y., J.-X. Yang & Y.-R. Chen. 1999</span>
+					A review of the cyprinoid fish genus <i>Barbodes</i> Bleeker, 1859, from Yunnan, China, with descriptions of two new species. <em>Zoological studies</em> <b>38</b>(1): 82-88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/64596c96-0b47-4a20-b88c-e23a689d846c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, Y.-Y. & H.-K. Mok. 2001</span>
+					A new synaphobranchid eel, <i>Dysomma longirostrum</i> (Anguilliformes: Synaphobranchidae), from the northeastern coast of Taiwan. <em>Zoological studies</em> <b>40</b>(2): 79-83.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/621df885-2a6e-4d88-81e0-095e69474e47">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, Z.-M. & Y.-F. Chen. 2001</span>
+					Phylogeny of the specialized schizothoracine fishes (Teleostei: Cypriniformes: Cyprinidae). <em>Zoological studies</em> <b>40</b>(2): 147-157.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f40d1b5a-35a1-4b3b-b81e-547b2f63b658">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chiou, M.-L., Kwang-Tsao Shao & T. Iwamoto. 2004</span>
+					A new species, <i>Caelorinchus sheni</i>, and 19 new records of grenadiers (Pisces: Gadiformes: Macrouridae) from Taiwan. <em>Zoological studies</em> <b>43</b>(1): 35-50.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/baf0f24b-5a7e-461d-9fd8-973477fb584a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Conde-Vela, Víctor M., Xuwen Wu & Sergio I. Salazar-Vallejo. 2018</span>
+					Reevaluation and new species of <em>Kainonereis</em> Chamberlin, 1919 (Annelida: Polychaeta: Nereididae). <em>Zoological Studies</em> <b>57</b>(6): 1-24.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dbd888e1-f9f4-485f-89f6-7e7d3b60191b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cottarelli, Vezio, Maria C. Bruno, Maria T. Spena & Rosario Grasso. 2012</span>
+					Studies on subterranean copepods from Italy, with descriptions of two new epikarstic species from a cave in Sicily. <em>Zoological Studies</em> <b>51</b>(4): 556-582.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0368be17-f6da-4f69-8a69-d7b29e39bad1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dai, Y.-G. & J.-X. Yang. 2003</span>
+					Phylogeny and zoogeography of the cyprinid hemicultrine group (Cyprinidae: Cultrinae). <em>Zoological studies</em> <b>42</b>(1): 73-92.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/242292f2-59eb-407d-bf73-d4d077565588">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Delgado-Blas, Víctor H. & Luis F. Carrera-Parra. 2018</span>
+					New phylogenetic analysis of <em>Paraprionospio</em> Caullery (Polychaeta: Spionidae), with description of a new species from the Gulf of Mexico. <em>Zoological Studies</em> <b>57</b>(52): 1-20.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fe84ef07-e706-483d-87a3-399521143e27">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Dellapé, Pablo M., María C. Melo & Jane E. O’Donnell. 2015</span>
+					Biodiversity and distribution of lethaeine seed bugs (Heteroptera, Rhyparochromidae, Lethaeini) from Argentina. <em>Zoological Studies</em> <b>54</b>(34): 1-21.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/42bab724-ecf8-442f-ac05-beba02d59ba9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferrer-Suay, Mar, Jesús Selfa & Juli Pujade-Villar. 2013</span>
+					Charipinae fauna (Hymenoptera: Figitidae) from Asia with a description of 11 new species. <em>Zoological Studies</em> <b>52</b>(41): 41.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/878a0596-199b-4285-b46d-f35c864e0568">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferrer-Suay, Mar, Jesús Selfa & Juli Pujade-Villar. 2013</span>
+					Charipinae fauna (Hymenoptera: Figitidae) from Asia with a description of 11 new species. <em>Zoological Studies</em> <b>52</b>(41): 41.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2525244e-c7af-470a-8589-c943a3422a71">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferrer-Suay, Mar, Jesús Selfa & Juli Pujade-Villar. 2014</span>
+					Charipinae fauna (Hymenoptera: Figitidae) from Asia with a description of 11 new species. <em>Zoological Studies</em> <b>52</b>(41).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d56a05de-8dc5-4f21-b731-95e9bb98463b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferrer-Suay, Mar, Jesús Selfa & Juli Pujade-Villar. 2014</span>
+					Charipinae fauna (Hymenoptera: Figitidae) from Asia with a description of 11 new species. <em>Zoological Studies</em> <b>52</b>(41): 41.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d656593b-ba6a-43fa-8842-950baef5e305">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferrer-Suay, Mar, Jesús Selfa & Juli Pujade-Villar. 2014</span>
+					Charipinae fauna (Hymenoptera: Figitidae) from Asia with a description of 11 new species. <em>Zoological Studies</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ab0d7d7f-384c-473c-b5aa-489abea93f25">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ferretti, Nelson. 2015</span>
+					Cladistic reanalysis and historical biogeography of the genus <em>Lycinus </em>Thorell, 1894 (Araneae: Mygalomorphae: Nemesiidae) with description of two new species from western Argentina. <em>Zoological Studies</em> <b>54</b>(11): 1-15.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/20297152-4e6f-4b40-ad9a-c3d77e672313">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hajiqanbar, Hamidreza & Farahnaz Hosseininaveh. 2014</span>
+					A new genus and species of the family Microdispidae (Acari: Prostigmata) associated with <em>Oryctes nasicornis</em> (Coleoptera: Scarabaeidae) and redescription of the monotypic genus <em>Vietodispus </em>Mahunka, 1975. <em>Zoological Studies</em> <b>53</b>(58): 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/26cff18c-5dae-4138-9195-e58554834621">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hanson, John D., Guillermo D’Elía, Sheri Westerman-Ayers, Stephen B. Cox, Santiago F. Burneo & Thomas E. Lee. 2015</span>
+					A new species of fish eating rat, genus Neusticomys (Sigmodontinae), from Ecuador. <em>Zoological Studies</em> <b>54</b>: 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/36a064d5-ab2c-423f-b17f-d3a37f211ebc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ho, Hsuan-Ching, John E. McCosker & David G. Smith. 2013</span>
+					Revision of the worm eel genus <em>Neenchelys</em> (Ophichthidae: Myrophinae), with descriptions of three new species from the western Pacific Ocean. <em>Zoological Studies</em> <b>52</b>(58): 1-20.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/20d4528e-efb7-4cc7-9710-fec18030c0f3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hsu, Hua H. 2020</span>
+					Somniosus (Rhinoscymnus) cheni sp. nov., A New Species of Sleeper Shark (Squaliformes: Somniosidae) from Eastern Taiwan, with Aspects of Embryo Biology. <em>Zoological Studies</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fab6559d-1809-49a2-8b30-331afb3af6d8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Huang, Shih-Pin, I-Shiung Chen, Mana M. N. Yung & Kwang-Tsao Shao. 2016</span>
+					The recognition and molecular phylogeny of <em>Mugilogobius mertoni</em> complex (Teleostei: Gobiidae), with description of a new cryptic species of <em>M. flavomaculatus</em> from Taiwan. <em>Zoological Studies</em>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2e402a3e-2517-4022-a98b-fde617bc2ac5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Huber, Augusto F., Emily R. Rockhill, Paula B. Araujo & Felipe B. Ribeiro. 2020</span>
+					A new species of the burrowing crayfish genus <em>Parastacus</em> Huxley, 1879 (Decapoda, Parastacidae) from the  Sinos River Basin, southern Brazil. <em>Zoological Studies</em> <b>59</b>(47): 1-14.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9a3b03b3-c61e-4efc-9809-8997742a3364">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ida, Hitoshi, P. Sirimontaporn & S. Monkolprasit. 1994</span>
+					Comparative morphology of the fishes of the family Ammodytidae, with a description of two new genera and two new species. <em>Zoological studies</em> <b>33</b>(4): 251-277.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7bc95033-58ab-424c-9bd1-8f3240f150ea">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Jiao, Ke-Long, Yi-Ran Mu & Wen-Jun Bu. 2017</span>
+					Notes on the genus Brachyneurina Mamaev (Diptera: Cecidomyiidae) with description of two new species from China. <em>Zoological Studies</em> <b>56</b>(04): 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/78e86a7d-c120-4580-8459-82d50df965c2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Jimi, Naoto, Danny Eibye-Jacobsen & Sergio I. Salazar-Vallejo. 2018</span>
+					Description of <em><em>E</em>lisesione imajimai</em> sp. nov. from Japan (Annelida: Hesionidae) and a redescription of <em>E</em>. <em>problematica</em> (Wesenberg-Lund, 1950) and its confirmation within Hesionini. <em>Zoological Studies</em> <b>57</b>: 8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/02cbad0e-d900-49e7-a8f9-ef0fd57c20a2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kadej, Marcin & Jiří Háva. 2013</span>
+					Key to species of the genus <em>Cryptorhopalum </em>(Coleoptera: Dermestidae) occurring in the Greater Antilles with description of six new species from Hispaniola. <em>Zoological Studies</em> <b>52</b>(5): 1-15.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c46301b7-c609-4943-8146-307bd1b33543">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kadej, Marcin & Jiří Háva. 2013</span>
+					Key to species of the genus Cryptorhopalum (Coleoptera: Dermestidae) occurring in the Greater Antilles with description of six new species from Hispaniola. <em>Zoological Studies</em> <b>52</b>(5).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/85faf8b3-5d50-4e24-9526-60c2959f9fe3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kruskop, Sergei V., Evgeniya N. Solovyeva & Anna D. Kaznadzey. 2018</span>
+					Unusual pipistrelle: taxonomic position of the Malayan noctule (Pipistrellus stenopterus; Vespertilionidae; Chiroptera). <em>Zoological Studies</em> <b>57</b>(60): 1-15.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ce5c6d01-06d7-47ea-b5ea-6c3500f25973">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kuo, C.-H. & H.-K. Mok. 1994</span>
+					<i>Eptatretus chinensis</i>: a new species of hagfish (Myxinidae; Myxiniformes) from the South China Sea. <em>Zoological studies</em> <b>33</b>(4): 246-250.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/79932082-a8e1-448c-a7c8-9bd4de7a3013">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kuo, C.-H., K.-F. Huang & H.-K. Mok. 1994</span>
+					Hagfishes of Taiwan (I): A taxonomic revision with description of four new <i>Paramyxine</i> species. <em>Zoological studies</em> <b>33</b>(2): 126-139.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9b81980d-9d27-4f4a-855f-390b3f6d6fb8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kuo, S. C. & H. K. Mok. 1999</span>
+					Redescription of <i>Paramyxine nelsoni</i> (Myxinidae; Myxiniformes) and comparison with <i>P. yangi</i> from Taiwan. <em>Zoological studies</em> <b>38</b>(1): 89-94.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/05ed06b1-7929-4adf-9f37-bc16d5e9811b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kuo, S.-R. & Kwang-Tsao Shao. 1999</span>
+					Species composition of fish in the coastal zones of the Tsengwen Estuary, with descriptions of five new records from Taiwan. <em>Zoological studies</em> <b>38</b>(4): 391-404.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/73885401-7f1e-43b2-85a8-3f1f9dc1101c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kury, Adriano B. & Carla M. Barros. 2014</span>
+					A new genus and eight new species of Amazonian cosmetines (Opiliones, Laniatores, Cosmetidae). <em>Zoological Studies</em> <b>53</b>(24): 1-46.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7bcfc39b-bebd-48c6-a7c6-ebea7b957466">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Larson, Helen K. & I.-S. Chen. 2007</span>
+					A new species of <em>Tryssogobius</em> (Teleostei, Gobiidae) from Hainan Island, China and Taiwan. <em>Zoological Studies</em> <b>46</b>(2): 155-161.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d3abc845-aa71-4223-9ec4-812da441843f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Chi-Feng & Jan Bezděk. 2013</span>
+					The genus <em>Cneorane </em>Baly, 1865 from Taiwan (Coleoptera: Chrysomelidae: Galerucinae), with notes on sexual dimorphism and its life history. <em>Zoological Studies</em> <b>52</b>(9): 14.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f04cd002-d2f1-48fa-a4cf-ad49200fcd52">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Chi-Feng, Masataka Satô & Masahiro Sakai. 2005</span>
+					The Rhipiceridae of Taiwan and Japan (Insecta: Coleoptera: Dascilloidea). <em>Zoological Studies</em> <b>44</b>(4): 437-444.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/839fda92-60a1-4dae-9ecb-f5583bf640ba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, S.-C. & J. T. Chang. 1996</span>
+					A new goby, <i>Rhinogobius rubromaculatus</i> (Teleostei: Gobiidae), from Taiwan. <em>Zoological studies</em> <b>35</b>(1): 30-35.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/15098e71-e6cd-4dc2-91f7-d7216f68d2d5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, S.-C. & M.-P. Tsai. 1999</span>
+					Molecular systematics of the thornfishes genera <i>Terapon</i> ansd <i>Pelates</i> (Perciformes: Teraponidae) with refernece to the new genus <i>Pseudoterapon</i>. <em>Zoological studies</em> <b>38</b>(3): 279-286.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d223cfcf-b7c0-4b6d-9aa5-4251afd65bb3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, S.-C. & W.-C. Chao. 1994</span>
+					A new aulopid species, <i>Aulopus formosanus</i> (Aulopiformes: Aulopodidae) from Taiwan. <em>Zoological studies</em> <b>33</b>(3): 211-216.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7e87c6f8-357f-4c21-8ec2-3b11ac7598d2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Taekjun, Sabine Stöhr, Yeon J. Bae & Sook Shin. 2019</span>
+					A new fissiparous brittle star, <i>Ophiacantha scissionis</i> sp. nov. (Echinodermata, Ophiuroidea, Ophiacanthida), from Jeju Island, Korea. <em>Zoological Studies</em> <b>58</b>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0affce2f-97dd-4e6e-8dd0-2ed5a6e586a2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lee, Yerim, Mariusz Kanturski & Seunghwan Lee. 2018</span>
+					The Mesocallis Matsumura (Hemiptera: Aphididae) of the Korean peninsula with description of two new species. <em>Zoological Studies</em> <b>57</b>(17): 1-20.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a85d0a31-5616-417d-8f02-42633d6accca">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Leis, Jeffrey M., A. C. Hay & A. G. Miskiewicz. 2004</span>
+					Larval development of the rare Australian aploactinid fish <i>Matsubarichthys inusitatus</i> (Pisces: Scorpaenidormes). <em>Zoological studies</em> <b>43</b>(3): 580-588.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/827fda98-5812-498f-91bb-59d1484585c0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Li, Song & Shao-Ting Liu. 2014</span>
+					Geographic variation of the large-eared field mouse (<em>Apodemus latronum</em> Thomas, 1911) (Rodentia: Muridae) with one new subspecies description verified via cranial morphometric variables and pelage characteristics. <em>Zoological Studies</em> <b>53</b>(23): 1-11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a55edec6-dc5e-4cc3-a7fc-00abcef43ebc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Liao, Y.-C., Li S. Chen, Kwang-Tsao Shao & I.-S. Chen. 2004</span>
+					A review of parrotfishes (Perciformes: Scaridae) of Taiwan with descriptions of four new records and one doubtful species. <em>Zoological studies</em> <b>43</b>(3): 519-536.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a1688650-40b7-450e-a150-bedcd69766eb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lin, P. L. & Kwang-Tsao Shao. 1999</span>
+					A review of the carangid fishes (Family Carangidae) from Taiwan with descriptions of four new records. <em>Zoological studies</em> <b>38</b>(1): 33-68.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/894feee5-76d0-4856-9fd4-03583ecb95bd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lin, P.-L., Kwang-Tsao Shao & Jeng-Ping Chen. 1994</span>
+					Five new records of coastal fishes from western Taiwan. <em>Zoological studies</em> <b>33</b>(2): 174-176.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5c22431a-306f-4798-989c-1a08d5d2064b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lin, Yu-Jia, Mohammad A. Qurban, Kang-Ning Shen & Ning L. Chao. 2019</span>
+					Delimitation of Otolithes species (Teleostei: Sciaenidae) from the western Arabian Gulf using an integrative approach, with a description of Otolithes arabicus sp. nov. <em>Zoological Studies</em> <b>58</b>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1f9e7aca-c78c-43a7-9e52-66bffc2b8b85">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Liu, C.-H. 2001</span>
+					Early osteological development of the yellow tail <i>Seriola dumerili</i> (Piseces: Carangidae). <em>Zoological studies</em> <b>40</b>(4): 289-298.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5bf08ddd-3d01-4faf-9847-404cdb0bfebb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Liu, Shang-Yin. 2013</span>
+					A new species of Pomacentrus (Actinopterygii:Pomacentridae) from Micronesia, with comments on its phylogenetic relationships. <em>Zoological Studies</em> <b>52</b>(6).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dab4d865-5183-4318-add6-80a7b7e09f66">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lobato-Vila, Irene & Juli Pujade-Villar. 2017</span>
+					Description of five new species of inquiline oak gall wasps of the genus Synergus Hartig (Hymenoptera, Cynipidae: Synergini) with partially smooth mesopleurae from Mexico. <em>Zoological Studies</em> <b>56</b>(36).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/eab236f6-24ef-4523-af5d-7191e7a720a3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lourie, Sara A. & John E. Randall. 2003</span>
+					A new pygmy seahorse, <i>Hippocampus denise</i> (Teleostei: Syngnathidae), from the Indo-Pacific. <em>Zoological studies</em> <b>42</b>(2): 284-291.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6962fc68-e56e-43dc-ad1e-2bc6561a4f47">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Magowski, Wojciech Ł. 2012</span>
+					Two new species and a new subgenus of tarsonemid mites (Acari: Heterostigmatina: Tarsonemidae) from ferns in Poland. <em>Zoological Studies</em> <b>51</b>(4): 512-525.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9a314ae8-7215-4887-9fcc-f84c6fb554bd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">McCosker, John E., Kar-Hoe Loh, James Lin & Hong-Ming Chen. 2012</span>
+					<em>Pylorobranchus hoi</em>, a new genus and species of myrophine worm-eel from Taiwan (Anguilliformes: Ophichthidae). <em>Zoological Studies</em> <b>51</b>(7): 1188-1194.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/163b9d9c-0e0c-485e-afc4-80d2fa3702c3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">McMillan, C. B. & R. L. Wisner. 2004</span>
+					Review of the hagfishes (Mxyinidae, Myxiniformes) of the northwestern Pacific Ocean, with descriptions of three new species, <i>Eptatretus fernholmi, Paramyxine moki</i>, and <i>P. walkeri</i>. <em>Zoological studies</em> <b>43</b>(1): 51-73.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5b5bdee5-c011-45d8-8f4e-e8c45245b48e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mercado-Salas, Nancy F., Eduardo Suárez-Morales & Marcelo Silva-Briano. 2009</span>
+					Two new <em>Acanthocyclops </em>Kiefer, 1927 (Copepoda: Cyclopoida: Cyclopinae) with pilose caudal rami from semi-arid areas of Mexico. <em>Zoological Studies</em> <b>48</b>(3): 380-393.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0fdf0a7c-83e0-429d-8831-b76a384c77f7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mok, H.-K. 2002</span>
+					<i>Myxine kuoi</i>, a new species of hagfish from southwestern Taiwanese waters. <em>Zoological studies</em> <b>41</b>(1): 59-62.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cd6adde3-da78-4cd4-909e-d383afca8bb7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mok, H.-K. & Y.-W. Chen. 2001</span>
+					Distribution of hagfish (Myxinidae: Myxiniformes) in Taiwan. <em>Zoological studies</em> <b>40</b>(3): 233-239.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4740a6b2-b4d5-46f8-b337-679a535d0372">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Monferran, Mateo D. 2020</span>
+					Revision of Two Spinicaudatan Species from the Cañadón Asfalto Formation (Jurassic), Patagonia Argentina. <em>Zoological Studies</em> <b>59</b>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e1da3f7a-596d-46ba-a19d-59166ae184bf">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Motomura, Hiroyuki & Hiroshi Senou. 2005</span>
+					Validity of the scorpionfish genus <i>Hipposcorpaena</i> Fowler and a redescription of <i>H. filamentosus</i> Fowler (Scorpaenidormes: Scorpaenidae). <em>Zoological studies</em> <b>44</b>(2): 210-218.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6cc88f04-ff29-4f0d-8976-850f58ab39c9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Motomura, Hiroyuki, Stuart G. Poss & Kwang-Tsao Shao. 2007</span>
+					<em>Scorpaena pepo</em>, a new species of scorpionfish (Scorpaeniformes: Scorpaenidae) from northeastern Taiwan, with a review of <em>S. onaria</em> Jordan and Snyder. <em>Zoological Studies</em> <b>46</b>(1): 35-45.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8dbb0f3e-6d68-480a-ac0f-c6ee7701c3fa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Motomura, Hiroyuki. 2004</span>
+					Morphological comparison of a poorly known scorpionfish, <i>Parapterois macrura</i>, with a related species, <i>P. heterura</i> (Scorpaenidae: Pteroinae). <em>Zoological studies</em> <b>43</b>(1): 1-7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/abaf2990-72db-4c0d-bb30-89e5461abc04">	
+										
+					
+					<span class="biblio-authors">Murakami, Eric, Shelley A. James, John E. Randall & Arnold Y. Suzumoto. 2007</span>
+					Two hybrids of carangid fishes of the genus <i>Caranx</i>, <i>C. ignobilis</i> x <i>C. melampygus</i> and  <i>C. melampygus</i> x <i>C. sexfasciatus</i>, from the Hawaiian Islands. <em>Zoological Studies</em> <b>46</b>(2): 186-193.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5b7df734-b124-499b-a446-d37902ad18d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Negrete, Lisandro, Ana M. Leal-Zanchet & Francisco Brusa. 2015</span>
+					A new species of <em>Notogynaphallia</em> (Platyhelminthes, Geoplanidae) extends the known distribution of land planarians in Chacoan province (Chacoan subregion), South America. <em>Zoological Studies</em> <b>54</b>: 58.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/613caf83-2b24-4c92-b53d-3cfffa82e634">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ng, Heok H. 2001</span>
+					<i>Clarias microstomus</i>, a new species of clariid catfish from eastern Borneo (Teleostei: Siluriformes). <em>Zoological studies</em> <b>40</b>(2): 158-162.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/877fa677-cfce-453c-a8ad-15493aba24e8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ng, Heok H. & H.-H. Tan. 1999</span>
+					The fishes of the Endau drainage, Peninsular Malaysia with descriptions of two new species of catfishes (Teleostei: Akysidae, Bagridae). <em>Zoological studies</em> <b>38</b>(3): 350-366.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/62cecb3f-d284-472d-a587-c88f44c89866">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ng, Ngan K., Tohru Naruse & Hsi-Te Shih. 2018</span>
+					<em>Helice epicure</em>, A New Species of Varunid Mud Crab (Brachyura, Decapoda, Grapsoidea) from the Ryukyus, Japan. <em>Zoological Studies</em> <b>57</b>.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ca52d6aa-d63b-40af-a966-92009ccc4efa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nguyen, T. T., H. d. Lam & Anh D. Nguyen. 2016</span>
+					On the giant pheretimoid earthworms from Vietnam (Clitellata: Megascolecidae), with descriptions of three new species. <em>Zoological Studies</em> <b>55</b>: 52.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1389649c-c9a3-4bea-8512-865bea7e9ad5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parenti, Paolo. 2003</span>
+					On the status of species classified in the genus <i>Perca</i> by Johann Julius Walbaum (1792). <em>Zoological studies</em> <b>42</b>(4): 491-505.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1c3f4b7b-1649-45e5-9ee1-a6568ee3759d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pati, Sameer K. & Arath R. S. Devi. 2015</span>
+					Description of a new genus and new species of freshwater crab (Brachyura: Gecarcinucidae) from the Western Ghats, Kerala, India. <em>Zoological Studies</em> <b>54</b>(35): 1-8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6566a9f5-2bb1-435d-91c9-9dec1229962b">	
+										
+					
+					<span class="biblio-authors">Randall, John E. 1998</span>
+					Zoogeography of shore fishes of the Indo-Pacific region. <em>Zoological studies</em> <b>37</b>(4): 227-268.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/72ac7ffe-e6c6-45f1-9d11-e18a003cb24b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. 1999</span>
+					<i>Halichoeres orientalis</i>, a new labrid fish from southern Japan and Taiwan. <em>Zoological studies</em> <b>38</b>(3): 295-300.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ebd6883f-bd8c-47aa-b89a-45874f3c2911">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. 2001</span>
+					<i>Naso reticulatus</i>, a new unicornfish (Perciformes: Acanthuridae) from Taiwan and Indonesia, with a key to the species of <i>Naso</i>. <em>Zoological studies</em> <b>40</b>(2): 170-176.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/38392b87-7ba0-4337-b43c-7b2e2a54a562">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. 2001</span>
+					Five new Indo-Pacific gobiid fishes of the genus <i>Coryphopterus</i>. <em>Zoological studies</em> <b>40</b>(3): 206-225.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3c6d1901-062a-474f-b862-fb7cb602f6fc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. 2005</span>
+					<i>Pascua caudilinea,</i> a new genus and species of gobiid fish (Perciformes: Gobiidae) from Easter Island. <em>Zoological studies</em> <b>44</b>(1): 19-25.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/edb2ce37-9ff2-4cec-aad7-0b02c366bb2c">	
+										
+					
+					<span class="biblio-authors">Randall, John E. 2005</span>
+					A review of mimicry in marine fishes. <em>Zoological studies</em> <b>44</b>(3): 299-328.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3e357f7d-ad38-41a8-a376-19249eb4c689">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. 2009</span>
+					Five new Indo-Pacific lizardfishes of the genus <em>Synodus</em> (Aulopiformes: Synodontidae). <em>Zoological Studies</em> <b>48</b>(3): 402-417.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/93843a16-9e7a-4d63-b83d-d24e4b7d5645">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Andrew S. Cornish. 2000</span>
+					<i>Xyrichtys trivittatus</i>, a new species of razorfish (Perciformes: Labridae) from Hong Kong and Taiwan. <em>Zoological studies</em> <b>39</b>(1): 18-22.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8b1d47f6-fc2d-421a-bb79-86754f8a397f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Helen A. Randall. 2001</span>
+					<i>Dascyllus auripinnis</i>, a new pomacentrid fish from atolls of the central Pacific Ocean. <em>Zoological studies</em> <b>40</b>(1): 61-67.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/76d36ee6-9473-466b-b370-a1bad7666104">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Hiroshi Senou. 2007</span>
+					Two new soles of the genus <em>Aseraggodes</em> (Pleuronectiformes: Soleidae) from Taiwan and Japan. Zoological Studies v. 46 (no. 3):. <em>Zoological Studies</em> <b>46</b>(3): 303-310.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/32aba622-c8a7-4625-85e4-b58438e8fc8d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & I.-S. Chen. 2007</span>
+					<em>Tomiyamichthys tanyspilus</em>, a new species of gobiid fish from Indonesia. <em>Zoological Studies</em> <b>46</b>(6): 651-655.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3cf65236-2511-4e42-8276-ca1ae67557ca">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Luiz A. Rocha. 2009</span>
+					<em>Halichoeres claudia</em> sp. nov., a New Indo-Pacific Wrasse (Perciformes: Labridae), the Fourth Species of the <em>H. ornatissimus</em> Complex. <em>Zoological Studies</em> <b>48</b>(5): 709-718.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0e998af7-8836-4c57-8cf1-6341f80be5ae">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Maroof Khalaf. 2003</span>
+					Redescription of the labrid fish <i>Oxycheilinus orientalis</i> (Günther), a senior synonym of <i>O. rhodochrous</i> (Günther), and the first record from the Red Sea. <em>Zoological studies</em> <b>42</b>(1): 135-139.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/04f6c58d-2572-45b2-94c9-b233d299f6fd">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Michel Kulbicki. 2006</span>
+					A Review of the Goatfishes of the Genus Upeneus(Perciformes:Mullidae) from New Caledonia and the Chesterfield Bank, with a New Species and Four New Records. <em>Zoological studies</em> <b>45</b>(3): 298-307.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9602391d-7523-485b-a5c2-3b1ec5f3fe38">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Richard L. Pyle. 2008</span>
+					<em>Synodus orientalis</em>, a new lizardfish (Aulopiformes: Synodontidae) from Taiwan and Japan, with correction of the Asian record of <em>S. lobeli</em>. <em>Zoological studies</em> <b>47</b>(5): 657–662.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fab49112-fa96-4fe9-a5c1-eb4c69744594">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Robert F. Myers. 2002</span>
+					<i>Parupeneus insularis</i>, a new central Pacific species of goatfish (Perciformes: Mullidae) of the <i>P. trifasciatus</i> complex. <em>Zoological studies</em> <b>41</b>(4): 431-440.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/242cdf23-d4c5-4167-84af-108a45f53fff">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E. & Takeshi Yamakawa. 2005</span>
+					<i>Parapercis phenax</i> from Japan and <i>P. banoni</i> from the southeast Atlantic, new species of pinguipedid fishes previously identified as <i>P. roseoviridis</i>. <em>Zoological studies</em> <b>45</b>(1): 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1df18774-94af-40fa-ad53-e9943a8569d3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E., Gerald R. Allen & D. Ross Robertson. 2003</span>
+					<i>Myripristis earlei</i>, a new soldierfish (Beryciformes: Holocentridae) from the Marquesas and Phoenix Islands. <em>Zoological studies</em> <b>42</b>(3): 405-410.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/99e104ed-d0bf-4d2c-a21f-109547ea8559">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E., Kwang-Tsao Shao & Jeng-Ping Chen. 2003</span>
+					A review of the Indo-Pacific gobiid fish genus <i>Ctenogobiops</i>, with descriptions of two new species. <em>Zoological studies</em> <b>42</b>(4): 506-515.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cac6894a-28c8-45b9-b574-e10a1357ec16">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Randall, John E., Kwang-Tsao Shao & Jeng-Ping Chen. 2007</span>
+					Two new shrimp gobies of the genus <i>Ctenogobiops</i> (Perciformes: Gobiidae), from the western Pacific. <em>Zoological Studies</em> <b>46</b>(1): 26-34.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/084f122c-fdec-46b9-9d11-3619723bcaa2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ross, A. & William A. Newman. 1999</span>
+					A New Coral-inhabiting Barnacle from Taiwan (Cirripedia: Pyrgomatidae). <em>Zoological Studies</em> <b>38</b>(4): 387-390.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/82f61207-e4c5-4e29-94d0-ac9e0d0792b0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ross, A. & William A. Newman. 2001</span>
+					Cionophora — New Records for a Western Pacific Coral-inhabiting Barnacle of Astreopora. <em>Zoological Studies</em> <b>40</b>(3): 204-205.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bfd5232d-5042-49fd-ac8e-7b75c6e6507e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Roszkowska, Milena, Marta Ostrowska & Łukasz Kaczmarek. 2015</span>
+					The genus <em>Milnesium </em>Doyère, 1840 (Tardigrada) in South America with descriptions of two new species from Argentina and discussion of the feeding behaviour in the family Milnesiidae. <em>Zoological Studies</em> <b>54</b>(12): 1-17.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0af84457-d60b-4107-b67a-3b0305a47dd1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Salazar-Vallejo, Sergio I. 2017</span>
+					Six new tropical sternaspid species (Annelida, Sternaspidae) with keys to identify genera and species. <em>Zoological Studies</em> <b>56</b>(32): 16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5e4f839d-9426-4446-a1d8-f35fc280b0ba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Salvatierra, Lidianne, Ana L. Tourinho & Antonio D. Brescovit. 2014</span>
+					Revision of the spider genera Ariston O. P.-Cambridge, 1896 and <em>Siratoba </em>Opell, 1979 (Arachnida: Araneae: Uloboridae) with description of two new species. <em>Zoological Studies</em> <b>53</b>(28): 1-13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/267f6573-edaf-4a01-8ff3-0823b33a014e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Schimmel, Rainer & Dariusz Tarnawski. 2012</span>
+					Negastriinae studies: species of the genus <em>Arhaphes</em> Candèze, 1860 (Insecta: Coleoptera: Elateridae). <em>Zoological Studies</em> <b>51</b>(4): 536-547.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a059fdf6-96cc-4f9a-a5a2-d62f49937d3f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shen, Kang-Ning, Hsuan-Ching Ho & Chih-Wei Chang. 2012</span>
+					The Blue Velvet Angelfish <em>Centropyge deborae</em> sp. nov., a New  Pomacanthid from the Fiji Islands, Based on Genetic and Morphological  Analyses. <em>Zoological studies</em> <b>51</b>(3): 415-423.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4f9eadbf-342c-4027-9913-51a86535ea43">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shen, Shih-Chieh. 1997</span>
+					A review of the genus <i>Scolopsis</i> of nemipterid fishes, with descriptions of three new records from Taiwan. <em>Zoological studies</em> <b>36</b>(4): 345-352.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/69f96388-1b76-422a-976c-1050698b1ef1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shen, Shih-Chieh. 1998</span>
+					A review of congrid eels of the genus <i>Ariosoma</i> from Taiwan, with description of a new species. <em>Zoological studies</em> <b>37</b>(1): 7-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c9e923c2-628a-4ec3-ba93-975fe91d7ee4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shih, Hsi-Te, Pei-Yi Hsu, Adnan Shahdadi, Christoph D. Schubart & Li Jheng-Jhang. 2019</span>
+					The Synonymy of the Supratidal Crab Species Parasesarma cognatum Rahayu & Li, 2013 with P. liho Koller, Liu & Schubart, 2010 (Decapoda: Brachyura: Sesarmidae) Based on Morphological and Molecular Evidence, with a Note on P. paucitorum Rahayu & Ng, 2009. <em>Zoological Studies</em> <b>58</b>(21).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0fc6ffab-20bc-4608-b2e6-c28f0c62b7a1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shih, Hsiu-Hui, Wei Liu & Zhaozhi Qiu. 2004</span>
+					Digenean fauna in marine fishes from Taiwanese waters with the description of a new species, <em>Lecithochirium tetraorchis </em>sp. nov. <em>Zoological Studies</em> <b>43</b>(4): 671-676.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4af66b5c-af72-4949-9ea9-939ab0bd70d4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sousa, Francisco D. R., Lourdes M. A. Elmoor-Loureiro & Sandro Santos. 2015</span>
+					<em>Alona kaingang</em> (Crustacea, Cladocera, Aloninae): a new species of the <em>pulchella</em>-group, with identification key to Neotropical species. <em>Zoological Studies</em> <b>54</b>(48): 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7b3de756-d021-4518-ae68-ef6f883db79e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Su, R.-F., J.-X. Yang & G.-H. Cui. 2001</span>
+					The nominal invalidity of the cyprinid genus, <i>Parasinilabeo</i>, with descriptions of a new genus and species. <em>Zoological studies</em> <b>40</b>(2): 134-140.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0e0b6334-ee53-4fc7-a0e6-72cdace2e2db">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Su, R.-F., J.-X. Yang & G.-H. Cui. 2003</span>
+					Taxonomic review of the genus <i>Sinocrossocheilus</i> Wu (Teleostei: Cyprinidae), with a description of four new species. <em>Zoological studies</em> <b>42</b>(3): 420-430.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/403b46cd-212a-4b94-bbd0-1d2b5630baa2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Suárez-Morales, Eduardo, Il-hoi Kim & B. Escamilla. 2012</span>
+					On some caligids (Copepoda, Caligidae) from the plankton of a coastal lagoon of the Gulf of Mexico with description of a new species of Metacaligus. <em>Zoological Studies</em> <b>51</b>(6): 804-818.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9e51e1ec-7e66-4574-bdc9-f7f2bc874134">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Suárez-Morales, Eduardo, Il-hoi Kim & B. Escamilla. 2012</span>
+					On some caligids (Copepoda: Caligidae) from plankton of a coastal lagoon in the Gulf of Mexico with a description of a new species of Metacaligus. <em>Zoological Studies</em> <b>51</b>(6): 804-818.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/257cb52a-fc60-41fc-823a-42c53735427b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sudarto, <?GivenName>, G. G. Teugels & L. Pouyaud. 2004</span>
+					Description of a new clariid catfish, <i>Clarias psuedonieuhofii</i> from West Borneo (Siluriformes: Clariidae). <em>Zoological studies</em> <b>43</b>(1): 8-19.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7582c06e-83eb-4458-ba58-f19e092ace67">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Teta, Pablo, Ricardo A. Ojeda, Sergio O. Lucero & Guillermo D’Elía. 2017</span>
+					Geographic variation in cranial morphology of the Southern Mountain Cavy, Microcavia australis (Rodentia, Caviidae): taxonomic implications, with the description of a new species. <em>Zoological Studies</em> <b>29</b>: 1-18.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/95f8caac-ae26-43e3-94d5-815760a8ae5e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Timms, Brian V. & D. C. Rogers. 2020</span>
+					Diagnosing Eulimnadia and Paralimnadia (Branchiopoda: Spinicaudata: Limnadiidae). <em>Zoological Studies</em> <b>59</b>(38): 1-10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1867e763-8703-4870-8645-fbf4e5a2e9fa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Victor, Benjamin C. & John E. Randall. 2010</span>
+					<i>Gramma</i> <i>dejongi</i>, a new basslet (Perciformes:Grammatidae) from Cuba, a sympatric sibling Species of <i>G</i>. <i>loreto</i>. <em>Zoological studies</em> <b>49</b>: 865-871.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/aa740157-1a2a-4f0c-a3ce-517c87d50b2d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Villarreal M., Osvaldo, Adriano B. Kury & Ricardo Pinto-da-Rocha. 2015</span>
+					The poorly know genus Ventrifurca Roewer, 1913 revisited (Opiliones: Cranaidae). <em>Zoological Studies</em> <b>54</b>(45): 1-18.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2d927f74-25c3-4334-9c3d-aa63980d4231">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vo, Van Q., Yusuke Hibino & Hsuan-Ching Ho. 2019</span>
+					A New Species of the Snake Eel Genus Ophichthus, with Additional Records from Viet Nam (Anguilliformes: Ophichthidae). <em>Zoological Studies</em> <b>58</b>(43): 1-14.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3ec68dbf-e3cd-49bf-b726-7297f65937e1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wang, H.-Y., S.-C. Lee & M.-J. Yu. 1997</span>
+					Genetic evidence to clarify the systematic status of the genera <i>Zacco</i> and <i>Candidia</i> (Cypriniformes: Cyprinidae). <em>Zoological studies</em> <b>36</b>(3): 170-177.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/152418ee-4ef9-4b6b-a637-d1f8f2052042">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wang, J. T.-M. & C.-T. Chen. 2001</span>
+					A review of lanternfishes (Families: Myctophidae and Neoscopelidae) and their distributions around Taiwan and the Tungsha Islands with notes on seventeen new records. <em>Zoological studies</em> <b>40</b>(2): 103-126.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5e03695e-99ab-4eb2-a0fe-f718b0d62a55">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">WANG, Zhi, Jian-Wen Qiu & Sergio I. Salazar-Vallejo. 2018</span>
+					Redescription of Leocrates chinensis Kinberg, 1866 (Annelida, Hesionidae). <em>Zoological Studies</em> <b>57</b>(5): 11.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0a646297-7379-41b2-87cf-8cd4d6ada65c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wisner, R. L. 1999</span>
+					Descriptions of two new subfamilies and a new genus of hagfishes (Cyclostomata: Myxinidae). <em>Zoological studies</em> <b>38</b>(3): 307-313.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/470ca402-f124-4ef1-93e5-b6a8e81f1bb5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wu, Kao-Yi, John E. Randall & Jeng-Ping Chen. 2011</span>
+					Two New Species of Anthiine Fishes of the Genus Plectranthias  (Perciformes: Serranidae) from Taiwan. <em>Zoological Studies</em> <b>50</b>(2): 247-253.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6da5a911-09fd-4376-a09c-68df8f71a669">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yamasaki, Hiroshi. 2016</span>
+					Two new <em>Echinoderes</em> species (Echinoderidae, Cyclorhagida, Kinorhyncha) from Nha Trang, Vietnam. <em>Zoological Studies</em> <b>55</b>: 32.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d5fe4e42-efd2-408d-b8eb-34a9c52d4e1a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yang, Qianqian & Xiaoping Yu. 2019</span>
+					A New Species of Apple Snail in the Genus <em>Pomacea</em> (Gastropoda: Caenogastropoda: Ampullariidae). <em>Zoological Studies</em> <b>58</b>(13).</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/651b25df-168f-419c-bd76-bd5cea0acd7c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, E. 2005</span>
+					Phylogenetic relationships of Labeonine cyprinids of the disk-bearing group (Pisces: Teleostei). <em>Zoological studies</em> <b>44</b>(1): 130-143.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c216abd8-97b8-4599-957b-909a47f48a2c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, Ming, Wen-Wen Chu, Thomas Pape & Dong Zhang. 2014</span>
+					Taxonomic review of the <em>Sphecapatodes ornata</em> group (Diptera: Sarcophagidae: Miltogramminae), with description of one new species. <em>Zoological Studies</em> <b>53</b>(48): 1-12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4dbc63a7-5ca4-4d13-a5c2-8cfb1675275f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhang, Yuan, Shun-Chern Tsaur & Hong-Wei Chen. 2014</span>
+					Survey of the genus <em>Stegana</em> Meigen (Diptera, Drosophilidae) from Taiwan, with DNA barcodes and descriptions of three new species. <em>Zoological Studies</em> <b>53</b>(2): 1-15.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/153e024b-571d-4c27-a6e5-45f810ac0bde">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhou, W. & Y.-W. Zhou. 2005</span>
+					Phylogenuy of the genus <i>Pseudecheneis</i> (Sisoridae) with an explanation of its distribution pattern. <em>Zoological studies</em> <b>44</b>(3): 417-433.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/71add674-f756-4a28-80dc-05d115cfa14d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhou, W., X.-F. Pan & Maurice Kottelat. 2005</span>
+					Species of <i>Garra</i> and <i>Discogobio</i> (Teleostei: Cyprinidae) in Yuanjiang (Upper Red River) drainage of Yunnan Province, China with description of a new species. <em>Zoological studies</em> <b>44</b>(4): 445-453.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">121 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=zh-cn">中文</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=nl">Nederlands</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=en-us">English</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=fr">Français</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=de">Deutsch</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=it">Italiano</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=ja">日本語</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=pt">Português</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=ru">Русский</a>&nbsp;<a href="/References/916ff81b-f8be-4b9b-a41f-4f4670bcd156?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>

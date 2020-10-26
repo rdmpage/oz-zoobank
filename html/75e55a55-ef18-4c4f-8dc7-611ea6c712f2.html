@@ -1,0 +1,3358 @@
+
+
+ 
+  
+	
+
+	
+	
+
+  
+  
+  
+
+		
+		
+		
+		
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172406915-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-172406915-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ZooBank.org</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="load.cfres?css=cfcss_fa0af0c60643912999ef9bf4b6edc2df.css"/>	
+		
+	<script src='https://google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="load.cfres?js=cfjs_892ee9f62a14cb3c5ad4009fcbd3e565.js"></script></head>
+
+<body>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	
+	<header id="header">
+	 
+		<span id="small_iczn_logo" class="small_iczn_logo"><img src="/images/iczn-birds-small.png" width="70" alt="small ICZN logo" /></span>
+    
+	<div class="container">
+		  
+			<h1 class="logo"><a href="/"><img src="/images/zoobank-logo.gif" style="margin-left:50px" alt="ZooBank Logo" /> </a></h1>
+        
+		
+		<nav>
+			<ul>
+				
+				<li><a href="/About">about</a></li>
+				<li><a href="/Contact">contact</a></li>
+				<li><a href="/Api">api</a></li>
+				<li class="login_container">
+					
+					
+					
+					   <a id="login_link" href="#login_form_layer">login</a>
+					   <div id="login_form_layer" style="display:none;" class="login_form">
+						   <form action="/DoLogin" method="post" class="uniForm">
+							   <fieldset>
+								   <div class="ctrlHolder">
+									 <label for="username">Username</label> <input name="username" id="username" type="text" >
+								   </div>
+								   <div class="ctrlHolder">
+									 <label for="password">Password</label> <input name="password" id="password" type="password" >
+								   </div>
+							   </fieldset>
+							   <div class="buttonHolder">
+									   <button type="submit" id="btn_login" class="primaryAction small">Log In</button>
+									   <!-- You'll need some jquery to hide the login menu when Cancel is clicked -->
+									   <button type="button" id="btn_cancel_login" class="secondaryAction">cancel</button>
+							   </div>
+							   <div class="helpful_links">
+									   <p><a href="/PasswordHelp">forgot your password?</a></p>
+									   <p><a href="/RequestAccount">create an account</a></p>
+							   </div>
+						   </form>
+					   </div>
+				   
+				   
+				</li>	
+				<li><a href="/Help">help</a></li>				
+			</ul>			
+		</nav>
+		
+	</div>
+	</header>
+
+
+	<div class="container" style="display: block;"><p class = "notice">
+		<b>UPDATE:</b> The ZooBank website appears to be suffering extreme use right now, possibly as the target of an attack.<br /> 
+		The website is very slow, and there may be brief and intermittent outages as we continue to test solutions to the problem.<br />
+		Thank you for your patience and understanding!
+	</p></div>
+
+
+	
+	<div class="searchBar">
+		<div class="container">
+			<form action="/Search" id="form_general_search" method="get"><input type="text" class="search_input_field" id="search_term" name="search_term" lang="en" size="65">
+			<button type="button" id="btn_header_search" class="primaryAction small">Search</button><span id="search_error" class="search_error"></span></form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="okMsg" style='display:none;'>
+		</div>
+	</div>
+	
+	
+	
+	
+		 
+		<div class="container">
+			<div class="actSummary">
+				<h2 class="actName">
+					Zoosymposia
+				</h2>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+							
+								<div class="lsidWrapper">
+										
+									<span class="lsidLogo" onmouseover='Tip("Registered 17 October 2012, 10:09:52.330 by Andreas Kroh",BGCOLOR,"#9CD9F7",ABOVE,true,LEFT,true,OFFSETX,2,OFFSETY,2)' onMouseOut="UnTip();">LSID</span>
+									<span class="lsid" style="background-color:white;line-height:18px;vertical-align:top;">urn:lsid:zoobank.org:pub:75E55A55-EF18-4C4F-8DC7-611EA6C712F2</span>
+									
+									
+									<object width="110" height="14" id="clippy" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" type="application/x-shockwave-flash">
+										<param value="/public/flash/clippy.swf" name="movie">
+										<param value="always" name="allowScriptAccess">
+										<param value="high" name="quality">
+										<param value="noscale" name="scale">
+										<param value="text=urn:lsid:zoobank.org:pub:75E55A55-EF18-4C4F-8DC7-611EA6C712F2" name="FlashVars">
+										<param value="#f5f5ff" name="bgcolor">
+										<embed width="110" height="14" bgcolor="#F5F5FF" flashvars="text=urn:lsid:zoobank.org:pub:75E55A55-EF18-4C4F-8DC7-611EA6C712F2" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" id="clippy1" src="/public/flash/clippy.swf">
+									</object>
+									<script type="text/javascript">
+										$(".selectAll").click(function(){ this.select(); });
+									</script>
+									
+								</div>
+								
+							
+						
+					
+					
+					
+						
+							
+							
+								 | 
+								<a href="http://biodiversity.org.au/afd.publication/415b326a-b277-4eb2-807a-dc5308a7a1ce" target="_blank">
+									
+										<img src="http://zoobank.org/images/AFDLogo.jpg" title="AFD-Pub: 415b326a-b277-4eb2-807a-dc5308a7a1ce" alt="Australian Faunal Directory Publications" class="linkLogo" style="height:16px;width:16px;" />
+									
+                            </a>
+                        
+                    
+				
+						
+							
+							
+								
+									
+								
+							
+                    
+				
+						
+							
+							
+								
+									                            
+								
+							
+                    
+				
+						
+				
+			
+			
+				
+			
+						
+			
+			
+			
+			
+			
+			
+				
+				
+				
+					
+						
+						
+						
+						
+					
+				
+				
+				
+				
+			
+			
+			
+			
+			<table>
+			<tbody>
+			 
+                <tr>
+                    <th scope="row" class="entry_label">Periodical:</th>
+                    <td>Zoosymposia<hr /></td>
+                </tr>									
+                <tr>
+                    <th scope="row" class="entry_label">Series:</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">ISSN<span style="font-size:smaller;">&nbsp;(Print)</span>:</th>
+                    <td>1178-9905</td>
+                </tr>
+                
+                    <tr>
+                        <th scope="row" class="entry_label"><span style="font-size:smaller;">(Online)</span>:</th>
+                        <td>1178-9913</td>
+                    </tr>	
+                
+                
+                <tr><th scope="row" class="entry_label">Online&nbsp;Archives:</th><td> Biotaxa (added: Apr 14 2020 11:46AM UTC)  [<a href="http://biotaxa.org/" target="_blank">http://biotaxa.org/</a>] </td></tr>
+                
+                <tr>
+                    <th scope="row" class="entry_label">Publisher:</th>
+                    <td>Magnolia Press</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Place Published:</th>
+                    <td>Auckland</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="entry_label">Language:</th>
+                    <td>English</td>
+                </tr>
+				
+            
+			
+            <tr>
+            	<th scope="row" class="entry_label">&nbsp;</th>
+                <td>
+                    
+                    
+                </td>
+            </tr>
+			</tbody>
+			</table>
+           
+			
+			
+			
+			
+			
+				<h3>Child Publications (231) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+					</h3>
+				<ol>
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b58b6a93-8d61-40eb-a544-240ffd3420b8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Alba-Tercedor, Javier. 2016</span>
+					Microtomographic study on the anatomy of adult male eyes of two mayfly species. <em>Zoosymposia</em> <b>11</b>(13): 101–120.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9b5ba089-adc6-452e-91b7-c477979bca3a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Alf, Axel. 2019</span>
+					Tegulidae and Turbinidae of the northeast Pacific. <em>Zoosymposia</em> <b>13</b>(1): 70–82.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2e178c5e-05d3-4ea2-afb4-b34ea802dbf4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Amusan, Babatunde & Sylvester S. Ogbogu. 2016</span>
+					Investigation into the Trichoptera fauna of the Opa Stream in Ile-Ife, southwestern Nigeria. <em>Zoosymposia</em> <b>10</b>(1): 85–90.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/be411f3a-c511-46ae-8de3-4bddf271ef35">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Arslan, Naime & Deniz Mercan. 2020</span>
+					Long-term macrobenthic community structure changes in the Upper Sakarya River System (1995–2015). <em>Zoosymposia</em> <b>17</b>(1): 89–101.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/89855ef1-132e-4e1f-83fe-fffac711e244">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Arslan, Naime & Deniz Mercan. 2020</span>
+					The aquatic oligochaete fauna of Lake Çıldır, Ardahan-Kars, Turkey, including an updated checklist of freshwater annelids known to occur in the country. <em>Zoosymposia</em> <b>17</b>(1): 53–76.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/be2cc943-a111-431d-927d-06463d9d4a73">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Arslan, Naime, Deniz Kara, Cansev A. Kökçü & Melih Rüzgar. 2014</span>
+					Aquatic Oligochaeta (Annelida) of Dam Lakes Çatören and Kunduzlar (Turkey). <em>Zoosymposia</em> <b>9</b>(12): 70–76.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2c9e7c09-d147-4d22-a47a-9069fa752c91">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bahia, Cristiano, Roberta Canário, Elizabeth G. Neves & Rodrigo Johnsson. 2012</span>
+					<em>Asterocheres </em><em>siphunculus</em>, a new species of Asterocheridae (Copepoda, Siphonostomatoida) associated with <em>Eucidaris </em><em>tribuloides </em>(Lamarck, 1816) (Echinodermata, Echinoidea) in Brazil. <em>Zoosymposia</em>(8): 29–38.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/74885a04-8218-4e34-ab4f-869c7bd18e15">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Barba-Álvarez, Rafael, Joaquín Bueno-Soria & Carlos Ramirez-Martinez. 2019</span>
+					Trichoptera of the Biosphere Reserve Montes Azules, Chiapas, Mexico. <em>Zoosymposia</em> <b>14</b>(1): 81–86.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/eec14b5a-21de-4fb7-8d62-ad29c65f35ba">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Barber-James, Helen M. & Ina S. Ferreira. 2019</span>
+					The Mayflies (Ephemeroptera) of Angola—new species and distribution records from previously unchartered waters, with a provisional species checklist. <em>Zoosymposia</em> <b>16</b>(1): 124–138.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/723b32bf-7d46-4dec-a8e0-c5a44b68b886">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Barcelos-Silva, Patrik, Ana M. Pes, Vanderly Andrade-Souza & Gleison R. Desidério. 2019</span>
+					The larva of the Neotropical caddisfly genus <em>Centromacronema </em>Ulmer, 1905 (Trichoptera: Hydropsychidae). <em>Zoosymposia</em> <b>14</b>(1): 204–210.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a640ab4a-2d44-499e-9158-db73f48978ff">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Baturina, Maria, Tarmo Timm & Olga Loskutova. 2014</span>
+					Oligochaete (Annelida, Clitellata) сommunities in lakes of the Ural Mountains (Russia). <em>Zoosymposia</em> <b>9</b>(13): 77–94.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b181dda-3f90-4cb5-aea0-a0c1a2af6e98">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bauernfeind, Ernst & Martin Schletterer. 2016</span>
+					In Memoriam: Uwe H. Humpesch. <em>Zoosymposia</em> <b>11</b>(5): 10–14.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6aa543b0-39f4-4956-88a6-da969ecbdfad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Benhadji, Nadhira, Karima A. Hassaine, Jean-Luc Gattolliat & Michel Sartori. 2019</span>
+					Thirty years after: an update to the mayflies composition in the Tafna basin (Algeria). <em>Zoosymposia</em> <b>16</b>(1): 22–35.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8c808e93-e048-406a-bd35-78736bf97eed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Bergeron, J. A. C., Jaime Pinzon & John R. Spence. 2018</span>
+					Carabid and spider population dynamics on urban green roofs. <em>Zoosymposia</em> <b>12</b>(8): 69–89.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ff5e34ff-926a-45a4-84f4-6ae043a5bae5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Brown, Brian V. 2018</span>
+					After “the call”: a review of urban insect ecology trends from 2000–2017. <em>Zoosymposia</em> <b>12</b>(3): 4–17.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/31b92477-959d-4096-9d4c-8bcbacc2fabc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Brown, Leonard G. 2019</span>
+					A new species of Epitoniidae (Mollusca: Gastropoda) from the northeast Pacific. <em>Zoosymposia</em> <b>13</b>(1): 154–156.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d579a2b4-0c6f-419c-af36-4a815ed0ff8f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Buntha, Pornpimon, Siripen Traichaiyaporn & Decha Thapanya. 2020</span>
+					Food Source for Hydropsychid Larvae during an Algae Bloom in Nan River, Nan Province, Thailand (Trichoptera: Hydropsychidae). <em>Zoosymposia</em> <b>18</b>(1): 9-16.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/48ef785d-9b2c-4187-8b20-560abef11b83">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Burian, Steven K. 2019</span>
+					The Mid-network Mayfly Maxima (MMM): A General Pattern of Mayfly (Ephemeroptera) Species Richness Within Drainage Networks and What We Can Learn From It. <em>Zoosymposia</em> <b>16</b>(1): 36–61.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5f611aaa-49e9-46d7-893b-ac757ff6deff">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cambronero-Solano, Sergio, R. Benavides, Francisco A. Solís-Marín & J. J. Alvarado. 2019</span>
+					New reports of echinoderms on the Caribbean continental slope of central America. <em>Zoosymposia</em> <b>15</b>(1): 5–12.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b015a986-6937-4918-b19e-15adfb2251d7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Canário, Roberta, Elizabeth G. Neves & Rodrigo Johnsson. 2012</span>
+					<em>Spongiopsyllus redactus</em>, a new species of Entomolepididae (Copepoda, Siphonostomatoida) associated with a scleractinian coral in Brazil. <em>Zoosymposia</em>(8): 49–55.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a7664e2d-cb6f-4454-85da-c6c350eeb39e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Casellato, Sandra, Valeria Covre & Stefania D. Piero. 2014</span>
+					Effects of sodium fluoride on the gametogenesis of the tubificid oligochaete <em>Branchiura sowerbyi</em> Beddard. <em>Zoosymposia</em> <b>9</b>(10): 51–58.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/29233bd2-8d69-4c9c-9b2a-2954910f7954">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Castillo, Pedro L. D. & Janice G. Peters. 2016</span>
+					In Memoriam: Juan Carlos Naranjo López (1952–2014). <em>Zoosymposia</em> <b>11</b>(4): 7–9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c51bc0b3-1623-4d4a-8f26-c957c4aa9d14">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chakma, Sanjib, Svante Martinsson, Sivabalan Srinivasan, Ahmed A. Ghani, Rohit Adam & Mohammed I. Naveed. 2020</span>
+					Preliminary report on freshwater oligochaetes from some districts of Tamil Nadu (India), along with DNA barcode sequence of a commercially important oligochaete in Chennai. <em>Zoosymposia</em> <b>17</b>(1): 45–52.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/02b6bef8-e28a-4618-9249-f11dd8d2f038">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chen, Zhi-Teng. 2019</span>
+					A synopsis of Chinese Plecoptera research. <em>Zoosymposia</em> <b>16</b>(1): 62–87.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0f4bcaea-053f-4768-9a0e-f9e50cac3d9b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cherchesova, S. K., A. V. Yakimov, Vadim O. Biasov, S. V. Kataev & Iya E. Dzhioeva. 2016</span>
+					Biology of <em>Plectrocnemia latissima</em> Martynov 1913 (Trichoptera, Polycentropodidae) from the rivers and streams of Central Caucasus northern slopes. <em>Zoosymposia</em> <b>10</b>(1): 91–95.</a>
+					</li>
+					
+				
+					
+					
+						<div id="more_pubs_layer" style="display:none;">											
+									
+					<li>
+					<a class="biblio-entry" href="/References/bf808dce-82ea-45e6-a56e-979433240115">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Chuluunbat, Suvdtsetseg, John C. Morse & Sosorburam Boldbaatar. 2016</span>
+					Caddisflies of Mongolia: Distribution and diversity. <em>Zoosymposia</em> <b>10</b>(1): 96–116.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5ee838f3-6d36-47e8-a878-3301f9edefd9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Cianficconi, Fernanda, Carla Corallini, Francesco Tucciarelli & Maria C. Bicchierai. 2016</span>
+					The genus <em>Hydroptila </em>Dalman 1819 in Italy: Ecology and morphology. <em>Zoosymposia</em> <b>10</b>(1): 117–147.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1b49605a-812d-4878-a83b-111eb1cf47cb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Clark, Elizabeth G. 2019</span>
+					Ophiuroid locomotion from fundamental structures to integrated systems. <em>Zoosymposia</em> <b>15</b>(1): 13–22.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7a13c151-7dbf-43e2-8c6d-f19fd6f56c07">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Clark, Roger N. 2019</span>
+					A new species of <em>Buccinum </em>from California (Gastropoda: Buccinidae). <em>Zoosymposia</em> <b>13</b>(1): 157–159.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/715b9327-b40d-4612-94f2-89e8ff283576">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Collin, Rachel. 2019</span>
+					Calyptraeidae from the northeast Pacific (Gastropoda: Caenogastropoda). <em>Zoosymposia</em> <b>13</b>(1): 107–130.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c02eba34-740b-4e64-bdb7-24d178aa61e1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Corallini, Carla & Maria C. Bicchierai. 2016</span>
+					Trichoptera larvae and gregarines: Host-parasite relationships. <em>Zoosymposia</em> <b>10</b>(1): 148–164.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e124348d-c681-45db-9e3a-98388f5241ce">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Corallini, Carla & Oriella Marchetti. 2016</span>
+					Parasitic infestation in a female of <em>Micropterna nycterobia</em> McLachlan 1875 (Trichoptera, Limnephilidae) found in Monte Cucco cave ( central Italy). <em>Zoosymposia</em> <b>10</b>(1): 165–171.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f24e7ed8-ecb4-42df-8b7c-e2e60e4ed619">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Darbyshire, Teresa & Andrew S. Y. Mackie. 2009</span>
+					Two new species of <em>Diplocirrus</em> (Polychaeta: Flabelligeridae) from the southern Irish Sea and South Africa. <em>Zoosymposia</em> <b>2</b>: 91-103.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4e68a0b8-cea9-4530-9c44-617c3d27ac16">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Demaintenon, Marta J. 2019</span>
+					The Columbellid species of the northeast Pacific coast from the Aleutian Islands to Cedros Island, Baja California (Neogastropoda: Columbellidae). <em>Zoosymposia</em> <b>13</b>(1): 160–183.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d0a70a89-26cd-4eaf-99e7-6dcb66d6b6ad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ebert, Thomas A., José C. Hernández & Sabrina Clemente. 2019</span>
+					Estimating survival in echinoid populations. <em>Zoosymposia</em> <b>15</b>(1): 23–32.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/abcf7b3f-66bf-4f6a-85b2-559e186f71fa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ekingen, Pinar & Nilgun Kazanci. 2019</span>
+					Larval description of <em>Rhyacophila osellai</em> Malicky, 1981 (Trichoptera: Rhyacophilidae) with some notes on its habitat. <em>Zoosymposia</em> <b>14</b>(1): 211–214.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ffc9fd90-936b-491f-8bec-73d4b7f61a6c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">El-Rashidy, Hoda H. & Geoffrey A. Boxshall. 2012</span>
+					Bomolochid copepods (Crustacea: Copepoda: Bomolochidae) parasitizing immigrant and native barracuda (Actinopterygii: Sphyraenidae) caught off the Egyptian Mediterranean coast. <em>Zoosymposia</em>(8): 20–28.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/89317137-66bf-42d7-85ab-352e0bd499a9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Erzinger, Felicitas, Björn Rotter, Nicolas Krezdorn & Steffen U. Pauls. 2019</span>
+					Gene expression profiling in the aquatic caddisfly larvae <em>Micropterna lateralis</em> (Insecta: Trichoptera) in relation to stream drying. <em>Zoosymposia</em> <b>14</b>(1): 54–58.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4a3c398e-24fc-4830-a307-5e6c3e3d9b4c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fend, Steven V., Akifumi Ohtaka & Takaaki Torii. 2020</span>
+					New species and new records of Japanese Lumbriculidae (Annelida, Clitellata). <em>Zoosymposia</em> <b>17</b>(1): 14–33.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/79f176a7-ebb6-43cb-b385-812fce7c72b6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Feral, J.-p., E. Poulin, C. De Ridder & T. Saucede. 2019</span>
+					A field guide to coastal echinoderms of the Kerguelen Islands. <em>Zoosymposia</em> <b>15</b>(1): 33–43.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/914ce4a1-e9d2-4cb1-88e1-eda1cca2b44f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Figueroa, José M. T. De, Julio M. Luzón-Ortega & Manuel J. López-Rodríguez. 2016</span>
+					A study of stonefly taxa (Insecta: Plecoptera) inhabiting a saline stream (Arroyo Salado) in southern Spain. <em>Zoosymposia</em> <b>11</b>(16): 156–163.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2b52e344-2670-4794-9207-5129914053b2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Francischetti, C. n., T. s. Raymundo & F. f. Salles. 2019</span>
+					A new species of <em>Thraulodes </em>Ulmer (Ephemeroptera: Leptophlebiidae) from the Atlantic Forests of Southeastern Brazil. <em>Zoosymposia</em> <b>16</b>(1): 88–95.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f4f91962-7a6a-4610-9bcd-14e97a30232f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Frandsen, Paul B. & Robin E. Thomson. 2016</span>
+					Collection and preservation of Trichoptera for use in DNA research. <em>Zoosymposia</em> <b>10</b>(1): 200–202.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/48b6f584-9c37-4be4-92a5-26fbf4a31954">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Frandsen, Paul B., Xin Zhou, Oliver F. Jr. & Karl M. Kjer. 2016</span>
+					Using DNA barcode data to add leaves to the Trichoptera tree of life. <em>Zoosymposia</em> <b>10</b>(1): 193–199.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/be014c6f-4641-487d-9b78-799e6ca5037f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Frankie, Gordon W., Rollin E. Coville, J. C. Pawelek, C. C. Jadallah, S. B. Vinson & L. E. S. Martinez. 2018</span>
+					“Bee-Flower-People Relationships, Field Biologists, and Conservation in Northwest Urban Costa Rica and Beyond.”. <em>Zoosymposia</em> <b>12</b>(1): 18–28.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1da7173f-274d-435d-95a6-04ec51a65431">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Fusaro, Abigail J., Bruce McCULLOCH, Sally Petrella & Velon Willis. 2019</span>
+					Discovery, dispersal, and genetic diversity of <em>Rhyacophila lobifera</em> Betten, 1934 (Trichoptera: Rhyacophilidae) in southeast Michigan, USA. <em>Zoosymposia</em> <b>14</b>(1): 177–188.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7d17148d-cd76-40c5-a0dd-c1779d253fee">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gattolliat, Jean-Luc, Gilles Vinçon, Sofia Wyler, Jan Pawlowski & Michel Sartori. 2016</span>
+					Toward a comprehensive COI DNA barcode library for Swiss Stoneflies (Insecta: Plecoptera) with special emphasis on the genus <em>Leuctra</em>. <em>Zoosymposia</em> <b>11</b>(15): 135–155.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/00a9d807-4baa-46e1-9a7d-deb68c8b391a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Geiger, Daniel L. 2019</span>
+					The families Scissurellidae, Anatomidae, and Sutilizonidae in the northeast Pacific. <em>Zoosymposia</em> <b>13</b>(1): 44–52.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/16d27c71-5a6c-4adf-ad6c-6b07c2773112">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Geiger, Daniel L. 2019</span>
+					The Family Seguenziidae Verrill, 1884 in the Northeast Pacific, including a comment on excessive numbers of taxonomic data portals. <em>Zoosymposia</em> <b>13</b>(1): 61–69.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6c2dd31c-9f11-4429-9c3f-7ab186575dd0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Geiger, Daniel L. & Buzz Owen. 2019</span>
+					The family Haliotidae Rafinesque, 1815 in the northeast Pacific. <em>Zoosymposia</em> <b>13</b>(1): 53–60.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a09858c6-cd91-4723-a867-b870c5861e30">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Geiger, Daniel L., Lindsey T. Groves & Jann E. Vendetti. 2019</span>
+					Foreword. <em>Zoosymposia</em> <b>13</b>(1): 5–13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/babda07b-8add-41fe-883f-dee2e626852a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Geiger, Daniel L., Lindsey T. Groves & Jann E. Vendetti. 2019</span>
+					James H. McLean Memorial Volume (Cover and Table of Contents). <em>Zoosymposia</em> <b>13</b>(1): 1–4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0cf40724-a8df-45c6-8472-3f383f7d4f0c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gelder, Stuart R. 2020</span>
+					An ongoing saga: Endemic branchiobdellidans (Annelida: Clitellata) on translocated commercial North American crayfish. <em>Zoosymposia</em> <b>17</b>(1): 141–158.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/59e339e6-0be9-4868-8675-4dc049208d31">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gellert, Marta, Katarzyna Kwiatkowska & Janusz Majecki. 2019</span>
+					The importance of shredding caddis larvae (Trichoptera: Limnephilidae) in leaf litter breakdown. <em>Zoosymposia</em> <b>14</b>(1): 39–53.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c8aab67f-4706-4115-93cb-b3e9d2a1ecf3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Genco, Madeline S., John C. Morse, Michael S. Caterino, Kelly M. Murray-Stoker & Thai H. Pham. 2020</span>
+					Larvae and adults of Vietnamese species of <em>Drepanocentron </em>and <em>Hydromanicus </em>(Trichoptera: Xiphocentronidae, Hydropsychidae). <em>Zoosymposia</em> <b>18</b>(1): 72–92.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5799ccaf-7880-49b2-a64f-931eef88915b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gillet, Emeric, Bertrand Lefebvre, Veronique Gardien, Emilie Steimetz, Christophe Durlet & Frederic Marin. 2019</span>
+					Reinterpretation of the enigmatic Ordovician genus Bolboporites (Echinodermata). <em>Zoosymposia</em> <b>15</b>(1): 44–70.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/326990d8-9701-4e3d-a01a-35b268a4a464">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gíslason, Gísli M. & Snæbjörn Pálsson. 2020</span>
+					Origin of the Trichoptera species in Iceland. <em>Zoosymposia</em> <b>18</b>(1): 118–126.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/62977e8a-9c89-4e35-9eb3-a73862f168a6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Godunko, Roman J. 2019</span>
+					In memory of Tomáš Soldán (9 November 1951–13 August 2018). <em>Zoosymposia</em> <b>16</b>(1): 15–21.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/720f9daa-ad6e-4f71-b5e5-4f33053eda51">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gonçalves, Maísa De C., Marcos C. Novaes, Lucas S. Lecci, Lucas H. De Almeida, Vinicius Costa & Frederico F. Salles. 2019</span>
+					Checklist of Plecoptera (Insecta) from the State of Espírito Santo, Brazil. <em>Zoosymposia</em> <b>16</b>(1): 96–123.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e5975088-ec6a-40c1-8104-635a80b05464">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Grant, Peter M. & Amber Rymer. 2016</span>
+					A simple, inexpensive artificial stream for rearing Ephemeroptera from sandy substrates. <em>Zoosymposia</em> <b>11</b>(17): 164–167.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2522d994-5deb-431c-806d-5be0a46e7367">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Groves, Lindsey T. 2019</span>
+					The family Cypraeidae Rafinesque, 1815, in the northeast Pacific: One spectacular species. <em>Zoosymposia</em> <b>13</b>(1): 131–138.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/20e93c08-5c32-42fc-9580-1ded748fcb5f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Groves, Lindsey T., Daniel L. Geiger, Jann E. Vendetti & Eugene V. Coan. 2019</span>
+					James Hamilton McLean: <em>The </em>master of the Gastropoda. <em>Zoosymposia</em> <b>13</b>(1): 14–43.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/11b24f97-503f-4811-bb92-78a8fa354a57">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Gupta, S. K. & Krishna Karmakar. 2011</span>
+					Diversity of mites (Acari) on medicinal and aromatic plants in India. <em>Zoosymposia</em> <b>6</b>: 56-61.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1d22ee8e-ddfd-4c7a-9ff4-aac46156a97d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hansen, Leivur J. & Gísli M. Gíslason. 2020</span>
+					Trichoptera in the Faroe Islands. <em>Zoosymposia</em> <b>18</b>(1): 127–134.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c6c32bd5-9486-43c7-8806-c0905aceb30e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Harris, Steven C. & Andrew K. Rasmussen. 2019</span>
+					Review of the <em>Orthotrichia </em>(Trichoptera: Hydroptilidae) of Florida, with descriptions of previously unknown females of three species. <em>Zoosymposia</em> <b>14</b>(1): 215–230.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/335cf6d3-d00c-48f4-bed8-31ca21d4d926">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hartop, Emily & Brian V. Brown. 2018</span>
+					Beyond pests: Biodiversity in the urban environment international congress of entomology 25-30 september 2016 Orlando, Florida, USA. <em>Zoosymposia</em> <b>12</b>(1): 1–3.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9767e33f-4b18-401e-970c-d1d49e5f1109">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hartop, Emily, Elizabeth Long, Carol Bornstein, Lisa Gonzalez & Brian V. Brown. 2018</span>
+					Urban Nature Gardens at the Natural History Museum of Los Angeles County attract “wildlife spectacle” of insect pollinators. <em>Zoosymposia</em> <b>12</b>(5): 29–50.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/00b704ae-241a-49c8-b730-a61d6b1c6818">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Helden, Alvin J., Geoffrey J. Morley, Gabrielle L. Davidson & Edgar C. Turner. 2018</span>
+					What can WE do for urban insect biodiversity? Applying lessons from ecological research. <em>Zoosymposia</em> <b>12</b>(6): 51–63.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/02fb3392-a8e7-47ee-b48e-4ce18e8092f4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirabayashi, Kimio, Eri Ikutama, Kousaku Ohkawa, Ryoichi Arai, T. Nomura, Masuhiro Tsukada & K. Abe. 2016</span>
+					Flight density of the aquatic insect fauna over the water surface in the middle reaches of the Shinano River, Japan, mainly among caddisflies (Trichoptera). <em>Zoosymposia</em> <b>10</b>(1): 203–213.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/17ab1864-b6cc-4a1c-8f12-137044cd6540">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hirabayashi, Kimio, Keiko Oga & Masamichii Yamamoto. 2014</span>
+					Bathymetric distribution of aquatic Oligochaeta in Lake Kizaki, Central Japan. <em>Zoosymposia</em> <b>9</b>(8): 36–43.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5622eb6a-91bd-41aa-9296-d6031cd69427">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hitchings, Timothy. 2019</span>
+					The Canterbury Museum mayfly collection (Insecta: Ephemeroptera) and what it can tell us about changes in species abundance with time. <em>Zoosymposia</em> <b>16</b>(1): 139–151.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/74808bf8-b07d-4a43-865c-0bcdc5a9c24d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hotchkiss, Frederick H. C. & Alexander Glass. 2012</span>
+					Observations on <em>Onychaster </em>Meek & Worthen, 1868 (Ophiuroidea: Onychasteridae) (Famennian–Visean age). <em>Zoosymposia</em> <b>7</b>: 121-138.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/197dff61-4287-4263-867e-3798b556052f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Houart, Roland, Geerat Vermeij & Shawn Wiedrick. 2019</span>
+					New taxa and new synonymy in Muricidae (Neogastropoda: Pagodulinae, Trophoninae, Ocenebrinae) from the Northeast Pacific. <em>Zoosymposia</em> <b>13</b>(1): 184–241.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5fd38322-dcb7-4bad-8a8c-af032cc571ec">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Hunter, Aaron W. 2012</span>
+					Crinoid diversity in the Upper Cretaceous Yezo Supergroup, Hokkaido, northern Japan. <em>Zoosymposia</em> <b>7</b>: 71-79.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1cc5229e-0810-49e7-b916-4cb2c2f3460f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ito, Tomiko. 2016</span>
+					Biology of <em>Anisocentropus pallidus</em> (Martynov) (Trichoptera, Calamoceratidae): Laboratory and field observations. <em>Zoosymposia</em> <b>10</b>(1): 214–223.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/cf9ad641-1f02-4ea5-890f-1991ad922c19">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ito, Tomiko. 2020</span>
+					Spermatophores in the female’s bursa copulatrix accumulated through their life span in three species of <em>Lepidostoma </em>(Trichoptera, Lepidostomatidae). <em>Zoosymposia</em> <b>18</b>(1): 17–23.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6635bd9a-a70e-4ed3-8e92-aef5414c6b27">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ivanov, Vladimir D. & Alexandr P. Rasnitsyn. 2016</span>
+					Andrei Vasilievich Martynov (09.[22.]viii.1879−29.i.1938): A life story. <em>Zoosymposia</em> <b>10</b>(1): 29–47.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/34e8fc23-d36f-4d4e-89d2-5904ad145945">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ivanov, Vladimir D. & Stanislav I. Melnitsky. 2016</span>
+					Diversity of the olfactory sensilla in caddisflies (Trichoptera). <em>Zoosymposia</em> <b>10</b>(1): 224–233.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/bb4f34e8-8efb-439e-b41f-efc948996295">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Janssen, Arie W., Stephanie L. Bush & Nina Bednaršek. 2019</span>
+					The shelled pteropods of the northeast Pacific Ocean (Mollusca: Heterobranchia, Pteropoda). <em>Zoosymposia</em> <b>13</b>(1): 305–346.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/05742cdc-193c-43a5-8a92-566af2fea750">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Johanson, Kjell A. & Alice Wells. 2019</span>
+					New Caledonia's Trichoptera—present status of knowledge. <em>Zoosymposia</em> <b>14</b>(1): 87–102.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/274ed4b5-6047-4352-9013-e17b6175ec57">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Johnsson, Rodrigo & Elizabeth G. Neves. 2012</span>
+					Siphonostomatoid copepods (Crustacea) associated with marine invertebrates and algae in Brazil: a review and future considerations. <em>Zoosymposia</em>(8): 69–80.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d969dd55-1299-47e9-9c17-47f259831f58">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kanazawa, K., M. Saitoh, N. Wakayama, M. Obuchi, S. Nakachi & A. Kroh. 2019</span>
+					A project for analyzing the ecology and phylogeny of western Pacific echinoids. <em>Zoosymposia</em> <b>15</b>(1): 83–87.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fcec27ea-977f-4f67-beea-0a227654e9e4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Karmakar, Krishna & S. K. Gupta. 2011</span>
+					Impact of the date of transplanting on population dynamics of the rice sheath mite, Steneotarsonemus spinki Smiley (Acari: Tarsonemidae), on the rice cultivar IET-4786 in the Gangetic Plains ofWest Bengal, India. <em>Zoosymposia</em> <b>6</b>: 131-134.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/95eb00d2-9fcd-416b-a852-d44a52d1e98f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Karmakar, Krishna & S. K. Gupta. 2011</span>
+					Predatory mite fauna associated with agri-horticultural crops and weeds from the Gangetic plains of West Bengal, India. <em>Zoosymposia</em> <b>6</b>: 62-67.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ac7e944d-52f3-41de-8b8f-9320ffdfbca2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kato, Moe. 2019</span>
+					Crinoids lived around the Cretaceous seeps: the second example from cold-seep deposit in the Yezo Group in Hokkaido, Japan. <em>Zoosymposia</em> <b>15</b>(1): 88–97.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/63d72156-5aca-4327-bcf3-7b31f201a1c7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Katsuma, Nobuyuki & Ryoichi B. Kuranishi. 2016</span>
+					Redescription of <em>Triplectides misakianus</em> (Matsumura 1931) (Trichoptera, Leptoceridae) in Japan with notes on its habitat. <em>Zoosymposia</em> <b>10</b>(1): 234–242.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/69cc2980-53bf-4313-a456-fc695b6cbd9f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Khan, M. S. R., C. M. Whittington, M. B. Thompson & M. Byrne. 2019</span>
+					Arrangement and size variation of intra-gonadal offspring in a viviparous asterinid sea star. <em>Zoosymposia</em> <b>15</b>(1): 71–82.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fcb9d037-9b41-4698-a415-37d0222f7bf4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kimura, G. G., Yoshimori Murai & Tsutomu Tanikawa. 2016</span>
+					Distribution and abundance of adult caddisflies (Trichoptera) in the vicinity of food and pharmaceutical factories. <em>Zoosymposia</em> <b>10</b>(1): 243–247.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1f9b069e-846f-4bd1-abd1-934c965bf19d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kimura, Goro & Ryoichi B. Kuranishi. 2020</span>
+					Effect of visible light sticks for collecting of adult caddisflies (Trichoptera): A preliminary field study. <em>Zoosymposia</em> <b>18</b>(1): 153–159.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/52a3a695-ced3-4a62-bc7a-48cbe03c199b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kimura, Goro, Goro Tajika, Toshihiro Kusama & Tsutomu Tanikawa. 2019</span>
+					Behavioral response of adult caddisflies (Trichoptera) to blue and green light-emitting diode lamps. <em>Zoosymposia</em> <b>14</b>(1): 59–62.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d613a9cc-c880-4194-941f-a81ab570a345">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kitazawa, Chisato & Akira Yamanaka. 2019</span>
+					First evidence of autofluorescence of a cell mass in developing temnopleurid sea urchins. <em>Zoosymposia</em> <b>15</b>(1): 98–105.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8d948e0b-65cc-4a46-929f-a086df4f55da">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kjer, Karl M., Jessica A. Thomas, Xin Zhou, Paul B. Frandsen, Elizabeth Prendini & Ralph W. Holzenthal. 2016</span>
+					Progress on the phylogeny of caddisflies (Trichoptera). <em>Zoosymposia</em> <b>10</b>(1): 248–256.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/239e1a71-e872-4e10-ba67-9b8fb1cfc9a6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kondratieff, B. C. & C. J. Verdone. 2019</span>
+					A Review of the Adults of the Nearctic Species of <em>Kogotus </em>(Plecoptera: Perlodidae). <em>Zoosymposia</em> <b>16</b>(1): 152–166.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0fdb2227-66a8-4235-b341-9d7773175cc1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kreiling, Agnes-katharina, Gísli M. Gíslason & Bjarni K. Kristjánsson. 2020</span>
+					Trichoptera diversity in Icelandic springs. <em>Zoosymposia</em> <b>18</b>(1): 46–52.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ec34c858-466a-4174-bef3-10066f813996">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kroh, Andreas, Rich Mooi & Sabine Stöhr. 2012</span>
+					On the spelling of <em>Antrechinus nordenskjoldi </em>(Echinodermata: Echinoidea). <em>Zoosymposia</em> <b>7</b>: 241-245.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6b22b37c-d4a5-4747-9071-1eb66905c125">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kuhara, Naotoshi. 2016</span>
+					The genus <em>Wormaldia </em>(Trichoptera, Philopotamidae) of the Ryûkyû Archipelago, southwestern Japan. <em>Zoosymposia</em> <b>10</b>(1): 257–271.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2bbfc497-2c73-4ab9-b1e8-a2fecceb5eee">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kuhara, Naotoshi. 2019</span>
+					The genus <em>Kisaura </em>(Philopotamidae) in Shikoku, western Japan, with descriptions of three new species. <em>Zoosymposia</em> <b>14</b>(1): 231–240.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9617381c-54e4-4292-a64f-e3471e3d89ec">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Kuranishi, Ryoichi B. & Li-peng Hsu. 2019</span>
+					Discovery of <em>Eubasilissa signata</em> Wiggins, 1998 (Trichoptera, Phryganeidae) from Taiwan. <em>Zoosymposia</em> <b>14</b>(1): 103–107.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/49e116f3-d9aa-4ab6-a28e-10c2edbb7a06">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Laudee, Pongsak & John C. Morse. 2020</span>
+					PREFACE: Proceedings of the 16th International Symposium on Trichoptera. <em>Zoosymposia</em> <b>18</b>(1): 5–8.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5bf04345-f17f-4cdd-be10-4c193bf2714f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Laudee, Pongsak & John C. Morse. 2020</span>
+					Proceedings of the 16th International Symposium on Trichoptera. <em>Zoosymposia</em> <b>18</b>(1): 1–4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/014b2e8f-6983-47fd-b317-5c341e655f64">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Laudee, Pongsak & Kankasame Mesuk. 2019</span>
+					Biodiversity of Trichoptera from waterfalls on islands in the Thai Gulf and the Andaman Sea, Thailand. <em>Zoosymposia</em> <b>14</b>(1): 108–112.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/309e9912-a489-4c27-b229-01fda11f2687">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Laudee, Pongsak & Taeng O. Prommi. 2016</span>
+					Description of the larva of <em>Cheumatopsyche lucida</em> (Ulmer 1907) (Trichoptera: Hydropsychidae). <em>Zoosymposia</em> <b>10</b>(1): 272–277.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/915db132-f277-4f5a-9e9a-ea57a44a193a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lefebvre, Bertrand, Kraig Derstler & Colin D. Sumrall. 2012</span>
+					A reinterpretation of the solutan <em>Plasiacystis mobilis</em> (Echinodermata) from the Middle Ordovician of Bohemia. <em>Zoosymposia</em> <b>7</b>: 287-306.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e9bb4bbd-0e89-4995-a293-b74e5a5a3e7f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Leong, Misha, Matthew A. Bertone, Keith M. Bayless, Robert R. Dunn & Michelle D. Trautwein. 2018</span>
+					The Exoskeletons in our Closets: A synthesis of research from the ‘Arthropods of our Homes’ project in Raleigh, NC. <em>Zoosymposia</em> <b>12</b>(7): 64–68.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b9d01efe-100f-4286-b2de-93ca264eee35">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lobo, Haroldo & Evaldo L. G. Espindola. 2014</span>
+					<em>Branchiura sowerbyi </em>Beddard, 1892 (Oligochaeta: Naididae) as a test species in ecotoxicology bioassays: a review. <em>Zoosymposia</em> <b>9</b>(11): 59–69.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/94f53888-e4ca-4255-90d8-48979ed2e93c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Lukashevich, Elena D. 2009</span>
+					Limoniidae (Diptera) in the Upper Jurassic of Shar Teg, Mongolia. <em>Zoosymposia</em> <b>3</b>: 131–154.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c27c8aa6-d140-42e9-99bf-391cf513804e">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">M., Hubmann & Schletterer M. 2016</span>
+					Development of a habitat preference curve for the mayfly <em>Baetis alpinus</em> (Pictet 1843). <em>Zoosymposia</em> <b>11</b>(10): 65–72.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b2781b88-2ec6-4402-ad69-bd9d6fd5a3c7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Macadam, Craig R. 2016</span>
+					The current status of British mayflies and stoneflies. <em>Zoosymposia</em> <b>11</b>(12): 89–100.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7c980871-f623-420b-9b50-699d15de1d62">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Macadam, Craig R. & Jenni A. Stockan. 2016</span>
+					Preface: Proceedings of the Joint Meeting of the XIV International Conference on Ephemeroptera and XVIII International Symposium on Plecoptera. <em>Zoosymposia</em> <b>11</b>(3): 5–6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/537b5ff6-e41f-4d88-9564-75d2378422c7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Macadam, Craig R. & Jenni A. Stockan. 2016</span>
+					Proceedings of the Joint Meeting of the XIV International Conference on Ephemeroptera and XVIII International Symposium on Plecoptera. <em>Zoosymposia</em> <b>11</b>(1): 1–2.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/56b8b093-a7b1-4c01-9965-43179f2f3f6c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Macadam, Craig R. & Jenni A. Stockan. 2016</span>
+					Proceedings of the Joint Meeting of the XIV International Conference on Ephemeroptera and XVIII International Symposium on Plecoptera. <em>Zoosymposia</em> <b>11</b>(1): 1–2.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4d03b572-b828-4ec1-ba36-75fb19f258a3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Malicky, Hans. 2020</span>
+					Expected and unexpected areas of distribution of caddisflies (Trichoptera). <em>Zoosymposia</em> <b>18</b>(1): 135–142.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/dc2639b9-62c4-4223-a65c-09b30a8e5adb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Malzacher, P. 2019</span>
+					In memory of Ingrid Müller-Liebenau (1921–2016). <em>Zoosymposia</em> <b>16</b>(1): 11–14.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/38e64e3f-d107-4678-8711-d878ad557213">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Martynov, Alexander V., Roman J. Godunko & Dmitry M. Palatov. 2016</span>
+					Kintrishi State Nature Reserve — a hotspot for mayfly (Insecta: Ephemeroptera) diversity in Adjara (Georgia). <em>Zoosymposia</em> <b>11</b>(18): 168–173.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6c759c22-a2b7-497a-9494-b0136aeff23a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Massariol, Fabiana C., Roberta Paresque & Frederico F. Salles. 2016</span>
+					Species delimitation of <em>Lachlania </em>Hagen (Ephemeroptera: Oligoneuriidae) with description of two new species from Brazil. <em>Zoosymposia</em> <b>11</b>(14): 121–134.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/eca79671-b19c-4fc4-9273-abc08168e7d0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">McILLERON, W. G. & Ferdinand C. De Moor. 2020</span>
+					New techniques for improving resolution and visual information on flight activity in Trichoptera. <em>Zoosymposia</em> <b>18</b>(1): 160–178.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0bbeb83b-80a1-4a73-a28a-5497984e5bde">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mclaughlin, Julianne E., Paul B. Frandsen, Wolfram Mey & Steffen U. Pauls. 2019</span>
+					A Preliminary Phylogeny of Rhyacophilidae with Reference to <em>Fansipangana </em>and the Monophyly of <em>Rhyacophila</em>. <em>Zoosymposia</em> <b>14</b>(1): 189–192.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ceaf35bc-9db2-4080-87db-4acb643dcb30">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Melnitsky, Stanislav I. & V. P. Ivanov. 2016</span>
+					Structure of the antennal sensilla in the genera <em>Molanna </em>and <em>Molannodes </em>(Trichoptera, Molannidae). <em>Zoosymposia</em> <b>10</b>(1): 292–300.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1966b299-94f3-46e6-b5c9-497365994779">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Melnitsky, Stanislav I. & Vladimir D. Ivanov. 2016</span>
+					New species of caddisflies (Insecta, Trichoptera) from the Rovno Amber. <em>Zoosymposia</em> <b>10</b>(1): 278–291.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/23d1e687-9e25-4628-a587-f98b60026dd3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mendez, Patina K. 2019</span>
+					Index to key words, taxa, geographical distribution and authors. <em>Zoosymposia</em> <b>14</b>(1): 303–318.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/44109852-25de-4b82-8596-4c18c4a4a04c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mendez, Patina K., Joseph C. Spagna, Ralph W. Holzenthal & David C. Houghton. 2019</span>
+					PREFACE: Proceedings of the 15th International Symposium on Trichoptera. <em>Zoosymposia</em> <b>14</b>(1): 6–15.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f481fced-4817-4d74-bfe8-d990d83a2a39">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mendez, Patina K., Joseph C. Spagna, Ralph W. Holzenthal & David C. Houghton. 2019</span>
+					Proceedings of the 15th International Symposium on Trichoptera (Cover and Table of Contents). <em>Zoosymposia</em> <b>14</b>(1): 1–5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d4da0626-d37e-4963-9161-c784038cdc2d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mendez, Patina K., Marilyn J. Myers, Joan E. Damerow, Christina Lew & Vincent H. Resh. 2019</span>
+					Species occurrence and distribution of Trichoptera (caddisflies) in California. <em>Zoosymposia</em> <b>14</b>(1): 113–133.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9a7ee643-1bfd-405c-900e-2ffc9b2a9ade">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mey, Wolfram & Ferdinand C. De Moor. 2019</span>
+					The Trichoptera (Insecta) of the lower Kunene River in Namibia and Angola. <em>Zoosymposia</em> <b>14</b>(1): 134–150.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4ee5054d-935c-4f34-acf2-28e7a40bc558">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mey, Wolfram & Hendrik Freitag. 2020</span>
+					Diversity of Trichoptera emergence and their longitudinal distribution along streams in central Palawan, the Philippines. <em>Zoosymposia</em> <b>18</b>(1): 53–62.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/43800229-65ac-4660-94f9-42b2e40c1e92">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Mey, Wolfram. 2016</span>
+					A case study on the Trichoptera fauna of springs in the escarpment mountains of southern Africa (Insecta, Trichoptera). <em>Zoosymposia</em> <b>10</b>(1): 301–311.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/98f034cb-2267-467c-9537-6b53b5bdf939">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Milbrink, Göran. 2014</span>
+					Where have all the ”vejdovskies” gone (<em>Potamothrix vejdovskyi</em> Hrabe)? Ponto-Caspian tubificid oligochaete species in Lake Mälaren, south-central Sweden, in a 100 year perspective. <em>Zoosymposia</em> <b>9</b>(14): 95–102.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5e7f4f4b-82f1-4990-a329-e0253c6757e3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Milbrink, Göran. 2020</span>
+					Composition and abundance of oligochaetes in Scandinavian lakes in the 1970s in full compatibility with the ”morpho-edaphic index”. Do these relationships still hold 40 years later? <em>Zoosymposia</em> <b>17</b>(1): 77–88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/100e3cb5-b706-4cee-9b81-a1e7bfc0f362">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moor, Ferdinand C. De & Ina S. Ferreira. 2020</span>
+					Preliminary report on Trichoptera from the headwaters of the Cuanavale, Cuito, Cuembo and Cuando Rivers in Angola. <em>Zoosymposia</em> <b>18</b>(1): 34–45.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/34f50d06-0127-494d-9f45-a349d13f948c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moor, Ferdinand C. De & Terence A. Bellingan. 2019</span>
+					Evaluation of the conservation requirements of Trichoptera from the Tsitsikamma mountain streams in South Africa. <em>Zoosymposia</em> <b>14</b>(1): 151–164.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d423caf3-5add-4956-b7fc-fa5e3b129da9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moor, Ferdinand C. De & W. G. McILLERON. 2016</span>
+					Preliminary observations of flight activity of Trichoptera in the southern Cape, South Africa. <em>Zoosymposia</em> <b>10</b>(1): 172–187.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ff7629bd-2c4d-4ec1-b3ca-f4a6c053cf65">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Morales-Serna, Francisco N. & Samuel Gómez. 2012</span>
+					Co-occurrence of the parasitic copepods <em>Acantholochus zairae</em> Morales-Serna & Gómez, 2010 (Poecilostomatoida: Bomolochidae) and<em> Pseudochondracanthus diceraus </em>C. B. Wilson, 1908 (Poecilostomatoida: Chondracanthidae) on the gills of <em>Sphoeroides annulatus</em> (Jenyns) (Pisces: Tetraodontidae). <em>Zoosymposia</em>(8): 97–105.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f309eb3e-14bd-4f59-bde7-a749c1e484c0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Moreno-Alcántara, María. 2019</span>
+					Atlantidae (Pterotracheoidea) of the northeast Pacific. <em>Zoosymposia</em> <b>13</b>(1): 139–146.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5a43f6f3-518b-4b60-a431-89e805bbfe17">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Morse, John C. 2016</span>
+					Keynote: The Trichoptera fauna of Asia. <em>Zoosymposia</em> <b>10</b>(1): 20–28.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/be9a27bc-49c4-4281-9c74-c0f8a9cdd7a5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Morse, John C. 2020</span>
+					Index to key words, taxa, geographical distribution, and authors. <em>Zoosymposia</em> <b>18</b>(1): 191-201.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0be87a94-cd89-4838-9fba-94c7f5228ae0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Morse, John C., Jing-ke Li, Chang-hai Sun, Xueping Zhang, Lin Lin & Meixiang Gao. 2019</span>
+					Trichoptera of Liaoning Province, People’s Republic of China. <em>Zoosymposia</em> <b>14</b>(1): 241–249.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4ae00fc2-ecb1-4a93-a922-5a0f1ca16367">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Murányi, Dávid, Tibor Kovács & Kirill M. Orci. 2016</span>
+					Contribution to the taxonomy and biology of two Balkan endemic <em>Isoperla</em> Banks, 1906 (Plecoptera: Perlodidae) species. <em>Zoosymposia</em> <b>11</b>(11): 73–88.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c2a1a473-09d2-4b17-be25-e9c5f6df0166">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Murray-Stoker, Kelly M., John C. Morse, Madeline S. Genco & Hong T. Pham. 2020</span>
+					New and variable caddisfly species (Insecta: Trichoptera) from Bạch Mã National Park in Vietnam. <em>Zoosymposia</em> <b>18</b>(1): 93–102.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ac65820d-74ed-4a3b-991c-c1bd705c29fb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nagasawa, Kazuya & Akiko Inoue. 2012</span>
+					Variations in the infection level of <em>Neoergasilus japonicus</em> (Copepoda: Ergasilidae) between freshwater fishes at different sites in the Ashida River system, western Japan. <em>Zoosymposia</em>(8): 106–116.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4d14d8b5-1e0b-4710-8981-2401c1f652b5">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nagasawa, Kazuya & Daisuke Uyeno. 2012</span>
+					Utilization of alien freshwater fishes by the parasitic copepod <em>Neoergasilus japonicus</em> (Ergasilidae) on Okinawa-jima Island, Japan, with a list of its known hosts. <em>Zoosymposia</em>(8): 81–96.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/75ad37ca-255e-4744-87b5-97abc0da4ab3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Naveed, Mohammed I., S. Thulasiraja, S. Karunakaran, C. Kulandaivel & Tamil Selvan. 2014</span>
+					Preliminary survey of aquatic oligochaetes in Eastern Tamil Nadu, India. <em>Zoosymposia</em> <b>9</b>(6): 14–23.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a4da9aad-0500-4a2f-a36b-0e2f87db773d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishimoto, Hiroyuki. 2016</span>
+					Discovery of an obligate cave-dwelling caddisfly (Trichoptera, Polycentropodidae) in Japan. <em>Zoosymposia</em> <b>10</b>(1): 312–322.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9fb3b1b2-3f3b-40d6-98a4-a71e5a796bbb">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nishimoto, Hiroyuki. 2020</span>
+					The identity of <em>Psychomyia nipponica </em>Tsuda (Trichoptera: Psychomyiidae), with descriptions of five allied new species from Japan. <em>Zoosymposia</em> <b>18</b>(1): 103–111.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5446a736-549a-44f7-947f-18c858b6011c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nozaki, Takao, Shigeharu Togashi & Takashi Sato. 2016</span>
+					The caddisfly fauna of a small spring brook in the Jimoto-yusui, Niigata, central Japan. <em>Zoosymposia</em> <b>10</b>(1): 323–330.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2b1f3ddd-1c64-4ef3-9884-6354cbfaf1ed">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Nozaki, Takao, Tomiko Ito & Koji Tojo. 2019</span>
+					Caddisflies collected using a Malaise trap at a spring-fed brook of Shimauchi-yusui in the Matsumoto Basin, central Japan: fauna and phenology. <em>Zoosymposia</em> <b>14</b>(1): 165–176.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2edbd545-6bda-4444-af78-f52457f72a9a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ogawa, Akito, Yui Takahashi & Toshihiko Fujita. 2019</span>
+					New wheel microfossils of Ophiocistioidea and Holothuroidea (Echinodermata) from Japan. <em>Zoosymposia</em> <b>15</b>(1): 106–114.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ca11ed9c-e4d7-4b39-bf9c-1fc09cf9a297">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ogden, T. H., J. W. Breinholt, S. M. Bybee, D. B. Miller, M. Sartori, D. Shiozawa & M. F. Whiting. 2019</span>
+					Mayfly Phylogenomics: Initial Evaluation of Anchored Hybrid Enrichment Data for the order Ephemeroptera. <em>Zoosymposia</em> <b>16</b>(1): 167–181.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/80b9cb4e-adf0-4467-bd1b-4e24e7c44d25">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtaka, Akifumi & Mark J. Wetzel. 2020</span>
+					PREFACE: 14th International Symposium on Aquatic Oligochaeta. <em>Zoosymposia</em> <b>17</b>(1): 5–7.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4b50285e-646c-4208-adfa-73734092172d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtaka, Akifumi, Kimio Hirabayashi, Mark J. Wetzel, Jana Schenková & Adrian Pinder. 2020</span>
+					Proceedings of the 14th International Symposium on Aquatic Oligochaeta (Cover and Table of Contents). <em>Zoosymposia</em> <b>17</b>(1): 1–4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/228c337d-e5f8-4086-9c4a-3eb5e2be5243">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtaka, Akifumi, Stuart R. Gelder & Susan M. Peterson. 2020</span>
+					A catalog and assessment of Prof. Hideji Yamaguchi's slide collection of branchiobdellidans (Annelida: Clitellata) with the identification of syntypes. <em>Zoosymposia</em> <b>17</b>(1): 159–187.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/87ce37d4-408c-4750-8d7d-b87ade6faca9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ohtaka, Akifumi. 2014</span>
+					Profundal oligochaete faunas (Annelida, Clitellata) in Japanese lakes. <em>Zoosymposia</em> <b>9</b>(7): 24–35.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/950947b3-2140-4432-980a-10a0aecbefc9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Oliver S. flint, JR., Michael A. Floyd & John K. Moulton. 2016</span>
+					A new species of <em>Oecetis </em>McLachlan (Trichoptera, Leptoceridae) from the Sandhills region of South Carolina, USA. <em>Zoosymposia</em> <b>10</b>(1): 188–192.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3ff4038d-e2a4-41fb-a61f-e084c523e425">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pan´kov, Nikolay N. & Andrey Krasheninnikov. 2016</span>
+					Current state of knowledge of a faunal inventory of Trichoptera (Hexapoda, Trichoptera) from the Ural Mountains and neighboring regions. <em>Zoosymposia</em> <b>10</b>(1): 331–339.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/37ac2872-f79d-48ad-9928-90c3369e33ca">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pandher, Manpreet S. & Sajad H. Parey. 2019</span>
+					Three new species of genus <em>Chimarra </em>Stephens, 1829 (Trichoptera: Philopotamidae) from Indian Himalaya. <em>Zoosymposia</em> <b>14</b>(1): 250–256.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4d0b189a-6307-43f2-9917-e9774c46c8f8">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pandher, Manpreet S., Sajad H. Parey & Simarjit Kaur. 2020</span>
+					Two new species of genus <em>Polyplectropus </em>Ulmer 1905 (Insecta: Trichoptera: Polycentropodidae) from the Indian Himalaya. <em>Zoosymposia</em> <b>18</b>(1): 112–117.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/fc5415cc-6895-44ad-875e-9f9365664ea4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parey, Sajad H. & Manpreet S. Pandher. 2019</span>
+					A new species of genus <em>Lepidostoma </em>Rambur (Trichoptera: Lepidostomatidae) from India. <em>Zoosymposia</em> <b>14</b>(1): 257–260.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/97b7a36e-88a7-4817-9900-488c9a66e29d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Parpet, Jean-françois & Stuart R. Gelder. 2020</span>
+					North American Branchiobdellida (Annelida: Clitellata) or Crayfish Worms in France: the most diverse distribution of these exotic ectosymbionts in Europe. <em>Zoosymposia</em> <b>17</b>(1): 121–140.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/14ba277e-9a2e-4024-b740-f108afb5dd14">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pessacq, Pablo, Maria D. C. Zúñiga & Tácio Duarte. 2019</span>
+					An updated checklist of Neotropical Plecoptera. <em>Zoosymposia</em> <b>16</b>(1): 182–209.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9d26eae1-c431-4e88-bef9-242c93369b92">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Piero, Stefania D., Luciano Masiero & Sandra Casellato. 2014</span>
+					Toxicity and bioaccumulation of fluoride ion on <em>Branchiura</em> <em>sowerbyi</em>, Beddard, (Oligochaeta, Tubificidae). <em>Zoosymposia</em> <b>9</b>(9): 44–50.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f4e162f3-7c83-4e64-9716-788c6b108588">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinder, Adrian, Mark Wetzel & Naime Arslan. 2014</span>
+					12th International Symposium on Aquatic Oligochaeta. <em>Zoosymposia</em> <b>9</b>(3): 4–5.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9c530fc4-f676-42c7-9685-35649038ca15">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Pinder, Adrian, Naime Arslan & Mark Wetzel. 2014</span>
+					Proceedings of the 12th International Symposium on Aquatic Oligochaeta. <em>Zoosymposia</em> <b>9</b>(1): 1–102.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/351e2640-3148-43fa-8d6d-54cb55879304">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ponomarenko, Margarita G. 2016</span>
+					A contribution to knowledge of some main trends in evolutionary  transformations of the male genitalia in superorder Amphiesmenoptera  (Insecta, Trichoptera + Lepidoptera). <em>Zoosymposia</em> <b>10</b>(1): 340–356.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/faba1510-1a64-44ad-8032-66e8051797ad">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Potikha, Elena & T. S. Vshivkova. 2016</span>
+					The caddisfly faunas (Insecta, Trichoptera) of Protected Natural Areas in southern Far East Russia. <em>Zoosymposia</em> <b>10</b>(1): 357–383.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a6e32efc-8598-4048-89b2-8c7a9e779399">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Prantoni, Alessandro L., Maikon Di Domenico & Paulo C. Lana. 2014</span>
+					First record of achaetous <em>Marionina</em> Michaelsen, 1890 (Annelida: Clitellata: Enchytraeidae) in the southern Atlantic. <em>Zoosymposia</em> <b>9</b>(5): 10–13.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/af6bae9c-4d04-4045-899f-ca2a704ea4d7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Prommi, Taeng O., Pronthip Peumwarunyoo & Pharawee Mansukphol. 2016</span>
+					Distribution of Hydropsychidae (Insecta, Trichoptera) and water quality parameters in Mae Tao Creek, Mae Sot District, Tak Province, northern Thailand. <em>Zoosymposia</em> <b>10</b>(1): 413–423.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/51db708c-1527-4a9b-8946-e8ea1f5ef143">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Prommi, Taeng-on. 2019</span>
+					Population Dynamics and Seasonal Occurrence of Adult <em>Amphipsyche meridiana</em> Ulmer 1902 (Trichoptera: Hydropsychidae) in an Irrigation Pond Outlet. <em>Zoosymposia</em> <b>14</b>(1): 63–67.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1854770e-00d1-4093-b442-cf51408d0ea9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Promwong, Wongphan & Decha Thapanya. 2019</span>
+					Monthly Diversity and Abundance of Caddisflies in Upstream and Downstream Areas of the Mae Ngat Somboonchol Dam, Chiang Mai Province, Thailand. <em>Zoosymposia</em> <b>14</b>(1): 68–80.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/259158a9-eb04-49d8-95dc-8f50d4ff3d31">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Raines, Bret K. 2019</span>
+					Caecidae of the northeast Pacific (Gastropoda: Caenogastropoda). <em>Zoosymposia</em> <b>13</b>(1): 97–103.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/528e14a0-20fc-4254-a9a9-96ddc6860290">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Reich, Mike. 2012</span>
+					On Mesozoic laetmogonid sea cucumbers (Echinodermata: Holothuroidea: Elasipodida). <em>Zoosymposia</em> <b>7</b>: 185-212.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ae9bbbf5-758f-4991-977c-020aec064c72">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Resh, Vincent H. 2019</span>
+					OBITUARY: Eric Paul McElravy, November 28, 1946-August 27, 2014. <em>Zoosymposia</em> <b>14</b>(1): 300–302.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ef46544b-378f-4eba-b9a7-dc08db53fb2f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Robinson, Jason L. & Charles R. Parker. 2019</span>
+					<em>Rhyacophila dandaganu</em>, a new caddisfly from the southern Cumberland Plateau (USA) (Trichoptera: Rhyacophilidae). <em>Zoosymposia</em> <b>14</b>(1): 261–272.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f25b7229-5235-4524-8054-ea3921faae6f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rozhnov, Sergey V. 2012</span>
+					Reinterpretation of Baltic Ordovician <em>Heckerites multistellatus</em> Rozhnov, 1987 as a possible paracrinoid based on new material. <em>Zoosymposia</em> <b>7</b>: 307-316.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7c54d05f-bcf1-4962-a439-f904a1bebed3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Rozhnov, Sergey V., Georgy V. Mirantsev & Sergey S. Terentiev. 2019</span>
+					First report of the mitrate <em>Lagynocystis </em>(Echinodermata: Stylophora) in the Ordovician of the Baltic paleobasin. <em>Zoosymposia</em> <b>15</b>(1): 115–122.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/989d141d-3b1d-43b8-a37c-f1badaf19922">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ruiter, David E. & Hiroyuki Nishimoto. 2019</span>
+					New species of <em>Allomyia </em>Banks from the Western United States (Trichoptera: Apataniidae). <em>Zoosymposia</em> <b>14</b>(1): 273–288.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/308fb2f2-5aea-495b-a2db-47e71c72a88a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Saito, Rie, Kazuki Sekiné & Koji Tojo. 2016</span>
+					Re-habitation and changes in the genetic diversity of aquatic insects in a newly restored shoal type habitat created as the result of a nature restoration project in the central basin of the Chikuma-gawa River. <em>Zoosymposia</em> <b>10</b>(1): 384–392.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f3032972-1207-4432-9ab7-8268432cd715">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Saitoh, Masaya, Andreas Kroh, Omri Bronstein, Shu Nakachi, Masami Obuchi, Yuki Kiyono & Ken’ichi Kanazawa. 2019</span>
+					The echinoid fauna from middle and southern Japan: a preliminary report. <em>Zoosymposia</em> <b>15</b>(1): 123–128.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6f8e9fef-2523-419f-9295-066c267390af">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Salles, Frederico F. & Tathiana G. Sobrinho. 2019</span>
+					PREFACE: Proceedings of the 15th International Conference on Ephemeroptera and 19th International Symposium on Plecoptera. <em>Zoosymposia</em> <b>16</b>(1): 5–10.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ff189175-17fa-48d5-bc7d-97f36dc7cba2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Salles, Frederico F. & Tathiana G. Sobrinho. 2019</span>
+					Proceedings of the Joint Meeting of the XV International Conference on Ephemeroptera and XIX International Symposium on Plecoptera (Cover and Table of Contents). <em>Zoosymposia</em> <b>16</b>(1): 1–4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d250bda7-97ac-4d53-a337-7f48669aef18">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Salles, Frederico F., Kamila B. Angeli & Luke M. Jacobus. 2016</span>
+					Review of <em>Waltzoyphius </em>McCafferty & Lugo-Ortiz, 1995 and <em>Zelusia </em>Lugo-Ortiz & McCafferty, 1998 (Ephemeroptera: Baetidae). <em>Zoosymposia</em> <b>11</b>(19): 174–204.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/602ded42-9d75-4bfa-909a-2863c318d3b6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sartori, Michel, Martin Kubiak & Peter Michalik. 2016</span>
+					Deciphering genital anatomy of rare, delicate and precious specimens: first study of two type specimens of mayflies using micro-computed X-ray tomography (Ephemeroptera; Heptageniidae). <em>Zoosymposia</em> <b>11</b>(7): 28–32.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/03c184e1-f842-4b08-a33e-eab68fb5a297">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Schletterer, Martin, Ernst Bauernfeind & W. Lechthaler. 2016</span>
+					Larval redescription of <em>Prosopistoma pennigerum</em> (Müller, 1785) from the River Volga near Rzhev, Tver Region, Russia (Insecta: Ephemeroptera). <em>Zoosymposia</em> <b>11</b>(6): 15–27.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/de003596-2416-4637-9fcd-085fc22beee0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Schlüter, Nils, Frank Wiese, Helmut Faustmann & Peter Girod. 2012</span>
+					Rare Late Cretaceous phymosomatoid echinoids from the Hannover area (Lower Saxony, Germany). <em>Zoosymposia</em> <b>7</b>: 267-278.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/293f95db-0815-4f46-bffc-91f039e49de0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Schmelz, Rüdiger M., Mårten J. Klinth, Rachel Wisdom & Thomas Bolger. 2020</span>
+					<em>Astacopsidrilus hibernicus</em> sp. nov. (Phreodrilidae, Oligochaeta, Annelida) from Irish peatlands. <em>Zoosymposia</em> <b>17</b>(1): 34–44.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d8276e88-c0ae-4761-a5c7-968cbcd6d5c9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Seapy, Roger R. 2019</span>
+					A taxonomic review of janthinid gastropod molluscs from California Current Waters off the west coast of North America. <em>Zoosymposia</em> <b>13</b>(1): 151–153.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0224775d-0491-4d1c-8b81-93a634ff11a2">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Seapy, Roger R. 2019</span>
+					A taxonomic review of pterotracheoid gastropod mollusks from California Current waters off the west coast of North America. <em>Zoosymposia</em> <b>13</b>(1): 147–150.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e619fb06-4986-4bad-992a-ed55255b9f55">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Setiamarga, Davin H. E., Rena Shiba, Yuki Kamito, Masaki Yamamoto, Nazifa N. B. Razali, Mikihito Arai, Toshihiko Fujita & Christopher L. Mah. 2019</span>
+					Two partial mitochondrial gene sequences (COI and 12S-rRNA) suggested that <em>Ceramaster japonicus</em> (Sladen, 1889) and <em>Ceramaster patagonicus</em> (Sladen, 1889) (Asteroidea: Goniasteridae) from the Japanese waters are probably of the same species. <em>Zoosymposia</em> <b>15</b>(1): 129–140.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4575632a-6e6d-49a2-bddc-c5a081150070">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Shevchenko, Jade, Achmad B. M. Yuni & Paul B. Frandsen. 2019</span>
+					Undergraduate teaching of scientific concepts using DNA barcoding of Trichoptera. <em>Zoosymposia</em> <b>14</b>(1): 16–31.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/42ededa0-b613-4852-a3a3-cf77a4eff337">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sibirina, Lidia, Alla Akatkina, Anna Skriptzova & T. S. Vshivkova. 2016</span>
+					Monitoring of Primorsky Territory freshwater by public ecological agencies. <em>Zoosymposia</em> <b>10</b>(1): 393–397.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/3216f6f8-8b03-4838-8bf6-c5ee91667334">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sirenko, Boris I., Igor S. Smirnov, Sofia D. Stepanjants, Oleg P. Poltaruha & Oleg V. Savinkin. 2019</span>
+					First record of symbiosis of the brittle star <em>Ophiocnemis </em><em>marmorata </em>(Echinodermata: Ophiuroidea: Ophiotrichidae) on jellyfish of the genus <em>Rhopilema </em>(Cnidaria: Scyphozoa) in Vietnamese waters. <em>Zoosymposia</em> <b>15</b>(1): 141–145.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e8ee9428-680f-4c3d-b228-f16e06be246b">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sivaramakrishnan, K. G. 2016</span>
+					Systematics of the Ephemeroptera of India: Present status and future prospects. <em>Zoosymposia</em> <b>11</b>(8): 33–52.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/e2d251bb-5588-4ff3-b098-55634d3c6435">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Smirnova, Dina A., Vladimir D. Ivanov, Stanislav I. Melnitsky, Olga N. Sklyarova & Julia V. Epova. 2020</span>
+					Trichoptera of Saur and Tarbagatay Mountains (Kazakhstan). <em>Zoosymposia</em> <b>18</b>(1): 63–71.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f8a498a4-cd16-4572-ada7-8ff6bf5a2792">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Smirnova, Dina, Lyudmila Kushnikova, Anna Evseeva, Olga Grishaeva, Vladimir Kraynyuk, Dmitry Pilin, Olga Sklyarova, Julia Epova, Zhanna Baymukanova & Serik Timirkhanov. 2016</span>
+					The Trichoptera of Kazakhstan: A review. <em>Zoosymposia</em> <b>10</b>(1): 398–408.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a0611a2f-3e44-4f66-909b-584c9977613d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sroka, Pavel, Jan Klecka & David S. Boukal. 2016</span>
+					Spatial heterogeneity and habitat permanence affect community assembly, structure and phenology of mayflies (Ephemeroptera) in sandpit pools. <em>Zoosymposia</em> <b>11</b>(20): 205–218.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/eadf80f0-4d93-4c38-9f30-dc4186e24ee7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Stöhr, Sabine, Elizabeth G. Clark, Ben Thuy & Simon A. F. Darroch. 2019</span>
+					Comparison of 2D SEM imaging with 3D micro-tomographic imaging for phylogenetic inference in brittle stars (Echinodermata: Ophiuroidea). <em>Zoosymposia</em> <b>15</b>(1): 146–158.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6c945ff1-ccf3-478a-828e-7294e51d88d6">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Sukatsheva, Irina D. & D. V. Vassilenko. 2016</span>
+					Mesozoic Trichoptera with reduced venation. <em>Zoosymposia</em> <b>10</b>(1): 409–412.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4e42ce36-5aab-4b6a-a4aa-480ab80a8bd7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Šupina, Jan, Jindriska Bojkova & David S. Boukal. 2016</span>
+					Influence of food availability, predation risk and initial body size on growth and maturation of <em>Cloeon dipterum </em>(Ephemeroptera: Baetidae). <em>Zoosymposia</em> <b>11</b>(9): 53–64.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b2c26c48-826d-4eb6-8b15-45be2a1fdbc4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Swisher, Robert E. & Jih-pai Lin. 2019</span>
+					A geometric morphometric analysis of <em>Arachnoides placenta</em> (Echinoidea: Clypeasteroida): An examination of ontogenetic development and morphological variation. <em>Zoosymposia</em> <b>15</b>(1): 159–171.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0ce41e10-22d5-45bf-bc7b-4e960b7623ab">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Takenaka, M., K. Sekiné, K. Yano & K. Tojo. 2019</span>
+					Evaluation of the Effectiveness of a “Hand-Pairing” Cross-Breeding Experiment in Ephemeroptera. <em>Zoosymposia</em> <b>16</b>(1): 210–217.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8ecb0df2-08a9-4e77-aa60-a1c4cf14f7a7">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tang, Danny & Julianne K. Passarelli. 2012</span>
+					Preface: Proceedings of the 1st International Workshop on Symbiotic Copepoda. <em>Zoosymposia</em>(8): 5–6.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/a5fb5ebf-ff93-4fc0-a252-1df953357ae4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tang, Danny, George W. Benz & Kazuya Nagasawa. 2012</span>
+					Description of the male of <em>Prosaetes </em><em>rhinodontis</em> (Wright, 1876) (Crustacea, Copepoda, Siphonostomatoida), with a proposal to synonymize Cecropidae Dana, 1849 and Amaterasidae Izawa, 2008 with Pandaridae Milne Edwards, 1840. <em>Zoosymposia</em>(8): 7–19.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/0e231c21-f79a-411b-b040-1b866990e950">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tatsuo, Oji, Fujita Toshihiko, Motokawa Tatsuo, Komatsu Mieko, Agatsuma Yukio & Kanazawa Ken’ichi. 2019</span>
+					Proceedings of the 16th International Echinoderm Coference. <em>Zoosymposia</em> <b>15</b>(1): 1–4.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1682e191-10b1-4c71-87bc-31ef246963f1">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Thuy, Ben, Adiël A. Klompmaker & John W. M. Jagt. 2012</span>
+					Late Triassic (Rhaetian) ophiuroids from Winterswijk, the Netherlands; with comments on the systematic position of <em>Aplocoma </em>(Echinodermata, Ophiolepididae). <em>Zoosymposia</em> <b>7</b>: 163-172.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6c9f10df-2601-40c8-827b-f1fc7b06d91c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Timm, Tarmo & Mark Wetzel. 2014</span>
+					In Memoriam Tamara L. Poddubnaya (1930–2011)—Oligochaetologist. <em>Zoosymposia</em> <b>9</b>(4): 6–9.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4c736248-8cee-421a-b2e2-187e8de846fa">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Timm, Tarmo. 2020</span>
+					Observations on the life cycles of aquatic Oligochaeta in aquaria. <em>Zoosymposia</em> <b>17</b>(1): 102–120.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/5ab608c9-40c1-4b36-ae7b-6f561a602257">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Torii, Takaaki & Hiroyuki Nishimoto. 2011</span>
+					Discovery of the genus <em>Eoneureclipsis</em> Kimmins (Trichoptera: Psychomyiidae) from Japan. <em>Zoosymposia</em> <b>5</b>: 453–464.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7a7cab61-9e2f-4884-85c6-ebd0e3a5362a">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Torii, Takaaki & M. Nakamura. 2016</span>
+					DNA identification and morphological description of the larva of <em>Eoneureclipsis montanus</em> (Trichoptera, Psychomyiidae). <em>Zoosymposia</em> <b>10</b>(1): 424–431.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7c0073d8-9bc6-4f38-bf15-48ef6b400e3c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Tuskes, Paul M. 2019</span>
+					Calliostomatidae of the northeast Pacific. <em>Zoosymposia</em> <b>13</b>(1): 83–96.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7985abe7-2758-4571-8f10-7621df601aa3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uy, Christine J. C., Naotoshi Kuhara & Yeon J. Bae. 2019</span>
+					Taxonomic review of the Northeast Asian species of <em>Kisaura </em>(Philopotamidae) with description of a new species. <em>Zoosymposia</em> <b>14</b>(1): 289–299.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/aa27f16f-9cae-46a1-9a5a-cedd9e94ab29">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Uyeno, Daisuke & Kazuya Nagasawa. 2012</span>
+					<em>Ttetaloia </em><em>hoshinoi</em>, a new genus and species of chondracanthid copepod (Poecilostomatoida) parasitic on triplefins (Actinopterygii: Tripterygiidae) from Japanese waters. <em>Zoosymposia</em>(8): 39–48.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/698cdb5d-80e6-4e38-94f6-ea1143ae6f95">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vafiadis, Platon & Lynton D. Stephens. 2019</span>
+					The genus <em>Pelycidion</em> P. Fischer in de Folin & Périer, 1873 (Caenogastropoda: Pickworthiidae: Pelycidiinae) in the northeast Pacific Ocean. <em>Zoosymposia</em> <b>13</b>(1): 104–106.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/b0575e4d-a07c-4776-a708-847c3053df57">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Valdés, Ángel. 2019</span>
+					Northeast Pacific benthic shelled sea slugs. <em>Zoosymposia</em> <b>13</b>(1): 242–304.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/2f48f5d0-7400-46bf-85c5-21657ebb2586">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Valuyskiy, Mikhail Y., Stanislav I. Melnitsky & Vladimir D. Ivanov. 2020</span>
+					Diversity and distribution of antennal sensilla in Glossosomatidae in comparison with other basal families of caddisflies (Insecta: Trichoptera). <em>Zoosymposia</em> <b>18</b>(1): 179-190.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f3162ba1-c24f-421e-8315-a11c3680993c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vshivkova, T. S. 2016</span>
+					Iya Mikhailovna Levanidova, the famous Russian hydrobiologist and investigator of the East Russian Trichoptera (1 March 1914–11 November 2005). <em>Zoosymposia</em> <b>10</b>(1): 48–63.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c33ee37f-490b-494c-a51f-131b4176ddf0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vshivkova, T. S. & John C. Morse. 2016</span>
+					PREFACE: Proceedings of the 14th International Symposium on Trichoptera. <em>Zoosymposia</em> <b>10</b>(1): 6–19.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/4824dafb-f0ce-48a5-bbd0-74a22e0389c3">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vshivkova, T. S. & John C. Morse. 2016</span>
+					Proceedings of the 14th International Symposium on Trichoptera. <em>Zoosymposia</em> <b>10</b>(1): 1–2.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/8941fad2-f340-4a7a-8eef-a84287fd3a2c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Vshivkova, T. S., Oliver Flint, Tomiko Ito, Vladimir D. Ivanov, Ralph W. Holzenthal, Stanislav I. Melnitsky, Wolfram Mey, Takao Nozaki, Min W. Oh, Konstantin Drozdov, Koji Tojo, Rie Saito & Takaaki Torii. 2016</span>
+					The List of Caddisflies (Insecta, Trichoptera) collected in South Primorye during the symposium and post-symposium excursions of the XIV International Symposium on Trichoptera (5 and 8−13 July 2012). <em>Zoosymposia</em> <b>10</b>(1): 64–84.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/d310b6ce-04f4-4c1b-a6a1-b4f50fbf8094">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wakayama, Norio, Yuki Kiyono, Natsuki Matsumoto, Masaya Saitoh & Ken’ichi Kanazawa. 2019</span>
+					Effective DNA extraction methods for mitochondrial phylogenomics of the sea urchins. <em>Zoosymposia</em> <b>15</b>(1): 192–202.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ed4ae8f5-ae68-4755-a56b-03064f41bca0">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Waringer, Johann, Wolfram Graf, Miklós Bálint, Mladen Kučinić, Steffen U. Pauls, Ana Previšić, Lujza Keresztes & Simon Vitecek. 2016</span>
+					Project overview: the Drusinae (Insecta, Trichoptera) in a World of global change—bridging basic and applied research in a highly sensitive aquatic insect group. <em>Zoosymposia</em> <b>10</b>(1): 432–438.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/1ee4f5ba-e092-42ed-90e7-7bcd19e6bf4d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Weaver, Dana, Joseph C. Spagna & Patina K. Mendez. 2019</span>
+					Phylogenetics of a small caddisfly genus (Thremmatidae: <em>Oligophlebodes</em>): comparison among multiple hypotheses from DNA barcode data. <em>Zoosymposia</em> <b>14</b>(1): 193–203.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/964c864a-89ac-4ecc-b4d2-f5acd9f2c05c">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Weaver, John S. 2020</span>
+					A phylogenetic review of the species groups of <em>Phylocentropus </em>Banks (Trichoptera: Dipseudopsidae). <em>Zoosymposia</em> <b>18</b>(1): 143-152.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/78f72c9b-ebe5-428e-a272-d2b9049ebaa9">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Webster, Gary D. 2012</span>
+					An Early Permian crinoid fauna from Crete. <em>Zoosymposia</em> <b>7</b>: 101-110.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/16dd18b7-8a02-42e8-ad6b-beb3b3a27468">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wells, A. & K. a. Johanson. 2016</span>
+					Micro-caddisfly faunas of Australia and the southwest Pacific (Trichoptera, Hydroptilidae). <em>Zoosymposia</em> <b>10</b>(1): 439–450.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/7256eda7-e56e-4b6a-8b6b-8a8338d02dc4">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wells, Alice, Kjell A. Johanson & Peter Dostine. 2019</span>
+					Why are so many species based on a single specimen? <em>Zoosymposia</em> <b>14</b>(1): 32–38.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/6f59c9f2-d2dc-41d0-b662-b37485fa108f">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wells, Alice. 2020</span>
+					Curious Caddis Couture: Form and function among cases of Australian Hydroptilidae. <em>Zoosymposia</em> <b>18</b>(1): 24–33.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/470db066-ca36-4600-af8a-26f8da55dbee">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Wetzel, Mark J. 2020</span>
+					Citations for the published proceedings of our 14 International Symposia on Aquatic Oligochaetes (1979–2018). <em>Zoosymposia</em> <b>17</b>(1): 188–189.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/f2db1662-b052-4930-ba47-17ee43f059be">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yamana, Yusuke, Takeshi Hayashibara, Masaki Yamamoto & Davin H. E. Setiamarga. 2019</span>
+					First observation of the "double-faced X-framed cup ossicle" extracted from a deep sea holothurian in Japan. <em>Zoosymposia</em> <b>15</b>(1): 203–211.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ba5096f0-b5c6-4900-b2ed-2033f1cc8e5d">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yamanaka, Akira, Yuki Takuwa & Chisato Kitazawa. 2019</span>
+					Experimental hybridization of sympatric temnopleurid sea urchins living in Yamaguchi, Japan. <em>Zoosymposia</em> <b>15</b>(1): 212–228.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/89c5c740-0b75-4683-8e4e-4ff3e186a516">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Yang, Lian-fang, Chang-hai Sun & John C. Morse. 2016</span>
+					An amended checklist of the caddisflies of China (Insecta, Trichoptera). <em>Zoosymposia</em> <b>10</b>(1): 451–479.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/ebfe951f-8c73-4616-bae7-b224fd1ad2dc">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zasypkina, Irina A. 2016</span>
+					Current knowledge on caddisflies (Trichoptera) in northern Far East Russia. <em>Zoosymposia</em> <b>10</b>(1): 480–492.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/c5bed0f4-4963-4551-8b51-14a8783bd723">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Zhivoglyadova, Lyubov L. & Vjacheslav S. Labay. 2016</span>
+					Caddisflies (Trichoptera) in benthic communities of southern Sakhalin rivers, Far East Russia. <em>Zoosymposia</em> <b>10</b>(1): 493–501.</a>
+					</li>
+					
+				
+					
+									
+					<li>
+					<a class="biblio-entry" href="/References/9d39b789-76f2-4577-9a9b-22247a191470">	
+					
+						<span class="lsidButton"></span>				
+										
+					
+					<span class="biblio-authors">Ziegler, Alexander. 2019</span>
+					Combined visualization of echinoderm hard and soft parts using contrast-enhanced micro-computed tomography. <em>Zoosymposia</em> <b>15</b>(1): 172–191.</a>
+					</li>
+					
+						</div>
+						<a id="more_pubs" class="secondaryAction">205 More...</a>
+						<script type="text/javascript">
+							$("#more_pubs").click(function () { 
+								$('#more_pubs_layer').toggle();
+								if($('#more_pubs_layer').is(":visible")) document.getElementById("more_pubs").innerHTML="Less...";
+									else document.getElementById("more_pubs").innerHTML="More...";
+							});
+						</script>
+					
+				
+				</ol>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	
+		
+	
+	
+		
+	
+	<div id="help_layer"></div>
+	
+	
+ 
+ <div id="footer">
+	<p class="cellsm">
+	<a href="https://www.iczn.org/" target="_blank">ICZN Home</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.nhm.ac.uk/hosted-sites/iczn/code/" target="_blank">The Code</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/submitting-to-the-bulletin-of-zoological-nomenclature/" target="_blank">The Bulletin</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/list-of-available-names/" target="_blank">Official Lists and Indexes</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Support ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/contact-us/" target="_blank">Contact ICZN</a>
+	&nbsp;|&nbsp;
+	<a href="https://www.iczn.org/make-a-donation/" target="_blank">Donate</a>
+	<br />
+	</p>
+	&copy; 2020 International Commission on Zoological Nomenclature - new
+	<br />ZooBank is part of the <a href="http://globalnames.org" target="_blank">Global Names Architecture</a>, and is supported by <br/>the U.S. National Science Foundation grants <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=1062441" target="_blank">DBI-1062441</a> and <a href="http://nsf.gov/awardsearch/showAward.do?AwardNumber=0956415" target="_blank">DBI-0956415</a>.
+       
+        <br />
+    	<a href="http://nsf.gov" target="_blank" style="border-bottom: none;"><img src="/images/nsf_logo_small.png" style="width:40px;height:40px;" alt="NSF Logo" /></a> <a href="http://globalnames.org" target="_blank" style="border-bottom: none;"><img src="/images/gna-logo.svg" style="width:40px;height:40px;" alt="GNA Logo" /></a><br />
+		
+		
+		
+			
+		
+		<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=zh-cn">中文</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=nl">Nederlands</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=en-us">English</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=fr">Français</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=de">Deutsch</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=it">Italiano</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=ja">日本語</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=pt">Português</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=ru">Русский</a>&nbsp;<a href="/References/75e55a55-ef18-4c4f-8dc7-611ea6c712f2?region=es">Español</a>&nbsp;<br />
+		
+	
+</div>
+<script type="text/javascript" src="load.cfres?js=cfjs_a09fffc7f2330a41cb4f81a9b8be56f5.js"></script></body>
+</html>
